@@ -1,16 +1,11 @@
 import { Routes, RouterModule } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
-import { IndexComponent } from './index/index.component'
+import { PagesComponent } from './pages.component'
 
 export const routes: Routes = [
   {
-    path: 'index',
-    loadChildren: 'app/pages/index/index.module#IndexModule'
-  },
-
-  {
-    path: 'pages',
-    component: IndexComponent,
+    path: '',
+    component: PagesComponent,
     children: [
       { path: '', redirectTo: 'index', pathMatch: 'full' },
       { path: 'index', loadChildren:'./index/index.module#IndexModule'},
