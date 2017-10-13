@@ -1,9 +1,16 @@
 import { Routes, RouterModule } from '@angular/router';
-import { PagesComponent } from './pages/pages.component'
+import { NgModule } from '@angular/core';
+import { PagesComponent } from './pages/pages.component';
 
-const appRoutes: Routes = [
-    { path: '', component: PagesComponent },
-    { path: '**', component: PagesComponent }
+const routes:Routes = [
+    {
+        path: '',
+        component: PagesComponent,
+    }
 ];
 
-export const routing = RouterModule.forRoot(appRoutes);
+@NgModule({
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule]
+})
+export class AppRoutingModule {}
