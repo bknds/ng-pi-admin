@@ -1,23 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Routes, RouterModule } from '@angular/router';
-import { IndexComponent } from './index/index.component';
-
-const PagesRoutes:Routes = [
-    {
-        path:'',
-        component:IndexComponent
-    },
-    {
-        path:'index',
-        component:IndexComponent
-    }
-];
+import { routing } from './pages.routing';
 
 @NgModule({
     imports: [
         CommonModule,
-        RouterModule.forChild(PagesRoutes),
+        routing
     ],
 })
 export class PagesModule {
