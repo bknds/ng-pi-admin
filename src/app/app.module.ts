@@ -1,21 +1,20 @@
 import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
-import { RouterModule, Routes } from "@angular/router";
 import { FormsModule } from "@angular/forms";
-import { AppComponent } from "./app.component";
+import { NgModule } from "@angular/core";
+import { PagesModule } from './pages/pages.module';
 import { routing } from "./app.routing";
-import { IndexComponent } from "./pages/index/index.component";
-import { PagesComponent } from "./pages/pages.component";
+
+import { AppComponent } from "./app.component";
+
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
+    PagesModule,
     routing
   ],
   declarations: [
     AppComponent,
-    IndexComponent,
-    PagesComponent,
   ],
   bootstrap: [AppComponent]
 })
