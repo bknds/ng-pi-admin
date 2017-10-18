@@ -1,15 +1,15 @@
-import { Routes, RouterModule } from "@angular/router";
-import { PagesComponent } from "./pages/pages.component";
+import { Routes, RouterModule } from '@angular/router';
+import { PagesComponent } from './pages/pages.component';
 
 const appRoutes: Routes = [
   {
     path: '',
-    redirectTo: "pages/index",
+    redirectTo: 'pages/index',
     pathMatch: 'full' 
   },
   {
     path: '**',
-    redirectTo: "pages"
+    redirectTo: 'pages'
   }
 
 ];
