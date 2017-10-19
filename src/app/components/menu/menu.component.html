@@ -1,8 +1,20 @@
-  <ul>
-      <li>
-          <a href="javascript:;" routerLink="/index">sasa</a>
-      </li>
-      <li>
-          <a routerLink="./form">form</a>
-      </li>
-  </ul>
+<ul [ngClass]="{'active':isNavOn}">
+    <li *ngFor="let item of menu" class="nav-list">
+        <a href="javascript:;" *ngIf="item.data" (click)="navOn()">{{item.data.menu.title}}</a>
+        <ul class="nav-box" [ngClass]="{'active':isNavOn}">
+            <li *ngFor="let item of item.children">
+                <a href="javascript:;" *ngIf="item.data" (click)="navOn()">{{item.data.menu.title}}</a>
+                <ul class="nav-box" [ngClass]="{'active':isNavOn}">
+                    <li *ngFor="let item of item.children">
+                        <a href="javascript:;" *ngIf="item.data" (click)="navOn()">{{item.data.menu.title}}</a>
+                        <ul class="nav-box" [ngClass]="{'active':isNavOn}">
+                            <li *ngFor="let item of item.children">
+                                <a href="javascript:;" *ngIf="item.data">{{item.data.menu.title}}</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
