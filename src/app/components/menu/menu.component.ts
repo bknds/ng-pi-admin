@@ -1,4 +1,5 @@
-import {Component, Input, Output, EventEmitter, OnInit} from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'com-menu',
@@ -70,16 +71,26 @@ export class MenuComponent implements OnInit {
       ]
     }
   ]
-  isNavOn:boolean = false;
-  @Input() menuItem:any;
-  @Input() child:boolean = false;
-  constructor() { }
+  isNavOn: boolean = false;
+  @Input() menuItem: any;
+  @Input() child: boolean = false;
+  constructor(private router: Router) { }
 
   ngOnInit() {
     console.log(this.menu);
   }
 
-  navOn(){
-    this.isNavOn?this.isNavOn = false:this.isNavOn = true;
+  navOn() {
+    this.isNavOn ? this.isNavOn = false : this.isNavOn = true;
+  }
+
+  toggleTarget() {
+    
+  }
+
+  userInfo() {
+    this.router.navigate(['/pages/index']);
+    console.log('sas');
+    
   }
 }

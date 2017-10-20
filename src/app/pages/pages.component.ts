@@ -12,6 +12,11 @@ export class PagesComponent implements OnInit {
   ngOnInit() {
   }
 
+  handle(time: number): void {
+    // [time] is string
+    // date style follow format props
+    console.log(time)}
+
 }
 
 

@@ -6,12 +6,15 @@ import { FormComponent } from './form/form.component';
 import { PagesComponent } from './pages.component';
 import { ComponentsModule } from '../components/components.module';
 import { FormModule } from './form/form.module';
+import { ElModule } from 'element-angular';
+import 'element-theme-default';
 
 @NgModule({
     imports: [
         CommonModule,
         ComponentsModule,
         FormModule,
+        ElModule.forRoot(),
         routing
     ],
     declarations: [
