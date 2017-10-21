@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { routing } from './form.routing';
 import { InputsComponent } from './components/inputs/inputs.component';
+import { FormComponent } from './form.component';
 
 @NgModule({
     imports: [
@@ -9,6 +10,7 @@ import { InputsComponent } from './components/inputs/inputs.component';
         routing
     ],
     declarations: [
+        FormComponent,
         InputsComponent
     ]
 })

@@ -80,17 +80,15 @@ export class MenuComponent implements OnInit {
     console.log(this.menu);
   }
 
-  navOn() {
-    this.isNavOn ? this.isNavOn = false : this.isNavOn = true;
-  }
-
   toggleTarget() {
     
   }
 
   userInfo() {
     this.router.navigate(['/pages/index']);
-    console.log('sas');
-    
+  }
+
+  userInfo2() {
+    this.router.navigate(['/pages/form/inputs']);
   }
 }
