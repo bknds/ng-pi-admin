@@ -3,14 +3,14 @@ import { CommonModule } from '@angular/common';
 import { routing } from './pages.routing';
 import { IndexComponent } from './index/index.component';
 import { PagesComponent } from './pages.component';
-import { ComponentsModule } from '../components/components.module';
+import { SharedModule } from '../shared/shared.module';
 import { ElModule } from 'element-angular';
 import 'element-theme-default';
 
 @NgModule({
     imports: [
         CommonModule,
-        ComponentsModule,
+        SharedModule,
         ElModule.forRoot(),
         routing
     ],

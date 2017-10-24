@@ -18,5 +18,5 @@ import { ElModule } from 'element-angular';
     MenuComponent
   ]
 })
-export class ComponentsModule {
+export class SharedModule {
 }
