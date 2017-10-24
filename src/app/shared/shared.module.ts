@@ -2,12 +2,15 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { RouterModule } from '@angular/router'
 import { CommonModule } from '@angular/common'
-import { MenuComponent } from './menu/menu.component'
+import { MenuItemComponent } from './menuItem/menuItem.component'
 import { ElModule } from 'element-angular';
+import { MenuComponent } from './menu/menu.component';
+
 @NgModule({
   declarations: [
+    MenuItemComponent,
     MenuComponent
-  ],
+],
   imports: [
     BrowserModule,
     CommonModule,
@@ -15,7 +18,7 @@ import { ElModule } from 'element-angular';
     ElModule.forRoot(),
   ],
   exports:[
-    MenuComponent
+    MenuItemComponent
   ]
 })
 export class SharedModule {

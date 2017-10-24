@@ -10,7 +10,7 @@ export class sidebarService {
   
   private parentNode = null;
   private node = null;
-  private arr1 = [];
+  private pathItem = [];
 
   public queryParentNode(json:any, nodeId:any) {
     for (var i = 0; i < json.length; i++) {
@@ -49,19 +49,20 @@ export class sidebarService {
     let obj = this.queryParentNode(SIDEBAR_JSON, nodeId);
 
     if (obj.parentNode && obj.parentNode.path) {
-      this.arr1.unshift(obj.parentNode.path);
+      this.pathItem.unshift(obj.parentNode.path);
       return this.creatRouterLink(obj.parentNode.path);
     } else {
-      return this.arr1.join('/');
+      return this.pathItem.join('/');
     }
   }
 
   public queryAllNode(Json:any) {
 
     Json.forEach((index) => {
-      this.arr1 = [index.path];
+      this.pathItem = [index.path];
       index.routerLink = this.creatRouterLink(index.path);
       if (index.children) {
+        delete index.routerLink;
         this.queryAllNode(index.children);
       }
     })

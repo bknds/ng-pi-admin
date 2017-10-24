@@ -1,20 +1,7 @@
 <ul class="nav-box">
-    <li *ngFor="let item of menuItem" class="nav-list">
-        <a href="javascript:;" [routerLink]="[item.routerLink]">{{item.title}}</a>
-        <ul class="nav-box">
-            <li *ngFor="let item of item.children">
-                <a href="javascript:;" [routerLink]="[item.routerLink]">{{item.title}}</a>
-                <ul class="nav-box">
-                    <li *ngFor="let item of item.children">
-                        <a href="javascript:;" [routerLink]="[item.routerLink]">{{item.title}}</a>
-                        <ul class="nav-box">
-                            <li *ngFor="let item of item.children">
-                                <a href="javascript:;" [routerLink]="[item.routerLink]">{{item.title}}</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </li>
+  <li *ngFor="let item of menuInfo">
+    <a href="javascript:;" [routerLink]="[item.routerLink]" *ngIf="item.routerLink">{{item.title}}</a>
+    <a href="javascript:;" *ngIf="!item.routerLink">{{item.title}}</a>
+    <menu [menuInfo]="item.children"></menu>
+  </li>
 </ul>

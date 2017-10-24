@@ -1,22 +1,16 @@
-import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
-import { sidebarService } from "./sidebar.service";
+import {Component, Input, Output, EventEmitter, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'com-menu',
+  selector: 'menu',
   templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.scss'],
-  providers: [sidebarService]
+  styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
-  protected menuItem = [];
+  @Input() menuInfo:any;
 
-  constructor(private router: Router,
-    private sidebarService: sidebarService) {
-  }
-  
+  constructor() { }
+
   ngOnInit() {
-    this.menuItem = this.sidebarService.putSidebarJson();
   }
 
 }
