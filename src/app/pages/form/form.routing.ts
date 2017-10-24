@@ -7,6 +7,7 @@ const childRoutes: Routes = [
         path: '',
         component: FormComponent,
         children: [
+            { path: '', redirectTo: 'inputs', pathMatch: 'full' },
             { path: 'inputs', component: InputsComponent },
         ]
     }

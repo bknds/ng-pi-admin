@@ -11,6 +11,7 @@ import { ElModule } from 'element-angular';
   imports: [
     BrowserModule,
     CommonModule,
+    RouterModule,
     ElModule.forRoot(),
   ],
   exports:[

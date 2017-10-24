@@ -1,17 +1,18 @@
 import { Injectable } from '@angular/core';
-import { SIDEBAR_JSON } from '../../pages/sidebar_json';
+import { SIDEBAR_JSON } from '../../pages/sidebar-json';
 
 @Injectable()
 export class sidebarService {
+  
   constructor() {
-    this.JsonNode(SIDEBAR_JSON);
-    console.log(SIDEBAR_JSON);
+    this.queryAllNode(SIDEBAR_JSON);
   }
+  
   private parentNode = null;
   private node = null;
   private arr1 = [];
 
-  getNode(json, nodeId) {
+  public queryParentNode(json:any, nodeId:any) {
     for (var i = 0; i < json.length; i++) {
       if (this.node) {
         break;
@@ -26,7 +27,7 @@ export class sidebarService {
       } else {
         if (obj.children) {
           this.parentNode = obj;
-          this.getNode(obj.children, nodeId);
+          this.queryParentNode(obj.children, nodeId);
         } else {
           continue;
         }
@@ -41,27 +42,33 @@ export class sidebarService {
     };
   }
 
-  public Query(nodeId) {
+  public creatRouterLink(nodeId:any) {
     this.node = null;
     this.parentNode = null;
-    let obj = this.getNode(SIDEBAR_JSON, nodeId);
+    
+    let obj = this.queryParentNode(SIDEBAR_JSON, nodeId);
+
     if (obj.parentNode && obj.parentNode.path) {
       this.arr1.unshift(obj.parentNode.path);
-      return this.Query(obj.parentNode.path);
+      return this.creatRouterLink(obj.parentNode.path);
     } else {
-      this.arr1.unshift('', 'pages');
       return this.arr1.join('/');
     }
   }
 
-  JsonNode(Json) {
-    for (let index = 0; index < Json.length; index++) {
-      this.arr1 = [Json[index].path];
-      Json[index].routerLink = this.Query(Json[index].path);
-      if (Json[index].children) {
-        this.JsonNode(Json[index].children);
+  public queryAllNode(Json:any) {
+
+    Json.forEach((index) => {
+      this.arr1 = [index.path];
+      index.routerLink = this.creatRouterLink(index.path);
+      if (index.children) {
+        this.queryAllNode(index.children);
       }
-    }
+    })
+    
   }
 
+  public putSidebarJson() {
+    return SIDEBAR_JSON;
+  }
 }

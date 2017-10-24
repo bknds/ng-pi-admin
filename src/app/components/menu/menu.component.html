@@ -1,15 +1,15 @@
-<!-- <ul class="nav-box">
-    <li *ngFor="let item of menu" class="nav-list">
-        <a href="javascript:;" *ngIf="item.data" (click)="userInfo()">{{item.data.menu.title}}</a>
+<ul class="nav-box">
+    <li *ngFor="let item of menuItem" class="nav-list">
+        <a href="javascript:;" [routerLink]="[item.routerLink]">{{item.title}}</a>
         <ul class="nav-box">
             <li *ngFor="let item of item.children">
-                <a href="javascript:;" *ngIf="item.data" (click)="userInfo()">{{item.data.menu.title}}</a>
+                <a href="javascript:;" [routerLink]="[item.routerLink]">{{item.title}}</a>
                 <ul class="nav-box">
                     <li *ngFor="let item of item.children">
-                        <a href="javascript:;" *ngIf="item.data">{{item.data.menu.title}}</a>
+                        <a href="javascript:;" [routerLink]="[item.routerLink]">{{item.title}}</a>
                         <ul class="nav-box">
                             <li *ngFor="let item of item.children">
-                                <a href="javascript:;" *ngIf="item.data">{{item.data.menu.title}}</a>
+                                <a href="javascript:;" [routerLink]="[item.routerLink]">{{item.title}}</a>
                             </li>
                         </ul>
                     </li>
@@ -17,14 +17,4 @@
             </li>
         </ul>
     </li>
-</ul> -->
-<a href="javascript:;" (click)="toggleTarget()">index</a>
-<a href="javascript:;" (click)="userInfo2()">inputs</a>
-
-<!-- <el-menu model="2" class="el-menu-vertical-demo" theme="dark">
-    <el-menu-item index="1"><i class="el-icon-setting"></i>index</el-menu-item>
-    <el-submenu index="2">
-        <ng-template><i class="el-icon-setting"></i>form</ng-template>
-        <el-menu-item index="1-1">form1</el-menu-item>
-    </el-submenu>
-</el-menu> -->
+</ul>

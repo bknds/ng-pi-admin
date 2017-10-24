@@ -9,18 +9,14 @@ import { sidebarService } from "./sidebar.service";
   providers: [sidebarService]
 })
 export class MenuComponent implements OnInit {
+  protected menuItem = [];
+
   constructor(private router: Router,
-              private sidebarService: sidebarService) {
-              }
+    private sidebarService: sidebarService) {
+  }
+  
   ngOnInit() {
-    this.sidebarService;
+    this.menuItem = this.sidebarService.putSidebarJson();
   }
 
-  userInfo() {
-    this.router.navigate(['/pages/index']);
-  }
-
-  userInfo2() {
-    this.router.navigate(['/pages/form/inputs']);
-  }
 }
