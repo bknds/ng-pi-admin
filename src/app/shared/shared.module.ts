@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser'
 import { RouterModule } from '@angular/router'
 import { CommonModule } from '@angular/common'
 import { MenuItemComponent } from './components/menuItem/menuItem.component'
-import { ElModule } from 'element-angular';
 import { MenuComponent } from './components/menu/menu.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 
@@ -17,7 +16,6 @@ import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.componen
     BrowserModule,
     CommonModule,
     RouterModule,
-    ElModule.forRoot(),
   ],
   exports:[
     MenuItemComponent,

@@ -20,7 +20,6 @@
       "prefix": "app",
       "styles": [
         "styles.scss",
-        "../node_modules/element-theme-default",
         "../node_modules/bootstrap/less/bootstrap.less"
       ],
       "scripts": [],
