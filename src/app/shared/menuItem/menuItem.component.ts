@@ -3,7 +3,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { sidebarService } from "./sidebar.service";
 
 @Component({
-  selector: 'menu-item',
+  selector: 'du-menu-item',
   templateUrl: './menuItem.component.html',
   styleUrls: ['./menuItem.component.scss'],
   providers: [sidebarService]

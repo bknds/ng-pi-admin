@@ -2,6 +2,6 @@
   <li *ngFor="let item of menuInfo">
     <a href="javascript:;" [routerLink]="[item.routerLink]" *ngIf="item.routerLink">{{item.title}}</a>
     <a href="javascript:;" *ngIf="!item.routerLink">{{item.title}}</a>
-    <menu [menuInfo]="item.children"></menu>
+    <du-menu [menuInfo]="item.children"></du-menu>
   </li>
 </ul>

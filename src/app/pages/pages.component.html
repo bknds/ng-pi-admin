@@ -2,9 +2,10 @@
     <div class="pages-top"></div>
     <div class="pages-body">
         <div class="pages-side">
-            <menu-item></menu-item>
+            <du-menu-item></du-menu-item>
         </div>
         <div class="pages-content">
+            <du-breadcrumb [breadcrumbItem]="breadcrumbItem"></du-breadcrumb>
             <router-outlet></router-outlet>
         </div>
     </div>

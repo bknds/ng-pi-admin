@@ -61,6 +61,8 @@ export class sidebarService {
     Json.forEach((index) => {
       this.pathItem = [index.path];
       index.routerLink = this.creatRouterLink(index.path);
+      console.log(index.routerLink);
+      
       if (index.children) {
         delete index.routerLink;
         this.queryAllNode(index.children);
