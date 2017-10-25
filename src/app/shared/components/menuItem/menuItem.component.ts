@@ -1,6 +1,6 @@
 import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import { sidebarService } from "./sidebar.service";
+import { sidebarService } from "../../services/sidebar.service";
 
 @Component({
   selector: 'du-menu-item',

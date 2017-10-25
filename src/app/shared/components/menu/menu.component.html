@@ -1,6 +1,6 @@
 <ul class="nav-box">
   <li *ngFor="let item of menuInfo">
-    <a href="javascript:;" [routerLink]="[item.routerLink]" *ngIf="item.routerLink">{{item.title}}</a>
+    <a href="javascript:;" [routerLink]="[item.routerLink.join('/')]" *ngIf="item.routerLink">{{item.title}}</a>
     <a href="javascript:;" *ngIf="!item.routerLink">{{item.title}}</a>
     <du-menu [menuInfo]="item.children"></du-menu>
   </li>

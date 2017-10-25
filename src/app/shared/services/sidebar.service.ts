@@ -52,17 +52,14 @@ export class sidebarService {
       this.pathItem.unshift(obj.parentNode.path);
       return this.creatRouterLink(obj.parentNode.path);
     } else {
-      return this.pathItem.join('/');
+      return this.pathItem;
     }
   }
 
   public queryAllNode(Json:any) {
-
     Json.forEach((index) => {
       this.pathItem = [index.path];
       index.routerLink = this.creatRouterLink(index.path);
-      console.log(index.routerLink);
-      
       if (index.children) {
         delete index.routerLink;
         this.queryAllNode(index.children);

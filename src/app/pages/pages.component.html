@@ -5,7 +5,9 @@
             <du-menu-item></du-menu-item>
         </div>
         <div class="pages-content">
-            <du-breadcrumb [breadcrumbItem]="breadcrumbItem"></du-breadcrumb>
+            <div class="pages-content-top">
+                <du-breadcrumb [breadcrumbItem]="breadcrumbItem"></du-breadcrumb>
+            </div>
             <router-outlet></router-outlet>
         </div>
     </div>

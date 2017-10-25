@@ -20,6 +20,11 @@
         }
         .pages-content{
             flex: 1;
+            border:1px solid #000;
+            .pages-content-top{
+                border:1px solid #000;
+                width:100%;
+            }
         }
     }
 }
