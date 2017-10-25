@@ -1,7 +1,19 @@
 export let SIDEBAR_JSON = [
     {
         path: 'index',
-        title: 'index'
+        title: 'index',
+        children: [
+            {
+                path: 'ddd',
+                title: 'ddd',
+                children: [
+                    {
+                        path: 'ddd',
+                        title: 'ddd'
+                    }
+                ]
+            }
+        ]
     },
     {
         path: 'form',
@@ -9,7 +21,25 @@ export let SIDEBAR_JSON = [
         children: [
             {
                 path: 'inputs',
-                title: 'inputs'
+                title: 'inputs',
+                children: [
+                    {
+                        path: 'aaa',
+                        title: 'aaa',
+                        children: [
+                            {
+                                path: 'sss',
+                                title: 'sss',
+                                children: [
+                                    {
+                                        path: 'ddd',
+                                        title: 'ddd'
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     }
