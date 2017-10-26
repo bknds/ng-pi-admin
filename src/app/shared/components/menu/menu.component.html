@@ -1,10 +1,14 @@
 <ul class="menu-wrapper">
   <li *ngFor="let item of menuInfo">
-    <a href="javascript:;" [routerLink]="[item.routerLink.join('/')]" *ngIf="item.routerLink" routerLinkActive="active">{{item.title}}</a>
-    <a href="javascript:;" *ngIf="!item.routerLink" (click)="switchMenu($event.target)">
-      <!-- <i class="fa fa-home fa-fw "></i> -->
+    <a href="javascript:;" [routerLink]="[item.routerLink.join('/')]"
+    *ngIf="item.routerLink" routerLinkActive="active">
+      <div class="placeholder"><i class="fa fa-{{item.icon}} fa-fw"></i></div>
       {{item.title}}
-      <!-- <span class="fa fa-plus fa-fw"></span> -->
+    </a>
+    <a href="javascript:;" *ngIf="!item.routerLink" (click)="switchMenu($event.target)">
+      <div class="placeholder"><i class="fa fa-{{item.icon}} fa-fw" *ngIf="item.icon"></i></div>
+      {{item.title}}
+      <span class="fa fa-plus fa-fw"></span>
     </a>
     <du-menu [menuInfo]="item.children"></du-menu>
   </li>
