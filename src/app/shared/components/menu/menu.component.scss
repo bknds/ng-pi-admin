@@ -1,36 +1,54 @@
-ul{
+.menu-wrapper{
     padding:0;
     width:200px;
     height:auto;
     li{
         list-style: none;
         width:100%;
-        height:auto;
-        line-height: 30px;
+        height:40px;
+        line-height: 40px;
+        margin:0;
         overflow: hidden;
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s;
         a{
             display: block;
             width:100%;
-            height:100%;
+            height:40px;
+            line-height: 40px;
             border:1px solid #000;
             text-align: center;
             text-decoration: none;
+            i{
+                float: left;
+                margin:0 0 0 10px;
+                line-height: 40px;
+            }
+            span{
+                float: right;
+                margin:0 10px 0 0;
+                line-height: 40px;
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+                -webkit-transition: all 0.2s;
+                transition: all 0.2s;
+            }
         }
-        menu{
-            padding:0;
-            margin:0;
-            -webkit-transition: all 0.5s;
-            transition: all 0.5s;
-            -webkit-transform: scale(0);
-                    transform: scale(0);
+        a.active{
+            background: rgb(209, 209, 209);
         }
     }
-   .active > menu{
-    padding:0;
-    margin:0;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    li.active{
+       $list-number: 1;
+        @for $i from 1 to length('.menu-wrapper li')+1 {
+            $list-number: $list-number + 1 ;
+        }
+        height: $list-number*40px;
+        a{
+            span{
+                -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+            }
+        }
    }
 }

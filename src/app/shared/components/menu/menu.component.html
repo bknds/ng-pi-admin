@@ -1,7 +1,11 @@
-<ul class="nav-box">
-  <li *ngFor="let item of menuInfo" class="active">
-    <a href="javascript:;" [routerLink]="[item.routerLink.join('/')]" *ngIf="item.routerLink">{{item.title}}</a>
-    <a href="javascript:;" *ngIf="!item.routerLink" (click)="switchMenu($event.target)">{{item.title}}></a>
+<ul class="menu-wrapper">
+  <li *ngFor="let item of menuInfo">
+    <a href="javascript:;" [routerLink]="[item.routerLink.join('/')]" *ngIf="item.routerLink" routerLinkActive="active">{{item.title}}</a>
+    <a href="javascript:;" *ngIf="!item.routerLink" (click)="switchMenu($event.target)">
+      <!-- <i class="fa fa-home fa-fw "></i> -->
+      {{item.title}}
+      <!-- <span class="fa fa-plus fa-fw"></span> -->
+    </a>
     <du-menu [menuInfo]="item.children"></du-menu>
   </li>
 </ul>

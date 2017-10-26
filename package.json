@@ -23,6 +23,8 @@
     "@angular/router": "^4.2.4",
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
+    "font-awesome": "^4.7.0",
+    "normalize.css": "^7.0.0",
     "rxjs": "^5.4.2",
     "zone.js": "^0.8.14"
   },
