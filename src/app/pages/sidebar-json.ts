@@ -12,6 +12,22 @@ export let SIDEBAR_JSON = [
             {
                 path: 'inputs',
                 title: 'inputs'
+            },
+            {
+                path: 'aaa',
+                title: 'aaa'
+            },
+            {
+                path: 'sss',
+                title: 'sss'
+            },
+            {
+                path: 'ddd',
+                title: 'ddd'
+            },
+            {
+                path: 'ccc',
+                title: 'ccc'
             }
         ]
     }
