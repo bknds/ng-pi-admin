@@ -10,7 +10,7 @@
     <a href="javascript:;" *ngIf="!item.routerLink" (click)="switchMenu($event.target)">
       <div class="placeholder"><i class="fa fa-{{item.icon}} fa-fw" *ngIf="item.icon"></i></div>
       {{item.title}}
-      <span class="fa fa-plus fa-fw"></span>
+      <span class="fa fa-angle-right fa-fw"></span>
     </a>
     
     <du-menu [menuInfo]="item.children"></du-menu>

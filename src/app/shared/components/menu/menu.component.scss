@@ -5,7 +5,7 @@
     li{
         list-style: none;
         width:100%;
-        height:auto;
+        height:41px;
         line-height: 40px;
         margin:0;
         overflow: hidden;
@@ -15,15 +15,16 @@
             display: block;
             width:100%;
             height:40px;
-            //background: #2d2c41;
-            border-bottom:1px solid #37364e;
-            color:#000;
+            outline: none;
+            background: transparent;
+            border-bottom:1px solid rgba(255,255,255,.1);
+            color:#80dbff;
             font-size: 15px;
             text-decoration: none;
             -webkit-transition: all 0.4s;
             transition: all 0.4s;
             &:hover{
-                color:#f76754;
+                color:#fdfdfd;
             }
             .placeholder{
                 display: block;
@@ -46,15 +47,16 @@
             }
         }
         a.active{
-            //background: #181827;
-            //color:#f76754;
+            background: rgba(0,0,0,.1);
+            color:#fdfdfd;
         }
     }
     li.active{
+        height:82px;
         a{
             span{
-                -webkit-transform: rotate(225deg);
-                transform: rotate(225deg);
+                -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
             }
         }
     }

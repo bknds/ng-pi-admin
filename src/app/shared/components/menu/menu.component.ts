@@ -11,12 +11,9 @@ export class MenuComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.menuInfo);
-    
   }
 
   protected switchMenu($event) {
-    console.log($event.parentNode);
     $event.parentNode.className === 'active' ? $event.parentNode.className = '' : $event.parentNode.className = 'active';
   }
 }
