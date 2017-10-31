@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import { SIDEBAR_JSON } from '../../pages/sidebar-json';
+import { MENU_DATA } from '../../pages/menu-data';
 
 @Injectable()
-export class sidebarService {
+export class menuService {
   
   constructor() {
-    this.queryAllNode(SIDEBAR_JSON);
+    this.queryAllNode(MENU_DATA);
   }
   
   private parentNode = null;
@@ -46,7 +46,7 @@ export class sidebarService {
     this.node = null;
     this.parentNode = null;
     
-    let obj = this.queryParentNode(SIDEBAR_JSON, nodeId);
+    let obj = this.queryParentNode(MENU_DATA, nodeId);
 
     if (obj.parentNode && obj.parentNode.path) {
       this.pathItem.unshift(obj.parentNode.path);
@@ -69,6 +69,6 @@ export class sidebarService {
   }
 
   public putSidebarJson() {
-    return SIDEBAR_JSON;
+    return MENU_DATA;
   }
 }

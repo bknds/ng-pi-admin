@@ -1,22 +1,27 @@
 import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import { sidebarService } from "../../services/sidebar.service";
+import { menuService } from "../../services/menu.service";
 
 @Component({
   selector: 'du-menu-item',
   templateUrl: './menuItem.component.html',
   styleUrls: ['./menuItem.component.scss'],
-  providers: [sidebarService]
+  providers: [menuService]
 })
 export class MenuItemComponent implements OnInit {
   protected menuInfo = [];
 
+  @Output() menuItem = new EventEmitter<any>();
+
   constructor(private router: Router,
-    private sidebarService: sidebarService) {
-  }
-  
-  ngOnInit() {
-    this.menuInfo = this.sidebarService.putSidebarJson();
+    private _menuService: menuService) {
   }
 
+  ngOnInit() {
+    this.menuInfo = this._menuService.putSidebarJson();
+  }
+
+  getPageInfo(info) {
+    this.menuItem.emit(info);
+  }
 }

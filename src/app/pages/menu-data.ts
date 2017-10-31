@@ -1,4 +1,4 @@
-export let SIDEBAR_JSON = [
+export let MENU_DATA = [
     {
         path: 'index',
         title: 'index',

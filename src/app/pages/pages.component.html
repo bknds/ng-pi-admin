@@ -1,7 +1,7 @@
 <div class="pages-wrapper">
     <div class="pages-side">
         <div class="avatar-wrapper"></div>
-        <du-menu-item></du-menu-item>
+        <du-menu-item (menuItem)="getPageInfo($event)"></du-menu-item>
     </div>
     <div class="pages-body">
         <div class="pages-top">
@@ -12,6 +12,7 @@
         <div class="pages-content">
             <div class="pages-content-top">
                 <du-breadcrumb [breadcrumbItem]="breadcrumbItem"></du-breadcrumb>
+                <a *ngFor="let item of historyList" [routerLink]="[item.routerLink.join('/')]">{{item.title}}</a>
             </div>
             <router-outlet></router-outlet>
         </div>
