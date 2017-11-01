@@ -14,5 +14,16 @@ export let MENU_DATA = [
                 title: 'inputs'
             }
         ]
+    },
+    {
+        path: 'table',
+        title: 'table',
+        icon: 'edit',
+        children: [
+            {
+                path: 'default-tables',
+                title: 'default tables'
+            }
+        ]
     }
 ]

@@ -9,7 +9,8 @@ export const childRoutes: Routes = [
         children: [
             { path: '', redirectTo: 'index', pathMatch: 'full' },
             { path: 'index', component: IndexComponent },
-            { path: 'form', loadChildren:'./form/form.module#FormModule'}
+            { path: 'form', loadChildren:'./form/form.module#FormModule'},
+            { path: 'table', loadChildren: './table/table.module#TableModule' }
         ]
     },
 ];
