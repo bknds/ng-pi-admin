@@ -5,12 +5,14 @@ import { CommonModule } from '@angular/common'
 import { MenuItemComponent } from './components/menuItem/menuItem.component'
 import { MenuComponent } from './components/menu/menu.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
+import { HistoryPageComponent } from './components/historyPage/historyPage.component';
 
 @NgModule({
   declarations: [
     MenuItemComponent,
     MenuComponent,
-    BreadcrumbComponent
+    BreadcrumbComponent,
+    HistoryPageComponent
 ],
   imports: [
     BrowserModule,
@@ -19,7 +21,8 @@ import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.componen
   ],
   exports:[
     MenuItemComponent,
-    BreadcrumbComponent
+    BreadcrumbComponent,
+    HistoryPageComponent
   ]
 })
 export class SharedModule {
