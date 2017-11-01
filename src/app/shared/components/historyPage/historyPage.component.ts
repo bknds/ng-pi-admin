@@ -14,6 +14,7 @@ export class HistoryPageComponent implements OnInit {
 
   ngOnInit() {
     this.getHistoryData();
+    console.log(this.historyList);
   }
 
   getHistoryData() {

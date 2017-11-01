@@ -10,7 +10,6 @@ import { menuService } from "../../services/menu.service";
 })
 export class MenuItemComponent implements OnInit {
   protected menuInfo = [];
-
   @Output() menuItem = new EventEmitter<any>();
 
   constructor(private router: Router,
