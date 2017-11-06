@@ -1,19 +1,25 @@
 <div class="pages-wrapper">
+    <!-- 侧边栏 -->
     <div class="pages-side">
         <div class="avatar-wrapper"></div>
         <du-menu-item (menuItem)="getPageInfo($event)"></du-menu-item>
     </div>
+    <!-- 右侧页面 -->
     <div class="pages-body">
+        <!-- 页面顶部 -->
         <div class="pages-top">
             <a href="" class="collapse-menu">
                 <i class="fa fa-naviconfa fa-fw"></i>
             </a>
         </div>
+        <!-- 页面内容 -->
         <div class="pages-content">
+            <!-- 内容顶部 -->
             <div class="pages-content-top">
                 <du-breadcrumb [breadcrumbItem]="breadcrumbItem"></du-breadcrumb>
                 <du-historyPage [historyItem]="historyList"></du-historyPage>
             </div>
+            <!-- content内容 路由插座 -->
             <router-outlet></router-outlet>
         </div>
     </div>

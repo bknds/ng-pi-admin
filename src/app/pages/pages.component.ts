@@ -18,7 +18,6 @@ export class PagesComponent implements OnInit {
 
   getPageInfo(info) {
     this.historyList.push(info);
-    console.log(this.historyList);
   }
 }
 
