@@ -55,7 +55,7 @@ export class menuService {
     }
   }
 
-  public getNodePath(json: any) {
+  public getNodePath(json: any): void {
     json.forEach((index) => {
       this.path_item = [index.path];
       index.routerLink = this.creatRouterLink(index.path);
