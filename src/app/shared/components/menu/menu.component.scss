@@ -18,13 +18,13 @@
             outline: none;
             background: transparent;
             border-bottom:1px solid rgba(255,255,255,.1);
-            color:rgb(160, 160, 160);
+            color:#fff;
             font-size: 15px;
             text-decoration: none;
             -webkit-transition: all 0.4s;
             transition: all 0.4s;
             &:hover{
-                color:rgb(187, 187, 187);
+                background: rgba(0,0,0,.1);
             }
             .placeholder{
                 display: block;
@@ -48,7 +48,7 @@
         }
         a.active{
             background: rgba(0,0,0,.1);
-            color:rgb(160, 159, 159);
+            color:#fff;
         }
     }
     li.active{

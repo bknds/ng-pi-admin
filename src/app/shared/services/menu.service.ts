@@ -3,15 +3,17 @@ import { MENU_DATA } from '../../pages/menu-data';
 
 @Injectable()
 export class menuService {
-  
+
   constructor() {
+    /* 初始化MENU_DATA数据 */
+    this.getNodePath(MENU_DATA);
   }
-  
+
   private parent_node = null;
   private node = null;
   private path_item = [];
 
-  public queryParentNode(json:any, node_id:any) {
+  public queryParentNode(json: any, node_id: any) {
     for (let i = 0; i < json.length; i++) {
       if (this.node) {
         break;
@@ -41,7 +43,7 @@ export class menuService {
     };
   }
 
-  public creatRouterLink(nodeId:any) {
+  public creatRouterLink(nodeId: any) {
     this.node = null;
     this.parent_node = null;
     let obj = this.queryParentNode(MENU_DATA, nodeId);
@@ -53,7 +55,7 @@ export class menuService {
     }
   }
 
-  public getNodePath(json:any) {
+  public getNodePath(json: any) {
     json.forEach((index) => {
       this.path_item = [index.path];
       index.routerLink = this.creatRouterLink(index.path);
