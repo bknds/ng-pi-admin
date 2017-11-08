@@ -20,7 +20,6 @@ export class MenuComponent implements OnInit {
 
   protected openMenu($event) {
     $event.parentNode.className === 'active' ? $event.parentNode.className = '' : $event.parentNode.className = 'active';
-    console.log($event.children);
   }
 
   public onChooseMenuItem(item) {

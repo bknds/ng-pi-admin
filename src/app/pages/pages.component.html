@@ -1,9 +1,9 @@
 <div class="pages-wrapper">
     <!-- 侧边栏 -->
     <div class="pages-side">
-        <div class="avatar-wrapper">
+        <div class="avatar-wrapper" [@simAnim]="'zoomIn'">
             <div class="avatar">
-                <img src="assets/images/avatar.jpg" alt="avatar">
+                <!-- <img src="assets/images/avatar.jpg" alt="avatar"> -->
             </div>
         </div>
         <du-menu-item (menuItem)="getPageInfo($event)"></du-menu-item>
