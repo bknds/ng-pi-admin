@@ -7,10 +7,11 @@ import { MenuComponent } from './components/menu/menu.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { HistoryPageComponent } from './components/historyPage/historyPage.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PaSiderbarComponent } from './components/paSiderbar/paSiderbar.component';
 
 @NgModule({
   declarations: [
-    MenuItemComponent,
+    PaSiderbarComponent,
     MenuComponent,
     BreadcrumbComponent,
     HistoryPageComponent
@@ -22,7 +23,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule
   ],
   exports:[
-    MenuItemComponent,
+    PaSiderbarComponent,
     BreadcrumbComponent,
     HistoryPageComponent
   ]

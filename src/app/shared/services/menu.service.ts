@@ -62,6 +62,7 @@ export class menuService {
       if (index.children) {
         delete index.routerLink;
         this.getNodePath(index.children);
+        index.toggle = 'off';
       }
     })
   }

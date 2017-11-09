@@ -3,12 +3,12 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { menuService } from "../../services/menu.service";
 
 @Component({
-  selector: 'du-menu-item',
-  templateUrl: './menuItem.component.html',
-  styleUrls: ['./menuItem.component.scss'],
+  selector: 'pa-siderbar',
+  templateUrl: './paSiderbar.component.html',
+  styleUrls: ['./paSiderbar.component.scss'],
   providers: [menuService]
 })
-export class MenuItemComponent implements OnInit {
+export class PaSiderbarComponent implements OnInit {
   protected menuInfo = [];
   @Output() menuItem = new EventEmitter<any>();
 

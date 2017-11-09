@@ -4,7 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { trigger, state, style, transition, animate, keyframes } from '@angular/animations';
 
 // 动画时间线
-var time = '300ms'
+var time = '3000ms'
 var styles = {
     ease: time + ' ease ',
     linear: time + ' linear ',
@@ -39,6 +39,10 @@ var opts = {
         style({ height: '0' }),
         animate(styles.inOutBack, style({ height: '*' }))
     ],
+    stretchOut: [
+        style({ height: '*' }),
+        animate(styles.inOutBack, style({ height: '0' }))
+    ],
     flyIn: [
         style({ transform: 'translateX(-100%)' }),
         animate(styles.inOutBack, style({ transform: '*' }))
@@ -54,6 +58,10 @@ var opts = {
     zoomOut: [
         style({ transform: '*' }),
         animate(styles.inOutBack, style({ transform: 'scale(.5)' }))
+    ],
+    accordion: [
+        style({ height: '0' }),
+        animate(styles.ease, style({ height: '*' }))
     ]
 }
 
@@ -64,6 +72,7 @@ export const animStyle = styles
 export const fadeIn = [trigger('fadeIn', [transition('void => *', opts.fadeIn)])]
 export const fadeOut = [trigger('fadeOut', [transition('* => void', opts.fadeOut)])]
 export const stretch = [trigger('stretch', [transition('void => *', opts.stretch)])]
+export const stretchOut = [trigger('stretchOut', [transition('* => void', opts.stretchOut)])]
 export const shrink = [trigger('shrink', [transition('* => void', opts.shrink)])]
 export const flyIn = [trigger('flyIn', [transition('void => *', opts.flyIn)])]
 export const flyOut = [trigger('flyOut', [transition('* => void', opts.flyOut)])]
@@ -76,6 +85,7 @@ export const simAnim = [
         transition('* => fadeIn', opts.fadeOut),
         transition('* => shrink', opts.shrink),
         transition('* => stretch', opts.stretch),
+        transition('* => stretchOut', opts.stretchOut),
         transition('* => flyIn', opts.flyIn),
         transition('* => flyOut', opts.flyOut),
         transition('* => zoomIn', opts.zoomIn),

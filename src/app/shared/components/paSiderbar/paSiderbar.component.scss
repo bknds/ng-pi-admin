@@ -1,0 +1,25 @@
+.pages-side{
+    width:220px;
+    height:100%;
+    background: transparent;
+    overflow-x: hidden;
+    .avatar-wrapper{
+        width:100%;
+        height:250px;
+        border:1px solid #000;
+        .avatar{
+            width:150px;
+            height:150px;
+            overflow: hidden;
+            margin:0 auto;
+            border:5px solid rgba(0,0,0,.1);
+            border-radius: 50%;
+            position: relative;
+            top:75px;
+            img{
+                display: block;
+                width:100%;
+            }
+        }
+    }
+}
