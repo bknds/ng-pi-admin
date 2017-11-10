@@ -4,7 +4,8 @@
     position: absolute;
     display: flex;
     flex-direction: row;
-    background: url(/assets/images/bg.jpg) no-repeat;
+    //background: url(/assets/images/bg.jpg) no-repeat;
+    background: rgb(0, 3, 90);
     background-size: 100% 100%;
     .pages-body{
         flex: 1;

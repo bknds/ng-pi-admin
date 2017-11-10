@@ -1,31 +1,30 @@
 import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { RouterModule } from '@angular/router'
 import { CommonModule } from '@angular/common'
-import { MenuItemComponent } from './components/menuItem/menuItem.component'
+
 import { MenuComponent } from './components/menu/menu.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { HistoryPageComponent } from './components/historyPage/historyPage.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PaSiderbarComponent } from './components/paSiderbar/paSiderbar.component';
+import { TreeDiagramComponent } from './components/treeDiagram/treeDiagram.component';
 
 @NgModule({
-  declarations: [
-    PaSiderbarComponent,
-    MenuComponent,
-    BreadcrumbComponent,
-    HistoryPageComponent
-],
   imports: [
-    BrowserModule,
     CommonModule,
     RouterModule,
-    BrowserAnimationsModule
   ],
-  exports:[
+  declarations: [
+    MenuComponent,
     PaSiderbarComponent,
     BreadcrumbComponent,
-    HistoryPageComponent
+    HistoryPageComponent,
+    TreeDiagramComponent
+  ],
+  exports: [
+    PaSiderbarComponent,
+    BreadcrumbComponent,
+    HistoryPageComponent,
+    TreeDiagramComponent
   ]
 })
 export class SharedModule {

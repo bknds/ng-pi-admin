@@ -12,6 +12,10 @@ export let MENU_DATA = [
             {
                 path: 'inputs',
                 title: 'inputs'
+            },
+            {
+                path: 'trees',
+                title: '树形图'
             }
         ]
     },

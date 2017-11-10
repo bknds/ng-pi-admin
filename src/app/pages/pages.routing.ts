@@ -12,7 +12,7 @@ export const childRoutes: Routes = [
             { path: 'form', loadChildren:'./form/form.module#FormModule'},
             { path: 'table', loadChildren: './table/table.module#TableModule' }
         ]
-    },
+    }
 ];
 
 export const routing = RouterModule.forChild(childRoutes);
