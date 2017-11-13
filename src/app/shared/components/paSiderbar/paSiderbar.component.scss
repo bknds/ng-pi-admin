@@ -1,3 +1,4 @@
+@import '../../styles/color';
 .pages-side {
     width: 220px;
     height: 100%;
@@ -16,7 +17,7 @@
     height: 150px;
     overflow: hidden;
     margin: 0 auto;
-    border: 5px solid rgba(0, 0, 0, .1);
+    border: 5px solid rgba($black, .2);
     border-radius: 50%;
     position: relative;
     top: 75px;

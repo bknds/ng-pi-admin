@@ -1,6 +1,8 @@
 import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { collapse } from '../../animation/collapse-animate';
+import { TransferService } from '../../services/transfer.service';
+
 @Component({
   selector: 'du-menu',
   templateUrl: './menu.component.html',
@@ -11,9 +13,9 @@ import { collapse } from '../../animation/collapse-animate';
 export class MenuComponent implements OnInit {
   @Input() menuInfo: any;
 
-  @Output() chooseMenuItem = new EventEmitter<any>();
+  //@Output() chooseMenuItem = new EventEmitter<any>();
 
-  constructor() { }
+  constructor(private _transferService: TransferService) { }
 
   ngOnInit() {
   }
@@ -23,7 +25,8 @@ export class MenuComponent implements OnInit {
   }
 
   public onChooseMenuItem(item) {
-    this.chooseMenuItem.emit(item);
+    //this.chooseMenuItem.emit(item);
+    this._transferService.transfer(item);
   }
 
 }

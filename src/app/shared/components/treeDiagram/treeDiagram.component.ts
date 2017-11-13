@@ -11,8 +11,7 @@ export class TreeDiagramComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.treesItem);
-    
+    //console.log(this.treesItem);
   }
 
 }

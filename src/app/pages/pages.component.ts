@@ -1,30 +1,34 @@
 import { Component, OnInit } from '@angular/core';
-import { simAnim } from '../shared/animation/sim-anim';
+import { TransferService } from '../shared/services/transfer.service';
 
 @Component({
   selector: 'app-pages',
   templateUrl: './pages.component.html',
   styleUrls: ['./pages.component.scss'],
-  animations: [simAnim]
+  providers: [TransferService]
 })
 export class PagesComponent implements OnInit {
 
-  historyList = [];
-  _isViewAll: boolean = true;
+  historyList;
+  isViewAll: boolean = true;
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(private _transferService: TransferService) {
+    this._transferService.damage$.subscribe(damage => {
+      console.log(damage);
+      
+      this.historyList.push(damage);
+      console.log(this.historyList);
+    }, error => {
+      console.log('error: ' + error);
+    });
   }
+
+  ngOnInit() { }
 
   breadcrumbItem = ['form', 'inputs', 'btn'];
 
-  getPageInfo(info) {
-    this.historyList.push(info);
-  }
-
-  isViewAll() {
-    this._isViewAll = !this._isViewAll;
+  _isViewAll() {
+    this.isViewAll = !this.isViewAll;
   }
 }
 

@@ -13,7 +13,7 @@ export class PaSiderbarComponent implements OnInit {
 
   @Input() isViewAll: boolean;
 
-  @Output() menuItem = new EventEmitter<any>();
+  //@Output() menuItem = new EventEmitter<any>();
 
   constructor(private router: Router,
     private _menuService: menuService) {
@@ -23,7 +23,8 @@ export class PaSiderbarComponent implements OnInit {
     this.menuInfo = this._menuService.putSidebarJson();
   }
 
-  getPageInfo(info) {
-    this.menuItem.emit(info);
+  _isViewAll() {
+    this.isViewAll = true;
   }
+
 }
