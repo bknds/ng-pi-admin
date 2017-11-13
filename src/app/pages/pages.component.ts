@@ -10,6 +10,7 @@ import { simAnim } from '../shared/animation/sim-anim';
 export class PagesComponent implements OnInit {
 
   historyList = [];
+  _isViewAll: boolean = true;
 
   constructor() { }
 
@@ -20,6 +21,10 @@ export class PagesComponent implements OnInit {
 
   getPageInfo(info) {
     this.historyList.push(info);
+  }
+
+  isViewAll() {
+    this._isViewAll = !this._isViewAll;
   }
 }
 

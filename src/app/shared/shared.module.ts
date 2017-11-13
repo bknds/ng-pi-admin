@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core'
 import { RouterModule } from '@angular/router'
 import { CommonModule } from '@angular/common'
 
+import { TransferService } from './services/transfer.service';
+
 import { MenuComponent } from './components/menu/menu.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { HistoryPageComponent } from './components/historyPage/historyPage.component';
@@ -12,6 +14,9 @@ import { TreeDiagramComponent } from './components/treeDiagram/treeDiagram.compo
   imports: [
     CommonModule,
     RouterModule,
+  ],
+  providers: [
+    TransferService
   ],
   declarations: [
     MenuComponent,

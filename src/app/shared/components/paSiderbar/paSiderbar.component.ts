@@ -10,6 +10,9 @@ import { menuService } from "../../services/menu.service";
 })
 export class PaSiderbarComponent implements OnInit {
   protected menuInfo = [];
+
+  @Input() isViewAll: boolean;
+
   @Output() menuItem = new EventEmitter<any>();
 
   constructor(private router: Router,

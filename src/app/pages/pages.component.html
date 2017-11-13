@@ -1,9 +1,9 @@
 <div class="pages-wrapper">
-    <pa-siderbar (menuItem)="getPageInfo($event)"></pa-siderbar>
+    <pa-siderbar [isViewAll]="_isViewAll" (menuItem)="getPageInfo($event)"></pa-siderbar>
     <div class="pages-body">
         <div class="pages-top">
             <div class="collapse-menu">
-                <a href="javascript:;">
+                <a href="javascript:;" (click)="isViewAll()">
                     <i class="fa fa-navicon fa-fw"></i>
                 </a>
             </div>
