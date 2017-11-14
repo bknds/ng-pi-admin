@@ -22,7 +22,7 @@ export let MENU_DATA = [
     {
         path: 'table',
         title: 'table',
-        icon: 'edit',
+        icon: 'table',
         children: [
             {
                 path: 'default-tables',

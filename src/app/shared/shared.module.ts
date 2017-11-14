@@ -2,13 +2,13 @@ import { NgModule } from '@angular/core'
 import { RouterModule } from '@angular/router'
 import { CommonModule } from '@angular/common'
 
-import { TransferService } from './services/transfer.service';
+import { GlobalService } from './services/global.service';
 
 import { MenuComponent } from './components/menu/menu.component';
-import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
-import { HistoryPageComponent } from './components/historyPage/historyPage.component';
-import { PaSiderbarComponent } from './components/paSiderbar/paSiderbar.component';
-import { TreeDiagramComponent } from './components/treeDiagram/treeDiagram.component';
+import { SiderbarComponent } from './components/siderbar/siderbar.component';
+import { PagesTopComponent } from './components/pages-top/pages-top.component';
+import { ContentTopComponent } from './components/content-top/content-top.component';
+import { TreeDiagramComponent } from './components/tree-diagram/tree-diagram.component';
 
 @NgModule({
   imports: [
@@ -16,19 +16,19 @@ import { TreeDiagramComponent } from './components/treeDiagram/treeDiagram.compo
     RouterModule,
   ],
   providers: [
-    TransferService
+    GlobalService
   ],
   declarations: [
     MenuComponent,
-    PaSiderbarComponent,
-    BreadcrumbComponent,
-    HistoryPageComponent,
+    SiderbarComponent,
+    PagesTopComponent,
+    ContentTopComponent,
     TreeDiagramComponent
   ],
   exports: [
-    PaSiderbarComponent,
-    BreadcrumbComponent,
-    HistoryPageComponent,
+    SiderbarComponent,
+    PagesTopComponent,
+    ContentTopComponent,
     TreeDiagramComponent
   ]
 })

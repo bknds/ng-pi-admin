@@ -2,7 +2,7 @@
   <ul>
     <li *ngFor="let item of treesItem">
       <a href="#">{{item.name}}</a>
-      <du-treeDiagram *ngIf="item.children" [treesItem]="item.children"></du-treeDiagram>
+      <tree-diagram *ngIf="item.children" [treesItem]="item.children"></tree-diagram>
     </li>
   </ul>
 </div>

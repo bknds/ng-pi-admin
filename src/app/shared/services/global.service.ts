@@ -2,7 +2,7 @@ import { Injectable } from "@angular/core";
 import { Subject } from "rxjs/Subject";
 
 @Injectable()
-export class TransferService {
+export class GlobalService {
 
     //定义数据源用来产生数据流
     private damageSource = new Subject<any>();

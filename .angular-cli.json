@@ -22,6 +22,7 @@
         "../node_modules/normalize.css/normalize.css",
         "../node_modules/font-awesome/scss/font-awesome.scss",
         "../node_modules/bootstrap/less/bootstrap.less",
+        "../node_modules/animate.css/animate.css",
         "styles.scss"
       ],
       "scripts": [],

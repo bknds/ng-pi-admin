@@ -1,13 +1,13 @@
 <ul class="menu-wrapper">
-  <li *ngFor="let item of menuInfo;let i = index" class="menu-item" [ngClass]="{'menu-item-toggle-on':item.toggle === 'on'}">
+  <li *ngFor="let item of menuInfo;let i = index" class="menu-item" [ngClass]="{'item-toggle-on':item.toggle === 'on','item-toggle-off':!isViewAll}">
     
     <a href="javascript:;" (click)="onChooseMenuItem(item)" [routerLink]="[item.routerLink.join('/')]"
-    *ngIf="item.routerLink" routerLinkActive="active">
+    *ngIf="item.routerLink" routerLinkActive="active" class="menu-link">
       <div class="placeholder"><i class="fa fa-{{item.icon}} fa-fw"></i></div>
       {{item.title}}
     </a>
     
-    <a href="javascript:;" *ngIf="!item.routerLink" (click)="isToggleOn(item)">
+    <a href="javascript:;" class="menu-link" *ngIf="!item.routerLink" (click)="isToggleOn(item)">
       <div class="placeholder"><i class="fa fa-{{item.icon}} fa-fw" *ngIf="item.icon"></i></div>
       {{item.title}}
       <span class="fa fa-angle-right fa-fw"></span>
