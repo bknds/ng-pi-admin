@@ -1,6 +1,6 @@
 <div class="pages-top">
   <div class="collapse-menu" (click)="_isViewAll()">
-    <i class="fa fa-navicon fa-fw" href="javascript:;">
-    </i>
+    <i class="fa fa-navicon fa-fw" *ngIf="isViewAll"></i>
+    <i class="fa fa-chevron-right fa-fw" *ngIf="!isViewAll"></i>
   </div>
 </div>

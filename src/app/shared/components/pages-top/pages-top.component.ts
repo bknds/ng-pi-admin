@@ -7,13 +7,13 @@ import { GlobalService } from '../../services/global.service';
   styleUrls: ['./pages-top.component.scss'],
   providers: []
 })
+
 export class PagesTopComponent implements OnInit {
   isViewAll: boolean = true;
 
   constructor(private _globalService: GlobalService) { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
   _isViewAll() {
     this._globalService.isViewAll$.subscribe(isViewAll => {
