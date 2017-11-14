@@ -1,6 +1,7 @@
 import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { menuService } from "../../services/menu.service";
+import { TransferService } from '../../services/transfer.service';
 
 @Component({
   selector: 'pa-siderbar',
@@ -16,7 +17,8 @@ export class PaSiderbarComponent implements OnInit {
   //@Output() menuItem = new EventEmitter<any>();
 
   constructor(private router: Router,
-    private _menuService: menuService) {
+    private _menuService: menuService,
+    public _transferService: TransferService) {
   }
 
   ngOnInit() {
@@ -25,6 +27,7 @@ export class PaSiderbarComponent implements OnInit {
 
   _isViewAll() {
     this.isViewAll = true;
+    this._transferService._isViewAllState(this.isViewAll);
   }
 
 }

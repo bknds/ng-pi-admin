@@ -1,7 +1,7 @@
 <ul class="menu-wrapper">
   <li *ngFor="let item of menuInfo;let i = index" class="menu-item" [ngClass]="{'menu-item-toggle-on':item.toggle === 'on'}">
     
-    <a href="javascript:;" [routerLink]="[item.routerLink.join('/')]"
+    <a href="javascript:;" (click)="onChooseMenuItem(item)" [routerLink]="[item.routerLink.join('/')]"
     *ngIf="item.routerLink" routerLinkActive="active">
       <div class="placeholder"><i class="fa fa-{{item.icon}} fa-fw"></i></div>
       {{item.title}}
@@ -12,8 +12,10 @@
       {{item.title}}
       <span class="fa fa-angle-right fa-fw"></span>
     </a>
+
     <div class="item-children" [@collapse]="item.toggle">
       <du-menu [menuInfo]="item.children"></du-menu>
     </div>
+    
   </li>
 </ul>

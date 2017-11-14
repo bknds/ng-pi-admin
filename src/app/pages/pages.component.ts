@@ -12,22 +12,25 @@ export class PagesComponent implements OnInit {
   historyList;
   isViewAll: boolean = true;
 
-  constructor(private _transferService: TransferService) {
+  constructor(private _transferService: TransferService) { }
+
+  ngOnInit() {
     this._transferService.damage$.subscribe(damage => {
-      console.log(damage);
-      
-      this.historyList.push(damage);
-      console.log(this.historyList);
+      this.historyList = damage;
+      console.log(this.historyList.routerLink);
     }, error => {
-      console.log('error: ' + error);
+      console.log('Error: ' + error);
     });
   }
-
-  ngOnInit() { }
 
   breadcrumbItem = ['form', 'inputs', 'btn'];
 
   _isViewAll() {
+    this._transferService.isViewAll$.subscribe(isViewAll => {
+      this.isViewAll = isViewAll;
+    }, error => {
+      console.log('Error: ' + error);
+    });
     this.isViewAll = !this.isViewAll;
   }
 }
