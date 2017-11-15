@@ -1,0 +1,14 @@
+.card,
+.card-block {
+    width: auto;
+    height: auto;
+    position: relative;
+    border: 1px solid rgba($black, .05);
+    border-radius: 5px;
+    @include box-shadow( 5px 10px 20px rgba($black, .2), 0 0 40px rgba($black, .1) inset);
+}
+
+.card-block {
+    display: block;
+    padding: 10px;
+}

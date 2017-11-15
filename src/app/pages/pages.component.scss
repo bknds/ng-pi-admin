@@ -5,8 +5,8 @@
     height: 100%;
     display: flex;
     flex-direction: row;
-    /* background: url(/assets/images/bg.jpg) no-repeat; */
-    background: rgb(53, 50, 50);
+    //background: url(/assets/images/bg.jpg) no-repeat;
+    background: $body-bg;
     background-size: 100% 100%;
     .pages-body {
         flex: 1;
@@ -14,8 +14,8 @@
         flex-direction: column;
         .pages-content {
             flex: 1;
-            background: $body-bg;
-            padding: 10px;
+            background: $white;
+            padding: 20px;
         }
     }
 }

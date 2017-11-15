@@ -1,12 +1,12 @@
 export let MENU_DATA = [
     {
         path: 'index',
-        title: 'index',
-        icon: 'desktop'
+        title: '仪表盘',
+        icon: 'dashboard'
     },
     {
         path: 'form',
-        title: 'form',
+        title: '表单',
         icon: 'edit',
         children: [
             {
@@ -21,12 +21,12 @@ export let MENU_DATA = [
     },
     {
         path: 'table',
-        title: 'table',
+        title: '表格',
         icon: 'table',
         children: [
             {
                 path: 'default-tables',
-                title: 'default tables'
+                title: '基础表格'
             }
         ]
     }

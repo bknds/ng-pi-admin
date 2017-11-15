@@ -1,4 +1,5 @@
 @import '../../styles/color';
+@import '../../styles/mixin';
 .menu-wrapper {
     padding: 0;
     width: 220px;
@@ -20,10 +21,9 @@
         background: transparent;
         border-bottom: 1px solid rgba($white, .1);
         color: $white;
-        font-size: 15px;
+        font-size: 12px;
         text-decoration: none;
-        -webkit-transition: all 0.4s;
-        transition: all 0.4s;
+        @include transition(all 0.4s);
         &:hover {
             background: $mask;
         }
@@ -32,37 +32,32 @@
             width: 40px;
             float: left;
             margin: 0 10px;
-            i {
-                line-height: 40px;
-                font-size: 12px;
-            }
+            line-height: 40px;
+            font-size: 12px;
         }
         span {
             float: right;
             margin: 0 10px 0 0;
             line-height: 40px;
-            -webkit-transform: rotate(0deg);
-            -webkit-transition: all 0.2s;
-            transform: rotate(0deg);
-            transition: all 0.2s;
+            @include transform(rotate(0deg));
+            @include transition(all 0.2s);
         }
     }
     .menu-link.active {
         background: $mask;
         color: $white;
-        border-left: 4px solid $white;
+        border-left: 4px solid $black;
     }
 }
 
 .item-toggle-on {
     .menu-link {
         span {
-            -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+            @include transform(rotate(90deg));
         }
     }
 }
 
-.item-toggle-off{
-    height:41px;
+.item-toggle-off {
+    height: 41px;
 }

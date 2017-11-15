@@ -13,7 +13,7 @@ import { GlobalService } from '../../services/global.service';
 
 export class MenuComponent {
   @Input() menuInfo: any;
-  
+
   @Input() isViewAll;
 
   constructor(public _globalService: GlobalService) { }

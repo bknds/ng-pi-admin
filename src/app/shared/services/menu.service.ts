@@ -5,7 +5,6 @@ import { MENU_DATA } from '../../pages/menu-data';
 export class menuService {
 
   constructor() {
-    /* 初始化MENU_DATA数据 */
     this.getNodePath(MENU_DATA);
   }
 

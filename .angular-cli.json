@@ -23,6 +23,7 @@
         "../node_modules/font-awesome/scss/font-awesome.scss",
         "../node_modules/bootstrap/less/bootstrap.less",
         "../node_modules/animate.css/animate.css",
+        "app/shared/_styles.scss",
         "styles.scss"
       ],
       "scripts": [],

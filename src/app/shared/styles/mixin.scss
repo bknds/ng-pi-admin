@@ -1,0 +1,20 @@
+@mixin box-shadow($shadow...) {
+    box-shadow: $shadow;
+    -o-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    -webkit-box-shadow: $shadow;
+}
+
+@mixin transform($transform...) {
+    transform: $transform;
+    -o-transform: $transform;
+    -moz-transform: $transform;
+    -webkit-transform: $transform;
+}
+
+@mixin transition($transition...) {
+    transition: $transition;
+    -o-transition: $transition;
+    -moz-transition: $transition;
+    -webkit-transition: $transition;
+}
