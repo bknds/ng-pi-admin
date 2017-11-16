@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import { GlobalService } from '../../services/global.service';
 
 @Component({
@@ -7,21 +7,18 @@ import { GlobalService } from '../../services/global.service';
   styleUrls: ['./content-top.component.scss'],
   providers: [GlobalService]
 })
+
 export class ContentTopComponent implements OnInit {
-  historyList;
-  
+  @Input() menuItemInfo: any;
+
   breadcrumbItem = ['form', 'inputs', 'btn'];
 
-  constructor(private _globalService: GlobalService) { }
+  constructor(public _globalService: GlobalService) {
+  }
 
   ngOnInit() {
-    this._globalService.damage$.subscribe(damage => {
-      this.historyList = damage;
-      console.log(damage);
-      
-    }, error => {
-      console.log('Error: ' + error);
-    });
+    console.log(this.menuItemInfo);
   }
+
 
 }

@@ -5,7 +5,7 @@ const appRoutes: Routes = [
   {
     path: '',
     redirectTo: 'pages/index',
-    pathMatch: 'full' 
+    pathMatch: 'full'
   },
   {
     path: '**',

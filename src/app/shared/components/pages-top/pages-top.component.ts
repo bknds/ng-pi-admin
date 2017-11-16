@@ -21,6 +21,7 @@ export class PagesTopComponent implements OnInit {
     }, error => {
       console.log('Error: ' + error);
     });
+
     this._globalService._isViewAllState(!this.isViewAll);
   }
 }

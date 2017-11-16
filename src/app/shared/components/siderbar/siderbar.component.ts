@@ -20,17 +20,17 @@ export class SiderbarComponent implements OnInit {
 
   ngOnInit() {
     this.menuInfo = this._menuService.putSidebarJson();
+    this._isViewAll();
+  }
 
+  _isViewAll() {
     this._globalService.isViewAll$.subscribe(isViewAll => {
       this.isViewAll = isViewAll;
     }, error => {
       console.log('Error: ' + error);
     });
-  }
 
-  _isViewAll() {
-    this.isViewAll = true;
-    this._globalService._isViewAllState(this.isViewAll);
+    this._globalService._isViewAllState(true);
   }
 
 }

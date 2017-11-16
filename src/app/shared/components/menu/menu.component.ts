@@ -16,7 +16,8 @@ export class MenuComponent {
 
   @Input() isViewAll;
 
-  constructor(public _globalService: GlobalService) { }
+  constructor(public _globalService: GlobalService) {
+  }
 
   isToggleOn(item) {
     item.toggle === 'on' ? item.toggle = 'off' : item.toggle = 'on';

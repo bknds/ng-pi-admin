@@ -4,7 +4,7 @@ import { Subject } from "rxjs/Subject";
 @Injectable()
 export class GlobalService {
 
-    private damageSource = new Subject<any>();
+    private damageSource = new Subject();
     private isViewAllSource = new Subject<boolean>();
 
     damage$ = this.damageSource.asObservable();

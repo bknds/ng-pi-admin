@@ -12,3 +12,13 @@
     display: block;
     padding: 10px;
 }
+
+.card-header {
+    width: 100%;
+    border-bottom: 1px solid $mask;
+    padding: 0 10px;
+}
+
+.card-content {
+    padding: 10px;
+}
