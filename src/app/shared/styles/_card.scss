@@ -5,7 +5,7 @@
     position: relative;
     border: 1px solid rgba($black, .05);
     border-radius: 5px;
-    @include box-shadow( 5px 10px 20px rgba($black, .2), 0 0 40px rgba($black, .1) inset);
+    @include box-shadow( 5px 5px 30px rgba($black, .15));
 }
 
 .card-block {

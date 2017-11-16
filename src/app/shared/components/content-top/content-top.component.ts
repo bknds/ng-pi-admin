@@ -17,7 +17,8 @@ export class ContentTopComponent implements OnInit {
   ngOnInit() {
     this._globalService.damage$.subscribe(damage => {
       this.historyList = damage;
-      console.log(this.historyList.routerLink);
+      console.log(damage);
+      
     }, error => {
       console.log('Error: ' + error);
     });

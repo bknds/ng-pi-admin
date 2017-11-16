@@ -14,7 +14,7 @@ export class GlobalService {
         this.damageSource.next(damage);
     }
 
-    _isViewAllState(isViewAll) {
+    _isViewAllState(isViewAll: boolean) {
         this.isViewAllSource.next(isViewAll);
     }
 }

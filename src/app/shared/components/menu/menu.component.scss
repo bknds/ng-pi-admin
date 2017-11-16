@@ -44,9 +44,9 @@
         }
     }
     .menu-link.active {
-        background: $mask;
+        background: rgba($black, .2);
         color: $white;
-        border-left: 4px solid $black;
+        border-left: 4px solid $white;
     }
 }
 
