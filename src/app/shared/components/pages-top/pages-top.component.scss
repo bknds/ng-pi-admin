@@ -9,13 +9,13 @@
         line-height: 40px;
         text-align: center;
         color: rgba($white, .7);
-        background: $mask;
+        background: rgba($black, .4);
         border-radius: 50%;
         position: relative;
         top: 20px;
         &:hover {
             color: $white;
-            background: rgba($black, .4);
+            background: rgba($black, .7);
             cursor: pointer;
         }
     }

@@ -19,8 +19,8 @@
         height: 40px;
         outline: none;
         background: transparent;
-        border-bottom: 1px solid rgba($white, .1);
-        color: $white;
+        border-bottom: 1px solid rgba($black, .05);
+        color: $gray;
         font-size: 12px;
         text-decoration: none;
         @include transition(all 0.4s);
@@ -44,9 +44,9 @@
         }
     }
     .menu-link.active {
-        background: rgba($black, .2);
-        color: $white;
-        border-left: 4px solid $white;
+        background: rgba($black, .05);
+        color: $gray;
+        border-left: 4px solid rgba($black, .5);
     }
 }
 

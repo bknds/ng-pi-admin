@@ -1,5 +1,4 @@
 @import '../../styles/color';
-
 .pages-sider {
     width: 220px;
     height: 100%;
@@ -9,8 +8,8 @@
     transition: all 0.4s;
     .avatar-wrapper {
         width: 100%;
-        height: 250px;
-        border-bottom:1px solid rgba($white,.1);
+        height: 270px;
+        border-bottom: 1px solid rgba($black, .05);
     }
 }
 
@@ -22,12 +21,29 @@
     border: 5px solid rgba($black, .2);
     border-radius: 50%;
     position: relative;
-    top: 75px;
+    top: 70px;
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
     img {
         display: block;
         width: 100%;
+    }
+}
+
+.tips-wrapper {
+    height: 50px;
+    position: relative;
+    top: 70px;
+    line-height: 50px;
+    text-align: center;
+    color: $gray;
+}
+
+.ring,
+.email {
+    &:hover {
+        cursor: pointer;
+        color: rgba($black, .7);
     }
 }
 

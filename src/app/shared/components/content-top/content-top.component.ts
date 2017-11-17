@@ -9,7 +9,7 @@ import { GlobalService } from '../../services/global.service';
 })
 
 export class ContentTopComponent implements OnInit {
-  @Input() menuItemInfo: any;
+  @Input() routerTitle: any;
 
   breadcrumbItem = ['form', 'inputs', 'btn'];
 
@@ -17,7 +17,7 @@ export class ContentTopComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log(this.menuItemInfo);
+    console.log(this.routerTitle);
   }
 
 

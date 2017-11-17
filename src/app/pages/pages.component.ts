@@ -10,10 +10,11 @@ import { GlobalService } from '../shared/services/global.service';
 
 export class PagesComponent {
   public menuItemInfo;
-
+  public routerTitle;
   constructor(public _globalService: GlobalService) {
     this._globalService.damage$.subscribe(damage => {
-      console.log(damage);
+      this.menuItemInfo = damage;
+      this.routerTitle = this.menuItemInfo.title;
     }, error => {
       console.log('Error: ' + error);
     });

@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 import { collapse } from '../../animation/collapse-animate';
 import { GlobalService } from '../../services/global.service';
 
@@ -16,7 +16,11 @@ export class MenuComponent {
 
   @Input() isViewAll;
 
-  constructor(public _globalService: GlobalService) {
+  constructor(public _globalService: GlobalService,
+    private router: Router) {
+    this.router.events.subscribe((event) => {
+      console.log(event);
+    });
   }
 
   isToggleOn(item) {
@@ -27,4 +31,7 @@ export class MenuComponent {
     this._globalService.transfer(item);
   }
 
+  queryMenuItem(path) {
+    
+  }
 }
