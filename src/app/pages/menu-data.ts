@@ -20,6 +20,17 @@ export let MENU_DATA = [
         ]
     },
     {
+        path: 'ui',
+        title: 'UI',
+        icon: 'edit',
+        children: [
+            {
+                path: 'buttons',
+                title: 'BUTTONS'
+            }
+        ]
+    },
+    {
         path: 'table',
         title: '表格',
         icon: 'table',

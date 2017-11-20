@@ -15,7 +15,7 @@ import { PagesComponent } from './pages.component';
     declarations: [
         PagesComponent,
         IndexComponent
-    ]
+]
 })
 export class PagesModule {
 }
