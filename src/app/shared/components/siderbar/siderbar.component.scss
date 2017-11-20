@@ -41,10 +41,11 @@
 }
 
 .ring,
+.comments,
 .email {
     &:hover {
         cursor: pointer;
-        color: rgba($black, .7);
+        color: $default;
     }
 }
 

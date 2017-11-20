@@ -6,19 +6,20 @@
     background: $white;
     @include box-shadow( 11px 1px 15px rgba($black, .3));
     .collapse-menu {
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
+        width: 27px;
+        height: 27px;
+        line-height: 27px;
         text-align: center;
         color: $gray;
         background: transparent;
-        @include box-shadow( 1px 1px 3px rgba($black, .2));
-        border-radius: 50%;
+        @include box-shadow( 3px 3px 3px rgba($black, .2));
+        border:1px solid rgba($black, .01);
+        border-radius: 5px;
         position: relative;
-        top: 20px;
+        top: 22px;
         left:20px;
         &:hover {
-            background: transparent;
+            color:$default;
             @include box-shadow( 1px 1px 5px rgba($black, .2));
             cursor: pointer;
         }

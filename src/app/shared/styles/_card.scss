@@ -1,11 +1,16 @@
 .card,
-.card-block {
+.card-block,
+.card-default,
+.card-success,
+.card-danger,
+.card-warning {
     width: auto;
     height: auto;
     position: relative;
     background: $white;
-    border: 1px solid rgba($black, .05);
-    border-radius: 5px;
+    border-radius: 3px;
+    color:$gray;
+    overflow: hidden;
     @include box-shadow( 5px 5px 20px rgba($black, .2));
 }
 
@@ -14,12 +19,38 @@
     padding: 10px;
 }
 
+.card-default {
+    color:#fff;
+    @include linear-gradient(to top right, #cb85fa,#0ae9ec);
+}
+
+.card-success {
+    color:#fff;
+    @include linear-gradient(to top right, #28bfb9,#9dffce);
+}
+
+.card-danger {
+    color:#fff;
+    @include linear-gradient(to top right, #f9619a,#fbaa68);
+}
+
+.card-warning {
+    color:#fff;
+    @include linear-gradient(to top right, #cb85fa,#0ae9ec);
+}
+
 .card-header {
     width: 100%;
-    border-bottom: 1px solid $mask;
+    height:35px;
+    border-bottom:1px solid $mask;
     padding: 0 10px;
+    .card-title{
+        margin:0;
+        line-height: 35px;
+    }
 }
 
 .card-content {
     padding: 10px;
 }
+

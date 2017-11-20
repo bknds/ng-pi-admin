@@ -1,5 +1,11 @@
+@import './mixin';
+
 $body-bg:#f3f3f3;
 $white:#ffffff;
 $black:#000000;
 $gray:rgb(148, 148, 148);
 $mask:rgba($black, .1);
+$default:#cb85fa;
+.bg-default {
+    @include linear-gradient( #cb85fa,#0ae9ec);
+}

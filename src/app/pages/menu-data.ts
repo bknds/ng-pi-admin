@@ -1,8 +1,8 @@
 export let MENU_DATA = [
     {
         path: 'index',
-        title: '仪表盘',
-        icon: 'dashboard'
+        title: '首页',
+        icon: 'home'
     },
     {
         path: 'form',
