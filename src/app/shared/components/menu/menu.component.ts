@@ -19,7 +19,7 @@ export class MenuComponent {
   constructor(public _globalService: GlobalService,
     private router: Router) {
     this.router.events.subscribe((event) => {
-      console.log(event);
+      //console.log(event);
     });
   }
 
