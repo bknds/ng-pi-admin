@@ -1,5 +1,5 @@
 {
-  "name": "dust-admin",
+  "name": "Pill",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -24,7 +24,6 @@
     "animate.css": "^3.5.2",
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
-    "element-angular": "^0.4.3",
     "font-awesome": "^4.7.0",
     "normalize.css": "^7.0.0",
     "rxjs": "^5.4.2",
