@@ -1,10 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { routing } from './ui.routing';
+import { IndexComponent } from './index.component';
+import { routing } from './index.routing';
 import { SharedModule } from '../../shared/shared.module';
-/* components */
-import { UiComponent } from './ui.component';
-import { ButtonsComponent } from './components/buttons/buttons.component';
 
 @NgModule({
     imports: [
@@ -13,8 +11,7 @@ import { ButtonsComponent } from './components/buttons/buttons.component';
         routing
     ],
     declarations: [
-        UiComponent,
-        ButtonsComponent
+        IndexComponent
     ]
 })
-export class UIModule { }
+export class IndexModule { }

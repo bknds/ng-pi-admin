@@ -1,5 +1,4 @@
 import { Routes, RouterModule } from '@angular/router';
-import { IndexComponent } from './index/index.component';
 import { PagesComponent } from './pages.component';
 
 export const childRoutes: Routes = [
@@ -8,7 +7,7 @@ export const childRoutes: Routes = [
         component: PagesComponent,
         children: [
             { path: '', redirectTo: 'index', pathMatch: 'full' },
-            { path: 'index', component: IndexComponent },
+            { path: 'index', loadChildren: './index/index.module#IndexModule' },
             { path: 'form', loadChildren:'./form/form.module#FormModule'},
             { path: 'ui', loadChildren: './ui/ui.module#UIModule' },
             { path: 'table', loadChildren: './table/table.module#TableModule' }

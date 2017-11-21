@@ -341,29 +341,21 @@ button.progress-button {
 }
 
 .btn {
+    padding: 5px;
     border: none;
-    border-radius: 5%;
+    border-radius: 3px;
     @include transition(all 0.2s);
-    &:active {
-        @extend .bg-primary;
-    }
 }
 
 .btn-default {
     color: $gray;
     @extend .bg-default;
     @include box-shadow( 3px 3px 20px rgba($black, .2));
-    &:active {
-        background: $white;
-    }
 }
 
 .btn-primary {
     @extend .bg-primary;
     @include box-shadow( 3px 3px 20px rgba($primary, .5));
-    &:active {
-        background: $primary;
-    }
 }
 
 .btn-success {
@@ -384,4 +376,31 @@ button.progress-button {
 .btn-info {
     @extend .bg-info;
     @include box-shadow( 3px 3px 20px rgba($info, .5));
+}
+
+.btn-mm {
+    font-size: 13px;
+}
+
+.btn-xm {
+    font-size: 15px;
+}
+
+.btn-group-xs>.btn,
+.btn-xs {
+    padding:2px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.btn-group-sm>.btn,
+.btn-sm {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.btn-group-lg>.btn,
+.btn-lg {
+    font-size: 18px;
+    line-height: 1.3333333;
 }

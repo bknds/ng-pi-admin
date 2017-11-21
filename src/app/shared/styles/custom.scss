@@ -1,7 +1,15 @@
-.row-margin-bottom{
-    margin-bottom:30px;
+ul,
+li,
+div {
+    padding: 0;
+    margin: 0;
 }
+
+.margin-bottom {
+    margin-bottom: 30px;
+}
+
 .block {
     display: block;
-    padding:10px;
+    padding: 10px;
 }
