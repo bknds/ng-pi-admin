@@ -3,9 +3,9 @@
         <du-siderbar></du-siderbar>
     </div>
     <div class="pages-body">
-        <pages-top></pages-top>
+        <pages-top [routerTitle]="routerTitle"></pages-top>
         <div class="pages-content">
-            <content-top [routerTitle]="routerTitle"></content-top>
+            <content-top></content-top>
             <router-outlet></router-outlet>
         </div>
     </div>

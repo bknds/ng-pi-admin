@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { GlobalService } from '../../services/global.service';
 
 @Component({
@@ -9,7 +9,6 @@ import { GlobalService } from '../../services/global.service';
 })
 
 export class ContentTopComponent implements OnInit {
-  @Input() routerTitle: any;
 
   breadcrumbItem = ['form', 'inputs', 'btn'];
 
@@ -17,7 +16,6 @@ export class ContentTopComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log(this.routerTitle);
   }
 
 

@@ -388,7 +388,7 @@ button.progress-button {
 
 .btn-group-xs>.btn,
 .btn-xs {
-    padding:2px;
+    padding: 2px;
     font-size: 12px;
     line-height: 1.5;
 }
@@ -403,4 +403,11 @@ button.progress-button {
 .btn-lg {
     font-size: 18px;
     line-height: 1.3333333;
+}
+
+.btn-with-icon {
+    span,
+    i {
+        margin:auto 5px;
+    }
 }

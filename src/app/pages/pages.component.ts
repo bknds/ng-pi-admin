@@ -19,5 +19,4 @@ export class PagesComponent {
       console.log('Error: ' + error);
     });
   }
-
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { GlobalService } from '../../services/global.service';
 
 @Component({
@@ -9,6 +9,8 @@ import { GlobalService } from '../../services/global.service';
 })
 
 export class PagesTopComponent implements OnInit {
+  @Input() routerTitle: any;
+
   isViewAll: boolean = true;
 
   constructor(private _globalService: GlobalService) { }

@@ -1,21 +1,21 @@
 export let MENU_DATA = [
     {
         path: 'index',
-        title: '首页',
+        title: 'Home',
         icon: 'home'
     },
     {
         path: 'form',
-        title: '表单',
+        title: 'Form',
         icon: 'edit',
         children: [
             {
                 path: 'inputs',
-                title: 'inputs'
+                title: 'Inputs'
             },
             {
                 path: 'trees',
-                title: '树形图'
+                title: 'Trees'
             }
         ]
     },
@@ -26,18 +26,18 @@ export let MENU_DATA = [
         children: [
             {
                 path: 'buttons',
-                title: 'BUTTONS'
+                title: 'Buttons'
             }
         ]
     },
     {
         path: 'table',
-        title: '表格',
+        title: 'Tables',
         icon: 'table',
         children: [
             {
                 path: 'default-tables',
-                title: '基础表格'
+                title: 'Default Tables'
             }
         ]
     }
