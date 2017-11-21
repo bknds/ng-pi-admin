@@ -1,11 +1,34 @@
 @import './mixin';
-
 $body-bg:#f3f3f3;
 $white:#ffffff;
 $black:#000000;
 $gray:rgb(148, 148, 148);
 $mask:rgba($black, .1);
-$default:#cb85fa;
+$primary:#cb85fa;
+$success:#28bfb9;
+$danger:#f9619a;
+$warning:#fda400;
+$info:#0a91ec;
 .bg-default {
-    @include linear-gradient( #cb85fa,#0ae9ec);
+    background: $white;
+}
+
+.bg-primary {
+    @include linear-gradient(to top right, #cb85fa, #0ae9ec);
+}
+
+.bg-success {
+    @include linear-gradient(to top right, #28bfb9, #9dffce);
+}
+
+.bg-danger {
+    @include linear-gradient(to top right, #f9619a, #fbaa68);
+}
+
+.bg-warning {
+    @include linear-gradient(to top right, #fda400, #fce16a);
+}
+
+.bg-info {
+    @include linear-gradient(to top right, #0a91ec, #0ae9ec);
 }

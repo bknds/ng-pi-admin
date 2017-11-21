@@ -13,13 +13,13 @@
         color: $gray;
         background: transparent;
         @include box-shadow( 3px 3px 3px rgba($black, .2));
-        border:1px solid rgba($black, .01);
+        border: 1px solid rgba($black, .01);
         border-radius: 5px;
         position: relative;
         top: 22px;
-        left:20px;
+        left: 20px;
         &:hover {
-            color:$default;
+            color: $primary;
             @include box-shadow( 1px 1px 5px rgba($black, .2));
             cursor: pointer;
         }

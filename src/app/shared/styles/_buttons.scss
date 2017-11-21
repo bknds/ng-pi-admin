@@ -1,4 +1,6 @@
-$hover: 24;
+@import './color';
+
+/* $hover: 24;
 .btn:focus,
 .btn:active:focus,
 .btn.active:focus,
@@ -328,4 +330,58 @@ button.progress-button {
     .btn {
         transition: none;
     }
+}
+ */
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+{
+    outline: none;
+}
+
+.btn {
+    border: none;
+    border-radius: 5%;
+    @include transition(all 0.2s);
+    &:active {
+        @extend .bg-primary;
+    }
+}
+
+.btn-default {
+    color: $gray;
+    @extend .bg-default;
+    @include box-shadow( 3px 3px 20px rgba($black, .2));
+    &:active {
+        background: $white;
+    }
+}
+
+.btn-primary {
+    @extend .bg-primary;
+    @include box-shadow( 3px 3px 20px rgba($primary, .5));
+    &:active {
+        background: $primary;
+    }
+}
+
+.btn-success {
+    @extend .bg-success;
+    @include box-shadow( 3px 3px 20px rgba($success, .5));
+}
+
+.btn-danger {
+    @extend .bg-danger;
+    @include box-shadow( 3px 3px 20px rgba($danger, .5));
+}
+
+.btn-warning {
+    @extend .bg-warning;
+    @include box-shadow( 3px 3px 20px rgba($warning, .5));
+}
+
+.btn-info {
+    @extend .bg-info;
+    @include box-shadow( 3px 3px 20px rgba($info, .5));
 }

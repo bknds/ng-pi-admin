@@ -1,6 +1,6 @@
 .card,
 .card-block,
-.card-default,
+.card-primary,
 .card-success,
 .card-danger,
 .card-warning {
@@ -9,7 +9,7 @@
     position: relative;
     background: $white;
     border-radius: 3px;
-    color:$gray;
+    color: $gray;
     overflow: hidden;
     @include box-shadow( 5px 5px 20px rgba($black, .2));
 }
@@ -19,33 +19,45 @@
     padding: 10px;
 }
 
-.card-default {
-    color:#fff;
-    @include linear-gradient(to top right, #cb85fa,#0ae9ec);
+.card-primary,
+.card-success,
+.card-danger,
+.card-warning {
+    color: #fff;
+}
+
+.card-primary {
+    @extend .bg-primary;
+    @include box-shadow( 3px 3px 20px rgba($primary, .5));
 }
 
 .card-success {
-    color:#fff;
-    @include linear-gradient(to top right, #28bfb9,#9dffce);
+    @extend .bg-success;
+    @include box-shadow( 3px 3px 20px rgba($success, .5));
 }
 
 .card-danger {
-    color:#fff;
-    @include linear-gradient(to top right, #f9619a,#fbaa68);
+    @extend .bg-danger;
+    @include box-shadow( 3px 3px 20px rgba($danger, .5));
 }
 
 .card-warning {
-    color:#fff;
-    @include linear-gradient(to top right, #cb85fa,#0ae9ec);
+    @extend .bg-warning;
+    @include box-shadow( 3px 3px 20px rgba($warning, .5));
+}
+
+.card-info {
+    @extend .bg-info;
+    @include box-shadow( 3px 3px 20px rgba($info, .5));
 }
 
 .card-header {
     width: 100%;
-    height:35px;
-    border-bottom:1px solid $mask;
+    height: 35px;
+    border-bottom: 1px solid $mask;
     padding: 0 10px;
-    .card-title{
-        margin:0;
+    .card-title {
+        margin: 0;
         line-height: 35px;
     }
 }
@@ -53,4 +65,3 @@
 .card-content {
     padding: 10px;
 }
-

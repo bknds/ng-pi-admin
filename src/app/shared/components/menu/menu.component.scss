@@ -25,7 +25,7 @@
         overflow: hidden;
         @include transition(all 0.4s);
         &:hover {
-            background: rgba($black, .03);
+            color: $primary;
         }
         .placeholder {
             display: block;
@@ -44,10 +44,9 @@
         }
     }
     .menu-link.active {
-        background: rgba($black, .0);
         @include box-shadow(0px 0px 5px rgba($black, .1) inset);
-        color: $default;
-        border-right: 4px solid $default;
+        color: $primary;
+        border-right: 4px solid $primary;
     }
 }
 
