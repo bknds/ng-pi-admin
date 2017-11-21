@@ -22,7 +22,7 @@ export let MENU_DATA = [
     {
         path: 'ui',
         title: 'UI',
-        icon: 'edit',
+        icon: 'heart',
         children: [
             {
                 path: 'buttons',

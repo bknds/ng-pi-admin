@@ -25,3 +25,9 @@
     background: -moz-linear-gradient($color);
     background: -webkit-linear-gradient($color);
 }
+
+@mixin border-gradient($color...) {
+    border-image: linear-gradient($color) 20 30;
+    border-image: -moz-linear-gradient($color) 30 30;
+    border-image: -webkit-linear-gradient($color) 30 30;
+}
