@@ -689,19 +689,15 @@ label.custom-checkbox {
 }
 
 .form-control {
+    display: block;
+    width: 100%;
     color: $gray;
-    border: 1px solid $primary;
-    @extend .border-primary;
-    border-radius: 5px;
     background-color: $white;
     box-shadow: none;
     font-size: 14px;
-    /* &:focus {
-        color: $content-text;
-        box-shadow: none;
-        border-color: $primary-bg;
-        background: $input-background;
-    } */
+    &:focus {
+        @include box-shadow(none);
+    }
 }
 
 .form-control-sm {
@@ -714,6 +710,36 @@ label.custom-checkbox {
     height: 50px;
 }
 
+input.form-control {
+    border: none; //border-bottom: 1px solid lighten($black, 80%);
+    border-radius: 0;
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top:0;
+        left:0;
+        width: 0;
+        border-bottom: 1px solid lighten($black, 80%);
+        @include transition(all 0.2s);
+    }
+    &:focus {
+        //border-bottom: 1px solid $primary;
+        input.form-control:after {
+            width: 100%;
+        }
+    }
+}
+
+.form-control[disabled] {
+    background-color: $white;
+}
+
 textarea.form-control {
-    height: 100px;
+    font-size: 14px;
+    height: 96px;
+    border-radius: 0;
+    &:focus {
+        border: 1px solid $primary;
+    }
 }
