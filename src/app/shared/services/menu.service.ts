@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import { MENU_DATA } from '../../pages/menu-data';
+import { MENU_INFO } from '../../pages/menu-info';
 
 @Injectable()
 export class menuService {
 
   constructor() {
-    this.getNodePath(MENU_DATA);
+    this.getNodePath(MENU_INFO);
   }
 
   private parent_node = null;
@@ -45,7 +45,7 @@ export class menuService {
   public creatRouterLink(nodeId: any) {
     this.node = null;
     this.parent_node = null;
-    let obj = this.queryParentNode(MENU_DATA, nodeId);
+    let obj = this.queryParentNode(MENU_INFO, nodeId);
     if (obj.parent_node && obj.parent_node.path) {
       this.path_item.unshift(obj.parent_node.path);
       return this.creatRouterLink(obj.parent_node.path);
@@ -67,6 +67,6 @@ export class menuService {
   }
 
   public putSidebarJson() {
-    return MENU_DATA;
+    return MENU_INFO;
   }
 }

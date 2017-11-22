@@ -1,4 +1,4 @@
-export let MENU_DATA = [
+export let MENU_INFO = [
     {
         path: 'index',
         title: 'Home',
