@@ -39,6 +39,7 @@
             float: right;
             margin: 0 10px 0 0;
             line-height: 40px;
+            font-size: 14px;
             @include transform(rotate(0deg));
             @include transition(all 0.2s);
         }
