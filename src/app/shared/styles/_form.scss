@@ -713,10 +713,27 @@ label.custom-checkbox {
 
 input.form-control {
     border-radius: 0;
-    @include transition(all 0.5s);
-    &:focus {
-        @extend .border-primary;
-    }
+    border: 1px solid $gray;
+}
+
+.with-primary-addon:focus {
+    @extend .border-primary;
+}
+
+.with-success-addon:focus {
+    @extend .border-success;
+}
+
+.with-warning-addon:focus {
+    @extend .border-warning;
+}
+
+.with-danger-addon:focus {
+    @extend .border-danger;
+}
+
+.with-info-addon:focus {
+    @extend .border-info;
 }
 
 input.form-control[disabled] {
@@ -730,4 +747,39 @@ textarea.form-control {
     &:focus {
         @extend .border-primary;
     }
+}
+
+.input-group-addon {
+    line-height: inherit;
+    color: $gray;
+    @extend .bg-default;
+}
+
+.input-group-addon-primary,
+.input-group-addon-success,
+.input-group-addon-warning,
+.input-group-addon-danger,
+.input-group-addon-info {
+    color: $white;
+    border: $gray;
+}
+
+.input-group-addon-primary {
+    background-color: $primary;
+}
+
+.input-group-addon-success {
+    background-color: $success;
+}
+
+.input-group-addon-warning {
+    background-color: $warning;
+}
+
+.input-group-addon-danger {
+    background-color: $danger;
+}
+
+.input-group-addon-info {
+    background-color: $info;
 }

@@ -34,15 +34,20 @@
 }
 
 .tips-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     height: 50px;
     line-height: 50px;
-    text-align: center;
     color: $gray;
 }
 
 .ring,
 .comments,
 .email {
+    min-width:50px;
+    text-align: center;
     &:hover {
         cursor: pointer;
         color: $primary;
