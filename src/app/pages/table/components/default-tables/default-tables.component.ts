@@ -9,14 +9,25 @@ import { TablesService } from '../../../../shared/services/tables.service';
 })
 export class DefaultTablesComponent implements OnInit {
 
-  default_data:Array<any>;
-  isCheckedAll:boolean = false;
+  default_data: Array<any>;
+  isCheckedAll: boolean = false;
 
   constructor(private _tablesService: TablesService) { }
 
   ngOnInit() {
     this.default_data = this._tablesService.DEFAULT_DATA;
+
+    /* 根据数组内对象指定属性排序 */
+    function compare(property) {
+      return function (a, b) {
+        var value1 = a[property];
+        var value2 = b[property];
+        return value1 - value2;
+      }
+    }
+    this.default_data = this.default_data.sort(compare('price'));
   }
+
 
   allChecked($event) {
     this.isCheckedAll = $event.checked;
