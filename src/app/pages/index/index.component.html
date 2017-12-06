@@ -19,38 +19,26 @@
     </div>
 </div>
 <div class="row margin-bottom">
-    <div class="col-md-8">
+    <div class="col-md-6">
         <card cardTitle='VIEWS'>
-            <h1>col-md-8</h1>
+            <div echarts [options]="chartOption" [loading]="showloading" class="demo-chart"></div>
         </card>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-6">
         <card cardTitle='TIPS'>
-            <h1>col-md-4</h1>
+            <div echarts [options]="Baroptions" [loading]="showloading" class="demo-chart"></div>
         </card>
     </div>
 </div>
 <div class="row margin-bottom">
     <div class="col-md-6">
         <card cardTitle='VIEWS'>
-            <h1>col-md-6</h1>
+            <div echarts [options]="linkoption" [loading]="showloading" class="demo-chart"></div>
         </card>
     </div>
     <div class="col-md-6">
         <card cardTitle='TIPS'>
-            <h1>col-md-6</h1>
-        </card>
-    </div>
-</div>
-<div class="row margin-bottom">
-    <div class="col-md-4">
-        <card cardTitle='VIEWS'>
-            <h1>col-md-4</h1>
-        </card>
-    </div>
-    <div class="col-md-8">
-        <card cardTitle='TIPS'>
-            <h1>col-md-8</h1>
+            <div echarts [options]="mapoption" [loading]="showloading" class="demo-chart"></div>
         </card>
     </div>
 </div>
