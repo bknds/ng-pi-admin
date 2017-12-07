@@ -20,6 +20,17 @@ export let MENU_INFO = [
         ]
     },
     {
+        path: 'charts',
+        title: 'Charts',
+        icon: 'bar-chart-o',
+        children: [
+            {
+                path: 'default-charts',
+                title: 'default-charts'
+            }
+        ]
+    },
+    {
         path: 'ui',
         title: 'UI',
         icon: 'heart',

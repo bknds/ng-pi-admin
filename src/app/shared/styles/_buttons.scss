@@ -343,7 +343,7 @@ button.progress-button {
 .btn {
     padding: 5px;
     border: none;
-    border-radius: 3px;
+    border-radius: 2px;
     @include transition(all 0.2s);
 }
 
@@ -356,26 +356,41 @@ button.progress-button {
 .btn-primary {
     @extend .bg-primary;
     @include box-shadow( 3px 3px 20px rgba($primary, .5));
+    &:active {
+        @extend .bg-primary;
+    }
 }
 
 .btn-success {
     @extend .bg-success;
     @include box-shadow( 3px 3px 20px rgba($success, .5));
+    &:active {
+        @extend .bg-success;
+    }
 }
 
 .btn-danger {
     @extend .bg-danger;
     @include box-shadow( 3px 3px 20px rgba($danger, .5));
+    &:active {
+        @extend .bg-danger;
+    }
 }
 
 .btn-warning {
     @extend .bg-warning;
     @include box-shadow( 3px 3px 20px rgba($warning, .5));
+    &:active {
+        @extend .bg-warning;
+    }
 }
 
 .btn-info {
     @extend .bg-info;
     @include box-shadow( 3px 3px 20px rgba($info, .5));
+    &:active {
+        @extend .bg-info;
+    }
 }
 
 .btn-mm {
@@ -384,6 +399,33 @@ button.progress-button {
 
 .btn-xm {
     font-size: 15px;
+}
+
+.btn-group {
+    .btn-primary,
+    .btn-primary:active {
+        @include linear-gradient(to bottom, #cb85fa, #0ae9ec);
+    }
+    .btn-primary,
+    .btn-primary:active {
+        @include linear-gradient(to bottom, #cb85fa, #0ae9ec);
+    }
+    .btn-success,
+    .btn-success:active {
+        @include linear-gradient(to bottom, #28bfb9, #9dffce);
+    }
+    .btn-danger,
+    .btn-danger:active {
+        @include linear-gradient(to bottom, #f9619a, #fbaa68);
+    }
+    .btn-warning,
+    .btn-warning:active {
+        @include linear-gradient(to bottom, #fda400, #fce16a);
+    }
+    .btn-info,
+    .btn-info:active {
+        @include linear-gradient(to bottom, #0a91ec, #0ae9ec);
+    }
 }
 
 .btn-group-xs>.btn,
@@ -408,6 +450,6 @@ button.progress-button {
 .btn-with-icon {
     span,
     i {
-        margin:auto 5px;
+        margin: auto 5px;
     }
 }
