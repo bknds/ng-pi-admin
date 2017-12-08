@@ -3,16 +3,17 @@
     &>thead {
         &>tr {
             &>th {
+                border-bottom: 1px solid rgba($mask, .1);
                 text-align: center;
                 white-space: nowrap;
-                border-bottom: 1px solid $mask;
             }
         }
     }
     &>tbody {
         &>tr {
             &>td {
-                border-top: 1px solid $mask;
+                //border-top: 1px solid rgba($mask, .1);
+                border: 1px solid transparent;
                 text-align: center;
             }
         }
@@ -32,7 +33,7 @@
 
 .table-hover {
     >tbody>tr:hover {
-        background-color: rgba($mask, .15);
+        background-color: rgba($mask, .1);
         >td {
             border-top: 1px solid transparent;
         }
@@ -43,5 +44,5 @@
 .table-bordered>thead>tr>th,
 .table-bordered>tbody>tr>td,
 .table-bordered>tfoot>tr>th {
-    border: 1px solid rgba($mask, .5);
+    border: 1px solid rgba($mask, .2);
 }

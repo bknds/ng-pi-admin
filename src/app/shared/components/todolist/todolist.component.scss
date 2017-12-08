@@ -1,0 +1,39 @@
+.form-group {
+    line-height: auto;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.list-id {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.list-text {
+    display: inline-block;
+    width: 65%;
+    text-align: left;
+    font-size: 15px;
+}
+
+.list-over {
+    display: inline-block;
+    width: 65%;
+    text-align: left;
+    font-size: 15px;
+    color:#ccc;
+    text-decoration: line-through;
+}
+
+.over-btn {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    padding: 0;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 25px;
+}

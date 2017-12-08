@@ -11,7 +11,8 @@
     border-radius: 3px;
     color: $gray;
     overflow: hidden;
-    @include box-shadow( 5px 5px 20px rgba($black, .2));
+    margin-bottom: 24px;
+    @include box-shadow( 0 5px 5px 0 rgba(0, 0, 0, 0.25));
 }
 
 .card-block {
@@ -28,27 +29,27 @@
 
 .card-primary {
     @extend .bg-primary;
-    @include box-shadow( 3px 3px 20px rgba($primary, .5));
+    @include box-shadow( 0 5px 5px 0 rgba($primary, .5));
 }
 
 .card-success {
     @extend .bg-success;
-    @include box-shadow( 3px 3px 20px rgba($success, .5));
+    @include box-shadow( 0 5px 5px 0 rgba($success, .5));
 }
 
 .card-danger {
     @extend .bg-danger;
-    @include box-shadow( 3px 3px 20px rgba($danger, .5));
+    @include box-shadow( 0 5px 5px 0 rgba($danger, .5));
 }
 
 .card-warning {
     @extend .bg-warning;
-    @include box-shadow( 3px 3px 20px rgba($warning, .5));
+    @include box-shadow( 0 5px 5px 0 rgba($warning, .5));
 }
 
 .card-info {
     @extend .bg-info;
-    @include box-shadow( 3px 3px 20px rgba($info, .5));
+    @include box-shadow( 0 5px 5px 0 rgba($info, .5));
 }
 
 .card-header {
@@ -56,12 +57,40 @@
     height: 35px;
     border-bottom: 1px solid $mask;
     padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
     .card-title {
+        display: inline-block;
         margin: 0;
         line-height: 35px;
     }
+    .collapse {
+        display: inline-block;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        background: transparent;
+        position: relative;
+        right: 0;
+        color: $gray;
+        &:hover {
+            color: #333;
+        }
+    }
+}
+
+.collapse-off {
+    @include transition(all 0.2s);
+    @include transform(rotate(0deg));
+}
+
+.collapse-on {
+    @include transition(all 0.2s);
+    @include transform(rotate(180deg));
 }
 
 .card-content {
-    padding: 10px;
+    padding: 10px 10px 0 10px;
+    height: auto;
+    overflow: hidden;
 }

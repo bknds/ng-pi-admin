@@ -32,6 +32,6 @@ export class MenuComponent {
   }
 
   queryMenuItem(path) {
-    
+
   }
 }

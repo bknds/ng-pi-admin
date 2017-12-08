@@ -1,26 +1,26 @@
 <card cardTitle="DEFAULT TABLE">
-  <table class="table table-hover">
+  <table class="table table-hover table-bordered">
     <thead>
       <tr>
         <th>
-          <label class="checkbox-inline custom-checkbox nowrap">
-            <input type="checkbox" [checked]="isCheckedAll" (change)="allChecked($event.target)">
-          </label>
+          <input class="checkbox" type="checkbox" id="isCheckedAll" [checked]="isCheckedAll" (change)="allChecked($event.target)">
+          <label class="check-label" for="isCheckedAll"></label>
         </th>
-        <th>first_name</th>
-        <th>last_name</th>
-        <th>user_name</th>
-        <th>email</th>
-        <th>price</th>
+        <th>#</th>
+        <th>FIRSTNAME</th>
+        <th>LASTNAME</th>
+        <th>USERNAME</th>
+        <th>EMAIL</th>
+        <th>PRICE</th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let item of default_data;let index = index">
         <td>
-          <label class="checkbox-inline custom-checkbox nowrap">
-            <input type="checkbox" [checked]="item.checked" (change)="Checked($event.target,index)">
-          </label>
+          <input class="checkbox" type="checkbox" id="check{{index}}" [checked]="item.checked" (change)="Checked($event.target,index)">
+          <label class="check-label" for="check{{index}}"></label>
         </td>
+        <td>{{index}}</td>
         <td>{{item.first_name}}</td>
         <td>{{item.last_name}}</td>
         <td>{{item.user_name}}</td>
