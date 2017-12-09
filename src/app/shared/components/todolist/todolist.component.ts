@@ -28,6 +28,7 @@ export class TodolistComponent implements OnInit {
 
   collapseCard() {
     let newList = new List;
+    //newList添加属性值
     this.todolist.unshift(newList);
   }
 }
