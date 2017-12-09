@@ -18,8 +18,17 @@ export class TodolistComponent implements OnInit {
   ngOnInit() {
   }
 
+  edit(index) {
+    this.todolist[index].isEdit = true;
+  }
+
   overMatter(index) {
     this.todolist[index].isOver = !this.todolist[index].isOver;
+  }
+
+  collapseCard() {
+    let newList = new List;
+    this.todolist.unshift(newList);
   }
 }
 export class List {

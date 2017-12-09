@@ -7,8 +7,9 @@
   </div>
   <div class="form-group" *ngFor="let item of todolist;let i = index">
     <span class="list-id">{{item.id}}. </span>
-    <label class="list-text" [ngClass]="{'list-over':item.isOver,'list-text':!item.isOver}">{{item.text}}</label>
-    <input type="text" class="form-control" [(ngModel)]="item.text" *ngIf="item.isEdit">
+    <label class="list-text" [ngClass]="{'list-over':item.isOver,'list-text':!item.isOver}"
+    (dblclick)="edit(i)" *ngIf="!item.isEdit">{{item.text}}</label>
+    <input type="text" class="edit-input" [(ngModel)]="item.text" *ngIf="item.isEdit">
     <button class="over-btn" (click)="overMatter(i)">
       <i class="fa fa-circle-o fa-fw" *ngIf="!item.isOver"></i>
       <i class="fa fa-check-circle-o fa-fw" *ngIf="item.isOver"></i>
