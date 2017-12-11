@@ -1,8 +1,38 @@
+@import '../../styles/color';
+@import '../../styles/mixin';
+.edit-input {
+    padding: 0 2%;
+    width: 65%;
+    height: 30px;
+    margin-top: 5px;
+    background: rgba(#fff, 0);
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
 .form-group {
     line-height: auto;
-    margin: 10px 0 0 0;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
     display: flex;
     justify-content: space-around;
+    @include transition(all 0.4s);
+    &:hover {
+        @include linear-gradient(to right, #28bfb9, #9dffce);
+        color: #fff;
+        .edit-input {
+            width: 65%;
+            height: 30px;
+            background: rgba($white, 0);
+            border: 1px solid $white;
+            border-radius: 2px;
+        }
+        .list-over {
+            color: $white;
+            text-decoration: line-through;
+        }
+    }
 }
 
 .list-id {
@@ -22,15 +52,11 @@
     color: #ccc;
     text-decoration: line-through;
 }
-.edit-input{
-    width:65%;
-    height:25px;
-    border:1px solid #ccc;
-    border-radius: 2px;
-}
+
 .over-btn {
     width: 20px;
-    height: 20px;
+    height: 40px;
+    line-height: 40px;
     line-height: 20px;
     text-align: center;
     padding: 0;
