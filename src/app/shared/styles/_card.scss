@@ -8,6 +8,7 @@
     height: auto;
     position: relative;
     background: $white;
+    border: none;
     border-radius: 3px;
     color: $gray;
     overflow: hidden;
@@ -54,28 +55,18 @@
 
 .card-header {
     width: 100%;
-    height: 35px;
+    height: 45px;
     border-bottom: 1px solid $mask;
+    @include box-shadow( 0 2px 7px 0 rgba(0, 0, 0, 0.15));
     padding: 0 10px;
     display: flex;
     justify-content: space-between;
     .card-title {
         display: inline-block;
         margin: 0;
-        line-height: 35px;
-    }
-    .collapse {
-        display: inline-block;
-        border: none;
-        outline: none;
-        font-size: 20px;
-        background: transparent;
-        position: relative;
-        right: 0;
-        color: $gray;
-        &:hover {
-            color: #333;
-        }
+        line-height: 45px;
+        font-size: 13px;
+        letter-spacing: .1em;
     }
 }
 

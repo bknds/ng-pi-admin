@@ -1,7 +1,7 @@
 <div class="pages-top">
   <div class="collapse-menu" (click)="_isViewAll()">
-    <i class="fa fa-navicon fa-fw" *ngIf="isViewAll"></i>
-    <i class="fa fa-chevron-right fa-fw" *ngIf="!isViewAll"></i>
+    <i class="fa fa-navicon fa-fw" [ngClass]="{'fade-in':isViewAll,'fade-out':!isViewAll}"></i>
+    <i class="fa fa-chevron-right fa-fw" [ngClass]="{'fade-in':!isViewAll,'fade-out':isViewAll}"></i>
   </div>
   <h1 class="router-title">{{routerTitle}}</h1>
 </div>

@@ -27,3 +27,15 @@
     margin: 0 auto;
     text-align: center;
 }
+
+.fade-out {
+    @include transition(scale .5s);
+    @include transform(scale(0));
+    width: 0;
+    height: 0;
+}
+
+.fade-in {
+    @include transition(all .5s);
+    @include transform(scale(1));
+}

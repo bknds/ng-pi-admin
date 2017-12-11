@@ -1,10 +1,11 @@
-<div class="card card-block">
+<div class="card">
   <div class="card-header">
     <h4 class="card-title">TODO LIST</h4>
-    <button class="collapse" (click)="addNewList()">
+    <button class="material-btn" (click)="addNewList()">
       <i class="fa fa-plus fa-fw" [ngClass]="{'collapse-on':collapse === 'on','collapse-off':collapse === 'off'}"></i>
     </button>
   </div>
+
   <div class="form-group" *ngFor="let item of todolist;let i = index">
     <span class="list-id">{{item.id}}. </span>
     <label class="list-text" [ngClass]="{'list-over':item.isOver,'list-text':!item.isOver}"

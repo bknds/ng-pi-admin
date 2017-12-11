@@ -28,6 +28,7 @@
     "font-awesome": "^4.7.0",
     "ngx-echarts": "^2.0.0",
     "normalize.css": "^7.0.0",
+    "roboto-fontface": "^0.8.0",
     "rxjs": "^5.4.2",
     "zone.js": "^0.8.14"
   },
