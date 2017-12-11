@@ -1,50 +1,52 @@
 @import './color';
-.material-btn {
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
+@mixin form {
+    display: block;
     text-align: center;
     outline: none;
-    font-size: 20px;
-    background: transparent;
     border: none;
+}
+
+.material-btn {
+    @include form;
     position: relative;
     right: 0;
     top: 5px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 20px;
+    background: transparent;
     color: rgba($gray, .7);
     &:after {
-        display: block;
+        @include form;
         content: '';
-        width: 35px;
-        height: 35px;
-        background: $mask;
-        border: none;
-        border-radius: 50%;
         position: absolute;
         top: 0;
-        @include transition(all .4s);
+        width: 35px;
+        height: 35px;
+        background: rgba($black, .15);
+        border-radius: 50%;
+        @include transition(all .2s);
         @include transform(scale(0));
     }
     &:hover {
         color: #333;
     }
     &:hover:after {
-        @include transition(all .4s);
+        @include transition(all .2s);
         @include transform(scale(1));
     }
 }
 
-.ro-btn {
-    display: inline-block;
+.cyclo-btn {
+    @include form;
     width: 40px;
     height: 40px;
     @include linear-gradient(to top right, #28bfb9, #9dffce);
     @include box-shadow( 0 2px 5px 0 rgba(0, 0, 0, 0.25));
     line-height: 40px;
-    text-align: center;
-    border: none;
     border-radius: 50%;
+    font-size: 20px;
     color: $white;
 }
 
