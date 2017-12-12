@@ -5,6 +5,7 @@ import { SharedModule } from '../../shared/shared.module';
 /* components */
 import { UiComponent } from './ui.component';
 import { ButtonsComponent } from './components/buttons/buttons.component';
+import { TabsComponent } from './components/tabs/tabs.component';
 
 @NgModule({
     imports: [
@@ -14,7 +15,8 @@ import { ButtonsComponent } from './components/buttons/buttons.component';
     ],
     declarations: [
         UiComponent,
-        ButtonsComponent
+        ButtonsComponent,
+        TabsComponent
     ]
 })
 export class UIModule { }

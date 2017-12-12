@@ -1,12 +1,12 @@
 export let MENU_ITEM = [
     {
         path: 'index',
-        title: 'Home',
+        title: '首页',
         icon: 'home'
     },
     {
         path: 'form',
-        title: 'Form',
+        title: '表单',
         icon: 'edit',
         children: [
             {
@@ -15,40 +15,44 @@ export let MENU_ITEM = [
             },
             {
                 path: 'trees',
-                title: 'Trees'
+                title: '树形图'
             }
         ]
     },
     {
         path: 'charts',
-        title: 'Charts',
+        title: '图表',
         icon: 'bar-chart-o',
         children: [
             {
                 path: 'default-charts',
-                title: 'default-charts'
+                title: '基础图表'
             }
         ]
     },
     {
         path: 'ui',
-        title: 'UI',
+        title: '样式',
         icon: 'heart',
         children: [
             {
                 path: 'buttons',
-                title: 'Buttons'
+                title: '按钮'
+            },
+            {
+                path: 'tabs',
+                title: '选项卡'
             }
         ]
     },
     {
         path: 'table',
-        title: 'Tables',
+        title: '表格',
         icon: 'table',
         children: [
             {
                 path: 'default-tables',
-                title: 'Default Tables'
+                title: '基础表格'
             }
         ]
     }

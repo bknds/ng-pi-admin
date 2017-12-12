@@ -4,7 +4,7 @@ $white:#ffffff;
 $black:#000000;
 $gray:#666;
 $mask:rgba($black, .1);
-$primary:#cb85fa;
+$primary:#2e4eff;
 $success:#28bfb9;
 $danger:#f9619a;
 $warning:#fda400;
@@ -14,23 +14,23 @@ $info:#0a91ec;
 }
 
 .bg-primary {
-    @include linear-gradient(to top right, #cb85fa, #0ae9ec);
+    @include linear-gradient(to top right, $primary, #0ae9ec);
 }
 
 .bg-success {
-    @include linear-gradient(to top right, #28bfb9, #9dffce);
+    @include linear-gradient(to top right, $success, #9dffce);
 }
 
 .bg-danger {
-    @include linear-gradient(to top right, #f9619a, #fbaa68);
+    @include linear-gradient(to top right, $danger, #fbaa68);
 }
 
 .bg-warning {
-    @include linear-gradient(to top right, #fda400, #fce16a);
+    @include linear-gradient(to top right, $warning, #fce16a);
 }
 
 .bg-info {
-    @include linear-gradient(to top right, #0a91ec, #0ae9ec);
+    @include linear-gradient(to top right, $info, #0ae9ec);
 }
 
 .border-default {
@@ -38,21 +38,21 @@ $info:#0a91ec;
 }
 
 .border-primary {
-    @include border-gradient(#cb85fa, #0ae9ec);
+    @include border-gradient($primary, #0ae9ec);
 }
 
 .border-success {
-    @include border-gradient(#28bfb9, #9dffce);
+    @include border-gradient($success, #9dffce);
 }
 
 .border-danger {
-    @include border-gradient(#f9619a, #fbaa68);
+    @include border-gradient($danger, #fbaa68);
 }
 
 .border-warning {
-    @include border-gradient(#fda400, #fce16a);
+    @include border-gradient($warning, #fce16a);
 }
 
 .border-info {
-    @include border-gradient(#0a91ec, #0ae9ec);
+    @include border-gradient($info, #0ae9ec);
 }

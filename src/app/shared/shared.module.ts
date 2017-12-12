@@ -5,6 +5,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CardComponent } from './components/card/card.component';
 import { TreeDiagramComponent } from './components/tree-diagram/tree-diagram.component';
 import { TodolistComponent } from './components/todolist/todolist.component';
+import { TabsComponent } from './components/tabs/tabs.component';
 
 @NgModule({
   imports: [
@@ -15,12 +16,14 @@ import { TodolistComponent } from './components/todolist/todolist.component';
   declarations: [
     CardComponent,
     TreeDiagramComponent,
-    TodolistComponent
+    TodolistComponent,
+    TabsComponent
   ],
   exports: [
     CardComponent,
     TreeDiagramComponent,
-    TodolistComponent
+    TodolistComponent,
+    TabsComponent
   ]
 })
 export class SharedModule {

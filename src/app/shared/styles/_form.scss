@@ -31,7 +31,8 @@
 
 input.form-control {
     border-radius: 0;
-    border: 1px solid $gray;
+    border:none;
+    border-bottom: 1px solid rgba($gray,.5);
 }
 
 .with-primary-addon:focus {
@@ -70,7 +71,6 @@ textarea.form-control {
 .input-group-addon {
     line-height: inherit;
     color: $gray;
-    @extend .bg-default;
 }
 
 .input-group-addon-primary,
@@ -101,7 +101,6 @@ textarea.form-control {
 .input-group-addon-info {
     background-color: $info;
 }
-
 
 /* checkbox */
 
