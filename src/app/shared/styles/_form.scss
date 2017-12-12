@@ -1,6 +1,5 @@
 @import './color';
 @import './mixin';
-
 .form-group {
     label {
         font-weight: normal;
@@ -114,19 +113,28 @@ textarea.form-control {
     display: inline-block;
     width: 14px;
     height: 14px;
-    border: 1px solid rgba($gray,.5);
+    border: 1px solid rgba($gray, .5);
+    border-radius: 2px;
     cursor: pointer;
     margin: 0;
     position: relative;
 }
 
-.checkbox:checked+.check-label:after {
+.check-label:after {
     display: block;
     content: '';
+    width: 0;
+    height: 0;
+    background-color: $gray;
+    border-radius: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include transition(all 0.2s);
+}
+
+.checkbox:checked+.check-label:after {
     width: 10px;
     height: 10px;
-    background-color: $gray;
-    position: absolute;
-    top: 1px;
-    left: 1px;
 }

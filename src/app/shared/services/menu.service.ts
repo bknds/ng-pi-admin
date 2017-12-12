@@ -1,27 +1,27 @@
 import { Injectable } from '@angular/core';
-import { MENU_INFO } from '../../pages/menu-info';
+import { MENU_ITEM } from '../../pages/menu-item';
 
 @Injectable()
 export class menuService {
 
   constructor() {
-    this.getNodePath(MENU_INFO);
+    this.getNodePath(MENU_ITEM);
   }
 
   private parent_node = null;
-  private node = null;
   private path_item = [];
+  private node = null;
 
   public queryParentNode(json: any, node_id: any) {
     for (let i = 0; i < json.length; i++) {
       if (this.node) {
         break;
       }
-      let obj = json[i];
+      const obj = json[i];
       if (!obj || !obj.path) {
         continue;
       }
-      if (obj.path == node_id) {
+      if (obj.path === node_id) {
         this.node = obj;
         break;
       } else {
@@ -45,10 +45,10 @@ export class menuService {
   public creatRouterLink(nodeId: any) {
     this.node = null;
     this.parent_node = null;
-    let obj = this.queryParentNode(MENU_INFO, nodeId);
-    if (obj.parent_node && obj.parent_node.path) {
-      this.path_item.unshift(obj.parent_node.path);
-      return this.creatRouterLink(obj.parent_node.path);
+    const menuObj = this.queryParentNode(MENU_ITEM, nodeId);
+    if (menuObj.parent_node && menuObj.parent_node.path) {
+      this.path_item.unshift(menuObj.parent_node.path);
+      return this.creatRouterLink(menuObj.parent_node.path);
     } else {
       return this.path_item;
     }
@@ -67,6 +67,6 @@ export class menuService {
   }
 
   public putSidebarJson() {
-    return MENU_INFO;
+    return MENU_ITEM;
   }
 }

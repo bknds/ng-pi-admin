@@ -3,7 +3,7 @@
     &>thead {
         &>tr {
             &>th {
-                border-bottom: 1px solid rgba($mask, .1);
+                border-bottom: 1px solid transparent;
                 text-align: center;
                 white-space: nowrap;
             }
@@ -12,7 +12,6 @@
     &>tbody {
         &>tr {
             &>td {
-                //border-top: 1px solid rgba($mask, .1);
                 border: 1px solid transparent;
                 text-align: center;
             }
