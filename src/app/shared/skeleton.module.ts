@@ -30,5 +30,5 @@ import { ContentTopComponent } from './components/content-top/content-top.compon
         ContentTopComponent
     ]
 })
-export class PageUseModule {
+export class SkeletonModule {
 }
