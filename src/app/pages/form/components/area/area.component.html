@@ -1,0 +1,12 @@
+<div class="card card-block">
+  <table class="table">
+    <tbody>
+      <tr *ngFor="let item of areaItem">
+        <td *ngFor="let area of item.item" [ngStyle]="{'background-color':area.background}">
+          {{area.name}}
+          <div class="mask"></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

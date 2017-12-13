@@ -16,6 +16,10 @@ export let MENU_ITEM = [
             {
                 path: 'trees',
                 title: '树形图'
+            },
+            {
+                path: 'area',
+                title: '区域图'
             }
         ]
     },
