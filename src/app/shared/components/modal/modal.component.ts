@@ -8,14 +8,15 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ModalComponent implements OnInit {
 
   @Input() cardTitle: any;
-  @Input() isToggle:boolean = false;
+  @Input() isToggle: boolean = false;
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
   close() {
     this.isToggle = false;
+
+    /* 未完成modal 第一次打开后 关闭无法再次打开 */
   }
 }
