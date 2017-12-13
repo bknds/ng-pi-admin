@@ -42,7 +42,7 @@
     @include form;
     width: 40px;
     height: 40px;
-    @include linear-gradient(to top right, #28bfb9, #9dffce);
+    @extend .bg-success;
     @include box-shadow( 0 2px 5px 0 rgba(0, 0, 0, 0.25));
     line-height: 40px;
     border-radius: 50%;
@@ -58,7 +58,7 @@
 }
 
 .btn {
-    padding: 5px;
+    padding: 5px 10px;
     border: none;
     border-radius: 2px;
     @include transition(all 0.2s);

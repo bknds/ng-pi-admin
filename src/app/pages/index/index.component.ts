@@ -11,4 +11,9 @@ export class IndexComponent implements OnInit {
   ngOnInit() {
   }
 
+  isToggle:boolean = false;
+
+  modalOpen() {
+    this.isToggle = true;
+  }
 }

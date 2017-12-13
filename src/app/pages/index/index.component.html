@@ -1,28 +1,37 @@
 <div class="row">
-  <div class="col-md-4 animated fadeInDown">
+  <div class="col-md-3 animated fadeInDown">
     <div class="card-primary block">
       <h2>New 5 Comments</h2>
       <i class="fa fa-comments fa-fw"></i>
     </div>
   </div>
-  <div class="col-md-4 animated fadeInDown">
+  <div class="col-md-3 animated fadeInDown">
     <div class="card-success block">
       <h2>New 15 Mails</h2>
       <i class="fa fa-envelope fa-fw"></i>
     </div>
   </div>
-  <div class="col-md-4 animated fadeInDown">
+  <div class="col-md-3 animated fadeInDown">
     <div class="card-danger block">
       <h2>New 2 GroupTips</h2>
       <i class="fa fa-group fa-fw"></i>
     </div>
   </div>
+  <div class="col-md-3 animated fadeInDown">
+    <div class="card-info block">
+      <h2>New 2 GroupTips</h2>
+      <i class="fa fa-group fa-fw"></i>
+    </div>
+  </div>
+
 </div>
 
 <div class="row">
   <div class="col-md-4 animated fadeInDown">
     <du-todolist></du-todolist>
   </div>
-  <div class="col-md-8 animated fadeInDown">
+  <div class="col-md-4 animated fadeInDown">
+    <button class="btn btn-sm btn-info" (click)="modalOpen()">打开modal</button>
+    <du-modal cardTitle="Modal Test" [isToggle]="isToggle"></du-modal>
   </div>
 </div>
