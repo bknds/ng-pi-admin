@@ -26,8 +26,8 @@
         @include transition(all 0.4s);
         &:hover {
             //background-color: $mask;
-            @include linear-gradient(to right, $primary, lighten($primary, 30%));
-            color: $white;
+            //@include linear-gradient(to right, $primary, lighten($primary, 30%));
+            color: $primary;
         }
         .placeholder {
             display: block;

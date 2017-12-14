@@ -2,7 +2,7 @@ import { trigger, state, style, transition, animate, keyframes } from '@angular/
 
 export const collapse = [
     trigger('collapse', [
-        state('off', style({ 'height': '0px' })),
+        state('off', style({ 'height': '0' })),
         state('on', style({ 'height': '*' })),
         transition('* => *', [animate('300ms')])
     ])
