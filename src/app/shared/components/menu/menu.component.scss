@@ -25,8 +25,9 @@
         overflow: hidden;
         @include transition(all 0.4s);
         &:hover {
-            background-color: $mask;
-            color: $primary;
+            //background-color: $mask;
+            @include linear-gradient(to right, $primary, lighten($primary, 30%));
+            color: $white;
         }
         .placeholder {
             display: block;
@@ -46,8 +47,10 @@
         }
     }
     .menu-link.active {
-        color: $primary;
-        border-right: 4px solid $primary;
+        //color: $primary;
+        //border-right: 4px solid $primary;
+        @include linear-gradient(to right, $primary, lighten($primary, 30%));
+        color: $white;
     }
 }
 

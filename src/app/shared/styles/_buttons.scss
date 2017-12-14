@@ -42,7 +42,7 @@
     @include form;
     width: 40px;
     height: 40px;
-    @extend .bg-success;
+    @include linear-gradient(to right, $primary, lighten($primary, 30%));
     @include box-shadow( 0 2px 5px 0 rgba(0, 0, 0, 0.25));
     line-height: 40px;
     border-radius: 50%;
@@ -121,11 +121,7 @@
 .btn-group {
     .btn-primary,
     .btn-primary:active {
-        @include linear-gradient(to bottom, #cb85fa, #0ae9ec);
-    }
-    .btn-primary,
-    .btn-primary:active {
-        @include linear-gradient(to bottom, #cb85fa, #0ae9ec);
+        @include linear-gradient(to bottom, $primary, lighten($primary, 30%));
     }
     .btn-success,
     .btn-success:active {

@@ -19,7 +19,7 @@
     justify-content: space-around;
     @include transition(all 0.4s);
     &:hover {
-        @include linear-gradient(to right, #28bfb9, #9dffce);
+        @include linear-gradient(to right, $primary, lighten($primary, 30%));
         color: #fff;
         .edit-input {
             width: 65%;

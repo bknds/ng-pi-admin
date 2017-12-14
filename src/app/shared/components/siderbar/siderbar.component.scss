@@ -20,7 +20,8 @@
     height: 150px;
     overflow: hidden;
     margin: 15px auto;
-    @include box-shadow( 5px 5px 20px rgba($black, .2));
+    border: 3px solid $success;
+    @include box-shadow( 5px 5px 20px rgba($success, .2));
     border-radius: 50%;
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
