@@ -11,12 +11,8 @@
 }
 
 .form-group {
-    line-height: auto;
-    height: 40px;
-    line-height: 40px;
     margin: 0;
     display: flex;
-    justify-content: space-around;
     @include transition(all 0.4s);
     &:hover {
         @include linear-gradient(to right, $primary, lighten($primary, 30%));
@@ -35,15 +31,12 @@
     }
 }
 
-.list-id {
-    font-size: 14px;
-    font-weight: 700;
-}
-
 .list-text,
 .list-over {
     display: inline-block;
-    width: 65%;
+    flex: 1;
+    height: 40px;
+    line-height: 40px;
     text-align: left;
     font-size: 12px;
 }
@@ -60,14 +53,13 @@
 }
 
 .over-btn {
-    width: 20px;
+    padding: 0;
+    width: 40px;
     height: 40px;
     line-height: 40px;
-    line-height: 20px;
     text-align: center;
-    padding: 0;
     border: none;
-    background: transparent;
     outline: none;
-    font-size: 20px;
+    background: transparent;
+    font-size: 15px;
 }

@@ -15,8 +15,7 @@ export class TodolistComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
   edit(index) {
     this.todolist[index].isEdit = true;
