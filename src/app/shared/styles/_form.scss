@@ -31,28 +31,33 @@
 
 input.form-control {
     border-radius: 0;
-    border:none;
-    border-bottom: 1px solid rgba($gray,.5);
+    border: none;
+    border-bottom: 1px solid rgba($gray, .5);
 }
 
 .with-primary-addon:focus {
-    @extend .border-primary;
+    //@extend .border-primary;
+    border-bottom: 1px solid $primary;
 }
 
 .with-success-addon:focus {
-    @extend .border-success;
+    //@extend .border-success;
+    border-bottom: 1px solid $success;
 }
 
 .with-warning-addon:focus {
-    @extend .border-warning;
+    //@extend .border-warning;
+    border-bottom: 1px solid $warning;
 }
 
 .with-danger-addon:focus {
-    @extend .border-danger;
+    //@extend .border-danger;
+    border-bottom: 1px solid $danger;
 }
 
 .with-info-addon:focus {
-    @extend .border-info;
+    //@extend .border-info;
+    border-bottom: 1px solid $info;
 }
 
 input.form-control[disabled] {
@@ -102,30 +107,36 @@ textarea.form-control {
     background-color: $info;
 }
 
-/* checkbox */
 
-.checkbox {
+/* 
+
+checkbox && radio 
+
+*/
+
+.checkbox,
+.radio {
     display: none;
 }
 
-.check-label {
+.check-label,
+.radio-label {
     display: inline-block;
     width: 14px;
     height: 14px;
     border: 1px solid rgba($gray, .5);
-    border-radius: 2px;
     cursor: pointer;
     margin: 0;
     position: relative;
 }
 
-.check-label:after {
+.check-label:after,
+.radio-label:after {
     display: block;
     content: '';
     width: 0;
     height: 0;
     background-color: $gray;
-    border-radius: 2px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -133,7 +144,18 @@ textarea.form-control {
     @include transition(all 0.2s);
 }
 
-.checkbox:checked+.check-label:after {
+.checkbox:checked+.check-label:after,
+.radio:checked+.radio-label:after {
     width: 10px;
     height: 10px;
+}
+
+.check-label,
+.check-label:after {
+    border-radius: 1px;
+}
+
+.radio-label,
+.radio-label:after {
+    border-radius: 50%;
 }
