@@ -42,9 +42,22 @@
 .email {
     min-width: 50px;
     text-align: center;
+    position: relative;
     &:hover {
         cursor: pointer;
         color: $primary;
+    }
+    .badge {
+        padding:0;
+        position: absolute;
+        top: 13.5px;
+        right: 13.5px;
+        display: block;
+        width: 10px;
+        height: 10px;
+        background: $danger;
+        border: 2px solid $white;
+        border-radius: 50%;
     }
 }
 
