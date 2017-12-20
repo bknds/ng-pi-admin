@@ -1,10 +1,10 @@
 @import './mixin';
-$body-bg:#e7e7e7;
-$white:#ffffff;
-$black:#000000;
+$body-bg:#eee;
+$white:#fff;
+$black:#000;
 $gray:#666;
 $mask:rgba($black, .1);
-$primary:#7c76ff;
+$primary:#c887fd;
 $success:#29bdb6;
 $danger:#f9619a;
 $warning:#fda400;
@@ -14,7 +14,7 @@ $info:#2e70ff;
 }
 
 .bg-primary {
-    @include linear-gradient(to top right, $primary, #cbaafd);
+    @include linear-gradient(to top right, $primary, #11e9e2);
 }
 
 .bg-success {

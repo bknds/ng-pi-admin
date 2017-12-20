@@ -1,36 +1,36 @@
 export let MENU_ITEM = [
     {
         path: 'index',
-        title: 'HOME',
+        title: 'Home',
         icon: 'home'
     },
     {
         path: 'form',
-        title: 'FORM',
+        title: 'Form',
         icon: 'edit',
         children: [
             {
                 path: 'inputs',
-                title: 'INPUTS'
+                title: 'Inputs'
             },
             {
                 path: 'trees',
-                title: 'TREES'
+                title: 'Trees'
             },
             {
                 path: 'area',
-                title: 'AREA'
+                title: 'Area'
             }
         ]
     },
     {
         path: 'charts',
-        title: 'CHARTS',
+        title: 'Charts',
         icon: 'bar-chart-o',
         children: [
             {
                 path: 'default-charts',
-                title: 'DEFAULT'
+                title: 'Default'
             }
         ]
     },
@@ -41,17 +41,17 @@ export let MENU_ITEM = [
         children: [
             {
                 path: 'buttons',
-                title: 'BUTTONS'
+                title: 'Buttons'
             },
             {
                 path: 'tabs',
-                title: 'TABS'
+                title: 'Tabs'
             }
         ]
     },
     {
         path: 'table',
-        title: 'TABLE',
+        title: 'Tables',
         icon: 'table',
         children: [
             {

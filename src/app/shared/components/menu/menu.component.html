@@ -4,13 +4,13 @@
     <a href="javascript:;" (click)="onChooseMenuItem(item)" [routerLink]="[item.routerLink.join('/')]"
     *ngIf="item.routerLink" routerLinkActive="active" class="menu-link">
       <div class="placeholder"><i class="fa fa-{{item.icon}} fa-fw"></i></div>
-      {{item.title}}
+      <span class="text">{{item.title}}</span>
     </a>
 
     <a href="javascript:;" class="menu-link" *ngIf="!item.routerLink" (click)="isToggleOn(item)">
       <div class="placeholder"><i class="fa fa-{{item.icon}} fa-fw" *ngIf="item.icon"></i></div>
-      {{item.title}}
-      <span class="fa fa-angle-right fa-fw"></span>
+      <span class="text">{{item.title}}</span>
+      <span class="fa fa-angle-right fa-fw direction"></span>
     </a>
 
     <div class="item-children" [@collapse]="item.toggle">

@@ -4,8 +4,7 @@
     width: 220px;
     height: 100%;
     background: rgba($white, .8);
-    overflow-x: hidden;
-    //@include box-shadow( 1px 5px 5px rgba($black, .3));
+    overflow-x: hidden; //@include box-shadow( 1px 5px 5px rgba($black, .3));
     @include transition(all .4s);
     .avatar-wrapper {
         width: 100%;
@@ -61,24 +60,6 @@
         background: $danger;
         border: 2px solid $white;
         border-radius: 50%;
-    }
-}
-
-.ring {
-    .badge {
-        background: $danger;
-    }
-}
-
-.comments {
-    .badge {
-        background: $success;
-    }
-}
-
-.email {
-    .badge {
-        background: $warning;
     }
 }
 

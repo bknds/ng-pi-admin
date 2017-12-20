@@ -11,9 +11,9 @@
     position: relative;
     right: 0;
     top: 5px;
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
     font-size: 20px;
     background: transparent;
     color: rgba($gray, .7);
@@ -22,8 +22,8 @@
         content: '';
         position: absolute;
         top: 0;
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
         background: rgba($black, .15);
         border-radius: 50%;
         @include transition(all .2s);
@@ -42,8 +42,8 @@
     @include form;
     width: 40px;
     height: 40px;
-    @include linear-gradient(to right, $primary, lighten($primary, 30%));
-    @include box-shadow( 0 2px 5px 0 rgba(0, 0, 0, 0.25));
+    background: $primary; //@include linear-gradient(to right, $primary, lighten($primary, 30%));
+    //@include box-shadow( 0 2px 5px 0 rgba(0, 0, 0, 0.25));
     line-height: 40px;
     border-radius: 50%;
     font-size: 20px;
@@ -121,23 +121,23 @@
 .btn-group {
     .btn-primary,
     .btn-primary:active {
-        @include linear-gradient(to bottom, $primary, lighten($primary, 30%));
+        @include linear-gradient(to bottom, $primary, #11e9e2);
     }
     .btn-success,
     .btn-success:active {
-        @include linear-gradient(to bottom, #28bfb9, #9dffce);
+        @include linear-gradient(to bottom, $success, #9dffce);
     }
     .btn-danger,
     .btn-danger:active {
-        @include linear-gradient(to bottom, #f9619a, #fbaa68);
+        @include linear-gradient(to bottom, $danger, #fbaa68);
     }
     .btn-warning,
     .btn-warning:active {
-        @include linear-gradient(to bottom, #fda400, #fce16a);
+        @include linear-gradient(to bottom, $warning, #fce16a);
     }
     .btn-info,
     .btn-info:active {
-        @include linear-gradient(to bottom, #0a91ec, #0ae9ec);
+        @include linear-gradient(to bottom, $info, #0ae9ec);
     }
 }
 
