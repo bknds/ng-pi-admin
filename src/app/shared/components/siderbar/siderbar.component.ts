@@ -24,7 +24,7 @@ export class SiderbarComponent implements OnInit {
     this._isViewAll();
     this.tip.ring = true;
     this.tip.comments = true;
-    this.tip.email = false;
+    this.tip.email = true;
   }
 
   _isViewAll() {

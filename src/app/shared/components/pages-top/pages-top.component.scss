@@ -3,7 +3,7 @@
 .pages-top {
     width: 100%;
     height: 70px;
-    background: $white;
+    background: transparent;
     @include box-shadow( 5px 2px 5px rgba($black, .3));
 }
 
