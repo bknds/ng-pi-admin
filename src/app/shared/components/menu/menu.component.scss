@@ -49,7 +49,7 @@
     .menu-link.active {
         //color: $primary;
         //border-right: 4px solid $primary;
-        @include linear-gradient(to right, $primary, lighten($primary, 30%));
+        @include linear-gradient(to right, $primary, #cbaafd);
         color: $white;
     }
 }

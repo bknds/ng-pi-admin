@@ -4,8 +4,8 @@ $white:#ffffff;
 $black:#000000;
 $gray:#666;
 $mask:rgba($black, .1);
-$primary:#28bfb9;
-$success:#28bfb9;
+$primary:#7c76ff;
+$success:#29bdb6;
 $danger:#f9619a;
 $warning:#fda400;
 $info:#2e70ff;
@@ -14,11 +14,11 @@ $info:#2e70ff;
 }
 
 .bg-primary {
-    @include linear-gradient(to top right, $primary, #0aece1);
+    @include linear-gradient(to top right, $primary, #cbaafd);
 }
 
 .bg-success {
-    @include linear-gradient(to top right, $success, #9dffce);
+    @include linear-gradient(to top right, $success, #42e697);
 }
 
 .bg-danger {
@@ -38,11 +38,11 @@ $info:#2e70ff;
 }
 
 .border-primary {
-    @include border-gradient($primary, #0ae9ec);
+    @include border-gradient($primary, #cbaafd);
 }
 
 .border-success {
-    @include border-gradient($success, #9dffce);
+    @include border-gradient($success, #42e697);
 }
 
 .border-danger {
