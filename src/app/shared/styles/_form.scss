@@ -33,6 +33,10 @@ input.form-control {
     border-radius: 0;
     border: none;
     border-bottom: 1px solid rgba($gray, .5);
+    @include transition(all .6s);
+    &:focus {
+        border-bottom: 1px solid $primary;
+    }
 }
 
 .with-primary-addon:focus {
@@ -66,10 +70,12 @@ input.form-control[disabled] {
 
 textarea.form-control {
     font-size: 14px;
+    max-width:100%;
     height: 96px;
-    border-radius: 0;
+    border-radius: 5px;
+    @include transition(border .6s);
     &:focus {
-        @extend .border-primary;
+        border: 1px solid $primary;
     }
 }
 

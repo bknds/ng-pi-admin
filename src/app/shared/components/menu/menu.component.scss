@@ -2,7 +2,7 @@
 @import '../../styles/mixin';
 .menu-wrapper {
     padding: 0;
-    width: 100%;
+    width: 220px;
     height: auto;
 }
 
@@ -16,13 +16,14 @@
     .menu-link {
         display: flex;
         flex-direction: row;
+        flex-wrap: nowrap;
         justify-content: space-around;
         width: 100%;
         height: 40px;
         outline: none;
         background: transparent;
         border-left: 3px solid transparent;
-        color: $gray;
+        color: $fonts-color;
         font-size: 12px;
         text-decoration: none;
         overflow: hidden;
@@ -33,14 +34,13 @@
         .placeholder,
         .text,
         .direction {
-            display: block;
-            border: 1px solid #000;
+            display: block; //border: 1px solid #000;
             height: 40px;
             line-height: 40px;
             font-size: 12px;
         }
         .placeholder {
-            width: 40px;
+            width: 47px;
             text-align: center;
         }
         .text {

@@ -3,20 +3,20 @@
     <div class="avatar">
       <img src="assets/images/avatar.png" alt="avatar">
     </div>
-    <div class="logo-system"></div>
-    <div class="tips-wrapper">
-      <div class="ring">
-        <span class="fa fa-bell fa-fw"></span>
-        <span class="badge" *ngIf="tip.ring"></span>
-      </div>
-      <div class="comments">
-        <span class="fa fa-comments fa-fw"></span>
-        <span class="badge" *ngIf="tip.comments"></span>
-      </div>
-      <div class="email">
-        <span class="fa fa-envelope fa-fw"></span>
-        <span class="badge" *ngIf="tip.email"></span>
-      </div>
+    <div class="logo-system-name">PIAdmin</div>
+  </div>
+  <div class="tips-wrapper row">
+    <div class="ring col-sm-4">
+      <span class="fa fa-bell fa-fw"></span>
+      <span class="badge" *ngIf="tip.ring"></span>
+    </div>
+    <div class="comments col-sm-4">
+      <span class="fa fa-comments fa-fw"></span>
+      <span class="badge" *ngIf="tip.comments"></span>
+    </div>
+    <div class="email col-sm-4">
+      <span class="fa fa-envelope fa-fw"></span>
+      <span class="badge" *ngIf="tip.email"></span>
     </div>
   </div>
   <du-menu [menuInfo]="menuInfo" [isViewAll]="isViewAll"></du-menu>

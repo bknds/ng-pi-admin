@@ -6,20 +6,24 @@
     background: rgba($white, .8);
     overflow-x: hidden; //@include box-shadow( 1px 5px 5px rgba($black, .3));
     @include transition(all .4s);
-    .avatar-wrapper {
-        width: 100%;
-        height: 110px;
-        border: 1px solid transparent;
-        @include transition(all .4s);
-    }
+}
+
+.avatar-wrapper {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 220px;
+    height: 60px;
+    border: 1px solid transparent;
+    @include transition(all .4s);
 }
 
 .avatar {
     width: 50px;
     height: 50px;
     overflow: hidden;
-    float: left;
-    margin: 15px 5px 0 5px; //@include box-shadow( 5px 5px 20px rgba($success, .2));
     border-radius: 5px;
     @include transition(all .4s);
     img {
@@ -28,32 +32,41 @@
     }
 }
 
-.tips-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    height: auto;
+.logo-system-name {
+    display: block;
+    flex: 1;
+    height: 50px;
     line-height: 50px;
-    color: $gray;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: .1em;
+    @include transition(all .4s);
+}
+
+.tips-wrapper {
+    margin: 0;
+    width: 100%;
+    color: $fonts-color;
 }
 
 .ring,
 .comments,
 .email {
     min-width: 50px;
+    height: 50px;
+    line-height: 50px;
     text-align: center;
     position: relative;
     &:hover {
         cursor: pointer;
         color: $primary;
     }
-    .badge {
+    span.badge {
         padding: 0;
         position: absolute;
         top: 14px;
-        right: 14px;
+        right: 25px;
         display: block;
         width: 11px;
         height: 11px;
@@ -65,11 +78,15 @@
 
 .side-collapsed {
     width: 50px;
+    .tips-wrapper {
+        height: 160px;
+    }
     .avatar-wrapper {
-        height: 210px;
+        padding: 10px 4px;
     }
     .avatar {
         width: 40px;
         height: 40px;
+        border-radius: 50%;
     }
 }
