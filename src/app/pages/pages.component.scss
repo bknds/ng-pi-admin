@@ -1,4 +1,4 @@
-@import '../shared/styles/conf';
+@import '../shared/theme/conf';
 .pages-wrapper {
     position: absolute;
     width: 100%;
@@ -16,8 +16,7 @@
             background: transparent;
             padding: 15px;
             overflow-x: hidden;
-            border-top: 1px solid $border-color;
-            //border-left: 1px solid $border-color;
+            border-top: 1px solid $border-color; //border-left: 1px solid $border-color;
         }
     }
 }

@@ -13,9 +13,6 @@ export class DefaultChartsComponent implements OnInit {
   ngOnInit() {
   }
   chartOption = {
-    title: {
-      text: '堆叠区域图'
-    },
     tooltip: {
       trigger: 'axis'
     },
@@ -122,9 +119,6 @@ export class DefaultChartsComponent implements OnInit {
   }
 
   linkoption = {
-    title: {
-      text: '懒猫今日访问量'
-    },
     color: ['#cb85fa'],
     //气泡提示框，常用于展现更详细的数据
     tooltip: {

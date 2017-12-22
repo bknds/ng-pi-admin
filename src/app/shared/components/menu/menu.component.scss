@@ -1,4 +1,4 @@
-@import '../../styles/conf';
+@import '../../theme/conf';
 .menu-wrapper {
     padding: 0;
     width: 220px;
@@ -33,8 +33,7 @@
         .placeholder,
         .text,
         .direction {
-            display: block;
-            //border: 1px solid #000;
+            display: block; //border: 1px solid #000;
             height: 40px;
             line-height: 40px;
             font-size: 12px;
