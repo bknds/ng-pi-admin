@@ -1,3 +1,4 @@
+
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
@@ -263,7 +264,7 @@
       "axisLine": {
         "show": true,
         "lineStyle": {
-          "color": "#aaaaaa"
+          "color": "#877a7a"
         }
       },
       "axisTick": {
@@ -279,10 +280,10 @@
         }
       },
       "splitLine": {
-        "show": true,
+        "show": false,
         "lineStyle": {
           "color": [
-            "#e6e6e6"
+            "#e8e8e8"
           ]
         }
       },
@@ -300,7 +301,7 @@
       "axisLine": {
         "show": true,
         "lineStyle": {
-          "color": "#aaaaaa"
+          "color": "#877a7a"
         }
       },
       "axisTick": {
@@ -316,10 +317,10 @@
         }
       },
       "splitLine": {
-        "show": true,
+        "show": false,
         "lineStyle": {
           "color": [
-            "#e6e6e6"
+            "#e8e8e8"
           ]
         }
       },
@@ -337,7 +338,7 @@
       "axisLine": {
         "show": true,
         "lineStyle": {
-          "color": "#aaaaaa"
+          "color": "#877a7a"
         }
       },
       "axisTick": {
@@ -353,10 +354,10 @@
         }
       },
       "splitLine": {
-        "show": true,
+        "show": false,
         "lineStyle": {
           "color": [
-            "#e6e6e6"
+            "#e8e8e8"
           ]
         }
       },
@@ -374,7 +375,7 @@
       "axisLine": {
         "show": true,
         "lineStyle": {
-          "color": "#aaaaaa"
+          "color": "#877a7a"
         }
       },
       "axisTick": {
@@ -390,10 +391,10 @@
         }
       },
       "splitLine": {
-        "show": true,
+        "show": false,
         "lineStyle": {
           "color": [
-            "#e6e6e6"
+            "#e8e8e8"
           ]
         }
       },
