@@ -1,5 +1,4 @@
-@import '../../styles/color';
-@import '../../styles/mixin';
+@import '../../styles/conf';
 .edit-input {
     padding: 0 2%;
     width: 65%;
@@ -15,7 +14,7 @@
     display: flex;
     @include transition(all 0.4s);
     &:hover {
-        @include linear-gradient(to right, $primary, lighten($primary, 30%));
+        @include linear-gradient(to right, $primary, rgba($primary,.1));
         color: #fff;
         .edit-input {
             width: 65%;

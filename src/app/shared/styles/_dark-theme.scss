@@ -1,18 +1,18 @@
 @import './mixin';
-$body-bg:#eee;
-$card-bg:#ffffff;
+$body-bg:#212b34;
+$card-bg:#212b34;
 $white:#ffffff;
 $black:#000000;
-$gray:#666666;
-$border-color:#e0e0e0;
-$fonts-color:#555555;
+$gray:#cccccc;
 $mask:rgba($black, .1);
-$primary:#bc6bff;
-$primary-end:#11e9e2;
-$success:#29bdb6;
-$danger:#f9619a;
-$warning:#fda400;
-$info:#2e70ff;
+$border-color:rgba($black, .1);
+$fonts-color:#ffffff;
+$primary:#f65d57;
+$primary-end:#ffba4a;
+$success:#00b144;
+$danger:#ff4187;
+$warning:#fdcf00;
+$info:#1e65ff;
 .bg-default {
     background: $body-bg;
 }
@@ -34,5 +34,5 @@ $info:#2e70ff;
 }
 
 .bg-info {
-    @include linear-gradient(to top right, $info, #0ae9ec);
+    @include linear-gradient(to top right, $info, #04f7fb);
 }

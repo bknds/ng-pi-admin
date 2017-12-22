@@ -1,10 +1,8 @@
-@import '../../styles/color';
-@import '../../styles/mixin';
+@import '../../styles/conf';
 .pages-top {
     width: 100%;
     height: 70px;
-    background: $white;
-    //@include box-shadow( 5px 2px 5px rgba($black, .3));
+    background: transparent; //@include box-shadow( 5px 2px 5px rgba($black, .3));
 }
 
 .collapse-menu {
@@ -13,6 +11,7 @@
     color: $gray;
     position: relative;
     top: 22px;
+    left: 22px;
     font-size: 20px;
     cursor: pointer;
     @include transition(all 0.4s);
