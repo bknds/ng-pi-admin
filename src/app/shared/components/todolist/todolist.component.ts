@@ -8,12 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class TodolistComponent implements OnInit {
 
   todolist: Array<any> = [
-    { text: 'This is first need todo thing!', isOver: false, isEdit: false },
-    { text: 'This is first need todo thing!', isOver: false, isEdit: false },
-    { text: 'This is first need todo thing!', isOver: false, isEdit: false },
+    { text: 'This is first need todo thing!', isOver: true, isEdit: false },
+    { text: 'This is first need todo thing!', isOver: true, isEdit: false },
+    { text: 'This is first need todo thing!', isOver: true, isEdit: false },
     { text: 'This is first need todo thing!', isOver: false, isEdit: false },
     { text: 'This is first need todo thing!', isOver: false, isEdit: false },
     { text: 'This is second need todo thing!', isOver: false, isEdit: false },
+    { text: 'This is third need todo thing!', isOver: false, isEdit: false },
     { text: 'This is third need todo thing!', isOver: false, isEdit: false },
     { text: 'This is third need todo thing!', isOver: false, isEdit: false },
   ];
