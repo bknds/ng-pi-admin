@@ -2,7 +2,7 @@
 .pages-sider {
     width: 220px;
     height: 100%;
-    background: transparent;
+    background: $siderbar-bg;
     overflow-x: hidden;
     @include box-shadow( 1px 3px 5px rgba($black, .3));
     @include transition(all .4s);

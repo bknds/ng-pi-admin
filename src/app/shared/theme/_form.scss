@@ -1,8 +1,16 @@
+//按下时active
+//按下松开focus
 .form-group {
     label {
         font-weight: normal;
         font-size: 14px;
     }
+}
+
+.help-block {
+    color: darken($fonts-color,2%);
+    vertical-align: sub;
+    font-size: 12px;
 }
 
 .form-control {
@@ -30,7 +38,7 @@
 input.form-control {
     border-radius: 0;
     border: none;
-    border-bottom: 1px solid darken($gray, 40%);
+    border-bottom: 1px solid darken($border-color, 4%);
     @include transition(all .6s);
     &:focus {
         border-bottom: 1px solid $primary;
@@ -70,11 +78,57 @@ textarea.form-control {
     font-size: 14px;
     max-width: 100%;
     height: 96px;
-    border: 1px solid $border-color;
+    border: 1px solid darken($border-color, 4%);
     border-radius: 5px;
     @include transition(border .6s);
     &:focus {
         border: 1px solid $primary;
+    }
+}
+
+select.form-control {
+    padding-left: 8px;
+    border-radius: 0;
+    border: 1px solid darken($border-color, 4%);
+    &:focus {
+        border: 1px solid $primary;
+    }
+}
+
+select.form-control:not([multiple]) option,
+select.form-control[multiple] option {
+    background: $body-bg;
+    color: $fonts-color;
+    border: none;
+}
+
+input.with-primary-addon {
+    &:focus {
+        border-bottom: 1px solid $primary;
+    }
+}
+
+input.with-success-addon {
+    &:focus {
+        border-bottom: 1px solid $success;
+    }
+}
+
+input.with-warning-addon {
+    &:focus {
+        border-bottom: 1px solid $warning;
+    }
+}
+
+input.with-danger-addon {
+    &:focus {
+        border-bottom: 1px solid $danger;
+    }
+}
+
+input.with-info-addon {
+    &:focus {
+        border-bottom: 1px solid $info;
     }
 }
 
@@ -88,28 +142,28 @@ textarea.form-control {
 .input-group-addon-warning,
 .input-group-addon-danger,
 .input-group-addon-info {
-    color: $white;
-    border: $gray;
+    color: $fonts-color;
+    border: 0;
 }
 
 .input-group-addon-primary {
-    background-color: $primary;
+    background: $primary;
 }
 
 .input-group-addon-success {
-    background-color: $success;
+    background: $success;
 }
 
 .input-group-addon-warning {
-    background-color: $warning;
+    background: $warning;
 }
 
 .input-group-addon-danger {
-    background-color: $danger;
+    background: $danger;
 }
 
 .input-group-addon-info {
-    background-color: $info;
+    background: $info;
 }
 
 
