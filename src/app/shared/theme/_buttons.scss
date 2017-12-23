@@ -14,7 +14,7 @@
     height: 30px;
     line-height: 30px;
     text-align: center;
-    font-size: 20px;
+    font-size: $lg-text;
     background: transparent;
     color: rgba($gray, .7);
     &:after {
@@ -46,7 +46,7 @@
     //@include box-shadow( 0 2px 5px 0 rgba(0, 0, 0, 0.25));
     line-height: 40px;
     border-radius: 50%;
-    font-size: 20px;
+    font-size: $lg-text;
     color: $white;
 }
 
@@ -72,7 +72,7 @@
     &:active:focus,
     &:focus {
         @extend .bg-default;
-        color: darken($gray,5%);
+        color: darken($gray, 5%);
     }
 }
 
@@ -117,11 +117,11 @@
 }
 
 .btn-mm {
-    font-size: 13px;
+    font-size: $sm-text;
 }
 
 .btn-xm {
-    font-size: 15px;
+    font-size: $default-text;
 }
 
 .btn-group {
@@ -154,19 +154,19 @@
 .btn-group-xs>.btn,
 .btn-xs {
     padding: 2px 5px;
-    font-size: 12px;
+    font-size: $sm-text;
     line-height: 1.5;
 }
 
 .btn-group-sm>.btn,
 .btn-sm {
-    font-size: 12px;
+    font-size: $sm-text;
     line-height: 1.5;
 }
 
 .btn-group-lg>.btn,
 .btn-lg {
-    font-size: 18px;
+    font-size: $default-text;
     line-height: 1.3333333;
 }
 
