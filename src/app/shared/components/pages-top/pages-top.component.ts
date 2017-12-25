@@ -9,8 +9,6 @@ import { GlobalService } from '../../services/global.service';
 })
 
 export class PagesTopComponent implements OnInit {
-  @Input() routerTitle: any;
-
   isViewAll: boolean = true;
 
   constructor(private _globalService: GlobalService) { }
@@ -23,7 +21,6 @@ export class PagesTopComponent implements OnInit {
     }, error => {
       console.log('Error: ' + error);
     });
-
     this._globalService._isViewAllState(!this.isViewAll);
   }
 }

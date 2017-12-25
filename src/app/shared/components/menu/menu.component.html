@@ -1,7 +1,7 @@
 <ul class="menu-wrapper">
   <li *ngFor="let item of menuInfo;let i = index" class="menu-item" [ngClass]="{'item-toggle-on':item.toggle === 'on','item-toggle-off':!isViewAll}">
 
-    <a href="javascript:;" (click)="onChooseMenuItem(item)" [routerLink]="[item.routerLink.join('/')]"
+    <a href="javascript:;" [routerLink]="[item.routerLink.join('/')]"
     *ngIf="item.routerLink" routerLinkActive="active" class="menu-link">
       <div class="placeholder"><i class="fa fa-{{item.icon}} fa-fw"></i></div>
       <span class="text">{{item.title}}</span>

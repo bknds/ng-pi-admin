@@ -16,22 +16,13 @@ export class MenuComponent {
 
   @Input() isViewAll;
 
-  constructor(public _globalService: GlobalService,
-    private router: Router) {
+/*   constructor(private router: Router) {
     this.router.events.subscribe((event) => {
-      //console.log(event);
     });
-  }
+  } */
 
   isToggleOn(item) {
     item.toggle === 'on' ? item.toggle = 'off' : item.toggle = 'on';
   }
 
-  onChooseMenuItem(item) {
-    this._globalService.transfer(item);
-  }
-
-  queryMenuItem(path) {
-
-  }
 }

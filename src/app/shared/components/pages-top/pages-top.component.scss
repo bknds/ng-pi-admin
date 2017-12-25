@@ -1,5 +1,9 @@
 @import '../../theme/conf';
 .pages-top {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
     width: 100%;
     height: 70px;
     background: transparent; //@include box-shadow( 5px 2px 5px rgba($black, .3));
@@ -20,10 +24,6 @@
     }
 }
 
-.router-title {
-    display: none;
-}
-
 .fade-out {
     @include transition(scale .5s);
     @include transform(scale(0));
@@ -34,4 +34,32 @@
 .fade-in {
     @include transition(all .5s);
     @include transform(scale(1));
+}
+
+.search-wrapper {
+    margin: 15px;
+    .search-input {
+        width: 240px;
+        height: 40px;
+        background: transparent;
+        border: 1px solid $border-color;
+        border-radius: 40px;
+        outline: none;
+        @include box-shadow( 1px 2px 5px rgba($black, .2) inset);
+        color: $fonts-color;
+        font-size: $sm-text;
+        text-indent: 1em;
+    }
+    .search-btn {
+        width: 40px;
+        height: 40px;
+        background: $primary;
+        border: 0;
+        border-radius: 50%;
+        outline: none;
+        position: relative;
+        top: 2px;
+        left: -42px;
+        color: $body-bg;
+    }
 }

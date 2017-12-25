@@ -3,5 +3,12 @@
     <i class="fa fa-navicon fa-fw" [ngClass]="{'fade-in':isViewAll,'fade-out':!isViewAll}"></i>
     <i class="fa fa-chevron-right fa-fw" [ngClass]="{'fade-in':!isViewAll,'fade-out':isViewAll}"></i>
   </div>
-  <h1 class="router-title">{{routerTitle}}</h1>
+  <div class="search-wrapper">
+    <div class="input-group">
+      <input type="text" class="search-input" placeholder="Search · · ·">
+      <button class="search-btn">
+        <i class="fa fa-search fa-fw"></i>
+      </button>
+    </div>
+  </div>
 </div>
