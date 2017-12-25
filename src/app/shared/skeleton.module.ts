@@ -6,7 +6,7 @@ import { GlobalService } from './services/global.service';
 
 import { MenuComponent } from './components/menu/menu.component';
 
-import { SiderbarComponent } from './components/siderbar/siderbar.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { PagesTopComponent } from './components/pages-top/pages-top.component';
 import { ContentTopComponent } from './components/content-top/content-top.component';
 
@@ -20,12 +20,12 @@ import { ContentTopComponent } from './components/content-top/content-top.compon
     ],
     declarations: [
         MenuComponent,
-        SiderbarComponent,
+        SidebarComponent,
         PagesTopComponent,
         ContentTopComponent
     ],
     exports: [
-        SiderbarComponent,
+        SidebarComponent,
         PagesTopComponent,
         ContentTopComponent
     ]

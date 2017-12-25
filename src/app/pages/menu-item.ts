@@ -16,10 +16,6 @@ export let MENU_ITEM = [
             {
                 path: 'trees',
                 title: 'Trees'
-            },
-            {
-                path: 'area',
-                title: 'Area'
             }
         ]
     },

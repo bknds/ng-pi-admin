@@ -3,13 +3,13 @@ import { menuService } from "../../services/menu.service";
 import { GlobalService } from '../../services/global.service';
 
 @Component({
-  selector: 'du-siderbar',
-  templateUrl: './siderbar.component.html',
-  styleUrls: ['./siderbar.component.scss'],
+  selector: 'du-sidebar',
+  templateUrl: './sidebar.component.html',
+  styleUrls: ['./sidebar.component.scss'],
   providers: [menuService]
 })
 
-export class SiderbarComponent implements OnInit {
+export class SidebarComponent implements OnInit {
   protected menuInfo = [];
 
   isViewAll: boolean = true;
