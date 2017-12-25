@@ -9,23 +9,11 @@ import { ChartsService } from '../../shared/services/charts.service';
 })
 export class IndexComponent implements OnInit {
   showloading: boolean = false;
-  option;
-  option2;
-  option3;
+  private chartsOptionItem;
 
   constructor(private _chartsService: ChartsService) { }
 
   ngOnInit() {
-    this.option = this._chartsService.lineOption;
-    this.option2 = this._chartsService.option;
-    this.option3 = this._chartsService.option3;
+    this.chartsOptionItem = this._chartsService;
   }
-
-  isToggle: boolean = false;
-
-  modalOpen() {
-    this.isToggle = true;
-  }
-
-
 }

@@ -10,13 +10,9 @@ import { GlobalService } from '../../services/global.service';
 
 export class ContentTopComponent implements OnInit {
 
-  breadcrumbItem = ['form', 'inputs', 'btn'];
-
-  constructor(public _globalService: GlobalService) {
+  constructor() {
   }
 
-  ngOnInit() {
-  }
-
+  ngOnInit() { }
 
 }

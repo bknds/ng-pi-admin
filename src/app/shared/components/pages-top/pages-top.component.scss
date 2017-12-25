@@ -6,7 +6,7 @@
     justify-content: space-between;
     width: 100%;
     height: 70px;
-    background: transparent; //@include box-shadow( 5px 2px 5px rgba($black, .3));
+    background: transparent;
 }
 
 .collapse-menu {
@@ -51,15 +51,15 @@
         text-indent: 1em;
     }
     .search-btn {
-        width: 40px;
-        height: 40px;
+        width: 38px;
+        height: 38px;
         background: $primary;
         border: 0;
         border-radius: 50%;
         outline: none;
         position: relative;
         top: 2px;
-        left: -42px;
+        left: -40px;
         color: $body-bg;
     }
 }
