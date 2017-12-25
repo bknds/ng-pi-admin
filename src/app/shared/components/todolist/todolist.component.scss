@@ -9,12 +9,16 @@
     border-radius: 2px;
 }
 
+.todolist-body {
+    margin-top: 14px;
+}
+
 .form-group {
     margin: 0;
     display: flex;
     @include transition(all 0.4s);
     &:hover {
-        @include linear-gradient(to right, $primary, rgba($primary,.1));
+        @include linear-gradient(to right, $primary, rgba($primary, .1));
         color: #fff;
         .edit-input {
             width: 65%;

@@ -24,7 +24,9 @@ export class TodolistComponent implements OnInit {
   ngOnInit() { }
 
   edit(index) {
-    this.todolist[index].isEdit = true;
+    if (!this.todolist[index].isOver) {
+      this.todolist[index].isEdit = true;
+    }
   }
 
   overMatter(index) {

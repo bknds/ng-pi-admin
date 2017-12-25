@@ -5,7 +5,7 @@
       <i class="fa fa-plus fa-fw" [ngClass]="{'collapse-on':collapse === 'on','collapse-off':collapse === 'off'}"></i>
     </button>
   </div>
-  <div style="margin-top:20px;">
+  <div class="todolist-body">
     <div class="form-group" *ngFor="let item of todolist;let i = index">
       <button class="over-btn" (click)="overMatter(i)">
         <i class="fa fa-circle-o fa-fw" *ngIf="!item.isOver"></i>
