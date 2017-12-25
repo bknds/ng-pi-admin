@@ -58,6 +58,8 @@
 }
 
 .btn {
+    display: block;
+    width:100%;
     padding: 5px 10px;
     border: none;
     border-radius: 2px;
@@ -166,7 +168,7 @@
 
 .btn-group-lg>.btn,
 .btn-lg {
-    font-size: $default-text;
+    font-size: 20px;
     line-height: 1.3333333;
 }
 

@@ -1,0 +1,14 @@
+@import '../../shared/theme/conf';
+.login-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: auto;
+    min-height: 400px;
+}
+.input-group,
+.btn {
+    margin: 10px 0;
+}

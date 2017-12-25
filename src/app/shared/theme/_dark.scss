@@ -17,6 +17,11 @@ $success:#00b144;
 $danger:#ff4187;
 $warning:#fdcf00;
 $info:#1e65ff;
+
+body{
+    background: $body-bg;
+}
+
 .bg-default {
     background: $body-bg;
 }
