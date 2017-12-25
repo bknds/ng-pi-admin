@@ -1,27 +1,25 @@
 import { Component, OnInit } from '@angular/core';
+import { TodoListService } from './todolist.service';
 
 @Component({
   selector: 'du-todolist',
   templateUrl: './todolist.component.html',
-  styleUrls: ['./todolist.component.scss']
+  styleUrls: ['./todolist.component.scss'],
+  providers: [TodoListService]
 })
 export class TodolistComponent implements OnInit {
 
-  todolist: Array<any> = [
-    { text: 'This is first need todo thing!', isOver: true, isEdit: false },
-    { text: 'This is first need todo thing!', isOver: true, isEdit: false },
-    { text: 'This is first need todo thing!', isOver: true, isEdit: false },
-    { text: 'This is first need todo thing!', isOver: false, isEdit: false },
-    { text: 'This is first need todo thing!', isOver: false, isEdit: false },
-    { text: 'This is second need todo thing!', isOver: false, isEdit: false },
-    { text: 'This is third need todo thing!', isOver: false, isEdit: false },
-    { text: 'This is third need todo thing!', isOver: false, isEdit: false },
-    { text: 'This is third need todo thing!', isOver: false, isEdit: false },
-  ];
+  todolist: Array<any> = [];
 
-  constructor() { }
+  constructor(private todoListService: TodoListService) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    this.todolist = this.todoListService.getTodoList();
+    this.todolist.forEach(element => {
+      element.isOver = false;
+      element.isEdit = false;
+    });
+  }
 
   edit(index) {
     if (!this.todolist[index].isOver) {
@@ -30,25 +28,25 @@ export class TodolistComponent implements OnInit {
   }
 
   overMatter(index) {
-    this.todolist[index].isOver = !this.todolist[index].isOver;
+    if (!this.todolist[index].isEdit) {
+      this.todolist[index].isOver = !this.todolist[index].isOver;
+    }
   }
 
+  saveAs(index) {
+    this.todolist[index].isEdit = false;
+  }
+  
   addNewList() {
     let newList = new List;
-    //newList添加属性值
-    newList.id = this.todolist.length + 1;
     newList.isEdit = true;
     newList.isOver = false;
     newList.text = '';
     this.todolist.unshift(newList);
   }
 
-  saveAs(index) {
-    this.todolist[index].isEdit = false;
-  }
 }
 export class List {
-  id: number;
   text: string;
   isOver: boolean;
   isEdit: boolean;
