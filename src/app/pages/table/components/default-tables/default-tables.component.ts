@@ -39,7 +39,7 @@ export class DefaultTablesComponent implements OnInit {
   Checked($event, index) {
     this.default_data[index].checked = $event.checked;
     if ($event.checked) {
-      for (let a = 0; a < this.default_data.length; a++) {
+      for (let a in this.default_data) {
         if (!this.default_data[a].checked) {
           this.isCheckedAll = false;
           break;
