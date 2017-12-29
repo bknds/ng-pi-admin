@@ -3,50 +3,48 @@
   "project": {
     "name": "Pill"
   },
-  "apps": [
-    {
-      "root": "src",
-      "outDir": "dist",
-      "assets": [
-        "assets",
-        "favicon.ico"
-      ],
-      "index": "index.html",
-      "main": "main.ts",
-      "polyfills": "polyfills.ts",
-      "test": "test.ts",
-      "tsconfig": "tsconfig.app.json",
-      "testTsconfig": "tsconfig.spec.json",
-      "prefix": "app",
-      "styles": [
-        "../node_modules/normalize.css/normalize.css",
-        "../node_modules/font-awesome/scss/font-awesome.scss",
-        "../node_modules/bootstrap/less/bootstrap.less",
-        "../node_modules/animate.css/animate.css",
-        "app/shared/_styles.scss",
-        "styles.scss"
-      ],
-      "scripts": [
-        "../node_modules/echarts/dist/echarts.min.js",
-        "../node_modules/echarts/map/js/china.js",
-        "../node_modules/echarts/dist/extension/bmap.js",
-        "app/shared/theme/echarts/dark.js",
-        "app/shared/theme/echarts/light.js"
-      ],
-      "environmentSource": "environments/environment.ts",
-      "environments": {
-        "dev": "environments/environment.ts",
-        "prod": "environments/environment.prod.ts"
-      }
+  "apps": [{
+    "root": "src",
+    "outDir": "dist",
+    "assets": [
+      "assets",
+      "favicon.ico"
+    ],
+    "index": "index.html",
+    "main": "main.ts",
+    "polyfills": "polyfills.ts",
+    "test": "test.ts",
+    "tsconfig": "tsconfig.app.json",
+    "testTsconfig": "tsconfig.spec.json",
+    "prefix": "app",
+    "styles": [
+      "../node_modules/normalize.css/normalize.css",
+      "../node_modules/font-awesome/scss/font-awesome.scss",
+      "../node_modules/bootstrap/less/bootstrap.less",
+      "../node_modules/animate.css/animate.css",
+      "app/shared/_styles.scss",
+      "styles.scss"
+    ],
+    "scripts": [
+      "../node_modules/jquery/dist/jquery.js",
+      "../node_modules/echarts/dist/echarts.min.js",
+      "../node_modules/echarts/map/js/china.js",
+      "../node_modules/echarts/dist/extension/bmap.js",
+      "app/shared/theme/echarts/dark.js",
+      "app/shared/theme/echarts/light.js"
+    ],
+    "environmentSource": "environments/environment.ts",
+    "environments": {
+      "dev": "environments/environment.ts",
+      "prod": "environments/environment.prod.ts"
     }
-  ],
+  }],
   "e2e": {
     "protractor": {
       "config": "./protractor.conf.js"
     }
   },
-  "lint": [
-    {
+  "lint": [{
       "project": "src/tsconfig.app.json",
       "exclude": "**/node_modules/**"
     },

@@ -46,25 +46,32 @@
   </div>
   <div class="col-md-6 animated fadeInDown">
     <card cardTitle="STANDARD FIELDS">
-      <div class="form-group">
-        <input class="checkbox" type="checkbox" id="checkbox1">
-        <label class="check-label" for="checkbox1"></label>
+      <div class="form-group row">
+        <div class="col-md-4 asa">
+          <input class="checkbox" type="checkbox" id="checkbox1" checked>
+          <label class="check-label" for="checkbox1">checkbox1</label>
+        </div>
+        <div class="col-md-4">
+          <input class="checkbox" type="checkbox" id="checkbox2">
+          <label class="check-label" for="checkbox2">checkbox1</label>
+        </div>
+        <div class="col-md-4">
+          <input class="checkbox" type="checkbox" id="checkbox3">
+          <label class="check-label" for="checkbox3">checkbox1</label>
+        </div>
       </div>
       <div class="form-group row">
         <div class="col-md-4">
-          <input class="radio" type="radio" id="radio1" name="radio">
-          <label class="radio-label" for="radio1"></label>
-          <label for="radio1">radio1</label>
+          <input class="radio" type="radio" id="radio1" name="radio" checked>
+          <label class="radio-label" for="radio1">radio1</label>
         </div>
         <div class="col-md-4">
           <input class="radio" type="radio" id="radio2" name="radio">
-          <label class="radio-label" for="radio2"></label>
-          <label for="radio2">radio2</label>
+          <label class="radio-label" for="radio2">radio1</label>
         </div>
         <div class="col-md-4">
           <input class="radio" type="radio" id="radio3" name="radio">
-          <label class="radio-label" for="radio3"></label>
-          <label for="radio3">radio3</label>
+          <label class="radio-label" for="radio3">radio1</label>
         </div>
       </div>
     </card>
@@ -75,6 +82,17 @@
           <option value="option2">option2</option>
           <option value="option3">option3</option>
           <option value="option4">option4</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <select multiple name="select" id="select1" class="form-control">
+          <option value="option1">option1</option>
+          <option value="option2">option2</option>
+          <option value="option3">option3</option>
+          <option value="option4">option4</option>
+          <option value="option5">option4</option>
+          <option value="option6">option4</option>
+          <option value="option7">option4</option>
         </select>
       </div>
     </card>

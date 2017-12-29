@@ -45,26 +45,6 @@ input.form-control {
     }
 }
 
-.with-primary-addon:focus {
-    border-bottom: 1px solid $primary;
-}
-
-.with-success-addon:focus {
-    border-bottom: 1px solid $success;
-}
-
-.with-warning-addon:focus {
-    border-bottom: 1px solid $warning;
-}
-
-.with-danger-addon:focus {
-    border-bottom: 1px solid $danger;
-}
-
-.with-info-addon:focus {
-    border-bottom: 1px solid $info;
-}
-
 input.form-control[disabled] {
     background-color: transparent;
 }
@@ -137,7 +117,7 @@ input.with-info-addon {
 .input-group-addon-warning,
 .input-group-addon-danger,
 .input-group-addon-info {
-    color: $fonts-color;
+    color: $white;
     border: 0;
 }
 
@@ -178,6 +158,8 @@ checkbox && radio
     display: inline-block;
     width: 14px;
     height: 14px;
+    line-height: 0.9em;
+    text-indent: 19px;
     border: 1px solid rgba($gray, .5);
     cursor: pointer;
     margin: 0;
