@@ -5,7 +5,7 @@ import { Observable } from "rxjs/Observable";
 export class TreesService {
     constructor() {
     }
-    treesData = [
+    fileData = [
         {
             name: 'A1',
             children: [

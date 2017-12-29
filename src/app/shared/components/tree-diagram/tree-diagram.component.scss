@@ -1,6 +1,32 @@
-ul{
-    padding:20px;
+@import '../../theme/conf';
+ul {
+    padding:0 5px;
 }
+
+li {
+    padding:5px 10px;
+    list-style: none;
+    font-size: 13px;
+}
+
+.file-ico {
+    display: inline-block;
+    margin-right: 5px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.ico {
+    font-size: 14px;
+    color: $primary;
+    margin:0;
+}
+
+.item-children {
+    overflow: hidden;
+}
+
 
 /* * {
     margin: 0;

@@ -8,7 +8,7 @@
 }
 
 .help-block {
-    color: darken($fonts-color,2%);
+    color: darken($fonts-color, 2%);
     vertical-align: sub;
     font-size: 12px;
 }
@@ -155,14 +155,13 @@ checkbox && radio
 
 .check-label,
 .radio-label {
-    display: inline-block;
+    display: block;
     width: 14px;
     height: 14px;
     line-height: 0.9em;
     text-indent: 19px;
     border: 1px solid rgba($gray, .5);
     cursor: pointer;
-    margin: 0;
     position: relative;
 }
 
@@ -194,4 +193,54 @@ checkbox && radio
 .radio-label,
 .radio-label:after {
     border-radius: 50%;
+}
+
+.checkbox-primary+.check-label,
+.checkbox-primary+.radio-label {
+    border: 1px solid $primary;
+}
+
+.checkbox-primary+.check-label:after,
+.checkbox-primary+.radio-label:after {
+    background-color: $primary;
+}
+
+.checkbox-success+.check-label,
+.checkbox-success+.radio-label {
+    border: 1px solid $success;
+}
+
+.checkbox-success+.check-label:after,
+.checkbox-success+.radio-label:after {
+    background-color: $success;
+}
+
+.checkbox-warning+.check-label,
+.checkbox-warning+.radio-label {
+    border: 1px solid $warning;
+}
+
+.checkbox-warning+.check-label:after,
+.checkbox-warning+.radio-label:after {
+    background-color: $warning;
+}
+
+.checkbox-danger+.check-label,
+.checkbox-danger+.radio-label {
+    border: 1px solid $danger;
+}
+
+.checkbox-danger+.check-label:after,
+.checkbox-danger+.radio-label:after {
+    background-color: $danger;
+}
+
+.checkbox-info+.check-label,
+.checkbox-info+.radio-label {
+    border: 1px solid $info;
+}
+
+.checkbox-info+.check-label:after,
+.checkbox-info+.radio-label:after {
+    background-color: $info;
 }

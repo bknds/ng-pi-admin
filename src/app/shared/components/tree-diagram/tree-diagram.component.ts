@@ -1,17 +1,27 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { collapse } from '../../animation/collapse-animate';
 
 @Component({
   selector: 'tree-diagram',
   templateUrl: './tree-diagram.component.html',
-  styleUrls: ['./tree-diagram.component.scss']
+  styleUrls: ['./tree-diagram.component.scss'],
+  animations: [collapse]
 })
 export class TreeDiagramComponent implements OnInit {
   @Input() treesItem: any;
 
+  @Input() isFile:boolean = true;
+
   constructor() { }
 
   ngOnInit() {
-    //console.log(this.treesItem);
+    this.treesItem.forEach(element => {
+      element.toggle = 'on';
+    });
+  }
+
+  toggleItem(item) {
+    item.toggle === 'on' ? item.toggle = 'off' : item.toggle = 'on';
   }
 
 }

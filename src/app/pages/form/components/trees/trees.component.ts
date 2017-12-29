@@ -9,12 +9,11 @@ import { TreesService } from './trees.service';
 })
 export class TreesComponent implements OnInit {
 
-  treesItem: Array<any>;
-  
+  fileData: Array<any>;
   constructor(private _TreesService: TreesService) { }
 
   ngOnInit() {
-    this.treesItem = this._TreesService.treesData;
+    this.fileData = this._TreesService.fileData;
   }
 
 }

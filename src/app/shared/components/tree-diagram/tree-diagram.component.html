@@ -1,8 +1,19 @@
 <div class="tree">
   <ul>
     <li *ngFor="let item of treesItem">
-      <a href="#">{{item.name}}</a>
-      <tree-diagram *ngIf="item.children" [treesItem]="item.children"></tree-diagram>
+      <div class="file-ico" (click)="toggleItem(item)">
+        <i class="fa fa-file fa-fw ico" *ngIf="!item.children&&isFile"></i>
+        <i class="fa fa-folder fa-fw ico" *ngIf="item.children&&item.toggle === 'off'&&isFile"></i>
+        <i class="fa fa-folder-open fa-fw ico" *ngIf="item.children&&item.toggle === 'on'&&isFile"></i>
+
+        <i class="ico" *ngIf="!item.children&&!isFile">·</i>
+        <i class="fa fa-plus-square-o fa-fw ico" *ngIf="item.children&&item.toggle === 'off'&&!isFile"></i>
+        <i class="fa fa-minus-square-o fa-fw ico" *ngIf="item.children&&item.toggle === 'on'&&!isFile"></i>
+      </div>
+      <span>{{item.name}}</span>
+      <div class="item-children" [@collapse]="item.toggle">
+        <tree-diagram *ngIf="item.children" [treesItem]="item.children"></tree-diagram>
+      </div>
     </li>
   </ul>
 </div>
