@@ -3,7 +3,8 @@ $default-text:14px;
 $sm-text:12px;
 $lg-text:20px;
 $body-bg:#212b34;
-$siderbar-bg:#212b34;
+$sidebar-bg:#212b34;
+$sidebar-fonts:#ffffff;
 $card-bg:#212b34;
 $white:#ffffff;
 $black:#000000;
@@ -17,8 +18,7 @@ $success:#00b144;
 $danger:#ff4187;
 $warning:#fdcf00;
 $info:#1e65ff;
-
-body{
+body {
     background: $body-bg;
 }
 

@@ -3,7 +3,8 @@ $default-text:14px;
 $sm-text:12px;
 $lg-text:16px;
 $body-bg:#f0f0f0;
-$siderbar-bg:#ffffff;
+$sidebar-bg:#293441;
+$sidebar-fonts:#ffffff;
 $card-bg:#ffffff;
 $white:#ffffff;
 $black:#000000;
@@ -11,12 +12,12 @@ $gray:#666666;
 $border-color:#e0e0e0;
 $fonts-color:#555555;
 $mask:rgba($black, .1);
-$primary:#bc6bff;
+$primary:#449bff;
 $primary-end:#11e9e2;
 $success:#29bdb6;
 $danger:#f9619a;
 $warning:#fda400;
-$info:#2e70ff;
+$info:#3584fb;
 body {
     background: $body-bg;
 }
@@ -42,5 +43,5 @@ body {
 }
 
 .bg-info {
-    @include linear-gradient(to top right, $info, #0ae9ec);
+    @include linear-gradient(to top right, $info, #22f8c3);
 }

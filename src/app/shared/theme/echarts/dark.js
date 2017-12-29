@@ -20,7 +20,7 @@
     log('ECharts is not Loaded');
     return;
   }
-  echarts.registerTheme('essos', {
+  echarts.registerTheme('dark', {
     "color": [
       "#893448",
       "#d95850",
