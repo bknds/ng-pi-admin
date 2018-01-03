@@ -5,11 +5,11 @@ import * as $ from "jquery";
   selector: 'back-top',
   styleUrls: ['./back-top.component.scss'],
   template: `
-    <i #baBackTop class="fa fa-angle-up back-top ba-back-top" title="Back to Top"></i>
+    <i #baBackTop class="fa fa-angle-up back-top ba-back-top" title="Back to Top" *ngIf="isShow"></i>
   `
 })
 export class BackTopComponent {
-
+  isShow:boolean = false;
   @ViewChild('baBackTop') _selector: ElementRef;
 
   ngAfterViewInit() {
@@ -22,9 +22,8 @@ export class BackTopComponent {
     return false;
   }
 
-  @HostListener('window:scroll')
+  @HostListener('scroll')
   _onWindowScroll(): void {
-    let el = this._selector.nativeElement;
-    window.scrollY > 300 ? $(el).fadeIn(1000) : $(el).fadeOut(1000);
+      console.log('111');
   }
 }

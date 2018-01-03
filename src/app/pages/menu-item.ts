@@ -2,12 +2,12 @@ export let MENU_ITEM = [
     {
         path: 'index',
         title: 'Home',
-        icon: 'home'
+        icon: 'dashboard'
     },
     {
         path: 'form',
         title: 'Form',
-        icon: 'edit',
+        icon: 'pencil',
         children: [
             {
                 path: 'inputs',
@@ -22,7 +22,7 @@ export let MENU_ITEM = [
     {
         path: 'charts',
         title: 'Charts',
-        icon: 'bar-chart-o',
+        icon: 'line-chart',
         children: [
             {
                 path: 'default-charts',
@@ -33,7 +33,7 @@ export let MENU_ITEM = [
     {
         path: 'ui',
         title: 'UI',
-        icon: 'heart',
+        icon: 'laptop',
         children: [
             {
                 path: 'buttons',

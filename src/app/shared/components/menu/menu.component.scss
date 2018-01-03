@@ -23,7 +23,6 @@
         background: transparent;
         border-left: 3px solid transparent;
         color: $sidebar-fonts;
-        font-size: 12px;
         text-decoration: none;
         overflow: hidden;
         @include transition(all 0.4s);
@@ -33,7 +32,7 @@
         .placeholder,
         .text,
         .direction {
-            display: block; //border: 1px solid #000;
+            display: block;
             height: 40px;
             line-height: 40px;
             font-size: 12px;
