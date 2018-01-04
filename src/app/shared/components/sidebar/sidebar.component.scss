@@ -18,9 +18,9 @@
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 220px;
+    width: auto;
     height: 60px;
-    border: 1px solid transparent;
+    margin-top:10px;
     @include transition(all .4s);
 }
 
@@ -29,6 +29,7 @@
     height: 50px;
     overflow: hidden;
     border-radius: 5px;
+    margin-left:10%;
     @include transition(all .4s);
     img {
         display: block;
@@ -121,5 +122,6 @@
         width: 40px;
         height: 40px;
         border-radius: 50%;
+        margin:0;
     }
 }
