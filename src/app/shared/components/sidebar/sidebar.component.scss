@@ -7,11 +7,13 @@
     @include box-shadow( 5px 1px 10px rgba($black, .1));
     @include transition(all .4s);
 }
+
 .br {
-    width:80%;
-    margin:20px auto 0 auto;
-    border-bottom:1px solid $border-color;
+    width: 80%;
+    margin: 20px auto 0 auto;
+    border-bottom: 1px solid $border-color;
 }
+
 .avatar-wrapper {
     padding: 10px;
     display: flex;
@@ -20,28 +22,25 @@
     flex-wrap: nowrap;
     width: auto;
     height: 60px;
-    margin-top:10px;
+    margin-top: 10px;
     @include transition(all .4s);
-}
-
-.avatar {
-    width: 50px;
-    height: 50px;
-    overflow: hidden;
-    border-radius: 5px;
-    margin-left:10%;
-    @include transition(all .4s);
-    img {
-        display: block;
-        width: 100%;
+    .avatar {
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+        border-radius: 5px;
+        margin-left: 10%;
+        @include transition(all .4s);
+        img {
+            display: block;
+            width: 100%;
+        }
     }
-}
-
-.user-info-wrap {
-    padding:3px 15px;
-    display: block;
-    flex: 1;
-    height: 50px;
+    .user-info-wrap {
+        padding: 3px 15px;
+        flex: 1;
+        height: 50px;
+    }
 }
 
 .user-name {
@@ -54,7 +53,7 @@
     display: block;
     color: $primary;
     font-size: 12px;
-    margin-top:5px;
+    margin-top: 5px;
 }
 
 .tips-wrapper {
@@ -122,6 +121,13 @@
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        margin:0;
+        margin: 0;
+    }
+    .user-info-wrap {
+        width: 0;
+        padding: 0;
     }
 }
+
+
+/* 头像显示错误 从零开始 */
