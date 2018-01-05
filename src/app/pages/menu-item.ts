@@ -7,7 +7,18 @@ export let MENU_ITEM = [
     {
         path: 'editor',
         title: 'CKEditor',
-        icon: 'dashboard'
+        icon: 'pencil-square-o'
+    },
+    {
+        path: 'charts',
+        title: 'Charts',
+        icon: 'line-chart',
+        children: [
+            {
+                path: 'default-charts',
+                title: 'Default'
+            }
+        ]
     },
     {
         path: 'form',
@@ -21,17 +32,6 @@ export let MENU_ITEM = [
             {
                 path: 'trees',
                 title: 'Trees'
-            }
-        ]
-    },
-    {
-        path: 'charts',
-        title: 'Charts',
-        icon: 'line-chart',
-        children: [
-            {
-                path: 'default-charts',
-                title: 'Default'
             }
         ]
     },
