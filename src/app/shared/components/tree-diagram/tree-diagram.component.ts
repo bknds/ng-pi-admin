@@ -10,8 +10,6 @@ import { collapse } from '../../animation/collapse-animate';
 export class TreeDiagramComponent implements OnInit {
   @Input() treesItem: any;
 
-  @Input() isFile:boolean = true;
-
   constructor() { }
 
   ngOnInit() {
