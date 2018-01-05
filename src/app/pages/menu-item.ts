@@ -5,6 +5,11 @@ export let MENU_ITEM = [
         icon: 'dashboard'
     },
     {
+        path: 'editor',
+        title: 'CKEditor',
+        icon: 'dashboard'
+    },
+    {
         path: 'form',
         title: 'Form',
         icon: 'pencil',

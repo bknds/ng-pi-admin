@@ -58,18 +58,17 @@
     @include box-shadow( 0 2px 5px 0 rgba($info, .5));
 }
 
-
 .card-header {
     width: 100%;
-    height: 45px;
-    border: 1px solid $mask;
+    height: 40px;
+    border-bottom: 1px solid $mask;
     padding: 0 10px;
     display: flex;
     justify-content: space-between;
     .card-title {
         display: inline-block;
         margin: 0;
-        line-height: 45px;
+        line-height: 40px;
         font-size: 13px;
         letter-spacing: .1em;
     }
@@ -86,8 +85,7 @@
 }
 
 .card-content {
-    padding: 10px;
-    padding-bottom: 0;
+    padding-top:10px;
     height: auto;
     overflow: hidden;
 }
