@@ -14,8 +14,8 @@
     border-bottom: 1px solid $border-color;
 }
 
-.avatar-wrapper {
-    padding:20px 10px 10px 20px;
+.avatar-wrap {
+    padding: 20px 10px 10px 20px;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -55,7 +55,7 @@
     margin-top: 5px;
 }
 
-.tips-wrapper {
+.msg-center-wrap {
     margin: 0;
     width: 100%;
     height: 50px;
@@ -63,9 +63,7 @@
     @include transition(all .4s);
 }
 
-.ring,
-.comments,
-.email {
+.msg-entrance {
     min-width: 50px;
     height: 50px;
     line-height: 50px;
@@ -84,36 +82,15 @@
         display: block;
         width: 11px;
         height: 11px;
-        background: $danger;
+        background: $primary;
         border: 2px solid $sidebar-bg;
         border-radius: 50%;
     }
 }
 
-.ring {
-    span.badge {
-        background: $danger;
-    }
-}
-
-.comments {
-    span.badge {
-        background: $warning;
-    }
-}
-
-.email {
-    span.badge {
-        background: $success;
-    }
-}
-
 .side-collapsed {
     width: 50px;
-    .tips-wrapper {
-        height: 160px;
-    }
-    .avatar-wrapper {
+    .avatar-wrap {
         padding: 10px 4px;
     }
     .avatar {
@@ -123,6 +100,9 @@
         margin: 2px;
     }
     .user-info-wrap {
-        transform: scale(0, 0)
+        transform: scale(0, 0);
+    }
+    .msg-center-wrap {
+        height: 160px;
     }
 }
