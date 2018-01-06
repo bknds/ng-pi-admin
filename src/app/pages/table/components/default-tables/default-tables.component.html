@@ -35,6 +35,32 @@
   </div>
   <div class="col-md-6">
     <card cardTitle="DEFAULT TABLE">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>FIRSTNAME</th>
+            <th>LASTNAME</th>
+            <th>USERNAME</th>
+            <th>EMAIL</th>
+            <th>PRICE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of default_data;let index = index">
+            <td>{{index}}</td>
+            <td>{{item.first_name}}</td>
+            <td>{{item.last_name}}</td>
+            <td>{{item.user_name}}</td>
+            <td>{{item.email}}</td>
+            <td>{{item.price}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </card>
+  </div>
+  <div class="col-md-6">
+    <card cardTitle="DEFAULT TABLE">
       <table class="table table-hover table-bordered">
         <thead>
           <tr>

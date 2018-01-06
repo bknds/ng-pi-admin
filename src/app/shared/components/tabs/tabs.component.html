@@ -1,10 +1,8 @@
-<div class="card card-block animated fadeIn">
+<div class="tabs-wrap">
   <div class="tabs-header">
     <div class="tabs-nav" *ngFor="let item of tabsItem;let i = index" (click)="isActive(i)" [ngClass]="{'is-active':item.isActive,'tabs-nav':!item.isActive}">{{item.text}}</div>
   </div>
   <div class="tabs-body">
-    <div class="tabs-content is-content-active">tabs-content 111 · · ·</div>
-    <div class="tabs-content">tabs-content 222 · · ·</div>
-    <div class="tabs-content">tabs-content 333 · · ·</div>
+    <ng-content></ng-content>
   </div>
 </div>

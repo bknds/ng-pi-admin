@@ -41,6 +41,10 @@ export let MENU_ITEM = [
         icon: 'laptop',
         children: [
             {
+                path: 'grid',
+                title: 'Grid'
+            },
+            {
                 path: 'buttons',
                 title: 'Buttons'
             },
