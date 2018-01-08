@@ -1,0 +1,79 @@
+<div class="row">
+  <div class="col-md-12">
+    <card cardTitle="DEFAULT TABLE">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <!-- <th>
+              <input class="checkbox" type="checkbox" id="isCheckedAll" [checked]="isCheckedAll" (change)="allChecked($event.target)">
+              <label class="check-label" for="isCheckedAll"></label>
+            </th> -->
+            <th>#</th>
+            <th>FIRSTNAME</th>
+            <th>LASTNAME</th>
+            <th>USERNAME</th>
+            <th>EMAIL</th>
+            <th>PRICE</th>
+            <th>STATE</th>
+            <th>OPERATION</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td>
+              <input type="text" class="form-control table-form-control">
+            </td>
+            <td>
+              <input type="text" class="form-control table-form-control">
+            </td>
+            <td>
+              <input type="text" class="form-control table-form-control">
+            </td>
+            <td>
+              <input type="text" class="form-control table-form-control">
+            </td>
+            <td>
+              <input type="text" class="form-control table-form-control">
+            </td>
+            <td>
+              <span class="label label-info">info</span>
+            </td>
+            <td>
+              <button class="btn btn-sm btn-primary btn-with-ico">
+                <i class="fa fa-plus"></i>
+                New Row
+              </button>
+            </td>
+          </tr>
+          <tr *ngFor="let item of table_data;let index = index">
+            <!-- <td>
+              <input class="checkbox" type="checkbox" id="check{{index}}" [checked]="item.checked" (change)="Checked($event.target,index)">
+              <label class="check-label" for="check{{index}}"></label>
+            </td> -->
+            <td>{{index}}</td>
+            <td>{{item.first_name}}</td>
+            <td>{{item.last_name}}</td>
+            <td>{{item.user_name}}</td>
+            <td>{{item.email}}</td>
+            <td>{{item.price}}</td>
+            <td>
+              <span class="label label-info">info</span>
+            </td>
+            <td>
+              <button class="btn btn-xs btn-primary">
+                <i class="fa fa-pencil"></i>
+              </button>
+              <button class="btn btn-xs btn-success">
+                <i class="fa fa-check"></i>
+              </button>
+              <button class="btn btn-xs btn-danger">
+                <i class="fa fa-trash-o"></i>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </card>
+  </div>
+</div>

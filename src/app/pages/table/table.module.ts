@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { routing } from './table.routing';
+import { SharedModule } from '../../shared/shared.module';
+
 /* components */
 import { TableComponent } from './table.component';
-import { DefaultTablesComponent } from './components/default-tables/default-tables.component';
-import { SharedModule } from '../../shared/shared.module';
+import { BasicTablesComponent } from './components/basic-tables/basic-tables.component';
+import { SmartTablesComponent } from './components/smart-tables/smart-tables.component';
 
 @NgModule({
     imports: [
@@ -14,7 +16,8 @@ import { SharedModule } from '../../shared/shared.module';
     ],
     declarations: [
         TableComponent,
-        DefaultTablesComponent
+        BasicTablesComponent,
+        SmartTablesComponent
     ]
 })
 export class TableModule { }

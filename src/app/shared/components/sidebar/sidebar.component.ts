@@ -1,15 +1,20 @@
 import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import { menuService } from "../../services/menu.service";
 import { GlobalService } from '../../services/global.service';
+import { collapse } from '../../animation/collapse-animate';
 
 @Component({
   selector: 'du-sidebar',
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.scss'],
+  animations: [collapse],
   providers: [menuService]
 })
 
 export class SidebarComponent implements OnInit {
+
+  isMsgCenterOn:string = 'off';
+
   protected menuInfo = [];
 
   isViewAll: boolean = true;
@@ -37,6 +42,9 @@ export class SidebarComponent implements OnInit {
     this._globalService._isViewAllState(true);
   }
 
+  isMsgCenterToggleOn() {
+    this.isMsgCenterOn === 'on' ? this.isMsgCenterOn = 'off' : this.isMsgCenterOn = 'on';
+  }
 }
 
 export class Tips {

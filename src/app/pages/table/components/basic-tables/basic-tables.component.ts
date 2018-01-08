@@ -2,12 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { TablesService } from '../../../../shared/services/tables.service';
 
 @Component({
-  selector: 'app-default-tables',
-  templateUrl: './default-tables.component.html',
-  styleUrls: ['./default-tables.component.scss'],
+  selector: 'app-basic-tables',
+  templateUrl: './basic-tables.component.html',
+  styleUrls: ['./basic-tables.component.scss'],
   providers: [TablesService]
 })
-export class DefaultTablesComponent implements OnInit {
+export class BasicTablesComponent implements OnInit {
 
   default_data: Array<any>;
   isCheckedAll: boolean = false;

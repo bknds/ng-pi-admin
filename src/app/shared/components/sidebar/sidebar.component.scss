@@ -88,6 +88,19 @@
     }
 }
 
+.msg-center {
+    width: 250px;
+    height: 400px;
+    overflow: hidden;
+    @include box-shadow( 0 1px 6px 0 rgba($black, 0.25) inset);
+    .bell-msgs {
+        width: 90%;
+        height: 50px;
+        margin: 0 auto;
+        border-bottom: 1px solid $border-color;
+    }
+}
+
 .side-collapsed {
     width: 50px;
     .avatar-wrap {

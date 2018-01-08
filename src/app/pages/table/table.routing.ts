@@ -1,6 +1,7 @@
 import { Routes, RouterModule } from '@angular/router';
-import { DefaultTablesComponent } from './components/default-tables/default-tables.component';
 import { TableComponent } from './table.component';
+import { BasicTablesComponent } from './components/basic-tables/basic-tables.component';
+import { SmartTablesComponent } from './components/smart-tables/smart-tables.component';
 
 const childRoutes: Routes = [
     {
@@ -8,7 +9,8 @@ const childRoutes: Routes = [
         component: TableComponent,
         children: [
             { path: '', redirectTo: 'default-tables', pathMatch: 'full' },
-            { path: 'default-tables', component: DefaultTablesComponent },
+            { path: 'basic-tables', component: BasicTablesComponent },
+            { path: 'smart-tables', component: SmartTablesComponent },
         ]
     }
 ];

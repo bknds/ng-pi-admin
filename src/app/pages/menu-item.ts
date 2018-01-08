@@ -27,11 +27,11 @@ export let MENU_ITEM = [
         children: [
             {
                 path: 'inputs',
-                title: 'Inputs'
+                title: 'Form Inputs'
             },
             {
                 path: 'trees',
-                title: 'Trees'
+                title: 'File Trees'
             }
         ]
     },
@@ -60,8 +60,12 @@ export let MENU_ITEM = [
         icon: 'table',
         children: [
             {
-                path: 'default-tables',
-                title: 'DEFAULT'
+                path: 'basic-tables',
+                title: 'Basic Tables'
+            },
+            {
+                path: 'smart-tables',
+                title: 'Smart Tables'
             }
         ]
     }
