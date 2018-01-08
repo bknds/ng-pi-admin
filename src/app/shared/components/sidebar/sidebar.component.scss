@@ -1,6 +1,6 @@
 @import '../../theme/conf';
 .pages-sider {
-    width: 220px;
+    width: 250px;
     height: 100%;
     background: $sidebar-bg;
     overflow-x: hidden;
@@ -15,12 +15,12 @@
 }
 
 .avatar-wrap {
-    padding: 20px 10px 10px 20px;
+    padding: 20px 10px 10px 40px;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 220px;
+    width: 250px;
     height: auto;
     @include transition(all .4s);
     .avatar {
@@ -78,7 +78,7 @@
         padding: 0;
         position: absolute;
         top: 14px;
-        right: 25px;
+        right: 27px;
         display: block;
         width: 11px;
         height: 11px;

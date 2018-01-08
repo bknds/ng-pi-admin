@@ -1,14 +1,46 @@
 //按下时active
 //按下松开focus
 .form-group {
+    padding: 0 10px;
     label {
         font-weight: normal;
-        font-size: 14px;
+        font-size: $default-text;
+    }
+    .control-label {
+        font-weight: normal;
+        font-size: $sm-text;
+        color: $fonts-color;
     }
 }
 
+.hr {
+    border-top: 1px solid #000;
+    height: 1px;
+    background: #333;
+}
+
+@mixin placeholderStyle($color, $opacity) {
+    &::-webkit-input-placeholder {
+        color: $color;
+        opacity: $opacity;
+    }
+    &::-moz-placeholder {
+        color: $color;
+        opacity: $opacity;
+    }
+    &::-ms-input-placeholder {
+        color: $color;
+        opacity: $opacity;
+    }
+}
+
+.control-label {
+    font-size: 12px;
+    font-weight: normal;
+}
+
 .help-block {
-    color: darken($fonts-color, 2%);
+    color: lighten($fonts-color, 20%);
     vertical-align: sub;
     font-size: 12px;
 }
@@ -20,6 +52,7 @@
     background-color: transparent;
     box-shadow: none;
     font-size: 14px;
+    @include placeholderStyle($fonts-color, 0.4);
     &:focus {
         @include box-shadow(none);
     }
@@ -54,7 +87,7 @@ textarea.form-control {
     max-width: 100%;
     height: 96px;
     border: 1px solid darken($border-color, 4%);
-    border-radius: 5px;
+    border-radius: 0;
     @include transition(border .6s);
     &:focus {
         border: 1px solid $primary;
@@ -243,4 +276,29 @@ checkbox && radio
 .checkbox-info+.check-label:after,
 .checkbox-info+.radio-label:after {
     background-color: $info;
+}
+
+.label {
+    padding: 2px 4px;
+    font-weight: 700;
+}
+
+.label-primary {
+    @extend .bg-primary;
+}
+
+.label-warning {
+    @extend .bg-warning;
+}
+
+.label-success {
+    @extend .bg-success;
+}
+
+.label-danger {
+    @extend .bg-danger;
+}
+
+.label-info {
+    @extend .bg-info;
 }
