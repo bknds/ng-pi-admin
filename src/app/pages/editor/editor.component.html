@@ -1,7 +1,7 @@
 <card cardTitle="CKEditor">
-        <ckeditor [(ngModel)]="ckeditorContent" [config]="config"></ckeditor>
+        <ck-editor name="editor1" [(ngModel)]="editorValue" skin="moono-lisa" lang="en" [fullPage]="true"></ck-editor>
 </card>
 <card cardTitle="CKEditor">
   输入的内容：
-  <br> {{ ckeditorContent }}
+  <br> {{ editorValue }}
 </card>

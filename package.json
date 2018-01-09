@@ -29,6 +29,7 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
     "ng2-ckeditor": "^1.1.13",
+    "ngx-ckeditor": "^0.1.1",
     "ngx-echarts": "^2.0.0",
     "normalize.css": "^7.0.0",
     "roboto-fontface": "^0.8.0",
