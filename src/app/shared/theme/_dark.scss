@@ -22,10 +22,6 @@ body {
     background: $body-bg;
 }
 
-.bg-default {
-    background: $body-bg;
-}
-
 .bg-primary {
     @include linear-gradient(to top right, $primary, $primary-end);
 }

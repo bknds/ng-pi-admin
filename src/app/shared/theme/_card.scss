@@ -8,11 +8,11 @@
     width: auto;
     height: auto;
     position: relative;
-    border: 0;
+    border: none;
     border-radius: 3px;
     color: $gray;
     margin-bottom: 24px;
-    @include box-shadow( 0 1px 6px 0 rgba($black, 0.25));
+    @include box-shadow(0 0 24px 0 rgba($black, .06), 0 1px 0 0 rgba($black, .02));
 }
 
 .card,
@@ -88,10 +88,10 @@
     text-align: center;
     font-size: $lg-text;
     background: transparent;
-    color: rgba($gray, .7);
+    color: rgba($gray, .5);
     letter-spacing: -$lg-text;
     &:hover {
-        color: $gray;
+        color: $primary;
     }
 }
 
@@ -107,7 +107,7 @@
 }
 
 .card-content {
-    padding-top: 10px;
+    padding: 10px 10px 0 10px;
     height: auto;
     overflow: hidden;
 }

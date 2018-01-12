@@ -6,22 +6,22 @@
 }
 
 .btn {
-    padding: 5px 10px;
+    padding:.4em .7em;
     border: none;
-    border-radius: 2px;
+    border-radius:3px;
     @include transition(all 0.2s);
 }
 
 .btn-default {
-    color: $gray;
-    @extend .bg-default;
-    @include box-shadow( 0 2px 10px 0 rgba($black, .2));
-    &:hover,
-    &:active:focus,
-    &:focus {
-        @extend .bg-default;
-        color: darken($gray, 5%);
-    }
+    @include box-shadow(none);
+}
+
+.btn-default,
+.btn-default:hover,
+.btn-default:active:focus,
+.btn-default:focus {
+    background: $primary;
+    color:$white;
 }
 
 .btn-primary {
@@ -64,12 +64,13 @@
     }
 }
 
-.btn-mm {
-    font-size: $sm-text;
+.btn-sm {
+    padding:.35em .65em;
+    font-size: $default-text;
 }
 
-.btn-xm {
-    font-size: $default-text;
+.btn-xs {
+    font-size: $sm-text;
 }
 
 .btn-group-xs>.btn,
@@ -87,8 +88,7 @@
 
 .btn-group-lg>.btn,
 .btn-lg {
-    font-size: 20px;
-    line-height: 1.3333333;
+    font-size: $lg-text;
 }
 
 .btn-with-icon {

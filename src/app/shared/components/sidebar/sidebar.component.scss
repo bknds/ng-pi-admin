@@ -4,7 +4,7 @@
     height: 100%;
     background: $sidebar-bg;
     overflow-x: hidden;
-    @include box-shadow( 5px 1px 10px rgba($black, .1));
+    @include box-shadow( 5px 1px 10px rgba($black, .06));
     @include transition(all .4s);
 }
 
