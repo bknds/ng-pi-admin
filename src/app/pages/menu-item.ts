@@ -31,7 +31,7 @@ export let MENU_ITEM = [
             },
             {
                 path: 'trees',
-                title: 'File Trees'
+                title: 'File Tree'
             }
         ]
     },

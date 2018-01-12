@@ -13,6 +13,8 @@ import { collapse } from '../../animation/collapse-animate';
 
 export class SidebarComponent implements OnInit {
 
+  avatarImgSrc: string = 'assets/images/avatar.png';
+
   isMsgCenterOn:string = 'off';
 
   protected menuInfo = [];
