@@ -16,6 +16,17 @@
 .form-group {
     margin: 0;
     display: flex;
+}
+
+.new-task-input {
+    display: block;
+    margin: 0 10px;
+    flex: 1;
+    border: none;
+    border-bottom: 1px solid $border-color;
+}
+
+.task-list {
     @include transition(all 0.4s);
     &:hover {
         @include linear-gradient(to right, $primary, rgba($primary, .1));
@@ -47,7 +58,7 @@
 }
 
 .list-over {
-    color: #ccc;
+    color: $white;
     text-decoration: line-through;
 }
 
