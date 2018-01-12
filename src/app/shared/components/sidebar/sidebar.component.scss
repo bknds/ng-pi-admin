@@ -8,26 +8,23 @@
     @include transition(all .4s);
 }
 
-.br {
-    width: 80%;
-    margin: 15px auto 0 auto;
-    border-bottom: 1px solid $border-color;
-}
-
 .avatar-wrap {
-    padding: 20px 10px 10px 40px;
+    padding: 15px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 250px;
+    width: 200px;
     height: auto;
+    min-height: 50px;
+    border-bottom: 1px solid $border-color;
     @include transition(all .4s);
     .avatar {
         width: 50px;
         height: 50px;
-        overflow: hidden;
         border-radius: 5px;
+        overflow: hidden;
         @include transition(all .4s);
         img {
             display: block;
@@ -35,7 +32,7 @@
         }
     }
     .user-info-wrap {
-        padding: 3px 15px;
+        padding: 3px 14px;
         flex: 1;
         height: 50px;
         @include transition(all .4s);
@@ -45,13 +42,13 @@
 .user-name {
     display: block;
     color: $sidebar-fonts;
-    font-size: 16px;
+    font-size: $lg-text;
 }
 
 .user-post {
     display: block;
     color: $primary;
-    font-size: 12px;
+    font-size: $sm-text;
     margin-top: 5px;
 }
 
@@ -64,11 +61,11 @@
 }
 
 .msg-entrance {
+    position: relative;
     min-width: 50px;
     height: 50px;
     line-height: 50px;
     text-align: center;
-    position: relative;
     @include transition(all .4s);
     &:hover {
         cursor: pointer;
@@ -104,7 +101,7 @@
 .side-collapsed {
     width: 50px;
     .avatar-wrap {
-        padding: 10px 4px;
+        padding: 15px 4px;
     }
     .avatar {
         width: 40px;

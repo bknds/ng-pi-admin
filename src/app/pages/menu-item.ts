@@ -10,13 +10,21 @@ export let MENU_ITEM = [
         icon: 'pencil-square-o'
     },
     {
-        path: 'charts',
-        title: 'Charts',
-        icon: 'line-chart',
+        path: 'ui',
+        title: 'UI',
+        icon: 'laptop',
         children: [
             {
-                path: 'default-charts',
-                title: 'Default'
+                path: 'grid',
+                title: 'Grid'
+            },
+            {
+                path: 'buttons',
+                title: 'Buttons'
+            },
+            {
+                path: 'tabs',
+                title: 'Tabs'
             }
         ]
     },
@@ -36,21 +44,13 @@ export let MENU_ITEM = [
         ]
     },
     {
-        path: 'ui',
-        title: 'UI',
-        icon: 'laptop',
+        path: 'charts',
+        title: 'Charts',
+        icon: 'line-chart',
         children: [
             {
-                path: 'grid',
-                title: 'Grid'
-            },
-            {
-                path: 'buttons',
-                title: 'Buttons'
-            },
-            {
-                path: 'tabs',
-                title: 'Tabs'
+                path: 'default-charts',
+                title: 'Default'
             }
         ]
     },

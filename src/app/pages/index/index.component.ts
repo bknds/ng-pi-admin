@@ -9,7 +9,7 @@ import { ChartsService } from '../../shared/services/charts.service';
 })
 export class IndexComponent implements OnInit {
   showloading: boolean = false;
-  private chartsOptionItem;
+  public chartsOptionItem;
 
   constructor(private _chartsService: ChartsService) { }
 

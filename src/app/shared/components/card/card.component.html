@@ -1,13 +1,14 @@
-<div class="card card-block animated fadeIn bg-default">
-    <div class="card-header" *ngIf="cardTitle">
-        <h4 class="card-title">{{cardTitle}}</h4>
-        <div class="btn-group">
-            <button class="material-btn" (click)="collapseCard()">
-                <i class="fa fa-angle-down fa-fw" [ngClass]="{'collapse-on':collapse === 'on','collapse-off':collapse === 'off'}"></i>
-            </button>
-        </div>
+<div class="card card-block animated fadeIn">
+  <div class="card-header" *ngIf="cardTitle">
+    <h4 class="card-title">{{cardTitle}}</h4>
+    <div class="btn-group">
+      <button class="collapse-btn" (click)="collapseCard()">
+        <i class="fa fa-minus fa-fw" [ngClass]="{'collapse-on':collapse === 'on','collapse-off':collapse === 'off'}"></i>
+        <i class="fa fa-plus fa-fw" [ngClass]="{'collapse-on':collapse === 'off','collapse-off':collapse === 'on'}"></i>
+      </button>
     </div>
-    <div class="card-content" [@collapse]="collapse">
-        <ng-content></ng-content>
-    </div>
+  </div>
+  <div class="card-content" [@collapse]="collapse">
+    <ng-content></ng-content>
+  </div>
 </div>

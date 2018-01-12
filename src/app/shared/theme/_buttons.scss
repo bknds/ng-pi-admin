@@ -1,55 +1,3 @@
-@mixin form {
-    display: block;
-    text-align: center;
-    outline: none;
-    border: none;
-}
-
-.material-btn {
-    @include form;
-    position: relative;
-    right: 0;
-    top: 5px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    font-size: $lg-text;
-    background: transparent;
-    color: rgba($gray, .7);
-    &:after {
-        @include form;
-        content: '';
-        position: absolute;
-        top: 0;
-        width: 30px;
-        height: 30px;
-        background: rgba($black, .15);
-        border-radius: 50%;
-        @include transition(all .2s);
-        @include transform(scale(0));
-    }
-    &:hover {
-        color: $gray;
-    }
-    /* &:hover:after {
-        @include transition(all .2s);
-        @include transform(scale(1));
-    } */
-}
-
-.cyclo-btn {
-    @include form;
-    width: 40px;
-    height: 40px;
-    background: $primary; //@include linear-gradient(to right, $primary, lighten($primary, 30%));
-    //@include box-shadow( 0 2px 5px 0 rgba(0, 0, 0, 0.25));
-    line-height: 40px;
-    border-radius: 50%;
-    font-size: $lg-text;
-    color: $white;
-}
-
 .btn:focus,
 .btn:active:focus,
 .btn.active:focus,
@@ -122,33 +70,6 @@
 
 .btn-xm {
     font-size: $default-text;
-}
-
-.btn-group {
-    .btn-default,
-    .btn-default:active {
-        @include box-shadow( 0 2px 10px -2px rgba($black, .5));
-    }
-    .btn-primary,
-    .btn-primary:active {
-        @include linear-gradient(to bottom, $primary, $primary-end);
-    }
-    .btn-success,
-    .btn-success:active {
-        @include linear-gradient(to bottom, $success, #9dffce);
-    }
-    .btn-danger,
-    .btn-danger:active {
-        @include linear-gradient(to bottom, $danger, #fbaa68);
-    }
-    .btn-warning,
-    .btn-warning:active {
-        @include linear-gradient(to bottom, $warning, #fce16a);
-    }
-    .btn-info,
-    .btn-info:active {
-        @include linear-gradient(to bottom, $info, #0ae9ec);
-    }
 }
 
 .btn-group-xs>.btn,

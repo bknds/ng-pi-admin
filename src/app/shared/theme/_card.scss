@@ -74,14 +74,36 @@
     }
 }
 
+.collapse-btn {
+    display: block;
+    text-align: center;
+    outline: none;
+    border: none;
+    position: relative;
+    right: 0;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: $lg-text;
+    background: transparent;
+    color: rgba($gray, .7);
+    letter-spacing: -$lg-text;
+    &:hover {
+        color: $gray;
+    }
+}
+
 .collapse-off {
-    @include transition(all 0.2s);
-    @include transform(rotate(0deg));
+    @include transition(all .5s);
+    @include transform(scale(0));
+    width: 0;
 }
 
 .collapse-on {
-    @include transition(all 0.2s);
-    @include transform(rotate(180deg));
+    @include transition(all .5s);
+    @include transform(scale(1));
 }
 
 .card-content {
