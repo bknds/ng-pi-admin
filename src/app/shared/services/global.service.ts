@@ -1,5 +1,6 @@
 import { Injectable } from "@angular/core";
 import { Subject } from "rxjs/Subject";
+import { TabMenuModel } from "../models/tabs-model";
 
 @Injectable()
 export class GlobalService {
@@ -13,12 +14,12 @@ export class GlobalService {
     }
 
     /* tabs title */
-    private tabsTitleSource = new Subject<string>();
+    private tabsMenuSource = new Subject<TabMenuModel>();
 
-    tabsTitle$ = this.tabsTitleSource.asObservable();
+    tabsMenu$ = this.tabsMenuSource.asObservable();
 
-    _tabsTitle(tabsTitle: string) {
-        this.tabsTitleSource.next(tabsTitle);
+    _tabsMenu(tabsMenu: TabMenuModel) {
+        this.tabsMenuSource.next(tabsMenu);
     }
 
 }

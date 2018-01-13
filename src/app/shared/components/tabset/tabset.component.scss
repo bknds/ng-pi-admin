@@ -8,10 +8,12 @@
         min-width: 100px;
         width: auto;
         height: 40px;
+        background: transparent;
+        border: none;
         float: left;
+        outline: none;
         line-height: 40px;
-        text-align: center;
-        cursor: pointer;
+        text-align: center; //cursor: pointer;
         &::after {
             display: block;
             content: '';
@@ -21,7 +23,7 @@
             border: none;
             border-radius: 2px;
             position: relative;
-            bottom: 1px;
+            bottom: 2px;
         }
     }
     .tabs-nav {
