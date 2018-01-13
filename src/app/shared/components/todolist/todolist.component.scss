@@ -9,7 +9,7 @@
     border-radius: 2px;
 }
 
-.todolist-body {
+.todolist-wrap {
     margin-top: 14px;
 }
 
@@ -24,12 +24,13 @@
     flex: 1;
     border: none;
     border-bottom: 1px solid $border-color;
+    outline: none;
 }
 
 .task-list {
     @include transition(all 0.4s);
     &:hover {
-        @include linear-gradient(to right, $primary, rgba($primary, .1));
+        @include linear-gradient(to right, $primary, rgba($primary, .5));
         .edit-input {
             width: 65%;
             height: 30px;

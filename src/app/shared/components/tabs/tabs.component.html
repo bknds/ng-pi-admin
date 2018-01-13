@@ -1,6 +1,6 @@
 <div class="tabs-wrap">
   <div class="tabs-header">
-    <div class="tabs-nav" *ngFor="let item of tabsItem;let i = index" (click)="isActive(i)" [ngClass]="{'is-active':item.isActive,'tabs-nav':!item.isActive}">{{item.text}}</div>
+    <div class="tabs-nav" *ngFor="let item of tabsMenuItem;let i = index" (click)="isActive(i)" [ngClass]="{'is-active':item.isActive,'tabs-nav':!item.isActive}">{{item.text}}</div>
   </div>
   <div class="tabs-body">
     <ng-content></ng-content>

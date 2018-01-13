@@ -1,26 +1,43 @@
 import { Component, OnInit } from '@angular/core';
+import { GlobalService } from '../../services/global.service';
 
 @Component({
   selector: 'du-tabs',
   templateUrl: './tabs.component.html',
-  styleUrls: ['./tabs.component.scss']
+  styleUrls: ['./tabs.component.scss'],
+  providers: [GlobalService]
 })
 export class TabsComponent implements OnInit {
 
-  tabsItem = [
-    { text: 'ITEM1', isActive: true },
-    { text: 'ITEM2', isActive: false },
-    { text: 'ITEM3', isActive: false }
-  ];
+  tabsMenuItem: Array<TabMenu> = [];
 
-  constructor() { }
+  constructor(public _globalService: GlobalService) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    this._getTabMenu();
+  }
 
   isActive(index) {
-    this.tabsItem.forEach(item => {
+    this.tabsMenuItem.forEach(item => {
       item.isActive = false;
     });
-    this.tabsItem[index].isActive = true;
+    this.tabsMenuItem[index].isActive = true;
   }
+
+  _getTabMenu() {
+    this._globalService.tabsTitle$.subscribe(tabsTitle => {
+      let tabMenu = new TabMenu;
+      tabMenu.text = tabsTitle;
+      tabMenu.isActive = false;
+      this.tabsMenuItem.push(tabMenu);
+      this.isActive(0);
+    }, error => {
+      console.log('Error: ' + error);
+    });
+  }
+}
+
+export class TabMenu {
+  text: string;
+  isActive: boolean;
 }

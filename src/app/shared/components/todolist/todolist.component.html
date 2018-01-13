@@ -1,21 +1,16 @@
-<div class="card">
-  <div class="card-header">
-    <h4 class="card-title">TODO LIST</h4>
+<div class="todolist-wrap">
+  <div class="form-group">
+    <input type="text" class="new-task-input" [(ngModel)]="newTaskText" (keyup.enter)="creatNewTask()">
+    <button class="btn btn-primary" (click)="creatNewTask()">
+      <i class="fa fa-plus"></i>
+    </button>
   </div>
-  <div class="todolist-body">
-    <div class="form-group">
-      <input type="text" class="new-task-input" [(ngModel)]="newTaskText" (keyup.enter)="creatNewTask()">
-      <button class="btn btn-primary">
-        <i class="fa fa-plus"></i>
-      </button>
-    </div>
-    <div class="form-group task-list" *ngFor="let item of todolist;let i = index">
-      <button class="over-btn" (click)="overMatter(i)">
-        <i class="fa fa-circle-o fa-fw" *ngIf="!item.isOver"></i>
-        <i class="fa fa-check fa-fw" *ngIf="item.isOver"></i>
-      </button>
-      <label class="list-text" [ngClass]="{'list-over':item.isOver,'list-text':!item.isOver}" (dblclick)="edit(i)" *ngIf="!item.isEdit">{{item.text}}</label>
-      <input type="text" class="edit-input" [(ngModel)]="item.text" *ngIf="item.isEdit" (keyup.enter)="updataTaskDetail(i)">
-    </div>
+  <div class="form-group task-list" *ngFor="let item of todolist;let i = index">
+    <button class="over-btn" (click)="overMatter(i)">
+      <i class="fa fa-circle-o fa-fw" *ngIf="!item.isOver"></i>
+      <i class="fa fa-check fa-fw" *ngIf="item.isOver"></i>
+    </button>
+    <label class="list-text" [ngClass]="{'list-over':item.isOver,'list-text':!item.isOver}" (dblclick)="edit(i)" *ngIf="!item.isEdit">{{item.text}}</label>
+    <input type="text" class="edit-input" [(ngModel)]="item.text" *ngIf="item.isEdit" (keyup.enter)="updataTaskDetail(i)">
   </div>
 </div>
