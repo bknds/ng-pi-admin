@@ -10,6 +10,10 @@ import { TablesService } from '../../../../shared/services/tables.service';
 
 })
 export class SmartTablesComponent implements OnInit {
+  pageSize: number = 5;
+  pageNumber: number = 1;
+  total: number;
+
 
   table_data: Array<any>;
 
@@ -17,5 +21,10 @@ export class SmartTablesComponent implements OnInit {
 
   ngOnInit() {
     this.table_data = this._tablesService.DEFAULT_DATA;
+  }
+
+  loadData() {}
+
+  pageChanged(pN: number): void {
   }
 }

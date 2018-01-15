@@ -1,5 +1,12 @@
+@import '../../theme/conf';
 .msg-center-wrap {
-    border: 1px solid #000;
-    width: 300px;
+    float: left;
+    width: 0px;
     height: 100%;
+    background: $sidebar-bg;
+    border-left:1px solid $border-color;
+}
+
+.msg-center-close {
+    width:0;
 }

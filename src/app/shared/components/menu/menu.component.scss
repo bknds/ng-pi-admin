@@ -46,7 +46,7 @@
         }
         .direction {
             width: 50px;
-            @include transition(transform .5s);
+            @include transition(transform .2s);
             @include transform(rotate(0deg));
         }
     }

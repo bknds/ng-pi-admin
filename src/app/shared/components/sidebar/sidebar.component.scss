@@ -4,18 +4,18 @@
     height: 100%;
     background: $sidebar-bg;
     overflow-x: hidden;
-    @include box-shadow( 5px 1px 10px rgba($black, .06));
-    @include transition(all .4s);
+    @include transition(all .3s);
+    float: left;
 }
 
 .avatar-wrap {
-    padding: 15px;
+    padding: 15px 0 ;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 200px;
+    width: 220px;
     height: auto;
     min-height: 50px;
     border-bottom: 1px solid $border-color;

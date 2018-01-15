@@ -22,9 +22,14 @@
     display: block;
     margin: 0 10px;
     flex: 1;
+    background: transparent;
     border: none;
     border-bottom: 1px solid $border-color;
     outline: none;
+    @include transition(all 1s);
+    &:focus {
+        border-bottom:1px solid $primary;
+    }
 }
 
 .task-list {
@@ -34,7 +39,7 @@
         .edit-input {
             width: 65%;
             height: 30px;
-            background: rgba($white, 0);
+            background: transparent;
             border: 1px solid $white;
             border-radius: 2px;
         }
@@ -59,7 +64,6 @@
 }
 
 .list-over {
-    color: $white;
     text-decoration: line-through;
 }
 

@@ -67,7 +67,7 @@ input.form-control {
     border: none;
     border-bottom: 1px solid transparent;
     background: $border-color;
-    @include transition(all .6s);
+    @include transition(all 1s);
     &:focus {
         border-bottom: 1px solid $primary;
     }
@@ -95,7 +95,7 @@ textarea.form-control {
     background: $border-color;
     border: 1px solid transparent;
     border-radius: 0;
-    @include transition(border .6s);
+    @include transition(border 1s);
     &:focus {
         border: 1px solid $primary;
     }
@@ -105,8 +105,14 @@ select.form-control {
     border-radius: 0;
     border: 1px solid transparent;
     background: $border-color;
+    @include transition(border 1s);
     &:focus {
         border: 1px solid $primary;
+    }
+    option {
+        background: $sidebar-bg;
+        color: $fonts-color;
+        border: none;
     }
 }
 

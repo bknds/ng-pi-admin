@@ -39,23 +39,24 @@
 .search-wrap {
     position: absolute;
     top: 50%;
-    right: 0px;
+    right: 20px;
     transform: translate(0, -50%);
+    border:1px solid $border-color;
+    border-radius: 40px;
     .search-input {
         width: 300px;
         height: 40px;
         background: transparent;
-        border: 1px solid $border-color;
+        border: none;
         border-radius: 40px;
-        outline: none; //@include box-shadow( 1px 1px 1px rgba($black, .1) inset);
+        outline: none;
         color: $fonts-color;
         font-size: $sm-text;
         text-indent: 1.5em;
     }
     .search-btn {
         position: relative;
-        top: 1px;
-        left: -35px;
+        right:5px;
         width: 30px;
         height: 30px;
         background: $primary;

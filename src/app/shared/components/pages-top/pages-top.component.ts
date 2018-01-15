@@ -9,18 +9,18 @@ import { GlobalService } from '../../services/global.service';
 })
 
 export class PagesTopComponent implements OnInit {
-  isViewAll: boolean = true;
+  sidebarToggle: boolean = true;
 
   constructor(private _globalService: GlobalService) { }
 
   ngOnInit() { }
 
-  _isViewAll() {
-    this._globalService.isViewAll$.subscribe(isViewAll => {
-      this.isViewAll = isViewAll;
+  _sidebarToggle() {
+    this._globalService.sidebarToggle$.subscribe(sidebarToggle => {
+      this.sidebarToggle = sidebarToggle;
     }, error => {
       console.log('Error: ' + error);
     });
-    this._globalService._isViewAllState(!this.isViewAll);
+    this._globalService._sidebarToggleState(!this.sidebarToggle);
   }
 }

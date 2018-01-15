@@ -1,0 +1,48 @@
+.pagination-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    .input-group {
+        width: 150px;
+    }
+    .form-group {
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.my-pagination /deep/ .ngx-pagination {
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: $sm-text;
+    a,
+    .current {
+        min-width: 40px;
+        text-decoration: none;
+        height: 35px;
+        text-align: center;
+        line-height: 35px;
+        margin: 0;
+        border-right: 1px solid $border-color;
+        color: $fonts-color;
+        &:last-child {
+            border: none;
+        }
+    }
+    a:hover,
+    .current {
+        min-width: 40px;
+        background: $primary;
+        color: $white;
+    }
+}
+
+.ngx-pagination .pagination-previous a::before,
+.ngx-pagination .pagination-previous.disabled::before,
+.ngx-pagination .pagination-next a::after,
+.ngx-pagination .pagination-next.disabled::after {
+    content: '' !important;
+}

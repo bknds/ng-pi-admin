@@ -1,11 +1,11 @@
-<div class="pages-sider" [ngClass]="{'side-collapsed':!isViewAll}" (click)="_isViewAll()">
+<div class="pages-sider" [ngClass]="{'side-collapsed':!sidebarToggle}" (click)="_sidebarToggle()">
   <div class="avatar-wrap">
     <div class="avatar">
       <img src="{{avatarImgSrc}}" alt="avatar">
     </div>
     <div class="user-info-wrap">
-      <span class="user-name">TreesFlower</span>
-      <span class="user-post">Developer</span>
+      <span class="user-name">Folisise Chosielie</span>
+      <span class="user-post">Musician, Player</span>
     </div>
   </div>
   <div class="msg-tips-wrap row">
@@ -22,5 +22,6 @@
       <span class="badge" *ngIf="tip.email"></span>
     </div>
   </div>
-  <du-menu [menuInfo]="menuInfo" [isViewAll]="isViewAll"></du-menu>
+  <du-menu [menuInfo]="menuInfo" [sidebarToggle]="sidebarToggle"></du-menu>
 </div>
+<msg-center></msg-center>

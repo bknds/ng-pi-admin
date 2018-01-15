@@ -15,7 +15,7 @@ export class SidebarComponent implements OnInit {
 
   public menuInfo = [];
 
-  isViewAll: boolean = true;
+  sidebarToggle: boolean = true;
 
   tip = new Tips;
 
@@ -25,20 +25,20 @@ export class SidebarComponent implements OnInit {
 
   ngOnInit() {
     this.menuInfo = this._menuService.putSidebarJson();
-    this._isViewAll();
+    this._sidebarToggle();
     this.tip.ring = true;
     this.tip.comments = true;
     this.tip.email = true;
   }
 
-  _isViewAll() {
-    this._globalService.isViewAll$.subscribe(isViewAll => {
-      this.isViewAll = isViewAll;
+  _sidebarToggle() {
+    this._globalService.sidebarToggle$.subscribe(sidebarToggle => {
+      this.sidebarToggle = sidebarToggle;
     }, error => {
       console.log('Error: ' + error);
     });
 
-    this._globalService._isViewAllState(true);
+    this._globalService._sidebarToggleState(true);
   }
 
 }

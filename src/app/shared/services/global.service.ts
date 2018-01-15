@@ -5,12 +5,12 @@ import { TabMenuModel } from "../models/tabs-model";
 @Injectable()
 export class GlobalService {
     /* sidebar toggole */
-    private isViewAllSource = new Subject<boolean>();
+    private sidebarToggleSource = new Subject<boolean>();
 
-    isViewAll$ = this.isViewAllSource.asObservable();
+    sidebarToggle$ = this.sidebarToggleSource.asObservable();
 
-    _isViewAllState(isViewAll: boolean) {
-        this.isViewAllSource.next(isViewAll);
+    _sidebarToggleState(sidebarToggle: boolean) {
+        this.sidebarToggleSource.next(sidebarToggle);
     }
 
     /* tabs title */

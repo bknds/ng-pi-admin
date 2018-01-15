@@ -1,5 +1,5 @@
 <ul class="menu-wrap">
-  <li *ngFor="let item of menuInfo;let i = index" class="menu-item" [ngClass]="{'item-toggle-on':item.toggle === 'on','item-toggle-off':!isViewAll}">
+  <li *ngFor="let item of menuInfo;let i = index" class="menu-item" [ngClass]="{'item-toggle-on':item.toggle === 'on','item-toggle-off':!sidebarToggle}">
 
     <a href="javascript:;" [routerLink]="[item.routerLink.join('/')]" *ngIf="item.routerLink" routerLinkActive="active" class="menu-link">
       <div class="placeholder">

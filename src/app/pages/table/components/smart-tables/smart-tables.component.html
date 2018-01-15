@@ -4,10 +4,6 @@
       <table class="table table-bordered">
         <thead>
           <tr>
-            <!-- <th>
-              <input class="checkbox" type="checkbox" id="isCheckedAll" [checked]="isCheckedAll" (change)="allChecked($event.target)">
-              <label class="check-label" for="isCheckedAll"></label>
-            </th> -->
             <th>#</th>
             <th>FIRSTNAME</th>
             <th>LASTNAME</th>
@@ -37,7 +33,13 @@
               <input type="text" class="form-control table-form-control">
             </td>
             <td>
-              <span class="label label-info">info</span>
+              <select name="state" id="state" class="form-control">
+                <option value="1">primary</option>
+                <option value="1">warning</option>
+                <option value="1">success</option>
+                <option value="1">danger</option>
+                <option value="1">info</option>
+              </select>
             </td>
             <td>
               <button class="btn btn-sm btn-primary btn-with-ico">
@@ -46,11 +48,7 @@
               </button>
             </td>
           </tr>
-          <tr *ngFor="let item of table_data;let index = index">
-            <!-- <td>
-              <input class="checkbox" type="checkbox" id="check{{index}}" [checked]="item.checked" (change)="Checked($event.target,index)">
-              <label class="check-label" for="check{{index}}"></label>
-            </td> -->
+          <tr *ngFor="let item of table_data | paginate: { id: 'pager', itemsPerPage: pageSize, currentPage: pageNumber, totalItems: total};let index = index">
             <td>{{index}}</td>
             <td>{{item.first_name}}</td>
             <td>{{item.last_name}}</td>
@@ -74,6 +72,28 @@
           </tr>
         </tbody>
       </table>
+      <form class="pagination-wrapper">
+        <div class="form-group pages">
+          <pagination-controls class="my-pagination" id="pager" (pageChange)="pageChanged($event)" maxSize="9" directionLinks="true"
+            autoHide="true" previousLabel="PREV" nextLabel="NEXT" screenReaderPaginationLabel="Pagination" screenReaderPageLabel="page"
+            screenReaderCurrentLabel="You're on page">
+          </pagination-controls>
+        </div>
+        <div class="form-group options pages">
+          <div class="input-group input-group-sm">
+            <select class="form-control" name="pageChangedName" [(ngModel)]="pageSize" (ngModelChange)="loadData()">
+              <option>1</option>
+              <option>5</option>
+              <option>10</option>
+              <option>20</option>
+              <option>50</option>
+              <option>100</option>
+              <option>200</option>
+            </select>
+            <span class="input-group-addon addon-right input-group-addon-primary">条/页</span>
+          </div>
+        </div>
+      </form>
     </card>
   </div>
 </div>
