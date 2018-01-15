@@ -13,12 +13,12 @@ export class SidebarComponent implements OnInit {
 
   avatarImgSrc: string = 'assets/images/avatar.png';
 
-  protected menuInfo = [];
+  public menuInfo = [];
 
   isViewAll: boolean = true;
 
   tip = new Tips;
-  
+
   constructor(private _menuService: menuService,
     public _globalService: GlobalService) {
   }
