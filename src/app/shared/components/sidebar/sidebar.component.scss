@@ -52,7 +52,7 @@
     margin-top: 5px;
 }
 
-.msg-center-wrap {
+.msg-tips-wrap {
     margin: 0;
     width: 100%;
     height: 50px;
@@ -82,19 +82,6 @@
         background: $primary;
         border: 2px solid $sidebar-bg;
         border-radius: 50%;
-    }
-}
-
-.msg-center {
-    width: 250px;
-    height: 400px;
-    overflow: hidden;
-    @include box-shadow( 0 1px 6px 0 rgba($black, 0.25) inset);
-    .bell-msgs {
-        width: 90%;
-        height: 50px;
-        margin: 0 auto;
-        border-bottom: 1px solid $border-color;
     }
 }
 

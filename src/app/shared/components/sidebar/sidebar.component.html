@@ -8,8 +8,8 @@
       <span class="user-post">Developer</span>
     </div>
   </div>
-  <div class="msg-center-wrap row">
-    <div class="msg-entrance ring col-sm-4" (click)="isMsgCenterToggleOn()">
+  <div class="msg-tips-wrap row">
+    <div class="msg-entrance ring col-sm-4">
       <span class="fa fa-bell fa-fw"></span>
       <span class="badge" *ngIf="tip.ring"></span>
     </div>
@@ -21,22 +21,6 @@
       <span class="fa fa-envelope fa-fw"></span>
       <span class="badge" *ngIf="tip.email"></span>
     </div>
-  </div>
-  <div class="msg-center" [@collapse]="isMsgCenterOn">
-    <div class="bell-msgs"></div>
-    <div class="bell-msgs"></div>
-    <div class="bell-msgs"></div>
-    <div class="bell-msgs"></div>
-    <div class="bell-msgs"></div>
-    <div class="bell-msgs"></div>
-    <div class="bell-msgs"></div>
-    <div class="bell-msgs"></div>
-    <div class="bell-msgs"></div>
-    <div class="bell-msgs"></div>
-    <div class="bell-msgs"></div>
-    <div class="bell-msgs"></div>
-    <div class="bell-msgs"></div>
-    <div class="bell-msgs"></div>
   </div>
   <du-menu [menuInfo]="menuInfo" [isViewAll]="isViewAll"></du-menu>
 </div>
