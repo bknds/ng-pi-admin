@@ -28,11 +28,12 @@
     outline: none;
     @include transition(all 1s);
     &:focus {
-        border-bottom:1px solid $primary;
+        border-bottom: 1px solid $primary;
     }
 }
 
 .task-list {
+    border-radius: 5px;
     @include transition(all 0.4s);
     &:hover {
         @include linear-gradient(to right, $primary, rgba($primary, .5));
