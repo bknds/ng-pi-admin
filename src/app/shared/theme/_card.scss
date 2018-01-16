@@ -1,61 +1,18 @@
-.card,
-.card-block,
-.card-primary,
-.card-success,
-.card-danger,
-.card-warning,
-.card-info {
+.card {
     width: auto;
     height: auto;
+    background: $card-bg;
     position: relative;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     color: $gray;
     margin-bottom: 24px;
     @include box-shadow(0 0 24px 0 rgba($black, .06), 0 1px 0 0 rgba($black, .02));
 }
 
-.card,
-.card-block {
-    background: $card-bg;
-}
-
 .card-block {
     display: block;
     padding: 10px;
-}
-
-.card-primary,
-.card-success,
-.card-danger,
-.card-warning,
-.card-info {
-    color: #fff;
-}
-
-.card-primary {
-    @extend .bg-primary;
-    @include box-shadow( 0 2px 5px 0 rgba($primary, .5));
-}
-
-.card-success {
-    @extend .bg-success;
-    @include box-shadow( 0 2px 5px 0 rgba($success, .5));
-}
-
-.card-danger {
-    @extend .bg-danger;
-    @include box-shadow( 0 2px 5px 0 rgba($danger, .5));
-}
-
-.card-warning {
-    @extend .bg-warning;
-    @include box-shadow( 0 2px 5px 0 rgba($warning, .5));
-}
-
-.card-info {
-    @extend .bg-info;
-    @include box-shadow( 0 2px 5px 0 rgba($info, .5));
 }
 
 .card-header {
@@ -120,4 +77,44 @@
     border: none;
     border-top: 1px solid $border-color;
     padding: 0 10px;
+}
+
+.tip-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .tip-msg {
+        h2 {
+            line-height: .5em;
+        }
+    }
+    .tip-ico {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        color: $white;
+        line-height: 70px;
+        text-align: center;
+        font-size: 20px;
+    }
+    .tip-ico-primary {
+        @extend .bg-primary;
+        @include box-shadow( 0 2px 5px 0 rgba($primary, .5));
+    }
+    .tip-ico-success {
+        @extend .bg-success;
+        @include box-shadow( 0 2px 5px 0 rgba($success, .5));
+    }
+    .tip-ico-danger {
+        @extend .bg-danger;
+        @include box-shadow( 0 2px 5px 0 rgba($danger, .5));
+    }
+    .tip-ico-warning {
+        @extend .bg-warning;
+        @include box-shadow( 0 2px 5px 0 rgba($warning, .5));
+    }
+    .tip-ico-info {
+        @extend .bg-info;
+        @include box-shadow( 0 2px 5px 0 rgba($info, .5));
+    }
 }

@@ -2,21 +2,21 @@
 $default-text:14px;
 $sm-text:12px;
 $lg-text:16px;
-$body-bg:#1a232b;
-$sidebar-bg:#1c262e;
+$body-bg:#1b2338;
+$sidebar-bg:#222a41;
 $sidebar-fonts:#ffffff;
-$card-bg:#1c262e;
+$card-bg:#222a41;
 $white:#ffffff;
 $black:#000000;
 $gray:#cccccc;
 $mask:rgba($black, .1);
 $border-color:rgba($black, .1);
 $fonts-color:#ffffff;
-$primary:#f65d57;
-$primary-end:#ffba4a;
-$success:#00b144;
-$danger:#ff4161;
-$warning:#fdcf00;
+$primary:#e45036;
+$primary-end:#ffbe56;
+$success:#04ad53;
+$danger:#fd3964;
+$warning:#fd8f00;
 $info:#1e65ff;
 body {
     background: $body-bg;
@@ -27,11 +27,11 @@ body {
 }
 
 .bg-success {
-    @include linear-gradient(to top right, $success, #42e697);
+    @include linear-gradient(to top right, $success, #1dffc7);
 }
 
 .bg-danger {
-    @include linear-gradient(to top right, $danger, #fbaa68);
+    @include linear-gradient(to top right, $danger, #fd7a9b);
 }
 
 .bg-warning {
