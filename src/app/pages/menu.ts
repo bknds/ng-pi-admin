@@ -11,12 +11,12 @@ export let MENU_ITEM = [
     },
     {
         path: 'ui',
-        title: 'UI',
+        title: 'UI Elements',
         icon: 'laptop',
         children: [
             {
                 path: 'grid',
-                title: 'Grid'
+                title: 'Bootstrap Grid'
             },
             {
                 path: 'buttons',
@@ -30,7 +30,7 @@ export let MENU_ITEM = [
     },
     {
         path: 'form',
-        title: 'Form',
+        title: 'Forms',
         icon: 'check-square-o',
         children: [
             {

@@ -1,14 +1,42 @@
 @import '../../shared/theme/conf';
 .login-card {
+    padding: 20px;
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 500px;
+    width: 400px;
     height: auto;
-    min-height: 400px;
-    .input-group,
+    .form-group {
+        padding: 0;
+    }
+    .form-label {
+        display: block;
+        color: $fonts-color;
+        padding: 0 10px;
+    }
+    span.form-label {
+        color: lighten($fonts-color, 30%);
+    }
+    .input-group {
+        padding: 0;
+        margin: 25px 0;
+    }
+    .form-control {
+        background: transparent;
+        color: $fonts-color;
+    }
+    .input-group-addon {
+        background: transparent;
+        border: none;
+        font-size: $lg-text;
+        color: lighten($fonts-color, 20%);
+    }
     .btn {
+        width: 100%;
+    }
+    .btn-link {
         margin: 10px 0;
+        color: lighten($fonts-color, 30%);
     }
 }

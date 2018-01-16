@@ -65,7 +65,7 @@
 input.form-control {
     border-radius: 0;
     border: none;
-    border-bottom: 1px solid transparent;
+    border-bottom: 1px solid $border-color;
     background: $border-color;
     @include transition(all 1s);
     &:focus {

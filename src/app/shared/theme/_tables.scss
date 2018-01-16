@@ -32,10 +32,7 @@
 
 .table-hover {
     >tbody>tr:hover {
-        background-color: rgba($primary, .1);
-        >td {
-            border-top: 1px solid transparent;
-        }
+        background-color: rgba($border-color, .7);
     }
 }
 
