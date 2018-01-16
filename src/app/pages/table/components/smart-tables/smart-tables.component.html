@@ -4,7 +4,6 @@
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>#</th>
             <th>FIRSTNAME</th>
             <th>LASTNAME</th>
             <th>USERNAME</th>
@@ -16,7 +15,6 @@
         </thead>
         <tbody>
           <tr>
-            <td></td>
             <td>
               <input type="text" class="form-control table-form-control">
             </td>
@@ -48,8 +46,7 @@
               </button>
             </td>
           </tr>
-          <tr *ngFor="let item of table_data | paginate: { id: 'pager', itemsPerPage: pageSize, currentPage: pageNumber, totalItems: total};let index = index">
-            <td>{{index}}</td>
+          <tr *ngFor="let item of table_data | paginate: { id: 'pager', itemsPerPage: pageInfo.pageSize, currentPage:pageInfo.pageNumber, totalItems: pageInfo.total};let index = index">
             <td>{{item.first_name}}</td>
             <td>{{item.last_name}}</td>
             <td>{{item.user_name}}</td>
@@ -72,28 +69,7 @@
           </tr>
         </tbody>
       </table>
-      <form class="pagination-wrapper">
-        <div class="form-group pages">
-          <pagination-controls class="my-pagination" id="pager" (pageChange)="pageChanged($event)" maxSize="9" directionLinks="true"
-            autoHide="true" previousLabel="PREV" nextLabel="NEXT" screenReaderPaginationLabel="Pagination" screenReaderPageLabel="page"
-            screenReaderCurrentLabel="You're on page">
-          </pagination-controls>
-        </div>
-        <div class="form-group options pages">
-          <div class="input-group input-group-sm">
-            <select class="form-control" name="pageChangedName" [(ngModel)]="pageSize" (ngModelChange)="loadData()">
-              <option>1</option>
-              <option>5</option>
-              <option>10</option>
-              <option>20</option>
-              <option>50</option>
-              <option>100</option>
-              <option>200</option>
-            </select>
-            <span class="input-group-addon addon-right input-group-addon-primary">条/页</span>
-          </div>
-        </div>
-      </form>
+      <du-pagination pagerId="pager" [pageInfo]="pageInfo" (pageChangedfn)="pageChanged()" (pageNumberChangefn)="loadData()"></du-pagination>
     </card>
   </div>
 </div>

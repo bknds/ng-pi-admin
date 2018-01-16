@@ -1,3 +1,4 @@
+@import '../../theme/conf';
 .pagination-wrapper {
     display: flex;
     flex-direction: row;
@@ -5,6 +6,11 @@
     justify-content: space-between;
     .input-group {
         width: 150px;
+        .input-group-addon {
+            @extend .bg-primary;
+            color: $white;
+            border: none;
+        }
     }
     .form-group {
         height: auto;
@@ -18,13 +24,14 @@
     border-radius: 5px;
     overflow: hidden;
     font-size: $sm-text;
+    padding: 0;
     a,
     .current {
         min-width: 40px;
         text-decoration: none;
         height: 35px;
         text-align: center;
-        line-height: 35px;
+        line-height: 33px;
         margin: 0;
         border-right: 1px solid $border-color;
         color: $fonts-color;
@@ -35,7 +42,7 @@
     a:hover,
     .current {
         min-width: 40px;
-        background: $primary;
+        @extend .bg-primary;
         color: $white;
     }
 }
