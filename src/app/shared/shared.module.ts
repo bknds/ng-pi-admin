@@ -38,5 +38,4 @@ import { PaginationComponent } from './components/pagination/pagination.componen
     PaginationComponent
   ]
 })
-export class SharedModule {
-}
+export class SharedModule { }

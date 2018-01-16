@@ -2,7 +2,7 @@
     &>thead {
         &>tr {
             &>th {
-                border-bottom: 1px solid transparent;
+                border-bottom: 1px solid $border-color;
                 text-align: center;
                 white-space: nowrap;
             }
@@ -11,7 +11,7 @@
     &>tbody {
         &>tr {
             &>td {
-                border: 1px solid transparent;
+                border-bottom: 1px solid $border-color;
                 text-align: center;
                 vertical-align: middle;
             }

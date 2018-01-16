@@ -4,6 +4,6 @@ export const collapse = [
     trigger('collapse', [
         state('off', style({ 'height': '0' })),
         state('on', style({ 'height': '*' })),
-        transition('* => *', [animate('200ms')])
+        transition('* => *', [animate('400ms cubic-bezier(.39,.8,.5,.95)')])
     ])
-]
+];

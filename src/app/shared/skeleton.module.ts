@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core'
-import { RouterModule } from '@angular/router'
-import { CommonModule } from '@angular/common'
+import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 import { GlobalService } from './services/global.service';
 
@@ -35,5 +35,4 @@ import { MsgCenterComponent } from './components/msg-center/msg-center.component
         MsgCenterComponent
     ]
 })
-export class SkeletonModule {
-}
+export class SkeletonModule { }
