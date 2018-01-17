@@ -6,22 +6,19 @@
 }
 
 .btn {
-    padding:.4em .7em;
+    padding: .4em .8em;
     border: none;
-    border-radius:3px;
+    border-radius: 3px;
     @include transition(all 0.2s);
 }
 
-.btn-default {
-    @include box-shadow(none);
-}
-
 .btn-default,
+.btn-default:disabled:hover,
 .btn-default:hover,
 .btn-default:active:focus,
 .btn-default:focus {
-    background: $primary;
-    color:$white;
+    color: $fonts-color;
+    @extend .bg-default;
 }
 
 .btn-primary {
@@ -65,7 +62,7 @@
 }
 
 .btn-sm {
-    padding:.35em .65em;
+    padding: .35em .8em;
     font-size: $default-text;
 }
 
@@ -89,6 +86,36 @@
 .btn-group-lg>.btn,
 .btn-lg {
     font-size: $lg-text;
+}
+
+.btn-group-open {
+    .btn-primary {
+        @extend .bg-warning;
+    }
+}
+
+.open>.btn.dropdown-toggle {
+    &.btn {
+        color: $fonts-color;
+    }
+    &.btn.btn-default {
+        @extend .bg-default;
+    }
+    &.btn.btn-primary {
+        @extend .bg-primary;
+    }
+    &.btn-success {
+        @extend .bg-success;
+    }
+    &.btn-warning {
+        @extend .bg-warning;
+    }
+    &.btn-danger {
+        @extend .bg-danger;
+    }
+    &.btn-info {
+        @extend .bg-info;
+    }
 }
 
 .btn-with-icon {

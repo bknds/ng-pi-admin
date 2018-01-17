@@ -12,14 +12,18 @@ $gray:#666666;
 $border-color:#e2e2e2;
 $fonts-color:#555555;
 $mask:rgba($black, .1);
-$primary:#ffb73a;
-$primary-end:#fae484;
+$primary:#faae21;
+$primary-end:#fad184;
 $success:#29bdb6;
 $danger:#f9619a;
-$warning:#fd7a00;
-$info:#36c5fd;
+$warning:#ff7403;
+$info:#2cc3ff;
 body {
     background: $body-bg;
+}
+
+.bg-default {
+    @include linear-gradient(to top right, darken($border-color, 10%), lighten($border-color, 5%));
 }
 
 .bg-primary {
@@ -35,9 +39,9 @@ body {
 }
 
 .bg-warning {
-    @include linear-gradient(to top right, $warning, #fce16a);
+    @include linear-gradient(to top right, $warning, #fcc26a);
 }
 
 .bg-info {
-    @include linear-gradient(to top right, $info, #22f8c3);
+    @include linear-gradient(to top right, $info, #15f8bf);
 }
