@@ -1,0 +1,34 @@
+@import "../../theme/_light.scss";
+.progress {
+    display: block;
+    padding: 0;
+    margin: 5px 0;
+    width: 100%;
+    height: 4px;
+    overflow: hidden;
+    border-radius: 2px;
+    background: $border-color;
+    .progress-bar {
+        height: 4px;
+        @extend .bg-primary;
+    }
+    .progress-bar-primary {
+        @extend .bg-primary;
+    }
+    .progress-bar-success {
+        @extend .bg-success;
+    }
+    .progress-bar-warning {
+        @extend .bg-warning;
+    }
+    .progress-bar-danger {
+        @extend .bg-danger;
+    }
+    .progress-bar-info {
+        @extend .bg-info;
+    }
+}
+
+.progress-percent {
+    font-size: $sm-text;
+}

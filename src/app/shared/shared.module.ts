@@ -11,6 +11,7 @@ import { TabsetComponent } from './components/tabset/tabset.component';
 import { TabContentComponent } from './components/tabset/tab-content/tab-content.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { PaginationComponent } from './components/pagination/pagination.component';
+import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 
 @NgModule({
   imports: [
@@ -26,6 +27,7 @@ import { PaginationComponent } from './components/pagination/pagination.componen
     TabsetComponent,
     TabContentComponent,
     ModalComponent,
+    ProgressBarComponent,
     PaginationComponent
   ],
   exports: [
@@ -35,6 +37,7 @@ import { PaginationComponent } from './components/pagination/pagination.componen
     TabsetComponent,
     TabContentComponent,
     ModalComponent,
+    ProgressBarComponent,
     PaginationComponent
   ]
 })

@@ -89,14 +89,15 @@
         }
         span {
             color: rgba($fonts-color, .6);
+            font-size: $sm-text;
         }
     }
     .tip-ico {
-        width: 70px;
-        height: 70px;
+        width: 100px;
+        height: 100px;
         border-radius: 50%;
         color: $white;
-        line-height: 70px;
+        line-height: 100px;
         text-align: center;
         font-size: 25px;
     }
