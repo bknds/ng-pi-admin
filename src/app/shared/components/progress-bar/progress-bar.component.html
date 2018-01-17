@@ -2,4 +2,4 @@
   <div [class]="theme" [ngStyle]="{'width':percentNumber + '%'}">
   </div>
 </div>
-<span class="progress-percent">{{percentNumber}}%</span>
+<span class="progress-percent" *ngIf="percentNumber">{{percentNumber}}%</span>

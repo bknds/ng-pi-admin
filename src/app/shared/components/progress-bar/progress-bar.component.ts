@@ -10,13 +10,12 @@ export class ProgressBarComponent implements OnInit {
   @Input()
   percentNumber: number;
   @Input()
-  color: string;
+  color: string = 'primary';
 
   theme: string;
   constructor() { }
 
   ngOnInit() {
-    console.log(this.percentNumber);
     this.theme = `progress-bar progress-bar-${this.color}`;
   }
 

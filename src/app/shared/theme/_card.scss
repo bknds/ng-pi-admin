@@ -95,11 +95,11 @@
     .tip-ico {
         width: 100px;
         height: 100px;
-        border-radius: 50%;
+        border-radius: 10%;
         color: $white;
         line-height: 100px;
         text-align: center;
-        font-size: 25px;
+        font-size: 30px;
     }
     .tip-ico-primary {
         @extend .bg-primary;
