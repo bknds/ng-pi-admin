@@ -50,7 +50,7 @@ export let MENU_ITEM = [
         children: [
             {
                 path: 'default-charts',
-                title: 'Default'
+                title: 'Base Charts'
             }
         ]
     },

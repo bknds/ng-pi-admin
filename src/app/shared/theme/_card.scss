@@ -64,9 +64,9 @@
 }
 
 .card-content {
-    padding: 10px 10px 0 10px;
+    padding: 10px;
     height: auto;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .card-footer {
@@ -88,7 +88,7 @@
             line-height: .5em;
         }
         span {
-            color:rgba($fonts-color,.6);
+            color: rgba($fonts-color, .6);
         }
     }
     .tip-ico {
@@ -98,7 +98,7 @@
         color: $white;
         line-height: 70px;
         text-align: center;
-        font-size: 20px;
+        font-size: 25px;
     }
     .tip-ico-primary {
         @extend .bg-primary;
