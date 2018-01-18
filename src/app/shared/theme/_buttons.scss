@@ -117,17 +117,26 @@
         @extend .bg-info;
     }
 }
+
 .btn-group {
     .dropdown-menu {
-        padding:0;
+        padding: 0;
+        background: $card-bg;
+        overflow: hidden;
         .divider {
-            margin:0;
+            margin: 0;
+            background-color: $border-color;
         }
-        a:hover {
-            background: darken($card-bg,10%);
+        a {
+            color: $fonts-color;
+            &:hover {
+                background: rgba($black, .1);
+                color: $fonts-color;
+            }
         }
     }
 }
+
 .btn-with-icon {
     span,
     i {
