@@ -117,7 +117,17 @@
         @extend .bg-info;
     }
 }
-
+.btn-group {
+    .dropdown-menu {
+        padding:0;
+        .divider {
+            margin:0;
+        }
+        a:hover {
+            background: darken($card-bg,10%);
+        }
+    }
+}
 .btn-with-icon {
     span,
     i {

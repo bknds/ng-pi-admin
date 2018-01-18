@@ -6,11 +6,12 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./progress-bar.component.scss']
 })
 export class ProgressBarComponent implements OnInit {
-
   @Input()
   percentNumber: number;
   @Input()
   color: string = 'primary';
+  @Input()
+  type: string = 'default';
 
   theme: string;
   constructor() { }
