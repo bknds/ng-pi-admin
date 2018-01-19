@@ -16,7 +16,7 @@ export class CardComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() { }
+  ngOnInit() {}
 
   collapseCard() {
     this.collapse === 'on' ? this.collapse = 'off' : this.collapse = 'on';
