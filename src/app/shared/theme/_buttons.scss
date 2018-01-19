@@ -118,6 +118,25 @@
     }
 }
 
+.btn-group {
+    .dropdown-menu {
+        padding: 0;
+        background: $card-bg;
+        overflow: hidden;
+        .divider {
+            margin: 0;
+            background-color: $border-color;
+        }
+        a {
+            color: $fonts-color;
+            &:hover {
+                background: rgba($black, .1);
+                color: $fonts-color;
+            }
+        }
+    }
+}
+
 .btn-with-icon {
     span,
     i {

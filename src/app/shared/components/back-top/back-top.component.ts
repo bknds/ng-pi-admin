@@ -1,5 +1,5 @@
 import { Component, ViewChild, HostListener, Input, ElementRef } from '@angular/core';
-import * as $ from "jquery";
+//import * as $ from "jquery";
 
 @Component({
   selector: 'back-top',
@@ -18,7 +18,7 @@ export class BackTopComponent {
 
   @HostListener('click')
   _onClick(): boolean {
-    $('.pages-content').animate({ scrollTop: 0 }, 600);
+    //$('.pages-content').animate({ scrollTop: 0 }, 600);
     return false;
   }
 

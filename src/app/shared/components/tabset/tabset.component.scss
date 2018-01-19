@@ -12,8 +12,9 @@
         border: none;
         float: left;
         outline: none;
+        color: $fonts-color;
         line-height: 40px;
-        text-align: center; //cursor: pointer;
+        text-align: center;
         &::after {
             display: block;
             content: '';
@@ -27,18 +28,20 @@
         }
     }
     .tabs-nav {
-        color: rgba($gray, .5);
         &::after {
             @include transition(all .2s);
             @include transform(scale(0, 1));
         }
     }
     .is-active {
-        color: $gray;
         &::after {
             @include transition(all .2s);
             @include transform(scale(1, 1));
         }
+    }
+    .tabs-nav[disabled] {
+        color: rgba($fonts-color, .4);
+        cursor: not-allowed;
     }
 }
 
