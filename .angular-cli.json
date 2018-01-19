@@ -23,7 +23,6 @@
       "../node_modules/bootstrap/less/bootstrap.less",
       "../node_modules/animate.css/animate.css",
       "app/shared/_styles.scss",
-      "app/shared/theme/scrollbar/customScrollbar.css",
       "styles.scss"
     ],
     "scripts": [
@@ -32,9 +31,7 @@
       "../node_modules/echarts/dist/echarts.min.js",
       "../node_modules/echarts/map/js/china.js",
       "../node_modules/echarts/dist/extension/bmap.js",
-      "app/shared/theme/echarts/dark.js",
-      "app/shared/theme/echarts/light.js",
-      "app/shared/theme/scrollbar/customScrollbar.js"
+      "app/shared/theme/echarts/dark.js"
     ],
     "environmentSource": "environments/environment.ts",
     "environments": {
