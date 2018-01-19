@@ -6,11 +6,12 @@
     width: 100%;
     height: 4px;
     overflow: hidden;
-    border-radius: 2px;
+    border-radius: 4px;
     background: $border-color;
     .progress-bar {
         height: 4px;
         @extend .bg-primary;
+        @include transition(all .4s);
     }
     .progress-bar-primary {
         @extend .bg-primary;

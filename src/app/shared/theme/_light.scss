@@ -12,8 +12,7 @@ $gray:#666666;
 $border-color:#e2e2e2;
 $fonts-color:#555555;
 $mask:rgba($black, .1);
-$primary:#faae21;
-$primary-end:#fad184;
+$primary:#fca400;
 $success:#29bdb6;
 $danger:#f9619a;
 $warning:#ff7403;
@@ -27,7 +26,7 @@ body {
 }
 
 .bg-primary {
-    @include linear-gradient(to top right, $primary, $primary-end);
+    @include linear-gradient(to top right, $primary, #ffdd9f);
 }
 
 .bg-success {

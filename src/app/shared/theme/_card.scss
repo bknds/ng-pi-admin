@@ -33,18 +33,17 @@
 
 .collapse-btn {
     display: block;
-    text-align: center;
-    outline: none;
-    border: none;
     position: relative;
     right: 0;
     top: 5px;
     width: 30px;
     height: 30px;
+    background: transparent;
+    outline: none;
+    border: none;
     line-height: 30px;
     text-align: center;
     font-size: $lg-text;
-    background: transparent;
     color: rgba($gray, .5);
     letter-spacing: -$lg-text;
     &:hover {
@@ -94,12 +93,12 @@
     }
     .tip-ico {
         width: 100px;
-        height: 100px;
-        border-radius: 50%;
+        height: 100%;
+        border-radius: 10%;
         color: $white;
         line-height: 100px;
         text-align: center;
-        font-size: 25px;
+        font-size: 30px;
     }
     .tip-ico-primary {
         @extend .bg-primary;
