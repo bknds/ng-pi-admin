@@ -1,0 +1,12 @@
+<div class="alerts-wrap">
+  <div class="alert-content error" *ngFor="let item of alertItem">
+    <div class="close-toggle">
+      <i class="fa fa-close"></i>
+    </div>
+    <label class="alert-title">
+      <span class="fa fa-exclamation-triangle alert-ico"></span>
+      {{item.title}}
+    </label>
+    <p class="alert-value">{{item.value}}</p>
+  </div>
+</div>

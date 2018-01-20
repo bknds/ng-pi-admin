@@ -25,6 +25,10 @@ export let MENU_ITEM = [
             {
                 path: 'tabs',
                 title: 'Tabs'
+            },
+            {
+                path: 'notification',
+                title: 'Notification'
             }
         ]
     },

@@ -7,6 +7,7 @@ import { UiComponent } from './ui.component';
 import { ButtonsComponent } from './components/buttons/buttons.component';
 import { TabsComponent } from './components/tabs/tabs.component';
 import { GridComponent } from './components/grid/grid.component';
+import { NotificationComponent } from './components/notification/notification.component';
 
 @NgModule({
     imports: [
@@ -18,7 +19,8 @@ import { GridComponent } from './components/grid/grid.component';
         UiComponent,
         ButtonsComponent,
         TabsComponent,
-        GridComponent
+        GridComponent,
+        NotificationComponent
     ]
 })
 export class UIModule { }

@@ -1,0 +1,53 @@
+@import '../../theme/conf';
+.alerts-wrap {
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.alert-content {
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    .close-toggle {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        width: 20px;
+        height: 20px;
+        line-height: 15px;
+        text-align: center;
+        color: $white;
+        cursor: pointer;
+    }
+    .alert-title {
+        color: $white;
+        font-size: $lg-text;
+        width: 85%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .alert-ico {
+        margin-right: 10px;
+    }
+    .alert-value {
+        color: rgba($white, .8);
+        font-size: $sm-text;
+    }
+}
+
+.error {
+    @extend .bg-danger;
+}
+
+.success {
+    @extend .bg-success;
+}
