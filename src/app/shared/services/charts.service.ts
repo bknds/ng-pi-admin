@@ -38,28 +38,28 @@ export class ChartsService {
                 type: 'line',
                 stack: '总量',
                 areaStyle: { normal: {} },
-                data: [120, 132, 101, 134, 90, 230, 210]
+                data: [10, 32, 11, 134, 90, 300, 210]
             },
             {
                 name: 'Degden',
                 type: 'line',
                 stack: '总量',
                 areaStyle: { normal: {} },
-                data: [220, 182, 191, 234, 290, 330, 310]
+                data: [220, 182, 191, 234, 290, 30, 310]
             },
             {
                 name: 'Ligien',
                 type: 'line',
                 stack: '总量',
                 areaStyle: { normal: {} },
-                data: [150, 232, 201, 154, 190, 330, 410]
+                data: [150, 232, 201, 54, 190, 30, 410]
             },
             {
                 name: 'Verien',
                 type: 'line',
                 stack: '总量',
                 areaStyle: { normal: {} },
-                data: [320, 332, 301, 334, 390, 330, 320]
+                data: [20, 332, 301, 334, 390, 30, 320]
             }
         ]
     }

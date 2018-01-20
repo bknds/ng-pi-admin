@@ -13,7 +13,7 @@ export class SmartTablesComponent implements OnInit {
   table_data: Array<any>;
 
   /* pagination Info */
-  pageSize = 1;
+  pageSize = 10;
   pageNumber = 1;
 
   constructor(private _tablesService: TablesService) { }

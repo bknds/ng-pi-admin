@@ -49,4 +49,8 @@
         @extend .bg-primary;
         color: $white;
     }
+    .disabled {
+        color: rgba($fonts-color, .4);
+        cursor: not-allowed;
+    }
 }
