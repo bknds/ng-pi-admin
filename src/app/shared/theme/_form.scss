@@ -105,6 +105,13 @@ select.form-control {
     border-radius: 0;
     border: 1px solid transparent;
     background: $border-color;
+    appearance: none;
+    -moz-appearance: none;
+    background-image: url("/assets/theme/select.png");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 7px) 50%;
+    background-size: 10px;
+    padding-right: 20px;
     @include transition(border 1s);
     &:focus {
         border: 1px solid $primary;

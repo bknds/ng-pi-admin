@@ -10,23 +10,23 @@ import { TablesService } from '../../../../shared/services/tables.service';
 
 })
 export class SmartTablesComponent implements OnInit {
-  pageInfo = {
-    pageSize: 1,
-    pageNumber: 1,
-    total: 1
-  };
-
   table_data: Array<any>;
+
+  /* pagination Info */
+  pageSize = 1;
+  pageNumber = 1;
 
   constructor(private _tablesService: TablesService) { }
 
   ngOnInit() {
+    this.loadData();
+  }
+
+  loadData() {
     this.table_data = this._tablesService.DEFAULT_DATA;
   }
 
-  loadData() { }
-
   pageChanged(pN: number): void {
-    this.pageInfo.pageNumber = pN;
+    this.pageNumber = pN;
   }
 }
