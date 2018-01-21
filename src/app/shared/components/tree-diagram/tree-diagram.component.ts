@@ -14,7 +14,7 @@ export class TreeDiagramComponent implements OnInit {
 
   ngOnInit() {
     this.treesItem.forEach(element => {
-      element.toggle = 'on';
+      element.toggle = 'off';
     });
   }
 
@@ -22,4 +22,14 @@ export class TreeDiagramComponent implements OnInit {
     item.toggle === 'on' ? item.toggle = 'off' : item.toggle = 'on';
   }
 
+  onCheckChanged(item) {
+    console.log('111');
+    
+    item.isPer = !item.isPer;
+    if (item.children) {
+      item.children.forEach(index => {
+        this.onCheckChanged(index);
+      });
+    }
+  }
 }

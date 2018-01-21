@@ -20,6 +20,6 @@ export class AlertsComponent implements OnInit {
 
   alertMessages(data: AlertsModel): void {
     this.alertItem.push(data);
-    console.log(this.alertItem);
+    console.log(data);
   }
 }

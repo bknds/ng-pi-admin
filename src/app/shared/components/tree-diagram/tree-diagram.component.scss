@@ -16,7 +16,7 @@ li {
 
 .file-ico {
     display: inline-block;
-    width: 50px;
+    width: 60px;
     margin-right: 5px;
     text-align: left;
     .ico {
@@ -31,4 +31,8 @@ li {
 
 .item-children {
     overflow: hidden;
+}
+
+.check-label {
+    float: left;
 }

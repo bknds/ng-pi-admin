@@ -1,5 +1,17 @@
 <div class="row">
   <card cardTitle="Trees Item" class="col-md-6">
-    <tree-diagram [treesItem]="fileData"></tree-diagram>
+    <div class="row">
+      <div class="col-sm-6">
+        <label class="control-label">页面权限</label>
+        <tree-diagram [treesItem]="fileData"></tree-diagram>
+      </div>
+      <div class="col-sm-6">
+        <label class="control-label">详细权限</label>
+        <div class="card card-block">
+          <input class="checkbox checkbox-primary" type="checkbox" id="1">
+          <label class="check-label" for="1">订单</label>
+        </div>
+      </div>
+    </div>
   </card>
 </div>
