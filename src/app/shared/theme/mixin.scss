@@ -31,3 +31,10 @@
     border-image: -moz-linear-gradient(to right, $color) 3 3;
     border-image: -webkit-linear-gradient(to right, $color) 3 3;
 }
+
+@mixin center($width, $height) {
+    width: $width;
+    height: $height;
+    text-align: center;
+    line-height: $height;
+}

@@ -21,5 +21,6 @@ export class AlertsComponent implements OnInit {
   alertMessages(data: AlertsModel): void {
     this.alertItem.push(data);
     console.log(data);
+    alert('1212');
   }
 }

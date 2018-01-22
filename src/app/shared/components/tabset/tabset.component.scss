@@ -6,15 +6,12 @@
     .tabs-nav,
     .is-active {
         min-width: 100px;
-        width: auto;
-        height: 40px;
         background: transparent;
         border: none;
         float: left;
         outline: none;
         color: $fonts-color;
-        line-height: 40px;
-        text-align: center;
+        @include center(auto,40px);
         &::after {
             display: block;
             content: '';
