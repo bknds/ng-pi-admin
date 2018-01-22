@@ -16,11 +16,6 @@ export class MenuComponent {
 
   @Input() sidebarToggle;
 
-/*   constructor(private router: Router) {
-    this.router.events.subscribe((event) => {
-    });
-  } */
-
   isToggleOn(item) {
     item.toggle === 'on' ? item.toggle = 'off' : item.toggle = 'on';
   }

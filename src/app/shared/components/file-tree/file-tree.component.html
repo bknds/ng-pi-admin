@@ -3,12 +3,9 @@
     <li *ngFor="let item of treesItem">
       <div class="trees-items" (click)="toggleItem(item)">
         <div class="file-ico">
-          <input class="checkbox checkbox-primary" type="checkbox" id="{{item.name}}"
-          [checked]="item.isPer" (change)="onCheckChanged(item)">
-          <label class="check-label" for="{{item.name}}"></label>
           <i class="fa fa-file fa-fw ico" *ngIf="!item.children"></i>
-          <i class="fa fa-caret-right fa-fw ico" *ngIf="item.children&&item.toggle === 'off'"></i>
-          <i class="fa fa-folder fa-fw ico" *ngIf="item.children&&item.toggle === 'off'"></i>
+          <i class="fa fa-caret-right fa-fw ico" *ngIf="item.children&&(item.toggle === 'off'||item.toggle === 'init')"></i>
+          <i class="fa fa-folder fa-fw ico" *ngIf="item.children&&(item.toggle === 'off'||item.toggle === 'init')"></i>
 
           <i class="fa fa-caret-down fa-fw ico" *ngIf="item.children&&item.toggle === 'on'"></i>
           <i class="fa fa-folder-open fa-fw ico" *ngIf="item.children&&item.toggle === 'on'"></i>
@@ -16,7 +13,7 @@
         <span>{{item.name}}</span>
       </div>
       <div class="item-children" [@collapse]="item.toggle">
-        <tree-diagram *ngIf="item.children" [treesItem]="item.children"></tree-diagram>
+        <file-tree *ngIf="item.children" [treesItem]="item.children"></file-tree>
       </div>
     </li>
   </ul>
