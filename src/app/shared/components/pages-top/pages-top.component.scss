@@ -11,14 +11,12 @@
     position: absolute;
     top: 50%;
     left: 20px;
-    width: 40px;
-    height: 40px;
     color: $gray;
-    line-height: 40px;
     font-size: 24px;
     cursor: pointer;
     transform: translate(0, -50%);
     @include transition(all .1s);
+    @include center(40px,40px);
     &:hover {
         color: $primary;
     }

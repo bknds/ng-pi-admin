@@ -75,14 +75,11 @@
 
 .over-btn {
     padding: 0;
-    width: 40px;
-    height: 39px;
-    line-height: 39px;
-    text-align: center;
     border: none;
     outline: none;
     background: transparent;
     font-size: 15px;
+    @include center(40px,39px);
     .fa-square-o {
         margin-left: -2px;
     }

@@ -18,12 +18,9 @@
         position: absolute;
         top: 5px;
         right: 5px;
-        width: 20px;
-        height: 20px;
-        line-height: 15px;
-        text-align: center;
         color: $white;
         cursor: pointer;
+        @include center(20px,20px);
     }
     .alert-title {
         color: $white;
