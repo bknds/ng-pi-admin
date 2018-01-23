@@ -42,7 +42,7 @@
 .form-control {
     display: block;
     width: 100%;
-    color: $gray;
+    color: $fonts-color;
     background-color: transparent;
     box-shadow: none;
     font-size: 14px;
@@ -172,7 +172,7 @@ input.with-info-addon {
 
 .input-group-addon {
     line-height: inherit;
-    color: $gray;
+    color: $fonts-color;
 }
 
 .input-group-addon-primary,
@@ -223,7 +223,7 @@ checkbox && radio
     height: 14px;
     line-height: 0.9em;
     text-indent: 19px;
-    border: 1px solid rgba($gray, .5);
+    border: 1px solid rgba($fonts-color, .5);
     cursor: pointer;
     position: relative;
 }
@@ -234,7 +234,7 @@ checkbox && radio
     content: '';
     width: 0;
     height: 0;
-    background-color: $gray;
+    background-color: $fonts-color;
     position: absolute;
     top: 50%;
     left: 50%;

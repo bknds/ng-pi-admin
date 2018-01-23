@@ -1,7 +1,14 @@
-<card cardTitle="CKEditor">
-        <ck-editor name="editor1" [(ngModel)]="editorValue" skin="moono-lisa" lang="en" [fullPage]="true"></ck-editor>
-</card>
-<card cardTitle="CKEditor">
-  输入的内容：
-  <br> {{ editorValue }}
-</card>
+<div class="row">
+  <div class="col-md-6">
+    <card cardTitle="CKEditor">
+      <ck-editor name="editor1" [config]="config" [(ngModel)]="ckeditorContent" skin="moono-lisa" lang="en" [fullPage]="true"></ck-editor>
+    </card>
+  </div>
+  <div class="col-md-6">
+    <card cardTitle="CKEditor">
+      ckeditorContent:
+      <br>
+      <div #ckContent></div>
+    </card>
+  </div>
+</div>

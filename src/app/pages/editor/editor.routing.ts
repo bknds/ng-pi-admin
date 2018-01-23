@@ -4,9 +4,7 @@ import { EditorComponent } from './editor.component';
 const childRoutes: Routes = [
     {
         path: '',
-        component: EditorComponent,
-        children: [
-        ]
+        component: EditorComponent
     }
 ];
 
