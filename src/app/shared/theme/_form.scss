@@ -54,7 +54,7 @@
 
 .form-control-sm {
     font-size: 12px;
-    height: 30px;
+    height: 31px;
 }
 
 .form-control-lg {
@@ -123,10 +123,21 @@ select.form-control {
     }
 }
 
-select.form-control[multiple] option {
-    background: transparent;
-    color: $fonts-color;
+select.form-control[multiple] {
+    background: $border-color;
+    option {
+        background: transparent;
+        color: $fonts-color;
+        border: none;
+    }
+}
+
+.form-control[type="color"] {
     border: none;
+    cursor: pointer;
+    &:focus {
+        border: none;
+    }
 }
 
 input.with-primary-addon {

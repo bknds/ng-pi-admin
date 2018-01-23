@@ -1,8 +1,20 @@
 @import '../../theme/conf';
 li {
-    padding: 5px 15px;
+    padding: 5px 37px;
     list-style: none;
     font-size: $sm-text;
+    position: relative;
+    &::before {
+        display: block;
+        content: '';
+        position: absolute;
+        top: -11px;
+        left: 27px;
+        width: 15px;
+        height: 26px;
+        border-left: 1px dotted rgba($fonts-color, .5);
+        border-bottom: 1px dotted rgba($fonts-color, .5);
+    }
 }
 
 .trees-items {

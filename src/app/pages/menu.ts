@@ -11,7 +11,7 @@ export let MENU_ITEM = [
     },
     {
         path: 'ui',
-        title: 'UI Elements',
+        title: 'UI Components',
         icon: 'laptop',
         children: [
             {
@@ -29,6 +29,10 @@ export let MENU_ITEM = [
             {
                 path: 'notification',
                 title: 'Notification'
+            },
+            {
+                path: 'file-tree',
+                title: 'File Tree'
             }
         ]
     },
@@ -40,10 +44,6 @@ export let MENU_ITEM = [
             {
                 path: 'inputs',
                 title: 'Form Inputs'
-            },
-            {
-                path: 'trees',
-                title: 'File Tree'
             }
         ]
     },

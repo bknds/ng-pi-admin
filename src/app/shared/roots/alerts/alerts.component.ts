@@ -11,8 +11,6 @@ export class AlertsComponent implements OnInit {
 
   alertItem: Array<AlertsModel> = [
     { type: "error", title: "Error Test", value: "Error TestError TestError Test" },
-    { type: "error", title: "Error Test", value: "Error TestError TestError Test" },
-    { type: "error", title: "Error Test", value: "Error TestError TestError Test" }
   ];
   constructor() { }
 

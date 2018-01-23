@@ -8,6 +8,7 @@ import { ButtonsComponent } from './components/buttons/buttons.component';
 import { TabsComponent } from './components/tabs/tabs.component';
 import { GridComponent } from './components/grid/grid.component';
 import { NotificationComponent } from './components/notification/notification.component';
+import { FileTreeComponent } from './components/file-tree/file-tree.component';
 
 @NgModule({
     imports: [
@@ -20,7 +21,8 @@ import { NotificationComponent } from './components/notification/notification.co
         ButtonsComponent,
         TabsComponent,
         GridComponent,
-        NotificationComponent
+        NotificationComponent,
+        FileTreeComponent
     ]
 })
 export class UIModule { }
