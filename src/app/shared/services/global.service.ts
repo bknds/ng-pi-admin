@@ -1,10 +1,12 @@
 import { Injectable } from "@angular/core";
 import { Subject } from "rxjs/Subject";
+/* models */
 import { TabMenuModel } from "../models/tabs-model";
+import { NotificationModel } from "../models/notification-model";
 
 @Injectable()
 export class GlobalService {
-    /* sidebar toggole */
+    /* sidebar toggle */
     private sidebarToggleSource = new Subject<boolean>();
 
     sidebarToggle$ = this.sidebarToggleSource.asObservable();
@@ -22,4 +24,12 @@ export class GlobalService {
         this.tabsMenuSource.next(tabsMenu);
     }
 
+    /* notification */
+    private notificationSource = new Subject<NotificationModel>();
+
+    notification$ = this.notificationSource.asObservable();
+
+    _notification(notification: NotificationModel) {
+        this.notificationSource.next(notification);
+    }
 }

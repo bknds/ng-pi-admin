@@ -8,7 +8,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { PagesTopComponent } from './components/pages-top/pages-top.component';
 import { MsgCenterComponent } from './components/msg-center/msg-center.component';
-import { AlertsComponent } from './roots/alerts/alerts.component';
+import { NotificationComponent } from './components/notification/notification.component';
 
 @NgModule({
     imports: [
@@ -23,13 +23,13 @@ import { AlertsComponent } from './roots/alerts/alerts.component';
         SidebarComponent,
         PagesTopComponent,
         MsgCenterComponent,
-        AlertsComponent
+        NotificationComponent
     ],
     exports: [
         SidebarComponent,
         PagesTopComponent,
         MsgCenterComponent,
-        AlertsComponent
+        NotificationComponent
     ]
 })
 export class SkeletonModule { }

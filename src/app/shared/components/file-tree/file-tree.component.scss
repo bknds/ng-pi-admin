@@ -1,23 +1,25 @@
 @import '../../theme/conf';
 li {
-    padding: 5px 37px;
+    padding:0 10px;
+    margin-left: 30px;
     list-style: none;
     font-size: $sm-text;
     position: relative;
+    border-left: 1px solid rgba($fonts-color, .3);
     &::before {
         display: block;
         content: '';
         position: absolute;
-        top: -11px;
-        left: 27px;
+        top: 0;
+        left: 0;
         width: 15px;
-        height: 26px;
-        border-left: 1px dotted rgba($fonts-color, .5);
-        border-bottom: 1px dotted rgba($fonts-color, .5);
+        height: 20px;
+        border-bottom: 1px solid rgba($fonts-color, .3);
     }
 }
 
 .trees-items {
+    padding:11px 0 0 0;
     &:hover {
         cursor: pointer;
         .ico {

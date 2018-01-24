@@ -20,7 +20,7 @@
         right: 5px;
         color: $white;
         cursor: pointer;
-        @include center(20px,20px);
+        @include center(20px, 20px);
     }
     .alert-title {
         color: $white;
@@ -39,10 +39,22 @@
     }
 }
 
-.error {
-    @extend .bg-danger;
+.default {
+    @extend .bg-primary;
 }
 
 .success {
     @extend .bg-success;
+}
+
+.warning {
+    @extend .bg-warning;
+}
+
+.danger {
+    @extend .bg-danger;
+}
+
+.info {
+    @extend .bg-info;
 }
