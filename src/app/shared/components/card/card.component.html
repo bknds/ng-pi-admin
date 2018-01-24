@@ -8,7 +8,9 @@
       </button>
     </div>
   </div>
-  <div class="card-content" [@collapse]="collapse">
-    <ng-content></ng-content>
+  <div class="content-wrap" [@collapse]="collapse">
+    <div class="card-content">
+      <ng-content></ng-content>
+    </div>
   </div>
 </div>

@@ -15,66 +15,6 @@
     padding: 10px;
 }
 
-.card-header {
-    width: 100%;
-    height: 40px;
-    border-bottom: 1px solid $border-color;
-    padding: 0 10px;
-    display: flex;
-    justify-content: space-between;
-    .card-title {
-        display: inline-block;
-        margin: 0;
-        line-height: 40px;
-        font-size: 13px;
-        letter-spacing: .1em;
-    }
-}
-
-.collapse-btn {
-    display: block;
-    position: relative;
-    right: 0;
-    top: 5px;
-    background: transparent;
-    outline: none;
-    border: none;
-    @include center(30px, 30px);
-    font-size: $lg-text;
-    color: rgba($fonts-color, .5);
-    letter-spacing: -$lg-text;
-    &:hover {
-        color: $primary;
-    }
-}
-
-.collapse-off {
-    @include transition(all .5s);
-    @include transform(scale(0));
-    width: 0;
-}
-
-.collapse-on {
-    @include transition(all .5s);
-    @include transform(scale(1));
-}
-
-.card-content {
-    padding: 10px;
-    height: auto;
-    overflow-x: hidden;
-}
-
-.card-footer {
-    width: 100%;
-    height: auto;
-    min-height: 45px;
-    line-height: 45px;
-    border: none;
-    border-top: 1px solid $border-color;
-    padding: 0 10px;
-}
-
 .tip-card {
     display: flex;
     flex-direction: row;
@@ -91,7 +31,7 @@
     .tip-ico {
         border-radius: 10%;
         color: $white;
-        @include center(100px,100px);
+        @include center(100px, 100px);
         font-size: 30px;
     }
     .tip-ico-primary {
