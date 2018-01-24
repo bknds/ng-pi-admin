@@ -21,6 +21,7 @@
       "../node_modules/normalize.css/normalize.css",
       "../node_modules/font-awesome/scss/font-awesome.scss",
       "../node_modules/bootstrap/less/bootstrap.less",
+      "../node_modules/sweetalert2/dist/sweetalert2.css",
       "../node_modules/animate.css/animate.css",
       "app/shared/_styles.scss",
       "styles.scss"
@@ -28,6 +29,7 @@
     "scripts": [
       "../node_modules/jquery/dist/jquery.js",
       "../node_modules/bootstrap/dist/js/bootstrap.js",
+      "../node_modules/sweetalert2/dist/sweetalert2.js",
       "../node_modules/echarts/dist/echarts.min.js",
       "../node_modules/echarts/map/js/china.js",
       "../node_modules/echarts/dist/extension/bmap.js",
