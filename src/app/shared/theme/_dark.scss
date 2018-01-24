@@ -13,7 +13,7 @@ $border-color:rgba($black, .1);
 $fonts-color:#fff;
 $primary:#e45036;
 $success:#04ad53;
-$danger:#fd3964;
+$danger:#ff2756;
 $warning:#fd8f00;
 $info:#1e65ff;
 body {
@@ -21,7 +21,7 @@ body {
 }
 
 .bg-default {
-    @include linear-gradient(to top right, lighten($border-color, 30%), lighten($border-color, 70%));
+    background: lighten($border-color, 70%);
 }
 
 .bg-primary {

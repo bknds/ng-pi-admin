@@ -21,7 +21,7 @@ body {
 }
 
 .bg-default {
-    @include linear-gradient(to top right, darken($border-color, 10%), lighten($border-color, 5%));
+    background: $border-color;
 }
 
 .bg-primary {

@@ -23,16 +23,16 @@ export let MENU_ITEM = [
                 title: 'Buttons'
             },
             {
-                path: 'tabs',
-                title: 'Tabs'
-            },
-            {
                 path: 'notification',
                 title: 'Notification'
             },
             {
                 path: 'file-tree',
                 title: 'File Tree'
+            },
+            {
+                path: 'tabs',
+                title: 'Tabs'
             }
         ]
     },
