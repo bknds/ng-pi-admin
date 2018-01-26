@@ -33,6 +33,18 @@ export let MENU_ITEM = [
             {
                 path: 'tabs',
                 title: 'Tabs'
+            },
+            {
+                path: 'panels',
+                title: 'Panels'
+            },
+            {
+                path: 'loading',
+                title: 'Loading'
+            },
+            {
+                path: 'animations',
+                title: 'Animations'
             }
         ]
     },

@@ -22,14 +22,14 @@
   }
   echarts.registerTheme('dark', {
     "color": [
-      "#893448",
-      "#d95850",
+      "#e45036",
+      "#e77339",
       "#eb8146",
       "#ffb248",
       "#f2d643",
       "#ebdba4"
     ],
-    "backgroundColor": "rgba(242,234,191,0)",
+    "backgroundColor": "rgba(242,234,191,0.15)",
     "textStyle": {},
     "title": {
       "textStyle": {
@@ -186,15 +186,15 @@
       "lineStyle": {
         "normal": {
           "width": 1,
-          "color": "#aaaaaa"
+          "color": "#aaa"
         }
       },
       "symbolSize": "6",
       "symbol": "emptyCircle",
       "smooth": true,
       "color": [
-        "#893448",
-        "#d95850",
+        "#e45036",
+        "#e77339",
         "#eb8146",
         "#ffb248",
         "#f2d643",
@@ -262,9 +262,9 @@
     },
     "categoryAxis": {
       "axisLine": {
-        "show": true,
+        "show": false,
         "lineStyle": {
-          "color": "#877a7a"
+          "color": "#aaaaaa"
         }
       },
       "axisTick": {
@@ -280,10 +280,10 @@
         }
       },
       "splitLine": {
-        "show": false,
+        "show": true,
         "lineStyle": {
           "color": [
-            "#e8e8e8"
+            "#e6e6e6"
           ]
         }
       },
@@ -299,9 +299,9 @@
     },
     "valueAxis": {
       "axisLine": {
-        "show": true,
+        "show": false,
         "lineStyle": {
-          "color": "#877a7a"
+          "color": "#aaaaaa"
         }
       },
       "axisTick": {
@@ -317,10 +317,10 @@
         }
       },
       "splitLine": {
-        "show": false,
+        "show": true,
         "lineStyle": {
           "color": [
-            "#e8e8e8"
+            "#e6e6e6"
           ]
         }
       },
@@ -336,9 +336,9 @@
     },
     "logAxis": {
       "axisLine": {
-        "show": true,
+        "show": false,
         "lineStyle": {
-          "color": "#877a7a"
+          "color": "#aaaaaa"
         }
       },
       "axisTick": {
@@ -354,10 +354,10 @@
         }
       },
       "splitLine": {
-        "show": false,
+        "show": true,
         "lineStyle": {
           "color": [
-            "#e8e8e8"
+            "#e6e6e6"
           ]
         }
       },
@@ -373,9 +373,9 @@
     },
     "timeAxis": {
       "axisLine": {
-        "show": true,
+        "show": false,
         "lineStyle": {
-          "color": "#877a7a"
+          "color": "#aaaaaa"
         }
       },
       "axisTick": {
@@ -391,10 +391,10 @@
         }
       },
       "splitLine": {
-        "show": false,
+        "show": true,
         "lineStyle": {
           "color": [
-            "#e8e8e8"
+            "#e6e6e6"
           ]
         }
       },
@@ -411,10 +411,10 @@
     "toolbox": {
       "iconStyle": {
         "normal": {
-          "borderColor": "#999999"
+          "borderColor": "#999"
         },
         "emphasis": {
-          "borderColor": "#666666"
+          "borderColor": "#666"
         }
       }
     },
@@ -514,3 +514,4 @@
     }
   });
 }));
+

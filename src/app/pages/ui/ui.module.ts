@@ -9,6 +9,9 @@ import { TabsComponent } from './components/tabs/tabs.component';
 import { GridComponent } from './components/grid/grid.component';
 import { NotificationComponent } from './components/notification/notification.component';
 import { FileTreeComponent } from './components/file-tree/file-tree.component';
+import { LoadingComponent } from './components/loading/loading.component';
+import { AnimationsComponent } from './components/animations/animations.component';
+import { PanelsComponent } from './components/panels/panels.component';
 
 @NgModule({
     imports: [
@@ -22,7 +25,10 @@ import { FileTreeComponent } from './components/file-tree/file-tree.component';
         TabsComponent,
         GridComponent,
         NotificationComponent,
-        FileTreeComponent
+        FileTreeComponent,
+        LoadingComponent,
+        AnimationsComponent,
+        PanelsComponent
     ]
 })
 export class UIModule { }

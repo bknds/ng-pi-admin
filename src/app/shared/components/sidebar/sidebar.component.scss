@@ -6,7 +6,7 @@
     overflow-x: hidden;
     @include transition(all .3s);
     float: left;
-    @include box-shadow( 2px 0 5px rgba($black, .15));
+    @include box-shadow( 2px 0 2px rgba($black, .06));
 }
 
 .avatar-wrap {
