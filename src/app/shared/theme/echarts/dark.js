@@ -29,14 +29,13 @@
       "#f2d643",
       "#ebdba4"
     ],
-    "backgroundColor": "rgba(242,234,191,0.15)",
-    "textStyle": {},
+    "backgroundColor": "rgba(0,0,0,0)",
     "title": {
       "textStyle": {
-        "color": "#893448"
+        "color": "#e45036"
       },
       "subtextStyle": {
-        "color": "#d95850"
+        "color": "#e77339"
       }
     },
     "line": {
@@ -262,7 +261,7 @@
     },
     "categoryAxis": {
       "axisLine": {
-        "show": false,
+        "show": true,
         "lineStyle": {
           "color": "#aaaaaa"
         }
@@ -280,7 +279,7 @@
         }
       },
       "splitLine": {
-        "show": true,
+        "show": false,
         "lineStyle": {
           "color": [
             "#e6e6e6"
@@ -299,7 +298,7 @@
     },
     "valueAxis": {
       "axisLine": {
-        "show": false,
+        "show": true,
         "lineStyle": {
           "color": "#aaaaaa"
         }
@@ -317,7 +316,7 @@
         }
       },
       "splitLine": {
-        "show": true,
+        "show": false,
         "lineStyle": {
           "color": [
             "#e6e6e6"
@@ -336,7 +335,7 @@
     },
     "logAxis": {
       "axisLine": {
-        "show": false,
+        "show": true,
         "lineStyle": {
           "color": "#aaaaaa"
         }
@@ -354,7 +353,7 @@
         }
       },
       "splitLine": {
-        "show": true,
+        "show": false,
         "lineStyle": {
           "color": [
             "#e6e6e6"
@@ -373,7 +372,7 @@
     },
     "timeAxis": {
       "axisLine": {
-        "show": false,
+        "show": true,
         "lineStyle": {
           "color": "#aaaaaa"
         }
@@ -391,7 +390,7 @@
         }
       },
       "splitLine": {
-        "show": true,
+        "show": false,
         "lineStyle": {
           "color": [
             "#e6e6e6"
@@ -426,11 +425,11 @@
     "tooltip": {
       "axisPointer": {
         "lineStyle": {
-          "color": "#cccccc",
+          "color": "#ccc",
           "width": 1
         },
         "crossStyle": {
-          "color": "#cccccc",
+          "color": "#ccc",
           "width": 1
         }
       }
@@ -495,7 +494,7 @@
       "handleColor": "#ffb248",
       "handleSize": "100%",
       "textStyle": {
-        "color": "#333333"
+        "color": "#333"
       }
     },
     "markPoint": {

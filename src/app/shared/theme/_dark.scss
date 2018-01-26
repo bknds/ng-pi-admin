@@ -21,7 +21,7 @@ body {
 }
 
 .bg-default {
-    background: lighten($border-color, 70%);
+    @include linear-gradient(to top right, lighten($card-bg, 3%), lighten($card-bg, 8%));
 }
 
 .bg-primary {

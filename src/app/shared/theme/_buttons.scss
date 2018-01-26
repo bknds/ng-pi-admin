@@ -10,6 +10,7 @@
     border: none;
     border-radius: 3px;
     @include transition(all 0.2s);
+    color: $white;
 }
 
 .btn-default,

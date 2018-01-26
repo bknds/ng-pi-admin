@@ -4,7 +4,7 @@
     background: $card-bg;
     position: relative;
     border: none;
-    border-radius: 0;
+    border-radius: 3px;
     color: $fonts-color;
     margin-bottom: 24px;
     @include box-shadow(1px 1px 10px 0 rgba($black, .15));
@@ -33,6 +33,11 @@
         color: $white;
         @include center(100px, 100px);
         font-size: 30px;
+        border: none;
+        outline: none;
+        &:active {
+            @include box-shadow( 0 2px 10px 0 rgba($black, .4) inset);
+        }
     }
     .tip-ico-primary {
         @extend .bg-primary;
