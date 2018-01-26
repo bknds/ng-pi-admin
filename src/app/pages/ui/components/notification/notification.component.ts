@@ -16,41 +16,10 @@ export class NotificationComponent extends RootComponent implements OnInit {
 
   ngOnInit() { }
 
-  default() {
-    this.alertMessage();
-  }
-
-  success() {
+  notification(type) {
     this.alertMessage(
       {
-        type: 'success',
-        title: 'Look here!',
-        value: 'This alert needs your attention.'
-      }
-    );
-  }
-  warning() {
-    this.alertMessage(
-      {
-        type: 'warning',
-        title: 'Look here!',
-        value: 'This alert needs your attention.'
-      }
-    );
-  }
-  danger() {
-    this.alertMessage(
-      {
-        type: 'danger',
-        title: 'Look here!',
-        value: 'This alert needs your attention.'
-      }
-    );
-  }
-  info() {
-    this.alertMessage(
-      {
-        type: 'info',
+        type: type,
         title: 'Look here!',
         value: 'This alert needs your attention.'
       }

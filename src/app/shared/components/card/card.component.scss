@@ -45,12 +45,14 @@
 }
 
 .content-wrap {
-    overflow-x: hidden;
+    height: auto;
+    overflow: hidden;
 }
 
 .card-content {
     padding: 10px;
     height: auto;
+    overflow-x: hidden;
 }
 
 .card-footer {

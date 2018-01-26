@@ -8,10 +8,6 @@
     background: $body-bg;
 }
 
-.pages-siderbar {
-    @include box-shadow( 5px 1px 10px rgba($black, .06));
-}
-
 .pages-body {
     flex: 1;
     display: flex;
