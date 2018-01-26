@@ -1,6 +1,5 @@
 import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
-import './ckeditor.loader';
-import 'ckeditor';
+
 @Component({
   selector: 'app-editor',
   templateUrl: './editor.component.html',
