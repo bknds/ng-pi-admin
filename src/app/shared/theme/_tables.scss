@@ -22,7 +22,7 @@
 .table-striped>tbody {
     &>tr {
         &:nth-child(odd) {
-            background-color: $body-bg;
+            background-color: rgba($border-color, .7);
         }
         &>td {
             border-top: 1px solid transparent;
@@ -32,7 +32,7 @@
 
 .table-hover {
     >tbody>tr:hover {
-        background-color: $body-bg;
+        background-color: rgba($border-color, .7);
     }
 }
 
@@ -40,5 +40,5 @@
 .table-bordered>thead>tr>th,
 .table-bordered>tbody>tr>td,
 .table-bordered>tfoot>tr>th {
-    border: 1px solid darken($body-bg, 3%);
+    border: 1px solid $border-color;
 }

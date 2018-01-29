@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col-md-6">
-    <card cardTitle="DEFAULT TABLE">
-      <table class="table table-hover">
+    <card cardTitle="basic table">
+      <table class="table">
         <thead>
           <tr>
             <th>
@@ -12,8 +12,6 @@
             <th>FIRSTNAME</th>
             <th>LASTNAME</th>
             <th>USERNAME</th>
-            <th>EMAIL</th>
-            <th>PRICE</th>
           </tr>
         </thead>
         <tbody>
@@ -26,8 +24,96 @@
             <td>{{item.first_name}}</td>
             <td>{{item.last_name}}</td>
             <td>{{item.user_name}}</td>
-            <td>{{item.email}}</td>
-            <td>{{item.price}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </card>
+  </div>
+  <div class="col-md-6">
+    <card cardTitle="bordered table">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>
+              <input class="checkbox" type="checkbox" id="isCheckedAll" [checked]="isCheckedAll" (change)="allChecked($event.target)">
+              <label class="check-label" for="isCheckedAll"></label>
+            </th>
+            <th>#</th>
+            <th>FIRSTNAME</th>
+            <th>LASTNAME</th>
+            <th>USERNAME</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of default_data;let index = index">
+            <td>
+              <input class="checkbox" type="checkbox" id="check{{index}}" [checked]="item.checked" (change)="Checked($event.target,index)">
+              <label class="check-label" for="check{{index}}"></label>
+            </td>
+            <td>{{index}}</td>
+            <td>{{item.first_name}}</td>
+            <td>{{item.last_name}}</td>
+            <td>{{item.user_name}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </card>
+  </div>
+  <div class="col-md-6">
+    <card cardTitle="hover table">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>
+              <input class="checkbox" type="checkbox" id="isCheckedAll" [checked]="isCheckedAll" (change)="allChecked($event.target)">
+              <label class="check-label" for="isCheckedAll"></label>
+            </th>
+            <th>#</th>
+            <th>FIRSTNAME</th>
+            <th>LASTNAME</th>
+            <th>USERNAME</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of default_data;let index = index">
+            <td>
+              <input class="checkbox" type="checkbox" id="check{{index}}" [checked]="item.checked" (change)="Checked($event.target,index)">
+              <label class="check-label" for="check{{index}}"></label>
+            </td>
+            <td>{{index}}</td>
+            <td>{{item.first_name}}</td>
+            <td>{{item.last_name}}</td>
+            <td>{{item.user_name}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </card>
+  </div>
+  <div class="col-md-6">
+    <card cardTitle="striped table">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>
+              <input class="checkbox" type="checkbox" id="isCheckedAll" [checked]="isCheckedAll" (change)="allChecked($event.target)">
+              <label class="check-label" for="isCheckedAll"></label>
+            </th>
+            <th>#</th>
+            <th>FIRSTNAME</th>
+            <th>LASTNAME</th>
+            <th>USERNAME</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of default_data;let index = index">
+            <td>
+              <input class="checkbox" type="checkbox" id="check{{index}}" [checked]="item.checked" (change)="Checked($event.target,index)">
+              <label class="check-label" for="check{{index}}"></label>
+            </td>
+            <td>{{index}}</td>
+            <td>{{item.first_name}}</td>
+            <td>{{item.last_name}}</td>
+            <td>{{item.user_name}}</td>
           </tr>
         </tbody>
       </table>

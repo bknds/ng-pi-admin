@@ -16,6 +16,12 @@ export class TablesService {
         { price: 9.1, checked: false, first_name: 'Larry', last_name: 'Thornton', user_name: '@fat', email: 'fat@yandex.ru' },
     ];
 
+    baseData = [
+        { first_name: 'Steve', last_name: 'Jobs', user_name: '@steve' },
+        { first_name: 'Simon', last_name: 'Philips', user_name: '@simon' },
+        { first_name: 'Jane', last_name: 'Doe', user_name: '@jane' },
+
+    ];
     constructor() {
     }
 }

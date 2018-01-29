@@ -15,7 +15,7 @@ export class BasicTablesComponent implements OnInit {
   constructor(private _tablesService: TablesService) { }
 
   ngOnInit() {
-    this.default_data = this._tablesService.DEFAULT_DATA;
+    this.default_data = this._tablesService.baseData;
 
     /* 根据数组内对象指定属性排序 */
     function compare(property) {
