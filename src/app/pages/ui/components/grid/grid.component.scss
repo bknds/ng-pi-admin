@@ -3,9 +3,9 @@ div[class^=col-] {
     padding: 10px;
     box-sizing: border-box;
     div {
-        padding:10px;
+        padding: 10px;
         text-align: center;
-        background: $primary;
+        background: rgba($primary, .8);
         border-radius: 3px;
         color: #fff;
     }
