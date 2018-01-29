@@ -9,8 +9,9 @@ import { ChartsService } from '../../shared/services/charts.service';
 })
 export class IndexComponent implements OnInit {
   showloading: boolean = false;
-  public chartsOptionItem;
 
+  public chartsOptionItem;
+  
   constructor(private _chartsService: ChartsService) { }
 
   ngOnInit() {

@@ -84,5 +84,10 @@ export let MENU_ITEM = [
                 title: 'Smart Tables'
             }
         ]
+    },
+    {
+        path: 'extra-pages',
+        title: 'Extra Pages',
+        icon: 'sitemap',
     }
 ]

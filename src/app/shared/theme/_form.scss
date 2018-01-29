@@ -234,7 +234,7 @@ checkbox && radio
     content: '';
     width: 0;
     height: 0;
-    background-color: $fonts-color;
+    background-color: rgba($fonts-color, .5);
     position: absolute;
     top: 50%;
     left: 50%;

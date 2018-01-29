@@ -25,9 +25,8 @@ export class SidebarComponent implements OnInit {
 
   ngOnInit() {
     this.menuInfo = this._menuService.putSidebarJson();
-    console.log(this.menuInfo);
-    
     this._sidebarToggle();
+    
     this.tip.ring = true;
     this.tip.comments = true;
     this.tip.email = true;

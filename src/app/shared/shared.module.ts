@@ -8,7 +8,6 @@ import { CardComponent } from './components/card/card.component';
 import { TodolistComponent } from './components/todolist/todolist.component';
 import { TabsetComponent } from './components/tabset/tabset.component';
 import { TabContentComponent } from './components/tabset/tab-content/tab-content.component';
-import { ModalComponent } from './components/modal/modal.component';
 import { PaginationComponent } from './components/pagination/pagination.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import { FileTreeComponent } from './components/file-tree/file-tree.component';
@@ -26,7 +25,6 @@ import { FileTreeComponent } from './components/file-tree/file-tree.component';
     TodolistComponent,
     TabsetComponent,
     TabContentComponent,
-    ModalComponent,
     ProgressBarComponent,
     PaginationComponent
   ],
@@ -36,7 +34,6 @@ import { FileTreeComponent } from './components/file-tree/file-tree.component';
     TodolistComponent,
     TabsetComponent,
     TabContentComponent,
-    ModalComponent,
     ProgressBarComponent,
     PaginationComponent
   ]

@@ -17,7 +17,8 @@ export const childRoutes: Routes = [
             { path: 'form', loadChildren: './form/form.module#FormModule' },
             { path: 'charts', loadChildren: './charts/charts.module#ChartsModule' },
             { path: 'ui', loadChildren: './ui/ui.module#UIModule' },
-            { path: 'table', loadChildren: './table/table.module#TableModule' }
+            { path: 'table', loadChildren: './table/table.module#TableModule' },
+            { path: 'extra-pages', loadChildren: './extra/extra.module#ExtraModule' }
         ]
     }
 ];
