@@ -4,14 +4,13 @@
     height: 81px;
     background: $sidebar-bg;
     position: relative;
-    border-bottom: 1px solid $border-color;
 }
 
 .collapse-menu {
     position: absolute;
     top: 50%;
     left: 20px;
-    color: $fonts-color;
+    color: $sidebar-fonts-color;
     font-size: 24px;
     cursor: pointer;
     transform: translate(0, -50%);
@@ -49,7 +48,7 @@
         background: transparent;
         border: none;
         outline: none;
-        color: $fonts-color;
+        color: $sidebar-fonts-color;
         font-size: $sm-text;
         text-indent: 1.5em;
     }

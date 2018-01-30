@@ -10,6 +10,11 @@ export let MENU_ITEM = [
         icon: 'pencil'
     },
     {
+        path: 'icon',
+        title: 'Icon',
+        icon: 'diamond'
+    },
+    {
         path: 'ui',
         title: 'UI Components',
         icon: 'laptop',

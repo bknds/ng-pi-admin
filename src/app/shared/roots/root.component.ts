@@ -8,7 +8,7 @@ export class RootComponent {
         type: 'default',
         title: 'Look here!',
         value: 'This alert needs your attention.'
-    }): void {
+    }) {
         this._globalService._notification(data);
     }
 }

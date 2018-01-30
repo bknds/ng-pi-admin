@@ -1,15 +1,15 @@
-@import './mixin';
+@import '../mixin';
 $default-text:14px;
 $sm-text:12px;
 $lg-text:16px;
 $body-bg:#141420;
 $sidebar-bg:#171824;
-$sidebar-fonts:#fff;
+$sidebar-fonts-color:#fff;
 $card-bg:#171824;
 $white:#fff;
 $black:#000;
-$mask:rgba($black, .1);
 $border-color:#12121f;
+$table-border-color:#12121f;
 $fonts-color:#fff;
 $primary:#e45036;
 $success:#04ad53;
