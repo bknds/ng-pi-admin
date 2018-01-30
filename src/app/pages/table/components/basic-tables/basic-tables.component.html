@@ -8,7 +8,6 @@
               <input class="checkbox" type="checkbox" id="isCheckedAll" [checked]="isCheckedAll" (change)="allChecked($event.target)">
               <label class="check-label" for="isCheckedAll"></label>
             </th>
-            <th>#</th>
             <th>FIRSTNAME</th>
             <th>LASTNAME</th>
             <th>USERNAME</th>
@@ -20,7 +19,6 @@
               <input class="checkbox" type="checkbox" id="check{{index}}" [checked]="item.checked" (change)="Checked($event.target,index)">
               <label class="check-label" for="check{{index}}"></label>
             </td>
-            <td>{{index}}</td>
             <td>{{item.first_name}}</td>
             <td>{{item.last_name}}</td>
             <td>{{item.user_name}}</td>
