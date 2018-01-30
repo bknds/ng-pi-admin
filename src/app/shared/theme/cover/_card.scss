@@ -20,6 +20,7 @@
     flex-direction: row;
     justify-content: space-around;
     .tip-msg {
+        flex: 1;
         h3 {
             line-height: .5em;
         }
@@ -29,6 +30,7 @@
         }
     }
     .tip-ico {
+        margin:0 10px;
         border-radius: 10%;
         color: $white;
         @include center(100px, 100px);

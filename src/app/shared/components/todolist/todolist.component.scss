@@ -10,7 +10,7 @@
 }
 
 .todolist-wrap {
-    margin-top: 14px;
+    margin-top: 10px;
 }
 
 .form-group {
@@ -79,7 +79,7 @@
     outline: none;
     background: transparent;
     font-size: 15px;
-    @include center(40px,39px);
+    @include center(40px, 39px);
     .fa-square-o {
         margin-left: -2px;
     }

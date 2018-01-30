@@ -5,17 +5,14 @@
     background: $sidebar-bg;
     overflow-x: hidden;
     @include transition(all .3s);
-    float: left;
-    //@include box-shadow( 2px 0 2px rgba($black, .06));
+    float: left; //@include box-shadow( 2px 0 2px rgba($black, .06));
 }
 
 .avatar-wrap {
     padding: 15px 0;
     margin: 0 auto;
     display: flex;
-    justify-content: space-around;
     flex-direction: row;
-    flex-wrap: nowrap;
     width: 220px;
     height: auto;
     min-height: 50px;
@@ -34,20 +31,26 @@
     }
     .user-info-wrap {
         padding: 2px 14px;
-        flex: 1;
+        width:170px;
         height: auto;
         @include transition(all .4s);
     }
 }
 
-.user-name {
+.user-name,
+.user-post {
     display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.user-name {
     color: $sidebar-fonts-color;
     font-size: $lg-text;
 }
 
 .user-post {
-    display: block;
     color: $primary;
     font-size: $sm-text;
     margin-top: 5px;
