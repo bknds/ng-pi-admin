@@ -4,8 +4,7 @@
     height: 100%;
     background: $sidebar-bg;
     overflow-x: hidden;
-    @include transition(all .3s);
-    float: left; //@include box-shadow( 2px 0 2px rgba($black, .06));
+    @include transition(all .3s); //@include box-shadow( 2px 0 2px rgba($black, .06));
 }
 
 .avatar-wrap {
@@ -31,7 +30,7 @@
     }
     .user-info-wrap {
         padding: 2px 14px;
-        width:170px;
+        width: 170px;
         height: auto;
         @include transition(all .4s);
     }

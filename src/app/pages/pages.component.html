@@ -1,12 +1,10 @@
 <div class="pages-wrap">
-    <div class="pages-siderbar">
-        <sidebar></sidebar>
+  <sidebar></sidebar>
+  <div class="pages-body">
+    <pages-top></pages-top>
+    <div class="pages-content">
+      <router-outlet></router-outlet>
+      <notification></notification>
     </div>
-    <div class="pages-body">
-        <pages-top></pages-top>
-        <div class="pages-content">
-            <router-outlet></router-outlet>
-            <notification></notification>
-        </div>
-    </div>
+  </div>
 </div>

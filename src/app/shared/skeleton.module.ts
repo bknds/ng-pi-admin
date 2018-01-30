@@ -7,7 +7,6 @@ import { GlobalService } from './services/global.service';
 import { MenuComponent } from './components/menu/menu.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { PagesTopComponent } from './components/pages-top/pages-top.component';
-import { MsgCenterComponent } from './components/msg-center/msg-center.component';
 import { NotificationComponent } from './components/notification/notification.component';
 
 @NgModule({
@@ -22,13 +21,11 @@ import { NotificationComponent } from './components/notification/notification.co
         MenuComponent,
         SidebarComponent,
         PagesTopComponent,
-        MsgCenterComponent,
         NotificationComponent
     ],
     exports: [
         SidebarComponent,
         PagesTopComponent,
-        MsgCenterComponent,
         NotificationComponent
     ]
 })
