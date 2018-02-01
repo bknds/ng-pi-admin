@@ -9,6 +9,9 @@ import { TabMenuModel } from '../../../models/tabs-model';
 })
 export class TabContentComponent implements OnInit {
   @Input()
+  for: string;
+
+  @Input()
   tabTitle: string = 'tab title';
 
   @Input()
@@ -23,10 +26,22 @@ export class TabContentComponent implements OnInit {
 
   ngOnInit() {
     this._tabsTitle();
+
+    this._globalService.tabsOrder$.subscribe(tabsOrder => {
+      if (this.for === tabsOrder[0]) {
+        this.active = false
+        if (this.tabTitle === tabsOrder[1]) {
+          this.active = true
+        }
+      }
+    }, error => {
+      console.log('Error: ' + error);
+    });
   }
 
   _tabsTitle() {
     this.tabsMenu = {
+      for: this.for,
       text: this.tabTitle,
       active: this.active,
       disabled: this.disabled

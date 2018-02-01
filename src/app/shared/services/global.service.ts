@@ -24,6 +24,15 @@ export class GlobalService {
         this.tabsMenuSource.next(tabsMenu);
     }
 
+    /* tabs id */
+    private tabsOrderSource = new Subject<Array<any>>();
+
+    tabsOrder$ = this.tabsOrderSource.asObservable();
+
+    _tabsOrder(tabsOrder: Array<any>) {
+        this.tabsOrderSource.next(tabsOrder);
+    }
+
     /* notification */
     private notificationSource = new Subject<NotificationModel>();
 

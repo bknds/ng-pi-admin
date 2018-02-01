@@ -1,3 +1,4 @@
+@import '../../../theme/conf';
 .tabs-content {
     display: none;
 }
@@ -6,5 +7,14 @@
     display: block;
     width: 100%;
     height: auto;
-    min-height: 50px;
+    animation: fadeIn 1.2s both;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

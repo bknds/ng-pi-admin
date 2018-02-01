@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { GlobalService } from '../../services/global.service';
 import { TabMenuModel } from '../../models/tabs-model';
 
@@ -8,6 +8,9 @@ import { TabMenuModel } from '../../models/tabs-model';
   styleUrls: ['./tabset.component.scss']
 })
 export class TabsetComponent implements OnInit {
+
+  @Input()
+  id: string;
 
   tabsMenuItem: Array<TabMenuModel> = [];
 
@@ -22,11 +25,14 @@ export class TabsetComponent implements OnInit {
       item.active = false;
     });
     this.tabsMenuItem[index].active = true;
+
+    this._globalService._tabsOrder([this.tabsMenuItem[index].for, this.tabsMenuItem[index].text]);
   }
 
   _getTabMenu() {
     this._globalService.tabsMenu$.subscribe(tabsMenu => {
-      this.tabsMenuItem.push(tabsMenu);
+      if (tabsMenu.for === this.id)
+        this.tabsMenuItem.push(tabsMenu);
     }, error => {
       console.log('Error: ' + error);
     });
