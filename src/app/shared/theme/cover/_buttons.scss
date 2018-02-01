@@ -13,6 +13,11 @@
     color: $white;
 }
 
+.btn-link {
+    color: $fonts-color;
+    text-decoration: underline;
+}
+
 .btn-default,
 .btn-default:disabled:hover,
 .btn-default:hover,

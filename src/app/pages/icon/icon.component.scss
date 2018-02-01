@@ -1,11 +1,13 @@
 .icon-box {
     margin: 20px 0;
+    height:auto;
+    min-height:100px;
     text-align: center;
-    font-size: 13px;
+    font-size: 12px;
     .icon {
         display: block;
         margin: 10px 0;
         width: 100%;
-        font-size: 30px;
+        font-size: 40px;
     }
 }

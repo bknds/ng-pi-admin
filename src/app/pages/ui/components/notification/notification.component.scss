@@ -1,3 +1,15 @@
 .btn {
-    margin:0 10px;
+    margin: 0 10px;
+}
+
+.col-md-4 {
+    .btn {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .btn-link {
+        padding: auto 0;
+        margin: 35px 0 20px 0;
+        text-align: left;
+    }
 }

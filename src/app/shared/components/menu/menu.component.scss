@@ -24,6 +24,7 @@
         color: $sidebar-fonts-color;
         text-decoration: none;
         overflow: hidden;
+        cursor: pointer;
         &:hover {
             color: $primary;
             background: $border-color;
@@ -67,4 +68,10 @@
 
 .item-toggle-off {
     height: 50px;
+}
+
+.item-children {
+    .menu-wrap {
+        background: rgba($black, .05);
+    }
 }
