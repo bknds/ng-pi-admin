@@ -15,7 +15,7 @@ export class SidebarComponent implements OnInit {
 
   public menuInfo = [];
 
-  private sidebarToggle: boolean = true;
+  public sidebarToggle: boolean = true;
 
   tip = new Tips;
 
