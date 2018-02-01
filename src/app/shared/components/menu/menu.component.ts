@@ -19,5 +19,4 @@ export class MenuComponent {
   isToggleOn(item) {
     item.toggle === 'on' ? item.toggle = 'off' : item.toggle = 'on';
   }
-
 }

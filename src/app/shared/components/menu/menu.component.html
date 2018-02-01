@@ -1,14 +1,14 @@
 <ul class="menu-wrap animated fadeIn">
   <li *ngFor="let item of menuInfo;let i = index" class="menu-item" [ngClass]="{'item-toggle-on':item.toggle === 'on','item-toggle-off':!sidebarToggle}">
 
-    <a href="javascript:;" [routerLink]="[item.routerLink.join('/')]" *ngIf="item.routerLink" routerLinkActive="active" class="menu-link">
+    <a [routerLink]="[item.routerLink.join('/')]" *ngIf="item.routerLink" routerLinkActive="active" class="menu-link">
       <div class="placeholder">
         <i class="fa fa-{{item.icon}} fa-fw"></i>
       </div>
       <span class="text">{{item.title}}</span>
     </a>
 
-    <a href="javascript:;" class="menu-link" *ngIf="!item.routerLink" (click)="isToggleOn(item)">
+    <a class="menu-link" *ngIf="!item.routerLink" (click)="isToggleOn(item)">
       <div class="placeholder">
         <i class="fa fa-{{item.icon}} fa-fw" *ngIf="item.icon"></i>
       </div>
