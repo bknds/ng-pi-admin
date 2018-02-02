@@ -12,6 +12,9 @@ export class TabsetComponent implements OnInit {
   @Input()
   id: string;
 
+  @Input()
+  type: string = 'default';
+
   tabsMenuItem: Array<TabMenuModel> = [];
 
   constructor(public _globalService: GlobalService) { }
@@ -26,6 +29,7 @@ export class TabsetComponent implements OnInit {
     });
     this.tabsMenuItem[index].active = true;
 
+    /* send checked info */
     this._globalService._tabsOrder([this.tabsMenuItem[index].for, this.tabsMenuItem[index].text]);
   }
 
@@ -34,7 +38,7 @@ export class TabsetComponent implements OnInit {
       if (tabsMenu.for === this.id)
         this.tabsMenuItem.push(tabsMenu);
     }, error => {
-      console.log('Error: ' + error);
+      console.log('Error:' + error);
     });
   }
 }

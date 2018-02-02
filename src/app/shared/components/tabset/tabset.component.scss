@@ -1,17 +1,24 @@
 @import '../../theme/conf';
-.tabs-header {
-    width: 100%;
-    height: 40px;
-    border-bottom: 1px solid $border-color;
+.tabs-wrap,
+.justified-tabs-wrap {
+    .tabs-header {
+        width: 100%;
+        height: 41px;
+        border-bottom: 1px solid $border-color;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-y: hidden;
+    }
     .tabs-nav,
     .is-active {
-        min-width: 100px;
         background: transparent;
         border: none;
-        float: left;
+        min-width: 70px;
         outline: none;
         color: $fonts-color;
-        @include center(auto,40px);
+        @include center(auto, 40px);
         &::after {
             display: block;
             content: '';
@@ -39,6 +46,16 @@
     .tabs-nav[disabled] {
         color: rgba($fonts-color, .4);
         cursor: not-allowed;
+    }
+}
+
+.justified-tabs-wrap {
+    .tabs-header {
+        justify-content: space-between;
+    }
+    .tabs-nav,
+    .is-active {
+        flex: 1;
     }
 }
 

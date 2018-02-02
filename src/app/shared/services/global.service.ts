@@ -24,7 +24,7 @@ export class GlobalService {
         this.tabsMenuSource.next(tabsMenu);
     }
 
-    /* tabs id */
+    /* tabs choosen */
     private tabsOrderSource = new Subject<Array<any>>();
 
     tabsOrder$ = this.tabsOrderSource.asObservable();
