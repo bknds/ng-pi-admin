@@ -11,6 +11,7 @@ import { TabContentComponent } from './components/tabset/tab-content/tab-content
 import { PaginationComponent } from './components/pagination/pagination.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import { FileTreeComponent } from './components/file-tree/file-tree.component';
+import { SwitchComponent } from './components/switch/switch.component';
 
 @NgModule({
   imports: [
@@ -26,7 +27,8 @@ import { FileTreeComponent } from './components/file-tree/file-tree.component';
     TabsetComponent,
     TabContentComponent,
     ProgressBarComponent,
-    PaginationComponent
+    PaginationComponent,
+    SwitchComponent
   ],
   exports: [
     CardComponent,
@@ -35,7 +37,8 @@ import { FileTreeComponent } from './components/file-tree/file-tree.component';
     TabsetComponent,
     TabContentComponent,
     ProgressBarComponent,
-    PaginationComponent
+    PaginationComponent,
+    SwitchComponent
   ]
 })
 export class SharedModule { }

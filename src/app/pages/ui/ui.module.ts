@@ -10,7 +10,6 @@ import { GridComponent } from './components/grid/grid.component';
 import { NotificationComponent } from './components/notification/notification.component';
 import { FileTreeComponent } from './components/file-tree/file-tree.component';
 import { LoadingComponent } from './components/loading/loading.component';
-import { AnimationsComponent } from './components/animations/animations.component';
 import { PanelsComponent } from './components/panels/panels.component';
 
 @NgModule({
@@ -27,7 +26,6 @@ import { PanelsComponent } from './components/panels/panels.component';
         NotificationComponent,
         FileTreeComponent,
         LoadingComponent,
-        AnimationsComponent,
         PanelsComponent
     ]
 })

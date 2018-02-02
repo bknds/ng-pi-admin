@@ -5,6 +5,11 @@ export let MENU_ITEM = [
         icon: 'dashboard'
     },
     {
+        path: 'mailbox',
+        title: 'Mailbox',
+        icon: 'envelope-o'
+    },
+    {
         path: 'editor',
         title: 'CKEditor',
         icon: 'pencil'
@@ -46,10 +51,6 @@ export let MENU_ITEM = [
             {
                 path: 'loading',
                 title: 'Loading'
-            },
-            {
-                path: 'animations',
-                title: 'Animations'
             }
         ]
     },

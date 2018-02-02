@@ -34,9 +34,21 @@
         <textarea cols="0" rows="10" class="form-control" placeholder="Textarea"></textarea>
       </div>
     </card>
-    <card>
-      <input type="checkbox" class="switch" id="switch">
-      <label class="switch-wrap" for="switch"></label>
+    <card cardTitle="Switch">
+      <div class="switch-group">
+        <switch switchName="multiple" switchId="multiple1" multiple checked></switch>
+        <switch switchName="multiple" switchId="multiple2" theme="success" multiple checked></switch>
+        <switch switchName="multiple" switchId="multiple3" theme="warning" multiple checked></switch>
+        <switch switchName="multiple" switchId="multiple4" theme="danger" multiple checked></switch>
+        <switch switchName="multiple" switchId="multiple5" theme="info" multiple checked></switch>
+      </div>
+      <div class="switch-group">
+        <switch switchName="single" switchId="single1" checked></switch>
+        <switch switchName="single" switchId="single2" theme="success"></switch>
+        <switch switchName="single" switchId="single3" theme="warning"></switch>
+        <switch switchName="single" switchId="single4" theme="danger"></switch>
+        <switch switchName="single" switchId="single5" theme="info"></switch>
+      </div>
     </card>
   </div>
 
@@ -86,58 +98,58 @@
     <card cardTitle="Checkbox&Radio">
       <div class="form-group">
         <div class="col-md-4">
-          <input class="checkbox" type="checkbox" id="checkbox1" checked>
-          <label class="check-label" for="checkbox1">default</label>
+          <input class="checkbox" type="checkbox" id="default-checkbox1" checked>
+          <label class="check-label" for="default-checkbox1">default</label>
         </div>
         <div class="col-md-4">
-          <input class="checkbox" type="checkbox" id="checkbox2" checked>
-          <label class="check-label" for="checkbox2">default</label>
+          <input class="checkbox" type="checkbox" id="default-checkbox2">
+          <label class="check-label" for="default-checkbox2">default</label>
         </div>
         <div class="col-md-4">
-          <input class="checkbox" type="checkbox" id="checkbox3" checked>
-          <label class="check-label" for="checkbox3">default</label>
+          <input class="checkbox" type="checkbox" id="default-checkbox3">
+          <label class="check-label" for="default-checkbox3">default</label>
         </div>
       </div>
       <div class="form-group">
         <div class="col-md-4">
-          <input class="radio" type="radio" id="radio1" name="radio" checked>
-          <label class="radio-label" for="radio1">radio1</label>
+          <input class="radio" type="radio" id="default-radio1" name="radio" checked>
+          <label class="radio-label" for="default-radio1">radio1</label>
         </div>
         <div class="col-md-4">
-          <input class="radio" type="radio" id="radio2" name="radio">
-          <label class="radio-label" for="radio2">radio1</label>
+          <input class="radio" type="radio" id="default-radio2" name="radio">
+          <label class="radio-label" for="default-radio2">radio1</label>
         </div>
         <div class="col-md-4">
-          <input class="radio" type="radio" id="radio3" name="radio">
-          <label class="radio-label" for="radio3">radio1</label>
+          <input class="radio" type="radio" id="default-radio3" name="radio">
+          <label class="radio-label" for="default-radio3">radio1</label>
         </div>
       </div>
     </card>
     <card cardTitle="Color&State">
       <div class="form-group">
         <div class="col-md-4">
-          <input class="checkbox" type="checkbox" id="checkbox1" checked>
-          <label class="check-label" for="checkbox1">default</label>
+          <input class="checkbox" type="checkbox" id="color-checkbox1" checked>
+          <label class="check-label" for="color-checkbox1">default</label>
         </div>
         <div class="col-md-4">
-          <input class="checkbox checkbox-primary" type="checkbox" id="checkbox2">
-          <label class="check-label" for="checkbox2">primary</label>
+          <input class="checkbox checkbox-primary" type="checkbox" id="color-checkbox2">
+          <label class="check-label" for="color-checkbox2">primary</label>
         </div>
         <div class="col-md-4">
-          <input class="checkbox checkbox-success" type="checkbox" id="checkbox3">
-          <label class="check-label" for="checkbox3">success</label>
+          <input class="checkbox checkbox-success" type="checkbox" id="color-checkbox3">
+          <label class="check-label" for="color-checkbox3">success</label>
         </div>
         <div class="col-md-4">
-          <input class="checkbox checkbox-warning" type="checkbox" id="checkbox4">
-          <label class="check-label" for="checkbox4">warning</label>
+          <input class="checkbox checkbox-warning" type="checkbox" id="color-checkbox4">
+          <label class="check-label" for="color-checkbox4">warning</label>
         </div>
         <div class="col-md-4">
-          <input class="checkbox checkbox-danger" type="checkbox" id="checkbox5">
-          <label class="check-label" for="checkbox5">danger</label>
+          <input class="checkbox checkbox-danger" type="checkbox" id="color-checkbox5">
+          <label class="check-label" for="color-checkbox5">danger</label>
         </div>
         <div class="col-md-4">
-          <input class="checkbox checkbox-info" type="checkbox" id="checkbox6">
-          <label class="check-label" for="checkbox6">info</label>
+          <input class="checkbox checkbox-info" type="checkbox" id="color-checkbox6">
+          <label class="check-label" for="color-checkbox6">info</label>
         </div>
       </div>
     </card>

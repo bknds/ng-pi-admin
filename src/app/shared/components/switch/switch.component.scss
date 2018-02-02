@@ -1,0 +1,59 @@
+@import '../../theme/conf';
+.switch {
+    display: none;
+}
+
+.switch-wrap {
+    display: block;
+    width: 45px;
+    height: 25px;
+    border: none;
+    border-radius: 20px !important;
+    background: rgba($black, .2);
+    cursor: pointer;
+    position: relative;
+    @include transition(all .3s);
+    @include box-shadow(1px 1px 10px rgba($black, .3) inset);
+}
+
+.switch-wrap:after {
+    display: block;
+    content: '';
+    width: 21px;
+    height: 21px;
+    border-radius: 19px !important;
+    background: $white;
+    position: relative;
+    top: 2px;
+    left: 2px;
+    @include transition(all .2s);
+    @include linear-gradient(to top right, darken($white, 12%), $white);
+}
+
+.switch:checked+.switch-wrap {
+    background: $primary;
+}
+
+.switch:checked+.switch-wrap:after {
+    left: 22px;
+}
+
+.switch:checked+.switch-wrap-default {
+    background: $primary;
+}
+
+.switch:checked+.switch-wrap-success {
+    background: $success;
+}
+
+.switch:checked+.switch-wrap-warning {
+    background: $warning;
+}
+
+.switch:checked+.switch-wrap-danger {
+    background: $danger;
+}
+
+.switch:checked+.switch-wrap-info {
+    background: $info;
+}

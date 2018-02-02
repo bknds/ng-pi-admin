@@ -1,0 +1,9 @@
+<ng-container *ngIf="multiple !== undefined">
+  <input type="checkbox" class="switch" id="{{switchId}}" name="{{switchName}}" [checked]="checked !== undefined">
+  <label [class]="theme" for="{{switchId}}"></label>
+</ng-container>
+
+<ng-container *ngIf="multiple === undefined">
+  <input type="radio" class="switch" id="{{switchId}}" name="{{switchName}}" [checked]="checked !== undefined">
+  <label [class]="theme" for="{{switchId}}"></label>
+</ng-container>

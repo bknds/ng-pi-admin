@@ -12,8 +12,8 @@ $border-color:rgba($black, .1);
 $table-border-color:#ccc;
 $fonts-color:#495057;
 $primary:#fca400;
-$success:#29bdb6;
-$danger:#f9619a;
+$success:#16be9a;
+$danger:#fa5167;
 $warning:#ff7403;
 $info:#2cc3ff;
 body {
@@ -33,11 +33,11 @@ body {
 }
 
 .bg-danger {
-    @include linear-gradient(to top right, $danger, #fbaa68);
+    @include linear-gradient(to top right, $danger, #fda09c);
 }
 
 .bg-warning {
-    @include linear-gradient(to top right, $warning, #fcc26a);
+    @include linear-gradient(to top right, $warning, #fac980);
 }
 
 .bg-info {
