@@ -332,3 +332,31 @@ checkbox && radio
 .label-info {
     @extend .bg-info;
 }
+
+@mixin alert($alertType) {
+    border: 1px solid $alertType;
+    background: rgba($alertType, .2);
+    color: $fonts-color;
+}
+
+.alert-success {
+    @include alert($success);
+}
+
+.alert-warning {
+    @include alert($warning);
+}
+
+.alert-danger {
+    @include alert($danger);
+}
+
+.alert-info {
+    @include alert($info);
+}
+
+.alert {
+    button.close {
+        color: $fonts-color;
+    }
+}
