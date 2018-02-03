@@ -5,11 +5,14 @@
 }
 
 .switch-group {
-    padding:6px;
+    padding: 10px;
     width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    .control-label {
+        width: 100%;
+    }
     switch {
         flex: 1;
     }

@@ -6,14 +6,14 @@
 .switch-wrap {
     display: block;
     width: 45px;
-    height: 25px;
+    height: 10px;
     border: none;
     border-radius: 20px !important;
     background: rgba($black, .2);
     cursor: pointer;
     position: relative;
     @include transition(all .3s);
-    @include box-shadow(1px 1px 10px rgba($black, .3) inset);
+    @include box-shadow(1px 1px 10px rgba($black, .2) inset);
 }
 
 .switch-wrap:after {
@@ -24,10 +24,10 @@
     border-radius: 19px !important;
     background: $white;
     position: relative;
-    top: 2px;
-    left: 2px;
-    @include transition(all .2s);
-    @include linear-gradient(to top right, darken($white, 12%), $white);
+    top: -6px;
+    left: -1px;
+    @include transition(all .5s cubic-bezier(.9, .01, .05, 1));
+    @include box-shadow(2px 2px 10px rgba($black, .4));
 }
 
 .switch:checked+.switch-wrap {
@@ -35,7 +35,7 @@
 }
 
 .switch:checked+.switch-wrap:after {
-    left: 22px;
+    left: 25px;
 }
 
 .switch:checked+.switch-wrap-default {

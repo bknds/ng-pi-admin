@@ -11,9 +11,9 @@ $black:#000;
 $border-color:#12121f;
 $table-border-color:#12121f;
 $fonts-color:#fff;
-$primary:#e45036;
+$primary:#ff0f6b;
 $success:#04ad53;
-$danger:#ff2756;
+$danger:#ff184a;
 $warning:#fd8f00;
 $info:#1e65ff;
 body {
@@ -24,8 +24,8 @@ body {
     @include linear-gradient(to top right, lighten($card-bg, 3%), lighten($card-bg, 8%));
 }
 
-.bg-primary {
-    @include linear-gradient(to top right, $primary, #ffbe56);
+.bg-primary {                                                                                                                                   
+    @include linear-gradient(to top right, $primary, #fd96bd);
 }
 
 .bg-success {
@@ -33,7 +33,7 @@ body {
 }
 
 .bg-danger {
-    @include linear-gradient(to top right, $danger, #fd7a9b);
+    @include linear-gradient(to top right, $danger, #fc85a2);
 }
 
 .bg-warning {

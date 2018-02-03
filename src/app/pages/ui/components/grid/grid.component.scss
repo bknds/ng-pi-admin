@@ -5,7 +5,7 @@ div[class^=col-] {
     div {
         padding: 10px;
         text-align: center;
-        background: rgba($primary, .8);
+        background: $primary;
         border-radius: 3px;
         color: #fff;
     }
