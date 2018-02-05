@@ -5,9 +5,9 @@ div[class^=col-] {
     div {
         padding: 10px;
         text-align: center;
-        background: $primary;
+        background: rgba($black, .2);
         border-radius: 3px;
-        color: #fff;
+        color: $fonts-color;
     }
 }
 

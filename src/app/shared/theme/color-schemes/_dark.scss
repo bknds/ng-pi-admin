@@ -6,15 +6,16 @@ $body-bg:#141420;
 $sidebar-bg:#171824;
 $sidebar-fonts-color:#fff;
 $card-bg:#171824;
+$card-border:transparent;
 $white:#fff;
 $black:#000;
 $border-color:#12121f;
 $table-border-color:#12121f;
 $fonts-color:#fff;
-$primary:#ff0f6b;
+$primary:#fd8f00;
 $success:#04ad53;
 $danger:#ff184a;
-$warning:#fd8f00;
+$warning:#ff7300;
 $info:#1e65ff;
 body {
     background: $body-bg;
@@ -24,8 +25,8 @@ body {
     @include linear-gradient(to top right, lighten($card-bg, 3%), lighten($card-bg, 8%));
 }
 
-.bg-primary {                                                                                                                                   
-    @include linear-gradient(to top right, $primary, #fd96bd);
+.bg-primary {
+    @include linear-gradient(to top right, $primary, #ffda33);
 }
 
 .bg-success {

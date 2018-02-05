@@ -1,5 +1,6 @@
 import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
-
+import './ckeditor.loader';
+import 'ckeditor';
 @Component({
   selector: 'app-editor',
   templateUrl: './editor.component.html',
@@ -11,9 +12,9 @@ export class EditorComponent implements OnInit {
     uiColor: '#ffffff',
     height: '500',
   };
-  
+
   constructor() { }
-  
+
   @ViewChild('ckContent') ckContent: ElementRef;
 
   ngOnInit() {
