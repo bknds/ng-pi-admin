@@ -60,8 +60,12 @@ export let MENU_ITEM = [
         icon: 'check-square-o',
         children: [
             {
-                path: 'inputs',
+                path: 'form-inputs',
                 title: 'Form Inputs'
+            },
+            {
+                path: 'form-layouts',
+                title: 'Form Layouts'
             }
         ]
     },

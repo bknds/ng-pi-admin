@@ -1,6 +1,7 @@
 import { Routes, RouterModule } from '@angular/router';
 import { FormComponent } from './form.component';
-import { InputsComponent } from './components/inputs/inputs.component';
+import { FormInputsComponent } from './components/form-inputs/form-inputs.component';
+import { FormLayoutsComponent } from './components/form-layouts/form-layouts.component';
 
 const childRoutes: Routes = [
     {
@@ -8,7 +9,8 @@ const childRoutes: Routes = [
         component: FormComponent,
         children: [
             { path: '', redirectTo: 'inputs', pathMatch: 'full' },
-            { path: 'inputs', component: InputsComponent }
+            { path: 'form-inputs', component: FormInputsComponent },
+            { path: 'form-layouts', component: FormLayoutsComponent }
         ]
     }
 ];

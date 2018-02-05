@@ -5,7 +5,8 @@ import { SharedModule } from '../../shared/shared.module';
 
 /* components */
 import { FormComponent } from './form.component';
-import { InputsComponent } from './components/inputs/inputs.component';
+import { FormInputsComponent } from './components/form-inputs/form-inputs.component';
+import { FormLayoutsComponent } from './components/form-layouts/form-layouts.component';
 
 @NgModule({
     imports: [
@@ -15,7 +16,8 @@ import { InputsComponent } from './components/inputs/inputs.component';
     ],
     declarations: [
         FormComponent,
-        InputsComponent
+        FormInputsComponent,
+        FormLayoutsComponent
     ]
 })
 export class FormModule { }

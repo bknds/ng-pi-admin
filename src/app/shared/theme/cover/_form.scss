@@ -6,11 +6,6 @@
         font-weight: normal;
         font-size: $default-text;
     }
-    .control-label {
-        font-weight: normal;
-        font-size: $sm-text;
-        color: $fonts-color;
-    }
 }
 
 @mixin placeholderStyle($color, $opacity) {
@@ -29,14 +24,14 @@
 }
 
 .control-label {
-    font-size: 12px;
+    font-size: $default-text;
     font-weight: normal;
 }
 
 .help-block {
     color: lighten($fonts-color, 20%);
     vertical-align: sub;
-    font-size: 12px;
+    font-size: $sm-text;
 }
 
 .form-control {
@@ -65,7 +60,7 @@
 input.form-control {
     border-radius: 0;
     border: none;
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid transparent;
     background: $border-color;
     @include transition(all 1s);
     &:focus {
@@ -226,6 +221,7 @@ checkbox && radio
     border: 1px solid rgba($fonts-color, .5);
     cursor: pointer;
     position: relative;
+    white-space: nowrap;
 }
 
 .check-label:after,
