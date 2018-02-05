@@ -7,16 +7,10 @@ import { collapse } from '../../animation/collapse-animate';
   styleUrls: ['./card.component.scss'],
   animations: [collapse]
 })
-
-export class CardComponent implements OnInit {
-
+export class CardComponent {
   @Input() cardTitle: any;
 
   collapse: string = 'on';
-
-  constructor() { }
-
-  ngOnInit() { }
 
   collapseCard() {
     this.collapse === 'on' ? this.collapse = 'off' : this.collapse = 'on';

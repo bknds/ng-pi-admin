@@ -5,8 +5,7 @@ import { Component, OnInit, Input } from '@angular/core';
   templateUrl: './pagination.component.html',
   styleUrls: ['./pagination.component.scss']
 })
-export class PaginationComponent implements OnInit {
-
+export class PaginationComponent {
   @Input()
   pagerId: string;
 
@@ -18,11 +17,6 @@ export class PaginationComponent implements OnInit {
 
   @Input()
   pageNumberChangefn;
-
-  constructor() { }
-
-  ngOnInit() {
-  }
 
 }
 

@@ -8,12 +8,10 @@ import { GlobalService } from '../../services/global.service';
   providers: []
 })
 
-export class PagesTopComponent implements OnInit {
+export class PagesTopComponent {
   sidebarToggle: boolean = true;
 
   constructor(private _globalService: GlobalService) { }
-
-  ngOnInit() { }
 
   _sidebarToggle() {
     this._globalService.sidebarToggle$.subscribe(sidebarToggle => {
