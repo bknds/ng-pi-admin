@@ -22,9 +22,7 @@
   }
   echarts.registerTheme('dark', {
     "color": [
-      "#e45036",
-      "#e77339",
-      "#eb8146",
+      "#fd8f00",
       "#ffb248",
       "#f2d643",
       "#ebdba4"
