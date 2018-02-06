@@ -5,13 +5,13 @@ import { GlobalService } from '../../services/global.service';
   selector: 'pages-top',
   templateUrl: './pages-top.component.html',
   styleUrls: ['./pages-top.component.scss'],
-  providers: []
 })
-
 export class PagesTopComponent {
   sidebarToggle: boolean = true;
+  tip = { ring: true, email: true };
 
-  constructor(private _globalService: GlobalService) { }
+  constructor(private _globalService: GlobalService) {
+  }
 
   _sidebarToggle() {
     this._globalService.sidebarToggle$.subscribe(sidebarToggle => {

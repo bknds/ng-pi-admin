@@ -4,7 +4,8 @@
     height: 100%;
     background: $sidebar-bg;
     overflow-x: hidden;
-    @include transition(all .3s); //@include box-shadow( 2px 0 2px rgba($black, .06));
+    @include transition(all .5s);
+    border-right: 1px solid $border-color; //@include box-shadow( 2px 0 2px rgba($black, .06));
 }
 
 .avatar-wrap {
@@ -55,39 +56,6 @@
     margin-top: 5px;
 }
 
-.msg-tips-wrap {
-    margin: 0;
-    width: 100%;
-    height: 50px;
-    color: $sidebar-fonts-color;
-    @include transition(all .4s);
-}
-
-.msg-entrance {
-    position: relative;
-    min-width: 50px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    @include transition(all .4s);
-    &:hover {
-        cursor: pointer;
-        color: $primary;
-    }
-    span.badge {
-        padding: 0;
-        position: absolute;
-        top: 14px;
-        right: 27px;
-        display: block;
-        width: 11px;
-        height: 11px;
-        background: $primary;
-        border: 2px solid $sidebar-bg;
-        border-radius: 50%;
-    }
-}
-
 .side-collapsed {
     width: 50px;
     .avatar-wrap {
@@ -102,9 +70,6 @@
     }
     .user-info-wrap {
         transform: scale(0, 0);
-    }
-    .msg-center-wrap {
-        height: 160px;
     }
 }
 

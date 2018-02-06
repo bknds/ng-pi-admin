@@ -9,7 +9,6 @@ import { collapse } from '../../animation/collapse-animate';
 })
 export class MenuComponent {
   @Input() menuInfo: any;
-
   @Input() sidebarToggle;
 
   isToggleOn(item) {

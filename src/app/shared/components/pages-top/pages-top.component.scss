@@ -1,27 +1,48 @@
 @import '../../theme/conf';
 .pages-top {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-between;
+    position: relative;
     width: 100%;
     height: 81px;
     background: $sidebar-bg;
+    border-bottom: 1px solid $border-color;
 }
 
 .collapse-menu {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
     color: $sidebar-fonts-color;
     font-size: 24px;
     cursor: pointer;
-    @include transition(all .1s);
     @include center(40px, 40px);
+    @include transition(all .2s);
     &:hover {
         color: $primary;
     }
+    .toggle-on {
+        transform: rotate(0);
+        @include transition(all .5s);
+    }
+    .toggle-off {
+        transform: rotate(-90deg);
+        @include transition(all .5s);
+    }
 }
 
-.search-wrap {
+.tools-wrap {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(0, -50%);
+    width: auto;
+    min-width: 440px;
     height: 40px;
+}
+
+.search-group {
+    width: 340px;
     background: $border-color;
     border: 1px solid $border-color;
     border-radius: 40px;
@@ -45,7 +66,7 @@
         border: 0;
         border-radius: 50%;
         outline: none;
-        line-height: 25px;
+        line-height: 30px;
         text-align: center;
         color: $body-bg;
         transform: scale(0);
@@ -57,6 +78,40 @@
     }
     .search-input:focus+.search-btn {
         transform: scale(1);
+    }
+}
+
+.msg-tips-wrap {
+    margin: 0;
+    width: 100px;
+    height: 40px;
+    color: $sidebar-fonts-color;
+    @include transition(all .4s);
+}
+
+.msg-entrance {
+    position: relative;
+    min-width: 50px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    @include transition(all .4s);
+    color: $sidebar-fonts-color;
+    &:hover {
+        cursor: pointer;
+        color: $primary;
+    }
+    span.badge {
+        padding: 0;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: block;
+        width: 11px;
+        height: 11px;
+        background: $primary;
+        border: 2px solid $sidebar-bg;
+        border-radius: 50%;
     }
 }
 
