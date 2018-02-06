@@ -4,14 +4,13 @@
     height: 40px;
     padding: 0 10px;
     display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid $border-color;
+    justify-content: space-between; //border-bottom: 1px solid $border-color;
     .card-title {
         display: inline-block;
         margin: 0;
         line-height: 40px;
         font-size: $default-text+1;
-        font-weight: bold;
+        font-weight: 700;
         text-transform: uppercase;
     }
 }
