@@ -12,6 +12,7 @@ import { PaginationComponent } from './components/pagination/pagination.componen
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import { FileTreeComponent } from './components/file-tree/file-tree.component';
 import { SwitchComponent } from './components/switch/switch.component';
+import { SortComponent } from './components/sort/sort.component';
 
 @NgModule({
   imports: [
@@ -28,7 +29,8 @@ import { SwitchComponent } from './components/switch/switch.component';
     TabContentComponent,
     ProgressBarComponent,
     PaginationComponent,
-    SwitchComponent
+    SwitchComponent,
+    SortComponent
   ],
   exports: [
     CardComponent,
@@ -38,7 +40,8 @@ import { SwitchComponent } from './components/switch/switch.component';
     TabContentComponent,
     ProgressBarComponent,
     PaginationComponent,
-    SwitchComponent
+    SwitchComponent,
+    SortComponent
   ]
 })
 export class SharedModule { }

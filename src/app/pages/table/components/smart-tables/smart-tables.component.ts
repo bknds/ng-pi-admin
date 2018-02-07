@@ -1,6 +1,6 @@
 
 import { Component, OnInit } from '@angular/core';
-import { TablesService } from '../../../../shared/services/tables.service';
+import { TablesService } from '../tables.service';
 
 @Component({
   selector: 'app-smart-tables',
@@ -29,4 +29,5 @@ export class SmartTablesComponent implements OnInit {
   pageChanged(pN: number): void {
     this.pageNumber = pN;
   }
+
 }

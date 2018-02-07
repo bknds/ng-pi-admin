@@ -1,0 +1,11 @@
+<a href="javascript:;" (click)="desc()" *ngIf="sortType === 'normal'">
+  <i class="fa fa-sort-amount-desc"></i>
+</a>
+
+<a href="javascript:;" class="select" (click)="desc()" *ngIf="sortType === 'asc'">
+  <i class="fa fa-sort-amount-asc"></i>
+</a>
+
+<a href="javascript:;" class="select" (click)="asc()" *ngIf="sortType === 'desc'">
+  <i class="fa fa-sort-amount-desc"></i>
+</a>

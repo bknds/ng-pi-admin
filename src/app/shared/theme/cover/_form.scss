@@ -75,6 +75,7 @@ input.form-control[disabled] {
 input.table-form-control {
     border: 1px solid $border-color;
     border-radius: 3px;
+    background: darken($border-color, 2%);
     font-size: 12px;
     color: $fonts-color;
     text-align: center;

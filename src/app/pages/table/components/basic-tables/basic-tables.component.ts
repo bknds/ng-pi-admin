@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TablesService } from '../../../../shared/services/tables.service';
+import { TablesService } from '../tables.service';
 
 @Component({
   selector: 'app-basic-tables',
