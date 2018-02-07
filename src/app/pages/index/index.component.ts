@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ChartsService } from '../../shared/services/charts.service';
+import { ChartsService } from '../charts/components/default-charts/charts.service';
 
 @Component({
   selector: 'app-index',
@@ -10,11 +10,11 @@ import { ChartsService } from '../../shared/services/charts.service';
 export class IndexComponent implements OnInit {
   showloading: boolean = false;
 
-  public chartsOptionItem;
-  
+  public AnimationBarOption;
+
   constructor(private _chartsService: ChartsService) { }
 
   ngOnInit() {
-    this.chartsOptionItem = this._chartsService;
+    this.AnimationBarOption = this._chartsService.getAnimationBarOption();
   }
 }

@@ -1,14 +1,14 @@
 import { Routes, RouterModule } from '@angular/router';
 import { ChartsComponent } from './charts.component';
-import { DefaultChartsComponent } from './components/default-charts/default-charts.component';
+import { EChartsComponent } from './components/echarts/echarts.component';
 
 const childRoutes: Routes = [
     {
         path: '',
         component: ChartsComponent,
         children: [
-            { path: '', redirectTo: 'default-charts', pathMatch: 'full' },
-            { path: 'default-charts', component: DefaultChartsComponent },
+            { path: '', redirectTo: 'echarts', pathMatch: 'full' },
+            { path: 'echarts', component: EChartsComponent },
         ]
     }
 ];

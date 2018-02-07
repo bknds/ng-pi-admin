@@ -75,7 +75,7 @@ export let MENU_ITEM = [
         icon: 'bar-chart',
         children: [
             {
-                path: 'default-charts',
+                path: 'echarts',
                 title: 'Echarts'
             }
         ]
