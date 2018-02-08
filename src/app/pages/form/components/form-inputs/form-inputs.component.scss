@@ -4,6 +4,15 @@
     margin-bottom: 20px;
 }
 
+.form-group {
+    >.form-control {
+        margin-bottom: 10px;
+    }
+    >.help-block {
+        margin-top: -10px;
+    }
+}
+
 .switch-group {
     padding: 10px;
     width: 100%;

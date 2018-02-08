@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ChartsService } from '../charts/components/default-charts/charts.service';
+import { ChartsService } from '../charts/components/echarts/charts.service';
 
 @Component({
   selector: 'app-index',

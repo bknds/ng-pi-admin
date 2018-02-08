@@ -2,44 +2,27 @@
   <div class="col-md-6">
 
     <!-- form-group form-control control-label ↓↓↓↓↓↓↓↓↓ -->
-
     <card cardTitle="Input Types">
       <div class="form-group">
         <label class="control-label">Text</label>
         <input type="text" class="form-control" placeholder="Text Input">
-      </div>
-      <div class="form-group">
         <label class="control-label">Password</label>
         <input type="password" class="form-control" placeholder="Password Input">
-      </div>
-      <div class="form-group">
         <label class="control-label">With Help</label>
         <input type="text" class="form-control" placeholder="With Help">
         <span class="help-block sub-little-text">A block of help text that breaks onto a new line and may extend beyond one line.</span>
-      </div>
-      <div class="form-group">
         <label class="control-label">Small Input</label>
         <input type="text" class="form-control form-control-sm" placeholder="Small Input">
-      </div>
-      <div class="form-group">
         <label class="control-label">Large Input</label>
         <input type="text" class="form-control form-control-lg" placeholder="Large Input">
-      </div>
-      <div class="form-group">
         <label class="control-label">Disabled</label>
         <input type="text" class="form-control" placeholder="Disabled Input" disabled>
-      </div>
-      <div class="form-group">
+        <label class="control-label">Readonly</label>
+        <input type="text" class="form-control" placeholder="Readonly Input" readonly>
         <label class="control-label">Textarea</label>
         <textarea cols="0" rows="10" class="form-control" placeholder="Textarea"></textarea>
       </div>
     </card>
-
-  </div>
-
-  <!-- input-group with-addon with-btn&btn-group ↓↓↓↓↓↓↓ -->
-
-  <div class="col-md-6">
     <card cardTitle="Input Group">
       <div class="form-group">
         <div class="input-group">
@@ -80,6 +63,31 @@
         </div>
       </div>
     </card>
+    <card cardTitle="Select&Multiple Select">
+      <div class="form-group">
+        <label class="control-label">Select</label>
+        <select name="select" id="select1" class="form-control">
+          <option value="option1">option1</option>
+          <option value="option2">option2</option>
+          <option value="option3">option3</option>
+          <option value="option4">option4</option>
+        </select>
+        <label class="control-label">Multiple Select</label>
+        <select multiple name="select" id="select1" class="form-control">
+          <option value="option1">option1</option>
+          <option value="option2">option2</option>
+          <option value="option3">option3</option>
+          <option value="option4">option4</option>
+          <option value="option5">option4</option>
+          <option value="option6">option4</option>
+          <option value="option7">option4</option>
+        </select>
+      </div>
+    </card>
+  </div>
+
+  <!-- input-group with-addon with-btn&btn-group ↓↓↓↓↓↓↓ -->
+  <div class="col-md-6">
     <card cardTitle="Checkbox&Radio">
       <div class="form-group">
         <div class="col-md-4">
@@ -154,27 +162,6 @@
         <switch switchName="single" switchId="single3" theme="warning"></switch>
         <switch switchName="single" switchId="single4" theme="danger"></switch>
         <switch switchName="single" switchId="single5" theme="info"></switch>
-      </div>
-    </card>
-    <card cardTitle="Select&Multiple Select">
-      <div class="form-group">
-        <select name="select" id="select1" class="form-control">
-          <option value="option1">option1</option>
-          <option value="option2">option2</option>
-          <option value="option3">option3</option>
-          <option value="option4">option4</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <select multiple name="select" id="select1" class="form-control">
-          <option value="option1">option1</option>
-          <option value="option2">option2</option>
-          <option value="option3">option3</option>
-          <option value="option4">option4</option>
-          <option value="option5">option4</option>
-          <option value="option6">option4</option>
-          <option value="option7">option4</option>
-        </select>
       </div>
     </card>
   </div>

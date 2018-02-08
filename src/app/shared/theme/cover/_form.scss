@@ -61,7 +61,7 @@ input.form-control {
     border-radius: 0;
     border: none;
     border-bottom: 1px solid transparent;
-    background: rgba($border-color, .9);
+    background: $border-color;
     @include transition(all 1s);
     &:focus {
         border-bottom: 1px solid $primary;
@@ -72,10 +72,17 @@ input.form-control[disabled] {
     background-color: transparent;
 }
 
+input.form-control[readonly] {
+    background-color: transparent;
+    &:focus {
+        border-bottom: 1px solid transparent;
+    }
+}
+
 input.table-form-control {
     border: 1px solid $border-color;
     border-radius: 3px;
-    background: darken($border-color, 2%);
+    background: $border-color;
     font-size: 12px;
     color: $fonts-color;
     text-align: center;
@@ -306,8 +313,8 @@ checkbox && radio
 }
 
 .label {
-    padding: 2px 4px;
-    font-weight: 700;
+    padding: 1px 4px;
+    border-radius: 2px;
 }
 
 .label-primary {
