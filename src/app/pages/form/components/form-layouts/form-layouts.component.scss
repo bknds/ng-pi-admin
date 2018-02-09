@@ -6,3 +6,11 @@
         margin: 10px 0;
     }
 }
+
+.form-inline {
+    .control-label,
+    .form-control,
+    .btn {
+        margin: auto 5px;
+    }
+}

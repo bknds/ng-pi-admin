@@ -1,33 +1,26 @@
 import { Component, OnInit } from '@angular/core';
-import { TablesService } from '../tables.service';
 
 @Component({
   selector: 'app-basic-tables',
   templateUrl: './basic-tables.component.html',
-  styleUrls: ['./basic-tables.component.scss'],
-  providers: [TablesService]
+  styleUrls: ['./basic-tables.component.scss']
 })
 export class BasicTablesComponent implements OnInit {
 
   default_data: Array<any>;
   isCheckedAll: boolean = false;
 
-  constructor(private _tablesService: TablesService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.default_data = this._tablesService.baseData;
-
-    /* 根据数组内对象指定属性排序 */
-    function compare(property) {
-      return function (a, b) {
-        var value1 = a[property];
-        var value2 = b[property];
-        return value1 - value2;
-      }
-    }
-    this.default_data = this.default_data.sort(compare('price'));
+    this.default_data = [
+      { first_name: 'Steve', last_name: 'Jobs', user_name: '@steve' },
+      { first_name: 'Simon', last_name: 'Philips', user_name: '@simon' },
+      { first_name: 'Jane', last_name: 'Doe', user_name: '@jane' },
+      { first_name: 'Larry', last_name: 'Thornton', user_name: '@larry' },
+      { first_name: 'Hiver', last_name: 'Choe', user_name: '@hiver' },
+    ];
   }
-
 
   allChecked($event) {
     this.isCheckedAll = $event.checked;

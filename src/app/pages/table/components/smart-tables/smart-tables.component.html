@@ -9,10 +9,10 @@
             <th>USERNAME</th>
             <th>EMAIL</th>
             <th>AGE
-              <sort type="age" [data]=table_data></sort>
+              <sort key="age" [data]=table_data></sort>
             </th>
             <th>STATE</th>
-            <th>OPERATION</th>
+            <th>ACTIONS</th>
           </tr>
         </thead>
         <tbody>
@@ -42,7 +42,7 @@
               </select>
             </td>
             <td>
-              <button class="btn btn-primary btn-with-ico">
+              <button class="btn btn-sm btn-primary btn-with-ico">
                 <i class="fa fa-plus"></i>
                 New Row
               </button>
@@ -58,13 +58,13 @@
               <span class="label label-info">info</span>
             </td>
             <td>
-              <button class="btn btn-sm btn-info">
+              <button class="btn btn-xs btn-info">
                 <i class="fa fa-pencil"></i>
               </button>
-              <button class="btn btn-sm btn-success">
+              <button class="btn btn-xs btn-success">
                 <i class="fa fa-check"></i>
               </button>
-              <button class="btn btn-sm btn-danger">
+              <button class="btn btn-xs btn-danger">
                 <i class="fa fa-trash-o"></i>
               </button>
             </td>

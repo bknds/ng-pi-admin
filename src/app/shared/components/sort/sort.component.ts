@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class SortComponent implements OnInit {
   @Input()
-  type: string;
+  key: string;
   @Input()
   data: Array<any>;
 
@@ -20,12 +20,12 @@ export class SortComponent implements OnInit {
 
   desc() {
     this.sortType = 'desc';
-    this.data = this.data.sort(this.sort(this.type.toString(), true));
+    this.data = this.data.sort(this.sort(this.key.toString(), true));
   }
 
   asc() {
     this.sortType = 'asc';
-    this.data = this.data.sort(this.sort(this.type.toString(), false));
+    this.data = this.data.sort(this.sort(this.key.toString(), false));
   }
 
   sort(property, isDesc) {

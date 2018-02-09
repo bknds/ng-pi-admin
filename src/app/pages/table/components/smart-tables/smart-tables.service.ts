@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 
 @Injectable()
-export class TablesService {
+export class SmartTablesService {
     constructor() { }
 
-    DEFAULT_DATA = [
+    DATA = [
         {
             id: 1,
             firstName: 'Mark',
@@ -127,11 +127,4 @@ export class TablesService {
         }
     ];
 
-    baseData = [
-        { first_name: 'Steve', last_name: 'Jobs', user_name: '@steve' },
-        { first_name: 'Simon', last_name: 'Philips', user_name: '@simon' },
-        { first_name: 'Jane', last_name: 'Doe', user_name: '@jane' },
-        { first_name: 'Larry', last_name: 'Thornton', user_name: '@larry' },
-        { first_name: 'Hiver', last_name: 'Choe', user_name: '@hiver' },
-    ];
 }
