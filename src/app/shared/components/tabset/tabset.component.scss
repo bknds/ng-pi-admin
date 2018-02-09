@@ -1,60 +1,79 @@
 @import '../../theme/conf';
-.tabs-wrap,
-.justified-tabs-wrap {
-    .tabs-header {
+.tabs-header {
+    width: 100%;
+    height: 41px;
+    border-bottom: 1px solid $border-color;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.tabs-nav,
+.active {
+    background: transparent;
+    border: none;
+    min-width: 70px;
+    outline: none;
+    color: $fonts-color;
+    @include center(auto, 40px);
+    &::after {
+        display: block;
+        content: '';
         width: 100%;
-        height: 41px;
-        border-bottom: 1px solid $border-color;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        overflow-y: hidden;
-    }
-    .tabs-nav,
-    .is-active {
-        background: transparent;
+        height: 2px;
+        background: $primary;
         border: none;
-        min-width: 70px;
-        outline: none;
-        color: $fonts-color;
-        @include center(auto, 40px);
-        &::after {
-            display: block;
-            content: '';
-            width: 100%;
-            height: 2px;
-            background: $primary;
-            border: none;
-            border-radius: 2px;
-            position: relative;
-            bottom: 2px;
-        }
-    }
-    .tabs-nav {
-        &::after {
-            @include transition(all .2s);
-            @include transform(scale(0, 1));
-        }
-    }
-    .is-active {
-        &::after {
-            @include transition(all .2s);
-            @include transform(scale(1, 1));
-        }
-    }
-    .tabs-nav[disabled] {
-        color: rgba($fonts-color, .4);
-        cursor: not-allowed;
+        border-radius: 2px;
+        position: relative;
+        bottom: 2px;
     }
 }
 
-.justified-tabs-wrap {
+.tabs-nav:after {
+    @include transition(all .2s);
+    @include transform(scale(0, 1));
+}
+
+.active:after {
+    @include transition(all .2s);
+    @include transform(scale(1, 1));
+}
+
+.tabs-nav[disabled] {
+    color: rgba($fonts-color, .4);
+    cursor: not-allowed;
+}
+
+.tabs-wrap-default {
+    .tabs-header {
+        border: none;
+    }
+    .tabs-nav,
+    .active {
+        position: relative;
+        top: 2px;
+        &::after {
+            display: none;
+        }
+    }
+    .active {
+        border-radius: 5px 5px 0 0;
+        border: 1px solid $border-color;
+        border-bottom: 1px solid $card-bg;
+        color: $primary;
+    }
+    .tabs-body {
+        border: 1px solid $border-color;
+    }
+}
+
+.tabs-wrap-justified {
     .tabs-header {
         justify-content: space-between;
     }
     .tabs-nav,
-    .is-active {
+    .active {
         flex: 1;
     }
 }

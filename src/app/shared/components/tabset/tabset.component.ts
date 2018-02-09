@@ -13,7 +13,7 @@ export class TabsetComponent implements OnInit {
   id: string;
 
   @Input()
-  type: string = 'default';
+  theme: string = 'default';
 
   tabsMenuItem: Array<TabMenuModel> = [];
 
@@ -21,6 +21,8 @@ export class TabsetComponent implements OnInit {
 
   ngOnInit() {
     this._getTabMenu();
+
+    this.theme = `tabs-wrap-${this.theme}`;
   }
 
   isActive(index) {
