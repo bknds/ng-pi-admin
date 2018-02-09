@@ -1,4 +1,11 @@
 # PIAdmin
 
 ![](https://raw.githubusercontent.com/treesflower/dustAdmin/master/admin.png)
-![](https://raw.githubusercontent.com/treesflower/dustAdmin/master/admin2.png)
+
+```
+npm install
+
+ng serve 
+
+localhost:4200
+```
