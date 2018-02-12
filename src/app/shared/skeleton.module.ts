@@ -8,6 +8,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { PagesTopComponent } from './components/pages-top/pages-top.component';
 import { NotificationComponent } from './components/notification/notification.component';
+import { LoadingComponent } from './components/loading/loading.component';
 
 @NgModule({
     imports: [
@@ -21,12 +22,14 @@ import { NotificationComponent } from './components/notification/notification.co
         MenuComponent,
         SidebarComponent,
         PagesTopComponent,
-        NotificationComponent
+        NotificationComponent,
+        LoadingComponent
     ],
     exports: [
         SidebarComponent,
         PagesTopComponent,
-        NotificationComponent
+        NotificationComponent,
+        LoadingComponent
     ]
 })
 export class SkeletonModule { }
