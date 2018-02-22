@@ -19,6 +19,9 @@ export class SidebarComponent implements OnInit {
   ngOnInit() {
     this.menuInfo = this._menuService.putSidebarJson();
     this._sidebarToggle();
+
+    console.log(this.menuInfo);
+    
   }
 
   _sidebarToggle() {
@@ -29,4 +32,5 @@ export class SidebarComponent implements OnInit {
       console.log('Error: ' + error);
     });
   }
+
 }

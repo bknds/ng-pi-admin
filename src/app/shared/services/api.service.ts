@@ -8,18 +8,26 @@ import { environment } from "../../../environments/environment";
 export class ApiService {
     constructor(private http: Http) { }
 
+    private setHeader() {
+    }
+
     private formatErrors(error: any) {
         let errorJson = error.json();
         return Observable.throw(errorJson);
     }
 
     public get(path: string) {
-        let getUrl = `${environment.api_url}${path}`;
-        return this.http.get(getUrl).catch(this.formatErrors).map(res => res.json());
+        let reqUrl = `${environment.api_url}${path}`;
+        return this.http.get(reqUrl).catch(this.formatErrors).map(res => res.json());
     }
 
     public post(path: string, body) {
-        let getUrl = `${environment.api_url}${path}`;
-        return this.http.post(getUrl, body).catch(this.formatErrors).map(res => res.json());
-    }/* post数据必须符合json内数据格式，不可自带主键id  */
+        let reqUrl = `${environment.api_url}${path}`;
+        return this.http.post(reqUrl, body).catch(this.formatErrors).map(res => res.json());
+    }
+
+    public delete(path: string, deleteId) {
+        let reqUrl = `${environment.api_url}${path}`;
+        return this.http.delete(reqUrl, deleteId).catch(this.formatErrors).map(res => res.json());
+    }
 }

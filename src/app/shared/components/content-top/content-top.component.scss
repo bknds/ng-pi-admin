@@ -1,0 +1,16 @@
+@import "../../theme/conf";
+a,
+span {
+    text-transform: uppercase;
+    color: $fonts-color;
+    font-size: $sm-text+1;
+}
+
+i {
+    color: rgba($fonts-color, .6);
+}
+
+a:hover {
+    color: $primary;
+    text-decoration: none;
+}

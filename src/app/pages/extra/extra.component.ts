@@ -33,4 +33,9 @@ export class ExtraComponent implements OnInit {
       this.getList = data;
     });
   }
+
+  delete(index) {
+    this._apiService.delete('/posts', index).subscribe(data => {
+    });
+  }
 }

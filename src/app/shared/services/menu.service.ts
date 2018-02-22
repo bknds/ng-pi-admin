@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
 import { MENU_ITEM } from '../../pages/menu';
+import { Router } from '@angular/router';
 
 @Injectable()
 export class menuService {
 
-  constructor() {
+  constructor(private _router: Router) {
     this.getNodePath(MENU_ITEM);
   }
 
@@ -56,17 +57,30 @@ export class menuService {
 
   public getNodePath(json: any): void {
     json.forEach((index) => {
-      this.path_item = [index.path];
-      index.routerLink = this.creatRouterLink(index.path);
       if (index.children) {
-        delete index.routerLink;
+        //delete index.routerLink;
         this.getNodePath(index.children);
         index.toggle = 'init';
+      } else {
+        this.path_item = [index.path];
+        index.routerLink = this.creatRouterLink(index.path);
+        index.routerLink.unshift('pages');
+        index.routerLink.unshift('/');
       }
     })
   }
 
   public putSidebarJson() {
     return MENU_ITEM;
+  }
+
+  public selectItem(item) {
+    item.forEach(element => {
+      if (element.routerLink) {
+        element.isActive = this._router.isActive(this._router.createUrlTree(element.routerLink), true);
+      } else if (element.children) {
+        this.selectItem(element.children);
+      }
+    });
   }
 }

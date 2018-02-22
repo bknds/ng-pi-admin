@@ -9,6 +9,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { PagesTopComponent } from './components/pages-top/pages-top.component';
 import { NotificationComponent } from './components/notification/notification.component';
 import { LoadingComponent } from './components/loading/loading.component';
+import { ContentTopComponent } from './components/content-top/content-top.component';
 
 @NgModule({
     imports: [
@@ -22,12 +23,14 @@ import { LoadingComponent } from './components/loading/loading.component';
         MenuComponent,
         SidebarComponent,
         PagesTopComponent,
+        ContentTopComponent,
         NotificationComponent,
         LoadingComponent
     ],
     exports: [
         SidebarComponent,
         PagesTopComponent,
+        ContentTopComponent,
         NotificationComponent,
         LoadingComponent
     ]
