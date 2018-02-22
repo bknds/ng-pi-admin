@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 import { MENU_ITEM } from '../../pages/menu';
 import { Router } from '@angular/router';
+import { GlobalService } from './global.service';
 
 @Injectable()
 export class menuService {
 
-  constructor(private _router: Router) {
+  constructor(public _globalService: GlobalService, private _router: Router) {
     this.getNodePath(MENU_ITEM);
   }
 
@@ -75,9 +76,13 @@ export class menuService {
   }
 
   public selectItem(item) {
+    /* isActive  当前路由状态获取  未完成 */
     item.forEach(element => {
       if (element.routerLink) {
         element.isActive = this._router.isActive(this._router.createUrlTree(element.routerLink), true);
+        if (element.isActive) {
+          this._globalService._isActived(element);
+        }
       } else if (element.children) {
         this.selectItem(element.children);
       }

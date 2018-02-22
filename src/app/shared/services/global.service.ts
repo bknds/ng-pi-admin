@@ -41,4 +41,14 @@ export class GlobalService {
     _notification(notification: NotificationModel) {
         this.notificationSource.next(notification);
     }
+
+
+    /* router isActive */
+    private isActivedSource = new Subject<any>();
+
+    isActived$ = this.isActivedSource.asObservable();
+
+    _isActived(isActived) {
+        this.isActivedSource.next(isActived);
+    }
 }
