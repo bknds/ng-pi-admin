@@ -80,6 +80,7 @@ export class menuService {
     item.forEach(element => {
       if (element.routerLink) {
         element.isActive = this._router.isActive(this._router.createUrlTree(element.routerLink), true);
+        /* 需顺序执行  未完成  有bug*/
         if (element.isActive) {
           this._globalService._isActived(element);
         }

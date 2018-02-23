@@ -7,16 +7,19 @@ import { GlobalService } from '../../services/global.service';
   styleUrls: ['./content-top.component.scss']
 })
 export class ContentTopComponent implements OnInit {
-  selectedRoute;  
+  routeTitle;  
 
-  constructor(public _globalService: GlobalService) { }
+  constructor(public _globalService: GlobalService) { 
+    this.getRouteTitle();
+  }
 
-  ngOnInit() {
+  ngOnInit() { }
+
+  getRouteTitle() {
     this._globalService.isActived$.subscribe(isActived => {
-      this.selectedRoute = isActived.title;
+      this.routeTitle = isActived.title;
     }, error => {
       console.log('Error: ' + error);
     });
   }
-
 }

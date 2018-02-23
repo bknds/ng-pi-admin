@@ -7,7 +7,6 @@ import { environment } from "../../../environments/environment";
 @Injectable()
 export class ApiService {
     constructor(private http: Http) { }
-
     private setHeader() {
     }
 
