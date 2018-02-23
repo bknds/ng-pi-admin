@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { collapse } from '../../animation/collapse-animate';
-import { menuService } from '../../services/menu.service';
+import { GlobalService } from '../../services/global.service';
 
 @Component({
   selector: 'du-menu',
@@ -12,13 +12,13 @@ export class MenuComponent {
   @Input() menuInfo: any;
   @Input() sidebarToggle;
 
-  constructor(private _menuService: menuService) { }
+  constructor(private _globalService: GlobalService) { }
 
   isToggleOn(item) {
     item.toggle === 'on' ? item.toggle = 'off' : item.toggle = 'on';
   }
 
-  _selectItem() {
-    this._menuService.selectItem(this._menuService.putSidebarJson());
+  _selectItem(item) {
+    this._globalService._isActived(item);
   }
 }

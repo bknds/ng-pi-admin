@@ -16,13 +16,11 @@ export class menuService {
 
   public queryParentNode(json: any, node_id: any) {
     for (let i = 0; i < json.length; i++) {
-      if (this.node) {
+      if (this.node)
         break;
-      }
       const obj = json[i];
-      if (!obj || !obj.path) {
+      if (!obj || !obj.path)
         continue;
-      }
       if (obj.path === node_id) {
         this.node = obj;
         break;
@@ -35,9 +33,8 @@ export class menuService {
         }
       }
     }
-    if (!this.node) {
+    if (!this.node)
       this.parent_node = null;
-    }
     return {
       parent_node: this.parent_node,
       node: this.node
@@ -76,17 +73,14 @@ export class menuService {
   }
 
   public selectItem(item) {
-    /* isActive  当前路由状态获取  未完成 */
     item.forEach(element => {
       if (element.routerLink) {
         element.isActive = this._router.isActive(this._router.createUrlTree(element.routerLink), true);
-        /* 需顺序执行  未完成  有bug*/
-        if (element.isActive) {
+        if (element.isActive)
           this._globalService._isActived(element);
-        }
-      } else if (element.children) {
+      } else if (element.children)
         this.selectItem(element.children);
-      }
     });
   }
+
 }
