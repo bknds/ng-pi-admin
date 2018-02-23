@@ -1,7 +1,9 @@
 @import "../../theme/conf";
 span {
+    display: block;
     text-transform: uppercase;
     color: $fonts-color;
-    font-size: $lg-text+1;
+    font-size: 25px;
     font-weight: 700;
+    margin-bottom: 20px;
 }
