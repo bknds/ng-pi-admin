@@ -1,9 +1,12 @@
 @import '../../theme/conf';
 li {
-    padding:0 10px;
+    font-size: $sm-text+1;
+}
+
+.children-list {
+    padding: 0 10px;
     margin-left: 30px;
     list-style: none;
-    font-size: $sm-text;
     position: relative;
     border-left: 1px solid rgba($fonts-color, .3);
     &::before {
@@ -19,7 +22,7 @@ li {
 }
 
 .trees-items {
-    padding:11px 0 0 0;
+    padding: 11px 0 0 0;
     &:hover {
         cursor: pointer;
         .ico {

@@ -9,7 +9,7 @@ import { collapse } from '../../animation/collapse-animate';
 })
 export class FileTreeComponent implements OnInit {
   @Input() treesItem: any;
-
+  @Input() isChild: boolean;
   constructor() { }
 
   ngOnInit() {

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { GlobalService } from '../../services/global.service';
 
 @Component({
@@ -6,16 +6,13 @@ import { GlobalService } from '../../services/global.service';
   templateUrl: './content-top.component.html',
   styleUrls: ['./content-top.component.scss']
 })
-export class ContentTopComponent implements OnInit {
-  routeTitle;  
-
-  constructor(public _globalService: GlobalService) { 
+export class ContentTopComponent {
+  routeTitle;
+  constructor(public _globalService: GlobalService) {
     this.getRouteTitle();
   }
 
-  ngOnInit() { }
-
-  getRouteTitle() {
+  private getRouteTitle() {
     this._globalService.isActived$.subscribe(isActived => {
       this.routeTitle = isActived.title;
     }, error => {
