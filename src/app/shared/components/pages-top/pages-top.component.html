@@ -2,22 +2,22 @@
   <div class="collapse-menu" (click)="_sidebarToggle()">
     <i class="fa fa-navicon fa-fw" [ngClass]="{'toggle-on':sidebarToggle,'toggle-off':!sidebarToggle}"></i>
   </div>
+  <div class="msg-tips-wrap">
+    <div class="msg-entrance ring">
+      <span class="fa fa-bell fa-fw"></span>
+      <span class="badge" *ngIf="tip.ring"></span>
+    </div>
+    <div class="msg-entrance email">
+      <span class="fa fa-envelope fa-fw"></span>
+      <span class="badge" *ngIf="tip.email"></span>
+    </div>
+  </div>
   <div class="tools-wrap">
     <div class="search-group">
       <input type="text" class="search-input" placeholder="Search project · · ·">
       <button class="search-btn">
         <i class="fa fa-search fa-fw"></i>
       </button>
-    </div>
-    <div class="msg-tips-wrap row">
-      <div class="msg-entrance ring col-sm-4">
-        <span class="fa fa-bell fa-fw"></span>
-        <span class="badge" *ngIf="tip.ring"></span>
-      </div>
-      <div class="msg-entrance email col-sm-4">
-        <span class="fa fa-envelope fa-fw"></span>
-        <span class="badge" *ngIf="tip.email"></span>
-      </div>
     </div>
   </div>
 </div>

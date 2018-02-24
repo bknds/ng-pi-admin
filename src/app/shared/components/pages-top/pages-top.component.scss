@@ -34,10 +34,9 @@
     display: flex;
     position: absolute;
     top: 50%;
-    right: 10px;
+    right: 30px;
     transform: translate(0, -50%);
     width: auto;
-    min-width: 440px;
     height: 40px;
 }
 
@@ -83,7 +82,12 @@
 }
 
 .msg-tips-wrap {
-    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 60px;
+    transform: translate(0, -50%);
     width: 100px;
     height: 40px;
     color: $sidebar-fonts-color;
@@ -92,7 +96,7 @@
 
 .msg-entrance {
     position: relative;
-    min-width: 50px;
+    width: 50px;
     height: 40px;
     line-height: 40px;
     text-align: center;

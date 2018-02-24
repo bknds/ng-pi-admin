@@ -19,4 +19,8 @@ export class ContentTopComponent {
       console.log('Error: ' + error);
     });
   }
+
+  returnHome() {
+    this._globalService._isActived({ title: 'Home' });
+  }
 }

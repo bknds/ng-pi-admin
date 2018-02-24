@@ -1,9 +1,23 @@
 @import "../../theme/conf";
-.route-title {
-    display: block;
+a,
+span {
+    display: inline-block;
     text-transform: uppercase;
-    color: $fonts-color;
-    font-size: 25px;
-    font-weight: 700;
+    color: rgba($fonts-color, .7);
+    font-size: $sm-text+1;
     margin-bottom: 20px;
+}
+
+a:hover {
+    color: $primary;
+    text-decoration: none;
+}
+
+i {
+    font-size: $default-text;
+    color: rgba($fonts-color, .5);
+}
+
+span {
+    color: $fonts-color;
 }

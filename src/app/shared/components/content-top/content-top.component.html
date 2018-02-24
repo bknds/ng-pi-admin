@@ -1,1 +1,3 @@
-<span class="route-title">{{routeTitle}}</span>
+<a routerLink="/pages/index" *ngIf="routeTitle !== 'Home'" (click)="returnHome()">HOME</a>
+<i class="fa fa-angle-right" *ngIf="routeTitle !== 'Home'"></i>
+<span>{{routeTitle}}</span>
