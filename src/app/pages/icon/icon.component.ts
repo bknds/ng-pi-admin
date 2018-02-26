@@ -32,6 +32,18 @@ export class IconComponent implements OnInit {
     "tag",
     "tags",
     "user",
+    "file",
+    "file-o",
+    "file-text-o",
+    "file-word-o",
+    "file-excel-o",
+    "file-powerpoint-o",
+    "file-pdf-o",
+    "file-code-o",
+    "file-audio-o",
+    "file-image-o",
+    "file-video-o",
+    "file-zip-o",
   ];
 
   constructor() { }

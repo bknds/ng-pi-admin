@@ -34,20 +34,20 @@
     display: flex;
     position: absolute;
     top: 50%;
-    right: 20px;
+    right: 10px;
     transform: translate(0, -50%);
     width: auto;
     height: 40px;
     .cogs-btn {
-        width: 30px;
-        height: 30px;
-        margin: 5px 0;
+        margin: 0;
         border: none;
         outline: none;
         border-radius: 50%;
-        font-size: 18px;
+        font-size: 20px;
         background: transparent;
         color: $sidebar-fonts-color;
+        @include center(40px, 40px);
+        @include transition(all .2s);
         &:hover {
             color: $primary;
         }
@@ -131,6 +131,64 @@
         background: $primary;
         border: 2px solid $sidebar-bg;
         border-radius: 50%;
+    }
+}
+
+.setting-wrap {
+    padding-top: 15px;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    z-index: 100;
+    width: 200px;
+    height: auto;
+    border: 1px solid $border-color;
+    background: $body-bg;
+    @include box-shadow(0 3px 10px rgba($black, .25));
+    &:after {
+        display: block;
+        content: '';
+        position: absolute;
+        top: -12px;
+        right: 15px;
+        width: 20px;
+        height: 20px;
+        background: $body-bg;
+        border: 1px solid darken($border-color, 5%);
+        border-right: none;
+        border-bottom: none;
+        @include transform(rotate(45deg));
+    }
+}
+
+.setting-list-ul {
+    padding: 0;
+    .setting-list {
+        list-style: none;
+        width: 100%;
+        min-height: 40px;
+    }
+    .setting-btn {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        @include center(auto, 40px);
+        text-decoration: none;
+        color: $fonts-color;
+        font-size: $default-text+1;
+        font-weight: 700;
+        &:hover {
+            text-decoration: none;
+            background: darken($body-bg, 10%);
+        }
+        i {
+            display: inline-block;
+            @include center(85px, 40px);
+        }
+        span {
+            flex: 1;
+            text-align: left;
+        }
     }
 }
 
