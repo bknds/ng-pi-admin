@@ -34,10 +34,24 @@
     display: flex;
     position: absolute;
     top: 50%;
-    right: 30px;
+    right: 20px;
     transform: translate(0, -50%);
     width: auto;
     height: 40px;
+    .cogs-btn {
+        width: 30px;
+        height: 30px;
+        margin: 5px 0;
+        border: none;
+        outline: none;
+        border-radius: 50%;
+        font-size: 18px;
+        background: transparent;
+        color: $sidebar-fonts-color;
+        &:hover {
+            color: $primary;
+        }
+    }
 }
 
 .search-group {

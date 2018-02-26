@@ -22,7 +22,7 @@ export let MENU_ITEM = [
     },
     {
         path: 'ui',
-        title: 'UI Components',
+        title: 'UI Element',
         icon: 'paint-brush',
         children: [
             {
