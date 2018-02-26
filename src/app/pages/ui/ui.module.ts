@@ -11,6 +11,7 @@ import { NotificationComponent } from './components/notification/notification.co
 import { FileTreeComponent } from './components/file-tree/file-tree.component';
 import { LoadingComponent } from './components/loading/loading.component';
 import { PanelsComponent } from './components/panels/panels.component';
+import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 
 @NgModule({
     imports: [
@@ -26,7 +27,8 @@ import { PanelsComponent } from './components/panels/panels.component';
         NotificationComponent,
         FileTreeComponent,
         LoadingComponent,
-        PanelsComponent
+        PanelsComponent,
+        ProgressBarComponent
     ]
 })
 export class UIModule { }

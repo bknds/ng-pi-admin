@@ -1,3 +1,5 @@
-<a routerLink="/pages/index" *ngIf="routeTitle !== 'Home'" (click)="returnHome()">HOME</a>
-<i class="fa fa-angle-right" *ngIf="routeTitle !== 'Home'"></i>
-<span>{{routeTitle}}</span>
+<div class="content-wrap">
+  <a routerLink="/pages/index" *ngIf="routeTitle !== 'Dashboard'" (click)="returnHome()">Dashboard</a>
+  <i class="fa fa-angle-right" *ngIf="routeTitle !== 'Dashboard'"></i>
+  <span>{{routeTitle}}</span>
+</div>

@@ -21,6 +21,6 @@ export class ContentTopComponent {
   }
 
   returnHome() {
-    this._globalService._isActived({ title: 'Home' });
+    this._globalService._isActived({ title: 'Dashboard' });
   }
 }

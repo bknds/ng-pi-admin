@@ -9,6 +9,7 @@ import { NotificationComponent } from './components/notification/notification.co
 import { FileTreeComponent } from './components/file-tree/file-tree.component';
 import { LoadingComponent } from './components/loading/loading.component';
 import { PanelsComponent } from './components/panels/panels.component';
+import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 
 const childRoutes: Routes = [
     {
@@ -21,6 +22,7 @@ const childRoutes: Routes = [
             { path: 'grid', component: GridComponent },
             { path: 'notification', component: NotificationComponent },
             { path: 'file-tree', component: FileTreeComponent },
+            { path: 'progress-bar', component: ProgressBarComponent },
             { path: 'loading', component: LoadingComponent },
             { path: 'panels', component: PanelsComponent },
         ]

@@ -1,0 +1,50 @@
+@import "../../shared/theme/conf";
+.tip-card {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .tip-msg {
+        flex: 1;
+        h3 {
+            line-height: 0;
+            margin-bottom: 20px;
+        }
+        span {
+            color: rgba($fonts-color, .6);
+            font-size: $default-text;
+        }
+    }
+    .tip-ico {
+        margin: 0 10px;
+        border-radius: 3px;
+        color: $white;
+        @include center(60px, 60px);
+        font-size: 30px;
+        border: none;
+        outline: none;
+        &:active {
+            @include box-shadow( 0 2px 10px 0 rgba($black, .4) inset);
+        }
+    }
+    .tip-ico-primary {
+        @extend .bg-primary;
+        @include box-shadow( 0 2px 10px 0 rgba($primary, .5));
+    }
+    .tip-ico-success {
+        @extend .bg-success;
+        @include box-shadow( 0 2px 10px 0 rgba($success, .5));
+    }
+    .tip-ico-danger {
+        @extend .bg-danger;
+        @include box-shadow( 0 2px 10px 0 rgba($danger, .5));
+    }
+    .tip-ico-warning {
+        @extend .bg-warning;
+        @include box-shadow( 0 2px 10px 0 rgba($warning, .5));
+    }
+    .tip-ico-info {
+        @extend .bg-info;
+        @include box-shadow( 0 2px 10px 0 rgba($info, .5));
+    }
+}

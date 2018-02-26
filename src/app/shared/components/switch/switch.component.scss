@@ -26,7 +26,7 @@
     position: relative;
     top: 2px;
     left: 2px;
-    @include transition(all .4s cubic-bezier(1, 0, 0, 1));
+    @include transition(all .4s);
     @include box-shadow(2px 2px 10px rgba($black, .15));
 }
 

@@ -2,7 +2,7 @@ export let MENU_ITEM = [
 
     {
         path: 'index',
-        title: 'Home',
+        title: 'Dashboard',
         icon: 'dashboard'
     },
     {
@@ -23,7 +23,7 @@ export let MENU_ITEM = [
     {
         path: 'ui',
         title: 'UI Components',
-        icon: 'laptop',
+        icon: 'paint-brush',
         children: [
             {
                 path: 'grid',
@@ -38,12 +38,16 @@ export let MENU_ITEM = [
                 title: 'Notification'
             },
             {
+                path: 'tabs',
+                title: 'Tabs'
+            },
+            {
                 path: 'file-tree',
                 title: 'File Tree'
             },
             {
-                path: 'tabs',
-                title: 'Tabs'
+                path: 'progress-bar',
+                title: 'ProgressBar'
             },
             {
                 path: 'panels',
