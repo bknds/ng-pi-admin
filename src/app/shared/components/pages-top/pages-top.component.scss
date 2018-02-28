@@ -134,7 +134,7 @@
     }
 }
 
-.setting-wrap {
+/* .setting-wrap {
     padding-top: 15px;
     position: absolute;
     top: 70px;
@@ -154,7 +154,7 @@
         width: 20px;
         height: 20px;
         background: $body-bg;
-        border: 1px solid darken($border-color, 5%);
+        border: 1px solid $border-color;
         border-right: none;
         border-bottom: none;
         @include transform(rotate(45deg));
@@ -190,7 +190,7 @@
             text-align: left;
         }
     }
-}
+} */
 
 @media (max-width:970px) {
     .collapse-menu {
