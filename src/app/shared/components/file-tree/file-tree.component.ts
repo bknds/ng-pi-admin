@@ -8,12 +8,12 @@ import { collapse } from '../../animation/collapse-animate';
   animations: [collapse]
 })
 export class FileTreeComponent implements OnInit {
-  @Input() treesItem: any;
+  @Input() model: any;
   @Input() isChild: boolean;
   constructor() { }
 
   ngOnInit() {
-    this.treesItem.forEach(element => {
+    this.model.forEach(element => {
       element.toggle = 'init';
     });
   }

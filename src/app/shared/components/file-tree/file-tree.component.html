@@ -1,6 +1,6 @@
 <div class="tree">
   <ul>
-    <li *ngFor="let item of treesItem" [ngClass]="{'children-list':isChild}">
+    <li *ngFor="let item of model" [ngClass]="{'children-list':isChild}">
       <div class="trees-items" (click)="toggleItem(item)">
         <div class="file-ico">
           <i class="fa fa-file fa-fw ico" *ngIf="!item.children"></i>
@@ -13,7 +13,7 @@
         <span>{{item.name}}</span>
       </div>
       <div class="item-children" [@collapse]="item.toggle">
-        <file-tree *ngIf="item.children" [treesItem]="item.children" isChild="true"></file-tree>
+        <file-tree *ngIf="item.children" [model]="item.children" isChild="true"></file-tree>
       </div>
     </li>
   </ul>
