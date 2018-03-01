@@ -1,12 +1,12 @@
 @import '../../theme/conf';
 li {
     font-size: $sm-text+1;
+    list-style: none;
 }
 
 .children-list {
     padding: 0 10px;
     margin-left: 30px;
-    list-style: none;
     position: relative;
     border-left: 1px solid rgba($fonts-color, .3);
     &::before {

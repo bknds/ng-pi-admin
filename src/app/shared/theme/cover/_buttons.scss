@@ -6,9 +6,9 @@
 }
 
 .btn {
-    padding: .4em .8em;
+    padding: .3em .8em;
     border: none;
-    border-radius: 2px;
+    border-radius: 1.5px;
     @include transition(all 0.2s);
     color: $white;
 }
@@ -74,6 +74,10 @@
 
 .btn-xs {
     font-size: $sm-text;
+}
+
+.btn-icon {
+    padding: .3em .5em;
 }
 
 .btn-group-xs>.btn,
