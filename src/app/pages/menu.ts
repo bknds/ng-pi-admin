@@ -46,6 +46,10 @@ export let MENU_ITEM = [
                 title: 'File Tree'
             },
             {
+                path: 'modals',
+                title: 'Modals'
+            },
+            {
                 path: 'progress-bar',
                 title: 'ProgressBar'
             },

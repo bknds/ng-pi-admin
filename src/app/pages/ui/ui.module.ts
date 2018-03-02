@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { routing } from './ui.routing';
 import { SharedModule } from '../../shared/shared.module';
+
 /* components */
 import { UiComponent } from './ui.component';
 import { ButtonsComponent } from './components/buttons/buttons.component';
@@ -12,6 +13,7 @@ import { FileTreeComponent } from './components/file-tree/file-tree.component';
 import { LoadingComponent } from './components/loading/loading.component';
 import { PanelsComponent } from './components/panels/panels.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
+import { ModalsComponent } from './components/modals/modals.component';
 
 @NgModule({
     imports: [
@@ -28,7 +30,8 @@ import { ProgressBarComponent } from './components/progress-bar/progress-bar.com
         FileTreeComponent,
         LoadingComponent,
         PanelsComponent,
-        ProgressBarComponent
+        ProgressBarComponent,
+        ModalsComponent,
     ]
 })
 export class UIModule { }
