@@ -7,17 +7,19 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ProgressBarComponent implements OnInit {
   @Input()
-  percentNumber: number;
+  percent: number;
   @Input()
-  color: string = 'primary';
+  theme: string = 'primary';
   @Input()
-  type: string = 'default';
+  size: string = 'sm';
+  @Input()
+  percentShow: boolean = true;
 
-  theme: string;
+  themeColor: string;
   constructor() { }
 
   ngOnInit() {
-    this.theme = `progress-bar progress-bar-${this.color}`;
+    this.themeColor = `progress-bar progress-bar-${this.theme}`;
   }
 
 }

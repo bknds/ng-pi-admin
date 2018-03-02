@@ -1,7 +1,15 @@
-<div *ngIf="type === 'default'" class="progress-default">
+<div *ngIf="size === 'sm'" class="progress-sm">
+  <span class="progress-percent" *ngIf="percent&&percentShow" [ngStyle]="{'left':percent-3 + '%'}">{{percent}}%</span>
   <div class="progress">
-    <div [class]="theme" [ngStyle]="{'width':percentNumber + '%'}">
+    <div [class]="themeColor" [ngStyle]="{'width':percent + '%'}">
     </div>
   </div>
-  <span class="progress-percent" *ngIf="percentNumber">{{percentNumber}}%</span>
+</div>
+
+<div *ngIf="size === 'lg'" class="progress-lg">
+  <div class="progress">
+    <div [class]="themeColor" [ngStyle]="{'width':percent + '%'}">
+      <span class="progress-percent" *ngIf="percent&&percentShow">{{percent}}%</span>
+    </div>
+  </div>
 </div>
