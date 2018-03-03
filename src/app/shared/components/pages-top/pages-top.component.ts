@@ -10,8 +10,7 @@ export class PagesTopComponent {
   sidebarToggle: boolean = true;
   tip = { ring: true, email: true };
 
-  constructor(private _globalService: GlobalService) {
-  }
+  constructor(private _globalService: GlobalService) { }
 
   _sidebarToggle() {
     this._globalService.sidebarToggle$.subscribe(sidebarToggle => {
