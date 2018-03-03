@@ -17,3 +17,16 @@
 .btn-icon {
     margin: 0 5px;
 }
+
+.btn-sizes {
+    margin-top: -1px;
+    .btn-lg {
+        margin-top: -2px;
+    }
+    .btn-sm {
+        margin-top: 2px;
+    }
+    .btn-xs {
+        margin-top: 5px;
+    }
+}

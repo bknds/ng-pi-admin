@@ -54,10 +54,6 @@ export let MENU_ITEM = [
                 title: 'ProgressBar'
             },
             {
-                path: 'panels',
-                title: 'Panels'
-            },
-            {
                 path: 'loading',
                 title: 'Loading'
             }
