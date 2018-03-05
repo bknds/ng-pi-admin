@@ -19,7 +19,7 @@ export class SwitchComponent implements OnInit {
   multiple;
 
   @Input()
-  checked;
+  checked: boolean = false;
 
   constructor() { }
   ngOnInit() {

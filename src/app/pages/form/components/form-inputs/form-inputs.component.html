@@ -2,7 +2,7 @@
   <div class="col-md-6">
 
     <!-- form-group form-control control-label ↓↓↓↓↓↓↓↓↓ -->
-    <card cardTitle="Input Types">
+    <card cardTitle="Input Types" isCollapse="true">
       <div class="form-group">
         <label class="control-label">Text</label>
         <input type="text" class="form-control" placeholder="Text Input">
@@ -149,15 +149,15 @@
     <card cardTitle="Switch">
       <div class="switch-group">
         <label class="control-label">Multiple Switch</label>
-        <switch switchName="multiple" switchId="multiple1" multiple checked></switch>
-        <switch switchName="multiple" switchId="multiple2" theme="success" multiple checked></switch>
-        <switch switchName="multiple" switchId="multiple3" theme="warning" multiple checked></switch>
-        <switch switchName="multiple" switchId="multiple4" theme="danger" multiple checked></switch>
-        <switch switchName="multiple" switchId="multiple5" theme="info" multiple checked></switch>
+        <switch switchName="multiple" switchId="multiple1" multiple [checked]="true"></switch>
+        <switch switchName="multiple" switchId="multiple2" theme="success" multiple [checked]="true"></switch>
+        <switch switchName="multiple" switchId="multiple3" theme="warning" multiple [checked]="true"></switch>
+        <switch switchName="multiple" switchId="multiple4" theme="danger" multiple [checked]="true"></switch>
+        <switch switchName="multiple" switchId="multiple5" theme="info" multiple [checked]="true"></switch>
       </div>
       <div class="switch-group">
         <label class="control-label">Single Switch</label>
-        <switch switchName="single" switchId="single1" checked></switch>
+        <switch switchName="single" switchId="single1" [checked]="true"></switch>
         <switch switchName="single" switchId="single2" theme="success"></switch>
         <switch switchName="single" switchId="single3" theme="warning"></switch>
         <switch switchName="single" switchId="single4" theme="danger"></switch>
