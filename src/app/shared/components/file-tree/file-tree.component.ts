@@ -14,7 +14,7 @@ export class FileTreeComponent implements OnInit {
 
   ngOnInit() {
     this.model.forEach(element => {
-      element.toggle = 'init';
+      element.isSelect ? element.toggle = 'on' : element.toggle = 'init';
     });
   }
 

@@ -13,7 +13,7 @@ export class FileTreeComponent implements OnInit {
   constructor(private _TreesService: TreesService) { }
 
   ngOnInit() {
-    this.fileData = this._TreesService.menu;
+    this.fileData = this._TreesService.FILE_DATA;
   }
 
 }
