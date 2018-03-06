@@ -10,6 +10,9 @@ import { GlobalService } from '../../services/global.service';
 })
 export class SidebarComponent implements OnInit {
   avatarImgSrc: string = 'assets/images/avatar.png';
+  userName: string = 'Folisise Chosielie';
+  userPost: string = 'Musician, Player';
+
   public menuInfo: Array<any> = [];
   public sidebarToggle: boolean = true;
 
