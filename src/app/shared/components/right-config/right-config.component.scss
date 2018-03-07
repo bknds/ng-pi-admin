@@ -5,10 +5,10 @@
     right: 0;
     width: 0;
     height: 100%;
-    background: $sidebar-bg;
+    background: $card-bg;
     @include transition(all .4s);
     .config-switch {
-        position: relative;
+        position: absolute;
         top: 15px;
         left: -50px;
         width: 50px;
@@ -16,13 +16,16 @@
         background: $sidebar-bg;
         border: none;
         outline: none;
-        color: $sidebar-fonts-color;
+        color: $fonts-color;
         font-size: $lg-text;
     }
 }
 
 .right-config-wrap-on {
     width: 300px;
+    .config-switch {
+        background: $card-bg;
+    }
 }
 
 .config-mask {

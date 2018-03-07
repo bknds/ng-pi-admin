@@ -1,4 +1,4 @@
-<div class="alerts-wrap">
+<div class="alerts-wrap" *ngIf="notificationItem.length>0">
   <div class="{{item.type}} alert-content animated fadeInRight" *ngFor="let item of notificationItem;let i = index">
     <div class="close-toggle" (click)="closeAlert(i)">
       <i class="fa fa-close"></i>
