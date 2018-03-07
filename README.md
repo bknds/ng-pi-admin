@@ -2,6 +2,10 @@
 
 ![](https://raw.githubusercontent.com/treesflower/dustAdmin/master/admin.png)
 
+
+
+[Demo](http://treesflower.com/dist)
+
 ```
 npm install
 

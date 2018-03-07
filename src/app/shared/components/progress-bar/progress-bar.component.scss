@@ -5,12 +5,12 @@
     margin: 5px 0;
     width: 100%;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 2px;
     background: $border-color;
     .progress-bar {
         @extend .bg-primary;
         @include transition(all .4s);
-        border-radius: 20px;
+        border-radius: 2px;
     }
     .progress-bar-primary {
         @extend .bg-primary;
