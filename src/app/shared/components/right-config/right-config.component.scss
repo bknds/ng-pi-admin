@@ -1,0 +1,49 @@
+@import "../../theme/conf";
+.right-config-wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background: $sidebar-bg;
+    @include transition(all .4s);
+    .config-switch {
+        position: relative;
+        top: 15px;
+        left: -50px;
+        width: 50px;
+        height: 50px;
+        background: $sidebar-bg;
+        border: none;
+        outline: none;
+        color: $sidebar-fonts-color;
+        font-size: $lg-text;
+    }
+}
+
+.right-config-wrap-on {
+    width: 300px;
+}
+
+.config-mask {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba($black, .2);
+    @include transition(all .4s);
+}
+
+.mask-on {
+    display: block;
+    animation: fadeIn .4s both;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

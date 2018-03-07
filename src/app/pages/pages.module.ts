@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { routing } from './pages.routing';
 
-import { SkeletonModule } from '../shared/skeleton.module';
+import { LayoutModule } from '../shared/layout.module';
 import { SharedModule } from '../shared/shared.module';
 
 /* components */
@@ -12,7 +12,7 @@ import { LoginComponent } from './login/login.component';
 @NgModule({
     imports: [
         CommonModule,
-        SkeletonModule,
+        LayoutModule,
         SharedModule,
         routing
     ],

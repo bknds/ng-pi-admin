@@ -10,6 +10,7 @@ import { PagesTopComponent } from './components/pages-top/pages-top.component';
 import { NotificationComponent } from './components/notification/notification.component';
 import { LoadingComponent } from './components/loading/loading.component';
 import { ContentTopComponent } from './components/content-top/content-top.component';
+import { RightConfigComponent } from './components/right-config/right-config.component';
 
 @NgModule({
     imports: [
@@ -25,6 +26,7 @@ import { ContentTopComponent } from './components/content-top/content-top.compon
         PagesTopComponent,
         ContentTopComponent,
         NotificationComponent,
+        RightConfigComponent,
         LoadingComponent
     ],
     exports: [
@@ -32,7 +34,8 @@ import { ContentTopComponent } from './components/content-top/content-top.compon
         PagesTopComponent,
         ContentTopComponent,
         NotificationComponent,
+        RightConfigComponent,
         LoadingComponent
     ]
 })
-export class SkeletonModule { }
+export class LayoutModule { }

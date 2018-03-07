@@ -1,0 +1,9 @@
+<div class="config-mask" [ngClass]="{'mask-on':isConfigToggle}" (click)="configToggle()"></div>
+<div class="right-config-wrap" [ngClass]="{'right-config-wrap-on':isConfigToggle}">
+  <button class="config-switch" (click)="configToggle()" *ngIf="!isConfigToggle">
+    <i class="fa fa-cog"></i>
+  </button>
+  <button class="config-switch" (click)="configToggle()" *ngIf="isConfigToggle">
+    <i class="fa fa-chevron-right"></i>
+  </button>
+</div>
