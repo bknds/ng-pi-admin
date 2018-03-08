@@ -4,7 +4,6 @@ import { Observable } from "rxjs/Rx";
 import { Http } from '@angular/http';
 import { environment } from "../../../environments/environment";
 
-
 @Injectable()
 export class ApiService {
     constructor(private http: Http) { }
