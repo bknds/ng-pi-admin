@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('dust-admin App', () => {
+describe('pi-admin', () => {
   let page: AppPage;
 
   beforeEach(() => {

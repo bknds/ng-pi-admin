@@ -13,3 +13,7 @@ ng serve
 
 localhost:4200
 ```
+
+
+## License
+[MIT](LICENSE.txt) license.
