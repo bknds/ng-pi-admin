@@ -71,7 +71,7 @@ export class NotificationComponent extends RootComponent implements OnInit {
         swal.showLoading()
       }
     }).then((result) => {
-      if (result.dismiss === 'timer') {
+      if (result.dismiss.toString() === 'timer') {
         console.log('I was closed by the timer')
       }
     })

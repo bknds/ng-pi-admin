@@ -33,9 +33,10 @@
 }
 
 .task-list {
+    border-radius: 5px;
     @include transition(all 0.4s);
     &:hover {
-        @include linear-gradient(to right, $primary, transparent);
+        background: rgba($primary, .8);
         .edit-input {
             width: 65%;
             height: 30px;
