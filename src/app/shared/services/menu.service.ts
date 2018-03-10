@@ -14,7 +14,7 @@ export class menuService {
   private path_item = [];
   private node = null;
 
-  public queryParentNode(json: any, node_id: any) {
+  protected queryParentNode(json: any, node_id: any) {
     for (let i = 0; i < json.length; i++) {
       if (this.node)
         break;
@@ -41,7 +41,7 @@ export class menuService {
     };
   }
 
-  public creatRouterLink(nodeId: any) {
+  protected creatRouterLink(nodeId: any) {
     this.node = null;
     this.parent_node = null;
     const menuObj = this.queryParentNode(MENU_ITEM, nodeId);
@@ -53,7 +53,7 @@ export class menuService {
     }
   }
 
-  public getNodePath(json: any): void {
+  protected getNodePath(json: any): void {
     json.forEach((index) => {
       if (index.children) {
         //delete index.routerLink;

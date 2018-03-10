@@ -56,6 +56,10 @@ export let MENU_ITEM = [
             {
                 path: 'loading',
                 title: 'Loading'
+            },
+            {
+                path: 'file-upload',
+                title: 'File Upload'
             }
         ]
     },
