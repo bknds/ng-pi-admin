@@ -23,7 +23,6 @@
       "../node_modules/bootstrap/less/bootstrap.less",
       "../node_modules/sweetalert2/dist/sweetalert2.css",
       "../node_modules/animate.css/animate.css",
-      "../node_modules/pell/src/pell.scss",
       "app/shared/_styles.scss",
       "styles.scss"
     ],

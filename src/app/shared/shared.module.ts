@@ -12,6 +12,7 @@ import { ProgressBarComponent } from './components/progress-bar/progress-bar.com
 import { FileTreeComponent } from './components/file-tree/file-tree.component';
 import { SwitchComponent } from './components/switch/switch.component';
 import { SortComponent } from './components/sort/sort.component';
+import { PellEditorComponent } from './components/pell-editor/pell-editor.component';
 
 @NgModule({
   imports: [
@@ -28,7 +29,8 @@ import { SortComponent } from './components/sort/sort.component';
     TabContentComponent,
     ProgressBarComponent,
     SwitchComponent,
-    SortComponent
+    SortComponent,
+    PellEditorComponent
   ],
   exports: [
     CardComponent,
@@ -38,7 +40,8 @@ import { SortComponent } from './components/sort/sort.component';
     TabContentComponent,
     ProgressBarComponent,
     SwitchComponent,
-    SortComponent
+    SortComponent,
+    PellEditorComponent
   ]
 })
 export class SharedModule { }

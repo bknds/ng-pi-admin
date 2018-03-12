@@ -7,8 +7,7 @@
 ul,
 div {
     padding: 0;
-    margin: 0;
-    //overflow: -moz-scrollbars-none;/* firefox滚动条隐藏，但无法滚动 */
+    margin: 0; //overflow: -moz-scrollbars-none;/* firefox滚动条隐藏，但无法滚动 */
 }
 
 ::-webkit-scrollbar {
@@ -26,7 +25,49 @@ div {
     background-color: rgba($fonts-color, .4);
 }
 
-
 .well {
     background: transparent;
 }
+
+$pell-actionbar-color: #FFF !important;
+$pell-border-color: rgba(10, 10, 10, 0.1) !important;
+$pell-border-style: solid !important;
+$pell-border-width: 1px !important;
+$pell-button-height: 30px !important;
+$pell-button-selected-color: #F0F0F0 !important;
+$pell-button-width: 30px !important;
+$pell-content-height: 300px !important;
+$pell-content-padding: 10px !important;
+.pell {
+    border: $pell-border-width $pell-border-style $pell-border-color;
+    box-sizing: border-box;
+}
+
+.pell-content {
+    box-sizing: border-box;
+    height: $pell-content-height;
+    outline: 0;
+    overflow-y: auto;
+    padding: $pell-content-padding;
+}
+
+.pell-actionbar {
+    background-color: $pell-actionbar-color;
+    border-bottom: $pell-border-width $pell-border-style $pell-border-color;
+}
+
+.pell-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    height: $pell-button-height;
+    outline: 0;
+    width: $pell-button-width;
+    vertical-align: bottom;
+}
+
+.pell-button-selected {
+    background-color: $pell-button-selected-color;
+}
+
+$pell-content-height: 400px;
