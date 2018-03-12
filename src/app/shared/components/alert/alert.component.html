@@ -1,0 +1,16 @@
+<div class="alert-wrap alert-wrap-{{type}}" [ngStyle]="{'display':isClose?'none':'flex'}">
+  <div class="alert-icon-wrap">
+    <span class="alert-icon">
+      <i class="fa fa-check alert-ico" *ngIf="type==='success'"></i>
+      <i class="fa fa-exclamation alert-ico" *ngIf="type==='warning'"></i>
+      <i class="fa fa-times alert-ico" *ngIf="type==='danger'"></i>
+      <i class="fa fa-info alert-ico" *ngIf="type==='info'"></i>
+    </span>
+  </div>
+  <p>
+    <ng-content></ng-content>
+  </p>
+  <button class="alert-close-btn" (click)="close()" *ngIf="isCloseAlert">
+    <i class="fa fa-times alert-ico"></i>
+  </button>
+</div>

@@ -1,0 +1,72 @@
+@import '../../theme/conf';
+.alert-wrap {
+    padding: 0;
+    display: flex;
+    margin: 10px 0 10px 10px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background: $card-bg;
+    border: 1px solid $success;
+    border-radius: 3px;
+    min-height: 50px;
+    .alert-icon-wrap {
+        width: 70px;
+        height: auto;
+    }
+    .alert-icon {
+        display: inline-block;
+        border-radius: 5px;
+        font-size: 15px;
+        transform: rotate(30deg);
+        @include center(30px, 30px);
+        @extend .bg-success;
+        i {
+            color: $white;
+            transform: rotate(-30deg);
+        }
+    }
+    p {
+        flex: 1;
+        margin: 0;
+        padding: 13px 0;
+        color: $fonts-color;
+    }
+    .alert-close-btn {
+        width: 40px;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: rgba($fonts-color, .3);
+        &:hover {
+            color: $fonts-color;
+        }
+    }
+}
+
+.alert-wrap-success {
+    border: 1px solid $success;
+    .alert-icon {
+        @extend .bg-success;
+    }
+}
+
+.alert-wrap-warning {
+    border: 1px solid $warning;
+    .alert-icon {
+        @extend .bg-warning;
+    }
+}
+
+.alert-wrap-danger {
+    border: 1px solid $danger;
+    .alert-icon {
+        @extend .bg-danger;
+    }
+}
+
+.alert-wrap-info {
+    border: 1px solid $info;
+    .alert-icon {
+        @extend .bg-info;
+    }
+}

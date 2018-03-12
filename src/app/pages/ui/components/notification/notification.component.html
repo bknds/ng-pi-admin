@@ -10,25 +10,14 @@
   </div>
   <div class="col-md-8">
     <card cardTitle="Bootstrap Alert">
-      <div class="alert alert-success" role="alert">Well done! You successfully read this important alert message.</div>
-      <div class="alert alert-info" role="alert">Heads up! This alert needs your attention, but it's not super important.</div>
-      <div class="alert alert-warning" role="alert">Warning! Better check yourself, you're not looking too good.</div>
-      <div class="alert alert-danger" role="alert">Oh snap! Change a few things up and try submitting again.</div>
+      <alert type="success">Well done! You successfully read this important alert message.</alert>
+      <alert type="info">Heads up! This alert needs your attention, but it's not super important.</alert>
+      <alert type="warning">Warning! Better check yourself, you're not looking too good.</alert>
+      <alert type="danger">Oh snap! Change a few things up and try submitting again.</alert>
     </card>
-    <card cardTitle="With Link&Close Button">
-      <div class="alert alert-warning alert-dismissible" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        Warning! Better check yourself, you're not looking too good.
-      </div>
-      <div class="alert alert-danger alert-dismissible" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        Oh snap!
-        <a href="#" class="alert-link">Change a few things up and try submitting again.</a>
-      </div>
+    <card cardTitle="With Close Button">
+      <alert type="warning" isCloseAlert="true">Warning! Better check yourself, you're not looking too good.</alert>
+      <alert type="danger" isCloseAlert="true">Oh snap! Change a few things up and try submitting again.</alert>
     </card>
   </div>
   <div class="col-md-4">

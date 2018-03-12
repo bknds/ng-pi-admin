@@ -13,6 +13,7 @@ import { FileTreeComponent } from './components/file-tree/file-tree.component';
 import { SwitchComponent } from './components/switch/switch.component';
 import { SortComponent } from './components/sort/sort.component';
 import { PellEditorComponent } from './components/pell-editor/pell-editor.component';
+import { AlertComponent } from './components/alert/alert.component';
 
 @NgModule({
   imports: [
@@ -30,7 +31,8 @@ import { PellEditorComponent } from './components/pell-editor/pell-editor.compon
     ProgressBarComponent,
     SwitchComponent,
     SortComponent,
-    PellEditorComponent
+    PellEditorComponent,
+    AlertComponent
   ],
   exports: [
     CardComponent,
@@ -41,7 +43,8 @@ import { PellEditorComponent } from './components/pell-editor/pell-editor.compon
     ProgressBarComponent,
     SwitchComponent,
     SortComponent,
-    PellEditorComponent
+    PellEditorComponent,
+    AlertComponent
   ]
 })
 export class SharedModule { }
