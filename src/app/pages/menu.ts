@@ -12,7 +12,7 @@ export let MENU_ITEM = [
     },
     {
         path: 'editor',
-        title: 'CKEditor',
+        title: 'Pell Editor',
         icon: 'pencil'
     },
     {

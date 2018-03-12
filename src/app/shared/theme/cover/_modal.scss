@@ -1,0 +1,9 @@
+.modal-content {
+    border: none;
+    border-radius: 3px;
+    @include box-shadow(none);
+}
+
+button.close {
+    outline: none;
+}

@@ -1,14 +1,3 @@
-<div class="row">
-  <div class="col-md-6">
-    <card cardTitle="CKEditor">
-      <pell-editor></pell-editor>
-    </card>
-  </div>
-  <div class="col-md-6">
-    <card cardTitle="CKEditor View">
-      ckeditorContent:
-      <br>
-      <div #ckContent></div>
-    </card>
-  </div>
-</div>
+<card cardTitle="pell editor">
+  <pell-editor [defaultContent]="defaultContent" [onChange]="onChange"></pell-editor>
+</card>

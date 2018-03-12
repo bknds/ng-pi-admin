@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import pell from 'pell';
 
 @Component({
@@ -8,6 +8,12 @@ import pell from 'pell';
 })
 export class PellEditorComponent implements OnInit {
 
+  @Input()
+  onChange: any;
+
+  @Input()
+  defaultContent: string;
+
   constructor() { }
 
   ngOnInit() {
@@ -15,16 +21,18 @@ export class PellEditorComponent implements OnInit {
       return /^https?:\/\//.test(str) && str || `http://${str}`
     }
 
-    pell.init({
+    let editor = pell.init({
       element: document.getElementById('pell'),
       defaultParagraphSeparator: 'p',
       styleWithCSS: true,
       onChange: function (html) {
-        document.getElementById('text-output').innerHTML = html
-        document.getElementById('html-output').textContent = html
+        /* document.getElementById('text-output').innerHTML = html
+        document.getElementById('html-output').textContent = html */
       }
     })
 
+    editor.content.innerHTML = this.defaultContent;
   }
 
 }
+/* 无法抛出数据   未完成组件封装 */

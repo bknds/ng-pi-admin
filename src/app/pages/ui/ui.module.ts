@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { routing } from './ui.routing';
 import { SharedModule } from '../../shared/shared.module';
+
+import { ModalModule } from "ngx-modal";
 import { FileUploadModule } from 'ng2-file-upload';
 
 /* components */
@@ -16,11 +18,13 @@ import { ProgressBarComponent } from './components/progress-bar/progress-bar.com
 import { ModalsComponent } from './components/modals/modals.component';
 import { FileUploadComponent } from './components/file-upload/file-upload.component';
 
+
 @NgModule({
     imports: [
         CommonModule,
         SharedModule,
         FileUploadModule,
+        ModalModule,
         routing
     ],
     declarations: [

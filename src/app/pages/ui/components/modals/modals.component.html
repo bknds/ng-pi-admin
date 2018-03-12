@@ -1,0 +1,18 @@
+<card cardTitle="modal sizes">
+  <button class="btn btn-primary" (click)="openModal(myModal)">open my modal</button>
+</card>
+
+<modal #myModal>
+  <modal-header>
+    <h3>Modal header</h3>
+  </modal-header>
+  <modal-content>
+    <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse.
+      Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.
+      Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip
+      quis cardigan american apparel, butcher voluptate nisi qui.</p>
+  </modal-content>
+  <modal-footer>
+    <button class="btn btn-primary" (click)="closeModal(myModal)">close</button>
+  </modal-footer>
+</modal>

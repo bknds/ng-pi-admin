@@ -30,6 +30,7 @@
     "jquery": "^3.2.1",
     "ng2-file-upload": "^1.3.0",
     "ngx-echarts": "^2.0.0",
+    "ngx-modal": "0.0.29",
     "ngx-pagination": "^3.0.3",
     "normalize.css": "^7.0.0",
     "pell": "^1.0.0",

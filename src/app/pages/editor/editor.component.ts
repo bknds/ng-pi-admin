@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-editor',
@@ -8,13 +8,8 @@ import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 export class EditorComponent implements OnInit {
   constructor() { }
 
-  @ViewChild('ckContent') ckContent: ElementRef;
+  ngOnInit() { }
+  
+  defaultContent = '<p>123132</p>'
 
-  ngOnInit() {
-    this.saveAs();
-  }
-
-  saveAs() {
-    //this.ckContent.nativeElement.innerHTML = this.ckeditorContent;
-  }
 }
