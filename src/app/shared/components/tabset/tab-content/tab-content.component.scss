@@ -7,10 +7,10 @@
     display: block;
     width: 100%;
     height: auto;
-    animation: fadeIn 1.2s both;
+    animation: tabContentfadeIn 1.2s both;
 }
 
-@keyframes fadeIn {
+@keyframes tabContentfadeIn {
     0% {
         opacity: 0;
     }

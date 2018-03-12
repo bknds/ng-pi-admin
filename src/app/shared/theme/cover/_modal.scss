@@ -1,9 +1,38 @@
 .modal-content {
+    position: relative;
+    background: $card-bg;
     border: none;
     border-radius: 3px;
     @include box-shadow(none);
 }
 
+.modal-header {
+    border-bottom: 1px solid $border-color;
+}
+
+.modal-footer {
+    border-top: 1px solid $border-color;
+}
+
 button.close {
     outline: none;
+}
+
+@keyframes modalFadeIn {
+    0% {
+        opacity: 0;
+        top: 100px;
+        @include transform(scale(.9));
+    }
+    100% {
+        opacity: 1;
+        top: 50px;
+        @include transform(scale(1));
+    }
+}
+
+.modal-open {
+    .modal-content {
+        animation: modalFadeIn .6s both;
+    }
 }
