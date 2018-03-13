@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GlobalService } from '../../services/global.service';
 
 @Component({
   selector: 'right-config',
@@ -8,12 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class RightConfigComponent implements OnInit {
 
   isConfigToggle: boolean = false;
-  constructor() { }
+  constructor(private _globalService: GlobalService) { }
 
   ngOnInit() {
   }
 
   configToggle() {
     this.isConfigToggle = !this.isConfigToggle;
+    this._globalService._sidebarToggleState(!this.isConfigToggle);
   }
 }
