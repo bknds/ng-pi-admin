@@ -12,7 +12,7 @@ export class CardComponent {
   @Input() isCollapse: boolean = false;
   collapse: string = 'on';
 
-  collapseCard() {
+  private collapseCard() {
     this.collapse === 'on' ? this.collapse = 'off' : this.collapse = 'on';
   }
 }

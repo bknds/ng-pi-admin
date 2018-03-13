@@ -5,9 +5,8 @@ $pell-border-width: 1px;
 $pell-button-height: 30px;
 $pell-button-selected-color: darken($card-bg, 10%);
 $pell-button-width: 30px;
-$pell-content-height: 300px;
 $pell-content-padding: 10px;
-
+$pell-content-height: 600px;
 .pell {
     border: $pell-border-width $pell-border-style $pell-border-color;
     box-sizing: border-box;
@@ -40,5 +39,3 @@ $pell-content-padding: 10px;
 .pell-button-selected {
     background-color: $pell-button-selected-color;
 }
-
-$pell-content-height: 400px;

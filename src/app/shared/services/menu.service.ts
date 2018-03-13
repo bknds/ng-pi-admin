@@ -11,8 +11,8 @@ export class menuService {
   }
 
   private parent_node = null;
-  private path_item = [];
   private node = null;
+  private path_item = [];
 
   protected queryParentNode(json: any, node_id: any) {
     for (let i = 0; i < json.length; i++) {
@@ -62,8 +62,7 @@ export class menuService {
       } else {
         this.path_item = [index.path];
         index.routerLink = this.creatRouterLink(index.path);
-        index.routerLink.unshift('pages');
-        index.routerLink.unshift('/');
+        index.routerLink.unshift('/','pages');
       }
     })
   }

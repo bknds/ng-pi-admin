@@ -12,12 +12,13 @@ export class PagesTopComponent {
 
   constructor(private _globalService: GlobalService) { }
 
-  _sidebarToggle() {
+  public _sidebarToggle() {
     this._globalService.sidebarToggle$.subscribe(sidebarToggle => {
       this.sidebarToggle = sidebarToggle;
     }, error => {
       console.log('Error: ' + error);
     });
+    
     this._globalService._sidebarToggleState(!this.sidebarToggle);
   }
 }

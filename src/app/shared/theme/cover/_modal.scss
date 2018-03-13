@@ -21,8 +21,8 @@ button.close {
 @keyframes modalFadeIn {
     0% {
         opacity: 0;
-        top: 100px;
-        @include transform(scale(.9));
+        top: 0;
+        @include transform(scale(.95));
     }
     100% {
         opacity: 1;
@@ -33,6 +33,6 @@ button.close {
 
 .modal-open {
     .modal-content {
-        animation: modalFadeIn .6s both;
+        animation: modalFadeIn .5s both;
     }
 }

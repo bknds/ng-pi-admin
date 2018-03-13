@@ -9,9 +9,6 @@ import pell from 'pell';
 export class PellEditorComponent implements OnInit {
 
   @Input()
-  onChange: any;
-
-  @Input()
   defaultContent: string;
 
   constructor() { }
@@ -25,15 +22,16 @@ export class PellEditorComponent implements OnInit {
       element: document.getElementById('pell'),
       defaultParagraphSeparator: 'p',
       styleWithCSS: true,
-      onChange: function (html) {
+      onChange(html) {
         document.getElementById('text-output').innerHTML = html
-        document.getElementById('html-output').textContent = html
+        //document.getElementById('html-output').textContent = html
       }
     })
+
     document.getElementById('text-output').innerHTML = this.defaultContent;
 
+    /* content init */
     editor.content.innerHTML = this.defaultContent;
   }
 
 }
-/* 无法抛出数据   未完成组件封装 */

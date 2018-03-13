@@ -16,7 +16,7 @@ export class NotificationComponent implements OnInit {
     this.getNewNotification();
   }
 
-  getNewNotification() {
+  public getNewNotification() {
     this._globalService.notification$.subscribe(notification => {
       this.notificationItem.push(notification)
     }, error => {

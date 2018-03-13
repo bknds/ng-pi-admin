@@ -14,11 +14,11 @@ export class MenuComponent {
 
   constructor(private _globalService: GlobalService) { }
 
-  isToggleOn(item) {
+  private isToggleOn(item) {
     item.toggle === 'on' ? item.toggle = 'off' : item.toggle = 'on';
   }
 
-  _selectItem(item) {
+  private _selectItem(item) {
     this._globalService._isActived(item);
   }
 }

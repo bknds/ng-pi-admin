@@ -12,7 +12,7 @@ export class ModalsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() { }
-
+  
   openModal(modal) {
     modal.open();
   }

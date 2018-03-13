@@ -18,7 +18,7 @@ export class FileTreeComponent implements OnInit {
     });
   }
 
-  toggleItem(item) {
+  private toggleItem(item) {
     item.toggle === 'on' ? item.toggle = 'off' : item.toggle = 'on';
   }
 

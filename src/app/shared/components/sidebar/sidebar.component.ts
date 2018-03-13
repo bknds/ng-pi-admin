@@ -29,8 +29,7 @@ export class SidebarComponent implements OnInit {
     this._isSelectItem(this.menuInfo);
   }
 
-  /* sidebar控制器 */
-  _sidebarToggle() {
+  public _sidebarToggle() {
     this._globalService._sidebarToggleState(true);
     this._globalService.sidebarToggle$.subscribe(sidebarToggle => {
       this.sidebarToggle = sidebarToggle;
@@ -39,7 +38,7 @@ export class SidebarComponent implements OnInit {
     });
   }
 
-  /* 初始化 判断当前路由状态信息 控制菜单打开状态 */
+  /* 初始化 判断当前路由状态信息 首次加载菜单状态 */
   _isSelectItem(item) {
     for (let i in item) {
       if (item[i].children) {
