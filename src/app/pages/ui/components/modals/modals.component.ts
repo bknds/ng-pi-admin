@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import swal from 'sweetalert2';
 
 @Component({
   selector: 'app-modals',
@@ -18,5 +19,13 @@ export class ModalsComponent implements OnInit {
 
   closeModal(modal) {
     modal.close();
+  }
+
+  onClose() {
+    swal({
+      type: 'success',
+      title: 'Success!',
+      text: 'close it!',
+    })
   }
 }

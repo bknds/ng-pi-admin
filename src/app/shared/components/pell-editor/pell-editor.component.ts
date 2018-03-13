@@ -26,10 +26,11 @@ export class PellEditorComponent implements OnInit {
       defaultParagraphSeparator: 'p',
       styleWithCSS: true,
       onChange: function (html) {
-        /* document.getElementById('text-output').innerHTML = html
-        document.getElementById('html-output').textContent = html */
+        document.getElementById('text-output').innerHTML = html
+        document.getElementById('html-output').textContent = html
       }
     })
+    document.getElementById('text-output').innerHTML = this.defaultContent;
 
     editor.content.innerHTML = this.defaultContent;
   }

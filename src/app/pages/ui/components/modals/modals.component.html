@@ -1,5 +1,9 @@
 <card cardTitle="modal sizes">
   <button class="btn btn-primary" (click)="openModal(myModal)">open my modal</button>
+  <button class="btn btn-primary" (click)="thirdModal.open()">modal that cannot be simply closed</button>
+  <button class="btn btn-primary" (click)="fifthModal.open()">large modal</button>
+  <button class="btn btn-primary" (click)="sixthModal.open()">small modal</button>
+  <button class="btn btn-primary" (click)="seventhModal.open()">it opens first modal after you close it</button>
 </card>
 
 <modal #myModal>
@@ -15,4 +19,34 @@
   <modal-footer>
     <button class="btn btn-primary" (click)="closeModal(myModal)">close</button>
   </modal-footer>
+</modal>
+
+<modal #thirdModal [closeOnEscape]="false" [closeOnOutsideClick]="false">
+  <modal-header>
+    <h1>I am third modal</h1>
+  </modal-header>
+  <modal-content>
+    You cannot close this modal by pressing "ESC" button or clicking outside of the modal.
+  </modal-content>
+  <modal-footer>
+    <button class="btn btn-primary" (click)="thirdModal.close()">okay!</button>
+  </modal-footer>
+</modal>
+
+<modal #fifthModal title="I am fifth modal" cancelButtonLabel="close it" modalClass="modal-lg">
+  <modal-content>
+    Very large modal.
+  </modal-content>
+</modal>
+
+<modal #sixthModal title="I am sixth modal" cancelButtonLabel="close it" modalClass="modal-sm">
+  <modal-content>
+    Very small modal.
+  </modal-content>
+</modal>
+
+<modal #seventhModal title="I am seventh modal" cancelButtonLabel="close it" (onClose)="onClose()">
+  <modal-content>
+    Now try to close it and it will open you first modal.
+  </modal-content>
 </modal>

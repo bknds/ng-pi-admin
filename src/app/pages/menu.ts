@@ -53,10 +53,10 @@ export let MENU_ITEM = [
                 path: 'progress-bar',
                 title: 'ProgressBar'
             },
-            {
+           /*  {
                 path: 'loading',
                 title: 'Loading'
-            },
+            }, */
             {
                 path: 'file-upload',
                 title: 'File Upload'
@@ -104,9 +104,9 @@ export let MENU_ITEM = [
             }
         ]
     },
-    {
+    /* {
         path: 'extra-pages',
         title: 'Extra Pages',
         icon: 'sitemap',
-    }
+    } */
 ]

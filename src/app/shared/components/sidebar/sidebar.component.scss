@@ -56,6 +56,24 @@
     margin-top: 5px;
 }
 
+@media (max-width:970px) {
+    .pages-sider {
+        width: 0;
+    }
+}
+
+@media (max-width:1440px) {
+    .pages-sider {
+        width: 210px;
+    }
+    .avatar-wrap {
+        width: 180px;
+        .user-info-wrap {
+            width: 130px;
+        }
+    }
+}
+
 .side-collapsed {
     width: 50px;
     .avatar-wrap {
@@ -66,15 +84,9 @@
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        margin: 5px 2px;
+        margin: 3px 2px;
     }
     .user-info-wrap {
         transform: scale(0, 0);
-    }
-}
-
-@media (max-width:970px) {
-    .pages-sider {
-        width: 0;
     }
 }
