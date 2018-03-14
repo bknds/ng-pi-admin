@@ -16,14 +16,16 @@ export class TodolistComponent implements OnInit {
 
   ngOnInit() {
     this.todolist = this.todoListService.getTodoList();
-    this.todolist.forEach(element => {
-      element.isOver = false;
-      element.isEdit = false;
+    this.todolist.forEach(item => {
+      item.isOver = false;
+      item.isEdit = false;
+      item.editText = item.text;
     });
   }
 
   edit(index) {
     if (!this.todolist[index].isOver) {
+      this.todolist[index].editText = this.todolist[index].text;
       this.todolist[index].isEdit = true;
     }
   }
@@ -34,7 +36,12 @@ export class TodolistComponent implements OnInit {
     }
   }
 
-  updataTaskDetail(index) {
+  enterTaskEdit(index) {
+    this.todolist[index].text = this.todolist[index].editText;
+    this.todolist[index].isEdit = false;
+  }
+
+  cancelTaskEdit(index) {
     this.todolist[index].isEdit = false;
   }
 
@@ -49,6 +56,7 @@ export class TodolistComponent implements OnInit {
 }
 export class List {
   text: string;
+  editText: string;
   isOver: boolean;
   isEdit: boolean;
 }

@@ -6,11 +6,18 @@
     </button>
   </div>
   <div class="form-group task-list" *ngFor="let item of todolist;let i = index">
-    <button class="over-btn" (click)="overMatter(i)">
+    <button class="over-btn" (click)="overMatter(i)" *ngIf="!item.isEdit">
       <i class="fa fa-square-o" *ngIf="!item.isOver"></i>
       <i class="fa fa-check-square-o" *ngIf="item.isOver"></i>
     </button>
-    <label class="list-text" [ngClass]="{'list-over':item.isOver,'list-text':!item.isOver}" (dblclick)="edit(i)" *ngIf="!item.isEdit">{{item.text}}</label>
-    <input type="text" class="edit-input" [(ngModel)]="item.text" *ngIf="item.isEdit" (keyup.enter)="updataTaskDetail(i)">
+    <label class="list-text" [ngClass]="{'list-over':item.isOver,'list-text':!item.isOver}" (dblclick)="edit(i)" *ngIf="!item.isEdit"
+      title="{{item.text}}">{{item.text}}</label>
+    <input type="text" class="edit-input" [(ngModel)]="item.editText" *ngIf="item.isEdit" (keyup.enter)="enterTaskEdit(i)">
+    <button class="enter-task-edit" *ngIf="item.isEdit" (click)="enterTaskEdit(i)">
+      <i class="fa fa-check"></i>
+    </button>
+    <button class="cancel-task-edit" *ngIf="item.isEdit" (click)="cancelTaskEdit(i)">
+      <i class="fa fa-close"></i>
+    </button>
   </div>
 </div>
