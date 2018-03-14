@@ -43,16 +43,41 @@
       </button>
     </div>
   </div>
-</div>
-<div class="row">
-  <div class="col-md-4 animated fadeIn">
+  <div class="col-md-8">
+    <card cardTitle='Bar Chart' isCollapse="true">
+      <div echarts [options]="AnimationBarOption" [loading]="showloading" theme="dark"></div>
+    </card>
+  </div>
+  <div class="col-md-4">
     <card cardTitle="Todo List" isCollapse="true">
       <du-todolist></du-todolist>
     </card>
   </div>
-  <div class="col-md-8 animated fadeIn">
-    <card cardTitle='Line Chart' isCollapse="true">
-      <div echarts [options]="AnimationBarOption" [loading]="showloading" theme="dark" class="demo-chart"></div>
+  <div class="col-md-4">
+    <card>
+      <du-todolist></du-todolist>
+    </card>
+  </div>
+  <div class="col-md-8">
+    <card>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Project Name</th>
+            <th>Name</th>
+            <th>Company</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Master project</td>
+            <td>Patrick Smith</td>
+            <td>Inceptos Hymenaeos Ltd</td>
+            <td>20%</td>
+          </tr>
+        </tbody>
+      </table>
     </card>
   </div>
 </div>

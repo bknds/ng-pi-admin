@@ -53,14 +53,10 @@ export let MENU_ITEM = [
                 path: 'progress-bar',
                 title: 'ProgressBar'
             },
-           /*  {
-                path: 'loading',
-                title: 'Loading'
-            }, */
-            {
-                path: 'file-upload',
-                title: 'File Upload'
-            }
+            /*  {
+                 path: 'loading',
+                 title: 'Loading'
+             }, */
         ]
     },
     {
@@ -75,6 +71,10 @@ export let MENU_ITEM = [
             {
                 path: 'form-layouts',
                 title: 'Form Layouts'
+            },
+            {
+                path: 'file-upload',
+                title: 'File Upload'
             }
         ]
     },

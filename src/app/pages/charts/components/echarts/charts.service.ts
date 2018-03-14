@@ -21,17 +21,18 @@ export class ChartsService {
         legend: {
             orient: 'vertical',
             x: 'left',
-            data: ['1', '2']
+            data: ['Example1', 'Example2', 'Example3']
         },
-        //roseType: 'angle',
+        roseType: 'angle',
         series: [
             {
-                name: '111',
+                name: 'PieChart',
                 type: 'pie',
                 radius: [0, '50%'],
                 data: [
-                    { value: 335, name: '1' },
-                    { value: 210, name: '2' },
+                    { value: 235, name: 'Example1' },
+                    { value: 210, name: 'Example2' },
+                    { value: 162, name: 'Example3' }
                 ]
             }
         ]

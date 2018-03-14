@@ -21,6 +21,8 @@ a:hover {
 i {
     font-size: $default-text;
     color: rgba($fonts-color, .5);
+    font-weight: 700;
+    margin: 0 3px;
 }
 
 span {

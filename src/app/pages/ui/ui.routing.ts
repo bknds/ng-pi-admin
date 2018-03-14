@@ -10,7 +10,6 @@ import { FileTreeComponent } from './components/file-tree/file-tree.component';
 import { LoadingComponent } from './components/loading/loading.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import { ModalsComponent } from './components/modals/modals.component';
-import { FileUploadComponent } from './components/file-upload/file-upload.component';
 
 const childRoutes: Routes = [
     {
@@ -26,7 +25,6 @@ const childRoutes: Routes = [
             { path: 'progress-bar', component: ProgressBarComponent },
             { path: 'loading', component: LoadingComponent },
             { path: 'modals', component: ModalsComponent },
-            { path: 'file-upload', component: FileUploadComponent },
         ]
     }
 ];

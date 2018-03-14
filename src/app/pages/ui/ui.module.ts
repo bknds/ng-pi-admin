@@ -2,9 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { routing } from './ui.routing';
 import { SharedModule } from '../../shared/shared.module';
-
 import { ModalModule } from "ngx-modal";
-import { FileUploadModule } from 'ng2-file-upload';
 
 /* components */
 import { UiComponent } from './ui.component';
@@ -16,14 +14,11 @@ import { FileTreeComponent } from './components/file-tree/file-tree.component';
 import { LoadingComponent } from './components/loading/loading.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import { ModalsComponent } from './components/modals/modals.component';
-import { FileUploadComponent } from './components/file-upload/file-upload.component';
-
 
 @NgModule({
     imports: [
         CommonModule,
         SharedModule,
-        FileUploadModule,
         ModalModule,
         routing
     ],
@@ -36,8 +31,7 @@ import { FileUploadComponent } from './components/file-upload/file-upload.compon
         FileTreeComponent,
         LoadingComponent,
         ProgressBarComponent,
-        ModalsComponent,
-        FileUploadComponent
+        ModalsComponent
     ]
 })
 export class UIModule { }

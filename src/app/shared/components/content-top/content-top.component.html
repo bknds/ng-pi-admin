@@ -1,5 +1,5 @@
 <div class="content-wrap">
   <a routerLink="/pages/index" *ngIf="routeTitle !== 'Dashboard'" (click)="returnHome()">Dashboard</a>
-  <i class="fa fa-angle-right" *ngIf="routeTitle !== 'Dashboard'"></i>
+  <i *ngIf="routeTitle !== 'Dashboard'">/</i>
   <span>{{routeTitle}}</span>
 </div>
