@@ -104,6 +104,27 @@ export let MENU_ITEM = [
             }
         ]
     },
+    {
+        path: '123',
+        title: 'Menu Levels',
+        icon: 'sitemap',
+        children: [
+            {
+                path: '111',
+                title: 'Menu Level1',
+                children: [
+                    {
+                        path: '1111',
+                        title: 'Menu Level1-1'
+                    }
+                ]
+            },
+            {
+                path: '222',
+                title: 'Menu Level2'
+            }
+        ]
+    },
     /* {
         path: 'extra-pages',
         title: 'Extra Pages',

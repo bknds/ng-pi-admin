@@ -1,13 +1,15 @@
 <div class="pages-wrap">
-  <sidebar></sidebar>
+  <pages-top></pages-top>
   <div class="pages-body">
-    <pages-top></pages-top>
+    <sidebar></sidebar>
+    
     <div class="pages-content">
       <content-top></content-top>
       <router-outlet></router-outlet>
       <notification></notification>
     </div>
+
+    <right-config></right-config>
   </div>
-<right-config></right-config>
 </div>
 <loading [loading]="false"></loading>

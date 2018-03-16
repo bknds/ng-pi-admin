@@ -1,5 +1,5 @@
 <ul class="menu-wrap animated fadeIn">
-  <li *ngFor="let item of menuInfo;let i = index" class="menu-item" [ngClass]="{'item-toggle-on':item.toggle === 'on','item-toggle-off':!sidebarToggle}">
+  <li *ngFor="let item of menuInfo;let i = index" class="menu-item" [ngClass]="{'item-toggle-on':item.toggle === 'on'}">
     <a [routerLink]="[item.routerLink.join('/')]" *ngIf="item.routerLink" routerLinkActive="active" class="menu-link" (click)="_selectItem(item)">
       <div class="placeholder">
         <i class="fa fa-{{item.icon}} fa-fw"></i>
@@ -15,7 +15,7 @@
       <span class="fa fa-angle-right fa-fw direction"></span>
     </a>
 
-    <div class="item-children" [@collapse]="item.toggle">
+    <div class="item-children" [@collapse]="item.toggle" *ngIf="item.children">
       <du-menu [menuInfo]="item.children"></du-menu>
     </div>
   </li>

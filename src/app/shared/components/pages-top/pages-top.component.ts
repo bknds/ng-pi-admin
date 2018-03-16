@@ -7,6 +7,11 @@ import { GlobalService } from '../../services/global.service';
   styleUrls: ['./pages-top.component.scss'],
 })
 export class PagesTopComponent {
+  avatarImgSrc: string = 'assets/images/avatar.png';
+  userName: string = 'Folisise Chosielie';
+  userPost: string = 'Musician, Player';
+
+  
   sidebarToggle: boolean = true;
   tip = { ring: true, email: true };
 

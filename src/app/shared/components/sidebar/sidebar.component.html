@@ -1,12 +1,3 @@
-<div class="pages-sider" [ngClass]="{'side-collapsed':!sidebarToggle}" (click)="_sidebarToggle()">
-  <div class="avatar-wrap">
-    <div class="avatar">
-      <img src="{{avatarImgSrc}}" alt="avatar">
-    </div>
-    <div class="user-info-wrap">
-      <span class="user-name" title="{{userName}}">{{userName}}</span>
-      <span class="user-post" title="{{userPost}}">{{userPost}}</span>
-    </div>
-  </div>
-  <du-menu [menuInfo]="menuInfo" [sidebarToggle]="sidebarToggle"></du-menu>
+<div class="pages-sider" [ngClass]="{'side-collapsed':!sidebarToggle}">
+  <du-menu [menuInfo]="menuInfo"></du-menu>
 </div>

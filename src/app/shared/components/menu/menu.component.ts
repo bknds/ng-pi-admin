@@ -10,7 +10,6 @@ import { GlobalService } from '../../services/global.service';
 })
 export class MenuComponent {
   @Input() menuInfo: any;
-  @Input() sidebarToggle;
 
   constructor(private _globalService: GlobalService) { }
 

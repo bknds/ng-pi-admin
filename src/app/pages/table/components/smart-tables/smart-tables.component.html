@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col-md-12">
-    <card>
-      <table class="table">
+    <card cardTitle="Data Table">
+      <table class="table table-bordered table-hover">
         <thead>
           <tr>
             <th>FIRSTNAME</th>
@@ -12,42 +12,9 @@
               <sort key="age" [data]=table_data></sort>
             </th>
             <th>STATE</th>
-            <th>ACTIONS</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>
-              <input type="text" class="form-control table-form-control">
-            </td>
-            <td>
-              <input type="text" class="form-control table-form-control">
-            </td>
-            <td>
-              <input type="text" class="form-control table-form-control">
-            </td>
-            <td>
-              <input type="text" class="form-control table-form-control">
-            </td>
-            <td>
-              <input type="text" class="form-control table-form-control">
-            </td>
-            <td>
-              <select name="state" id="state" class="form-control">
-                <option value="1">primary</option>
-                <option value="1">warning</option>
-                <option value="1">success</option>
-                <option value="1">danger</option>
-                <option value="1">info</option>
-              </select>
-            </td>
-            <td>
-              <button class="btn btn-sm btn-primary btn-with-ico">
-                <i class="fa fa-plus"></i>
-                New Row
-              </button>
-            </td>
-          </tr>
           <tr *ngFor="let item of table_data | paginate: { id: 'pager', itemsPerPage: pageSize, currentPage: pageNumber};let index = index">
             <td>{{item.firstName}}</td>
             <td>{{item.lastName}}</td>
@@ -56,17 +23,6 @@
             <td>{{item.age}}</td>
             <td>
               <span class="label label-info">info</span>
-            </td>
-            <td>
-              <button class="btn btn-xs btn-info">
-                <i class="fa fa-pencil"></i>
-              </button>
-              <button class="btn btn-xs btn-success">
-                <i class="fa fa-check"></i>
-              </button>
-              <button class="btn btn-xs btn-danger">
-                <i class="fa fa-trash-o"></i>
-              </button>
             </td>
           </tr>
         </tbody>
@@ -89,7 +45,7 @@
               <option>100</option>
               <option>200</option>
             </select>
-            <span class="input-group-addon addon-right">条/页</span>
+            <span class="input-group-addon addon-right">Per Page</span>
           </div>
         </div>
       </form>

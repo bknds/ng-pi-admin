@@ -59,15 +59,11 @@
 }
 
 .item-toggle-on {
-    .menu-link {
+    >.menu-link {
         .direction {
             @include transform(rotate(90deg));
         }
     }
-}
-
-.item-toggle-off {
-    height: 50px;
 }
 
 .item-children {

@@ -9,9 +9,7 @@ import { GlobalService } from '../../services/global.service';
   providers: [menuService]
 })
 export class SidebarComponent implements OnInit {
-  avatarImgSrc: string = 'assets/images/avatar.png';
-  userName: string = 'Folisise Chosielie';
-  userPost: string = 'Musician, Player';
+
 
   public menuInfo: Array<any> = [];
   public sidebarToggle: boolean = true;
@@ -30,7 +28,7 @@ export class SidebarComponent implements OnInit {
   }
 
   public _sidebarToggle() {
-    this._globalService._sidebarToggleState(true);
+    //this._globalService._sidebarToggleState(true);
     this._globalService.sidebarToggle$.subscribe(sidebarToggle => {
       this.sidebarToggle = sidebarToggle;
     }, error => {

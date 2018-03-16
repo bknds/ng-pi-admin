@@ -7,10 +7,58 @@
     border-bottom: 1px solid $border-color;
 }
 
-.collapse-menu {
+.avatar-wrap {
     position: absolute;
     top: 50%;
     left: 10px;
+    transform: translate(0, -50%);
+    padding: 15px 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 240px;
+    height: auto;
+    min-height: 50px;
+    @include transition(all .4s);
+    .avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+        overflow: hidden;
+        @include transition(all .4s);
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+    .user-info-wrap {
+        padding: 2px 14px;
+        width: 170px;
+        height: auto;
+        @include transition(all .4s);
+    }
+    .user-name,
+    .user-post {
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis
+    }
+    .user-name {
+        color: $sidebar-fonts-color;
+        font-size: $lg-text;
+    }
+    .user-post {
+        color: $primary;
+        font-size: $sm-text;
+        margin-top: 5px;
+    }
+}
+
+.collapse-menu {
+    position: absolute;
+    top: 50%;
+    left: 250px;
     transform: translate(0, -50%);
     color: $sidebar-fonts-color;
     font-size: 24px;
@@ -25,7 +73,7 @@
         @include transition(all .5s);
     }
     .toggle-off {
-        transform: rotate(-90deg);
+        transform: rotate(-270deg);
         @include transition(all .5s);
     }
 }

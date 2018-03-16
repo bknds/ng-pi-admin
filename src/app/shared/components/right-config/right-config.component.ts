@@ -11,8 +11,7 @@ export class RightConfigComponent implements OnInit {
   isConfigToggle: boolean = false;
   constructor(private _globalService: GlobalService) { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
   configToggle() {
     this.isConfigToggle = !this.isConfigToggle;
