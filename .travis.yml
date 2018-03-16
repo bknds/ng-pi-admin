@@ -1,9 +1,68 @@
+<<<<<<< HEAD
 language: node_js  
 sudo: true
+=======
+sudo: required
+dist: trusty
+language: node_js
+
+cache:
+  directories:
+    - node_modules
+
+addons:
+  apt:
+    sources:
+      - google-chrome
+    packages:
+      - google-chrome-stable
+
+>>>>>>> fd4bb2e8d3ecb438b84411ca14a4d4cd44f4d11e
 node_js:
-  - 6.0
-script: node_modules/karma/bin/karma start ./karma.conf.js
+  - "6"
+  - "7"
+  - "node"
+
+matrix:
+  fast_finish: true
+
 before_install:
-  - export CHROME_BIN=chromium-browser
+  - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > .npmrc
+  - npm prune
+  - npm update
+
+install:
+  - npm install
+
+
+before_script:
+  - npm rebuild node-sass
+  - ./node_modules/protractor/bin/webdriver-manager update --gecko false
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
+  - sleep 3
+
+script:
+  - npm run lib:sync
+  - npm run lib:build
+  - npm run lib:test
+  - npm run lint
+  - npm run test
+  - npm run build:aot
+  - npm run e2e:travis
+  - npm run github-deploy:prod
+
+deploy:
+  - provider: pages
+    skip_cleanup: true
+    local_dir: dist
+    github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+    on:
+      branch: master
+      node: "node"
+  - provider: script
+    skip_cleanup: true
+    script: npm run travis-publish
+    on:
+      branch: master
+      node: "node"

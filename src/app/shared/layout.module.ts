@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { SharedModule } from './shared.module';
 
 import { GlobalService } from './services/global.service';
 
@@ -15,7 +16,8 @@ import { RightConfigComponent } from './components/right-config/right-config.com
 @NgModule({
     imports: [
         CommonModule,
-        RouterModule
+        RouterModule,
+        SharedModule
     ],
     providers: [
         GlobalService

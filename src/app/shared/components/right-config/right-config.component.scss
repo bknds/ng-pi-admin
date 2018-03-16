@@ -1,5 +1,8 @@
 @import "../../theme/conf";
+$config-width:230px;
 .right-config-wrap {
+    display: flex;
+    flex-direction: column;
     position: relative;
     width: 0;
     height: 100%;
@@ -27,5 +30,42 @@
 }
 
 .right-config-wrap-on {
-    width: 200px;
+    width: $config-width;
+}
+
+.config-header {
+    padding: 5px 10px;
+    width: $config-width;
+    height: auto;
+    color: $sidebar-fonts-color;
+    .config-title {
+        border-left: 3px solid $sidebar-fonts-color;
+        padding: 0 10px;
+        span {
+            font-size: .8em;
+        }
+    }
+    .desc {
+        color: rgba($sidebar-fonts-color, .7);
+        word-break: break-all;
+        font-size: $sm-text;
+        line-height: $sm-text+10;
+    }
+}
+
+.config-content {
+    flex: 1;
+    width: $config-width;
+    color: $sidebar-fonts-color;
+    .config-list {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        padding: 20px 10px 10px 10px;
+        border-bottom: 1px solid $border-color;
+        &:first-child {
+            border-top: 1px solid $border-color;
+        }
+    }
 }

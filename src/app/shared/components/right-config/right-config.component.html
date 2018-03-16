@@ -3,4 +3,25 @@
   <i class="fa fa-chevron-right" *ngIf="isConfigToggle"></i>
 </button>
 <div class="right-config-wrap" [ngClass]="{'right-config-wrap-on':isConfigToggle}">
+  <div class="config-header">
+    <h3 class="config-title">
+      <i class="fa fa-cogs"></i>
+      <span>Settings</span>
+    </h3>
+    <p class="desc">Settings desc Settings desc Settings desc Settings desc.</p>
+  </div>
+  <ul class="config-content">
+    <li class="config-list">
+      <span>Config1</span>
+      <switch switchName="config1" switchId="config1" multiple [checked]="true"></switch>
+    </li>
+    <li class="config-list">
+      <span>Config2</span>
+      <switch switchName="config2" switchId="config2" multiple></switch>
+    </li>
+    <li class="config-list">
+      <span>Config3</span>
+      <switch switchName="config3" switchId="config3" multiple></switch>
+    </li>
+  </ul>
 </div>
