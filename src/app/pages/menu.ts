@@ -125,9 +125,4 @@ export let MENU_ITEM = [
             }
         ]
     },
-    /* {
-        path: 'extra-pages',
-        title: 'Extra Pages',
-        icon: 'sitemap',
-    } */
 ]
