@@ -7,7 +7,7 @@
     "start": "ng serve",
     "build": "ng build --base-href ./",
     "build:demo": "npm run build:prod:aot -- --base-href \"http://treesflower.com/pi-admin/\"",
-    "test": "ng test",
+    "test": ".\\node_modules\\.bin\\karma.cmd start",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
