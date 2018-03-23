@@ -98,29 +98,29 @@ export let MENU_ITEM = [
                 title: 'Basic Tables'
             },
             {
-                path: 'smart-tables',
-                title: 'Smart Tables'
+                path: 'data-table',
+                title: 'Data Table'
             }
         ]
     },
     {
-        path: '123',
+        path: 'menu-levels',
         title: 'Menu Levels',
         icon: 'sitemap',
         children: [
             {
-                path: '111',
+                path: 'levels2',
+                title: 'Menu Level2'/* creatRouterLink() bug if children 现停止下一循环*/
+            },
+            {
+                path: 'levels1',
                 title: 'Menu Level1',
                 children: [
                     {
-                        path: '1111',
+                        path: 'levels1-1',
                         title: 'Menu Level1-1'
                     }
                 ]
-            },
-            {
-                path: '222',
-                title: 'Menu Level2'
             }
         ]
     },

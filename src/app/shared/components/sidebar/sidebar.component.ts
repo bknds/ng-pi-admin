@@ -19,6 +19,8 @@ export class SidebarComponent implements OnInit {
 
   ngOnInit() {
     this.menuInfo = this._menuService.putSidebarJson();
+    console.log(this.menuInfo);
+    
 
     this._sidebarToggle();
 
@@ -41,7 +43,7 @@ export class SidebarComponent implements OnInit {
     for (let i in item) {
       if (item[i].children) {
         for (let index in item[i].children) {
-          if (item[i].children[index].isActive) {
+          if (item[i].children[index].isActive || item[i].children[index].toggle === 'on') {
             item[i].toggle = 'on';
             break;
           } else {

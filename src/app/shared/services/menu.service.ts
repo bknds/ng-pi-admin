@@ -62,7 +62,7 @@ export class menuService {
       } else {
         this.path_item = [index.path];
         index.routerLink = this.creatRouterLink(index.path);
-        index.routerLink.unshift('/','pages');
+        index.routerLink.unshift('/', 'pages');
       }
     })
   }

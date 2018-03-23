@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 @Injectable()
-export class SmartTablesService {
+export class TablesDataService {
     constructor() { }
 
     DATA = [
