@@ -19,13 +19,8 @@ export class SidebarComponent implements OnInit {
 
   ngOnInit() {
     this.menuInfo = this._menuService.putSidebarJson();
-    console.log(this.menuInfo);
-    
-
     this._sidebarToggle();
-
     this._menuService.selectItem(this.menuInfo);/* ----->初始化判断路由isActive状态  未完成  待优化 */
-
     this._isSelectItem(this.menuInfo);
   }
 

@@ -161,3 +161,21 @@
         border-radius: 50%;
     }
 }
+
+@media (max-width:414px) {
+    .avatar-wrap {
+        width: auto;
+        .avatar {
+            border-radius: 50px;
+        }
+        .user-info-wrap {
+            display: none;
+        }
+    }
+    .collapse-menu {
+        left: 100px;
+    }
+    .search-group {
+        display: none;
+    }
+}

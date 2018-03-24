@@ -2,7 +2,7 @@
 
 
 
-[Demo](http://treesflower.com/dist)
+[Demo](http://treesflower.com/ng-pi-admin)
 
 ## Getting started
 ```

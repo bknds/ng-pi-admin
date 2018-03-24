@@ -109,10 +109,6 @@ export let MENU_ITEM = [
         icon: 'sitemap',
         children: [
             {
-                path: 'levels2',
-                title: 'Menu Level2'/* creatRouterLink() bug if children 现停止下一循环*/
-            },
-            {
                 path: 'levels1',
                 title: 'Menu Level1',
                 children: [
@@ -121,6 +117,14 @@ export let MENU_ITEM = [
                         title: 'Menu Level1-1'
                     }
                 ]
+            },
+            {
+                path: 'levels2',
+                title: 'Menu Level2'
+            },
+            {
+                path: 'levels3',
+                title: 'Menu Level3'
             }
         ]
     },

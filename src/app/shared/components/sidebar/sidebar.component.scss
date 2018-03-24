@@ -15,18 +15,6 @@
     }
 }
 
-@media (max-width:970px) {
-    .pages-sider {
-        width: 0;
-    }
-}
-
-@media (max-width:1440px) {
-    .pages-sider {
-        width: 210px;
-    }
-}
-
 .side-collapsed {
     width: 0;
     /* .avatar-wrap {
@@ -42,4 +30,16 @@
     .user-info-wrap {
         transform: scale(0, 0);
     } */
+}
+
+@media (max-width:1440px) {
+    .pages-sider {
+        width: 210px;
+    }
+}
+
+@media (max-width:970px) {
+    .pages-sider {
+        width: 0;
+    }
 }
