@@ -1,12 +1,13 @@
 {
-  "name": "Pill",
+  "name": "ng-pi-admin",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --base-href ./",
-    "build:demo": "npm run build:prod:aot -- --base-href \"http://treesflower.com/pi-admin/\"",
+    "build:prod": "ng build --prod --base-href ./",
+    "build:ci": "ng build --prod --base-href ./",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
