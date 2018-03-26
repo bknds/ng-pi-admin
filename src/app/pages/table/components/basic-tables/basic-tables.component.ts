@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class BasicTablesComponent implements OnInit {
 
   default_data: Array<any>;
-  isCheckedAll: boolean = false;
 
   constructor() { }
 
@@ -22,26 +21,4 @@ export class BasicTablesComponent implements OnInit {
     ];
   }
 
-  allChecked($event) {
-    this.isCheckedAll = $event.checked;
-    for (let i of this.default_data) {
-      i.checked = $event.checked;
-    }
-  };
-
-  Checked($event, index) {
-    this.default_data[index].checked = $event.checked;
-    if ($event.checked) {
-      for (let a in this.default_data) {
-        if (!this.default_data[a].checked) {
-          this.isCheckedAll = false;
-          break;
-        } else {
-          this.isCheckedAll = true;
-        }
-      }
-    } else {
-      this.isCheckedAll = false;
-    }
-  }
 }

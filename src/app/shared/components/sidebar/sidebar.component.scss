@@ -36,6 +36,9 @@
     .pages-sider {
         width: 210px;
     }
+    .side-collapsed {
+        width: 0;
+    }
 }
 
 @media (max-width:970px) {

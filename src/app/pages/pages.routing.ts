@@ -13,7 +13,7 @@ export const childRoutes: Routes = [
         children: [
             { path: '', redirectTo: 'index', pathMatch: 'full' },
             { path: 'index', loadChildren: './index/index.module#IndexModule' },
-            { path: 'mailbox', loadChildren: './mailbox/mailbox.module#MailboxModule' },
+            { path: 'markdown', loadChildren: './markdown/markdown.module#MarkdownModule' },
             { path: 'editor', loadChildren: './editor/editor.module#EditorModule' },
             { path: 'icon', loadChildren: './icon/icon.module#IconModule' },
             { path: 'form', loadChildren: './form/form.module#FormModule' },

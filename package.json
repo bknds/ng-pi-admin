@@ -37,6 +37,7 @@
     "pell": "^1.0.0",
     "roboto-fontface": "^0.8.0",
     "rxjs": "^5.4.2",
+    "simplemde": "^1.11.2",
     "sweetalert2": "^7.6.3",
     "zone.js": "^0.8.14"
   },

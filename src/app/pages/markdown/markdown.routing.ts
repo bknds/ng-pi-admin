@@ -1,10 +1,10 @@
 import { Routes, RouterModule } from '@angular/router';
-import { MailboxComponent } from './mailbox.component';
+import { MarkdownComponent } from './markdown.component';
 
 const childRoutes: Routes = [
     {
         path: '',
-        component: MailboxComponent,
+        component: MarkdownComponent,
         children: [
         ]
     }

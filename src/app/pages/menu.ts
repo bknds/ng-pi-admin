@@ -5,9 +5,9 @@ export let MENU_ITEM = [
         icon: 'dashboard'
     },
     {
-        path: 'mailbox',
-        title: 'Mailbox',
-        icon: 'envelope-o'
+        path: 'markdown',
+        title: 'Markdown',
+        icon: 'book'
     },
     {
         path: 'editor',
@@ -121,10 +121,6 @@ export let MENU_ITEM = [
             {
                 path: 'levels2',
                 title: 'Menu Level2'
-            },
-            {
-                path: 'levels3',
-                title: 'Menu Level3'
             }
         ]
     },
