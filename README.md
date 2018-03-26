@@ -1,15 +1,22 @@
+
 [![Build Status](https://travis-ci.org/Treesflowers/ng-pi-admin.svg?branch=master)](https://travis-ci.org/Treesflowers/ng-pi-admin)
 
-![](https://raw.githubusercontent.com/treesflower/dustAdmin/master/admin.png)
+
+Default | Dark | Light
+---|---|---
+![](https://raw.githubusercontent.com/treesflower/dustAdmin/master/default.png) | ![](https://raw.githubusercontent.com/treesflower/dustAdmin/master/dark.png) | ![](https://raw.githubusercontent.com/treesflower/dustAdmin/master/light.png)
+
+
 
 ## Based on
 Angular 4+, Angular CLI, TypeScript, Scss, Bootstrap
 
+## Demo
 [Live Demo](http://treesflower.com/ng-pi-admin)
 
 ## Getting started
 ```
-git clone https://github.com/treesflower/PIAdmin.git
+git clone https://github.com/treesflower/ng-pi-admin.git
 
 npm install
 
