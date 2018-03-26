@@ -1,8 +1,11 @@
+[![Build Status](https://travis-ci.org/Treesflowers/ng-pi-admin.svg?branch=master)](https://travis-ci.org/Treesflowers/ng-pi-admin)
+
 ![](https://raw.githubusercontent.com/treesflower/dustAdmin/master/admin.png)
 
+## Based on
+Angular 4+, Angular CLI, TypeScript, Scss, Bootstrap
 
-
-[Demo](http://treesflower.com/ng-pi-admin)
+[Live Demo](http://treesflower.com/ng-pi-admin)
 
 ## Getting started
 ```
@@ -16,4 +19,4 @@ localhost:4200
 ```
 
 ## License
-[MIT](LICENSE)
+[MIT license](LICENSE)
