@@ -124,4 +124,4 @@ export let MENU_ITEM = [
             }
         ]
     },
-]
+];

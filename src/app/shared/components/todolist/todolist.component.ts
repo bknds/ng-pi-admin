@@ -46,7 +46,7 @@ export class TodolistComponent implements OnInit {
   }
 
   creatNewTask() {
-    let newTask = new List;
+    const newTask = new List;
     newTask.isEdit = false;
     newTask.isOver = false;
     newTask.text = this.newTaskText;

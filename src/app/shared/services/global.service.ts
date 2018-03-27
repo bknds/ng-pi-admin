@@ -1,8 +1,8 @@
-import { Injectable } from "@angular/core";
-import { Subject } from "rxjs/Subject";
+import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs/Subject';
 /* models */
-import { TabMenuModel } from "../models/tabs-model";
-import { NotificationModel } from "../models/notification-model";
+import { TabMenuModel } from '../models/tabs-model';
+import { NotificationModel } from '../models/notification-model';
 
 @Injectable()
 export class GlobalService {
@@ -16,8 +16,10 @@ export class GlobalService {
     }
 
     /* tabs title */
+    // tslint:disable-next-line:member-ordering
     private tabsMenuSource = new Subject<TabMenuModel>();
 
+    // tslint:disable-next-line:member-ordering
     tabsMenu$ = this.tabsMenuSource.asObservable();
 
     _tabsMenu(tabsMenu: TabMenuModel) {
@@ -25,8 +27,10 @@ export class GlobalService {
     }
 
     /* tabs choosen */
+    // tslint:disable-next-line:member-ordering
     private tabsOrderSource = new Subject<Array<any>>();
 
+    // tslint:disable-next-line:member-ordering
     tabsOrder$ = this.tabsOrderSource.asObservable();
 
     _tabsOrder(tabsOrder: Array<any>) {
@@ -34,8 +38,10 @@ export class GlobalService {
     }
 
     /* notification */
+    // tslint:disable-next-line:member-ordering
     private notificationSource = new Subject<NotificationModel>();
 
+    // tslint:disable-next-line:member-ordering
     notification$ = this.notificationSource.asObservable();
 
     _notification(notification: NotificationModel) {
@@ -44,8 +50,10 @@ export class GlobalService {
 
 
     /* router isActive */
+    // tslint:disable-next-line:member-ordering
     private isActivedSource = new Subject<any>();
 
+    // tslint:disable-next-line:member-ordering
     isActived$ = this.isActivedSource.asObservable();
 
     _isActived(isActived) {

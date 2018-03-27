@@ -15,18 +15,18 @@ export class PellEditorComponent implements OnInit {
 
   ngOnInit() {
     function ensureHTTP(str) {
-      return /^https?:\/\//.test(str) && str || `http://${str}`
+      return /^https?:\/\//.test(str) && str || `http://${str}`;
     }
 
-    let editor = pell.init({
+    const editor = pell.init({
       element: document.getElementById('pell'),
       defaultParagraphSeparator: 'p',
       styleWithCSS: true,
       onChange(html) {
-        document.getElementById('text-output').innerHTML = html
-        //document.getElementById('html-output').textContent = html
+        document.getElementById('text-output').innerHTML = html;
+        // document.getElementById('html-output').textContent = html
       }
-    })
+    });
 
     document.getElementById('text-output').innerHTML = this.defaultContent;
 

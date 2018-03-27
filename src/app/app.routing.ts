@@ -10,7 +10,7 @@ const appRoutes: Routes = [
   {
     path: '**',
     redirectTo: 'pages/index'
-  }  
+  }
 ];
 
 export const routing = RouterModule.forRoot(appRoutes);

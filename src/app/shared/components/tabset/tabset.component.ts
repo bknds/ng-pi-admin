@@ -37,6 +37,7 @@ export class TabsetComponent implements OnInit {
 
   _getTabMenu() {
     this._globalService.tabsMenu$.subscribe(tabsMenu => {
+      // tslint:disable-next-line:curly
       if (tabsMenu.for === this.id)
         this.tabsMenuItem.push(tabsMenu);
     }, error => {

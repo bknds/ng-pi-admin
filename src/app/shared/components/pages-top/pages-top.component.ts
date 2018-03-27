@@ -11,7 +11,7 @@ export class PagesTopComponent {
   userName: string = 'Folisise Chosielie';
   userPost: string = 'Musician, Player';
 
-  
+
   sidebarToggle: boolean = true;
   tip = { ring: true, email: true };
 
@@ -23,7 +23,7 @@ export class PagesTopComponent {
     }, error => {
       console.log('Error: ' + error);
     });
-    
+
     this._globalService._sidebarToggleState(!this.sidebarToggle);
   }
 }

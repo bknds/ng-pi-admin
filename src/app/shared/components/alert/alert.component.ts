@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
+  // tslint:disable-next-line:component-selector
   selector: 'alert',
   templateUrl: './alert.component.html',
   styleUrls: ['./alert.component.scss']

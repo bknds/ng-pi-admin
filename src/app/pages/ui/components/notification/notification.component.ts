@@ -31,7 +31,7 @@ export class NotificationComponent extends RootComponent implements OnInit {
       'The Internet?',
       'That thing is still around?',
       'question'
-    )
+    );
   }
 
   alert2Error() {
@@ -39,13 +39,13 @@ export class NotificationComponent extends RootComponent implements OnInit {
       type: 'error',
       title: 'Oops...',
       text: 'Something went wrong!',
-    })
+    });
   }
 
   alertConfirm() {
     swal({
       title: 'Are you sure?',
-      text: "You won't be able to revert this!",
+      text: 'You won\'t be able to revert this!',
       type: 'warning',
       showCancelButton: true,
       confirmButtonColor: '#3085d6',
@@ -57,9 +57,9 @@ export class NotificationComponent extends RootComponent implements OnInit {
           'Deleted!',
           'Your file has been deleted.',
           'success'
-        )
+        );
       }
-    })
+    });
   }
 
   alertTimer() {
@@ -68,13 +68,13 @@ export class NotificationComponent extends RootComponent implements OnInit {
       text: 'I will close in 2 seconds.',
       timer: 2000,
       onOpen: () => {
-        swal.showLoading()
+        swal.showLoading();
       }
     }).then((result) => {
       if (result.dismiss.toString() === 'timer') {
-        console.log('I was closed by the timer')
+        console.log('I was closed by the timer');
       }
-    })
+    });
   }
 
   alertRequest() {
@@ -90,11 +90,11 @@ export class NotificationComponent extends RootComponent implements OnInit {
             if (email === 'taken@example.com') {
               swal.showValidationError(
                 'This email is already taken.'
-              )
+              );
             }
-            resolve()
-          }, 2000)
-        })
+            resolve();
+          }, 2000);
+        });
       },
       allowOutsideClick: () => !swal.isLoading()
     }).then((result) => {
@@ -103,9 +103,9 @@ export class NotificationComponent extends RootComponent implements OnInit {
           type: 'success',
           title: 'Ajax request finished!',
           html: 'Submitted email: ' + result.value
-        })
+        });
       }
-    })
+    });
   }
 
   alertImg() {
@@ -117,6 +117,6 @@ export class NotificationComponent extends RootComponent implements OnInit {
       imageHeight: 200,
       imageAlt: 'Custom image',
       animation: false
-    })
+    });
   }
 }

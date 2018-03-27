@@ -29,9 +29,9 @@ export class TabContentComponent implements OnInit {
 
     this._globalService.tabsOrder$.subscribe(tabsOrder => {
       if (this.for === tabsOrder[0]) {
-        this.active = false
+        this.active = false;
         if (this.tabTitle === tabsOrder[1]) {
-          this.active = true
+          this.active = true;
         }
       }
     }, error => {

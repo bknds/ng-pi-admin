@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { routing } from './ui.routing';
 import { SharedModule } from '../../shared/shared.module';
-import { ModalModule } from "ngx-modal";
+import { ModalModule } from 'ngx-modal';
 
 /* components */
 import { UiComponent } from './ui.component';

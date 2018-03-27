@@ -12,7 +12,7 @@ export class ModalsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() { }
-  
+
   openModal(modal) {
     modal.open();
   }
@@ -26,6 +26,6 @@ export class ModalsComponent implements OnInit {
       type: 'success',
       title: 'Success!',
       text: 'close it!',
-    })
+    });
   }
 }
