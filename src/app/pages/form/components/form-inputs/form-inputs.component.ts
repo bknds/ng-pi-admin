@@ -9,7 +9,5 @@ export class FormInputsComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
-
+  ngOnInit() { }
 }

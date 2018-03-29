@@ -18,16 +18,16 @@ export class menuService {
     for (let i = 0; i < json.length; i++) {
       if (this.node)
         break;
-      const obj = json[i];
-      if (!obj || !obj.path)
+      const object = json[i];
+      if (!object || !object.path)
         continue;
-      if (obj.path === node_id) {
-        this.node = obj;
+      if (object.path === node_id) {
+        this.node = object;
         break;
       } else {
-        if (obj.children) {
-          this.parent_node = obj;
-          this.queryParentNode(obj.children, node_id);
+        if (object.children) {
+          this.parent_node = object;
+          this.queryParentNode(object.children, node_id);
         } else {
           continue;
         }

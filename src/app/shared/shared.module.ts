@@ -20,7 +20,7 @@ import { AlertComponent } from './components/alert/alert.component';
     CommonModule,
     NgxPaginationModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   declarations: [
     CardComponent,

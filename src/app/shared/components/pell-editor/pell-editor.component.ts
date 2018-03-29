@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import pell from 'pell';
 
 @Component({
@@ -10,10 +10,17 @@ export class PellEditorComponent implements OnInit {
 
   @Input()
   defaultContent: string;
+  @Output() checkEmitter = new EventEmitter<string>();
 
   constructor() { }
 
   ngOnInit() {
+    this.editorInit();
+  }
+
+  editorInit() {
+    let that = this;
+
     function ensureHTTP(str) {
       return /^https?:\/\//.test(str) && str || `http://${str}`;
     }
@@ -23,15 +30,12 @@ export class PellEditorComponent implements OnInit {
       defaultParagraphSeparator: 'p',
       styleWithCSS: true,
       onChange(html) {
-        document.getElementById('text-output').innerHTML = html;
         // document.getElementById('html-output').textContent = html
+        that.checkEmitter.emit(html);
       }
     });
-
-    document.getElementById('text-output').innerHTML = this.defaultContent;
 
     /* content init */
     editor.content.innerHTML = this.defaultContent;
   }
-
 }

@@ -5,11 +5,6 @@ export let MENU_ITEM = [
         icon: 'dashboard'
     },
     {
-        path: 'markdown',
-        title: 'Markdown',
-        icon: 'book'
-    },
-    {
         path: 'editor',
         title: 'Pell Editor',
         icon: 'pencil'
@@ -74,6 +69,10 @@ export let MENU_ITEM = [
             {
                 path: 'file-upload',
                 title: 'File Upload'
+            },
+            {
+                path: 'ng2-select',
+                title: 'Ng2-Select'
             }
         ]
     },
