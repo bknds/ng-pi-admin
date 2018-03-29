@@ -8,9 +8,9 @@ import pell from 'pell';
 })
 export class PellEditorComponent implements OnInit {
 
-  @Input()
-  defaultContent: string;
-  @Output() checkEmitter = new EventEmitter<string>();
+  @Input() defaultContent: string = '<i>Please enter content...</i>';
+
+  @Output() content = new EventEmitter<string>();
 
   constructor() { }
 
@@ -30,8 +30,7 @@ export class PellEditorComponent implements OnInit {
       defaultParagraphSeparator: 'p',
       styleWithCSS: true,
       onChange(html) {
-        // document.getElementById('html-output').textContent = html
-        that.checkEmitter.emit(html);
+        that.content.emit(html);
       }
     });
 
