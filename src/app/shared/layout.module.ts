@@ -5,13 +5,13 @@ import { SharedModule } from './shared.module';
 
 import { GlobalService } from './services/global.service';
 
-import { MenuComponent } from './components/menu/menu.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
-import { PagesTopComponent } from './components/pages-top/pages-top.component';
 import { NotificationComponent } from './components/notification/notification.component';
 import { LoadingComponent } from './components/loading/loading.component';
-import { ContentTopComponent } from './components/content-top/content-top.component';
-import { RightConfigComponent } from './components/right-config/right-config.component';
+import { MenuComponent } from './layouts/menu/menu.component';
+import { SidebarComponent } from './layouts/sidebar/sidebar.component';
+import { ContentTopComponent } from './layouts/content-top/content-top.component';
+import { PagesTopComponent } from './layouts/pages-top/pages-top.component';
+import { RightConfigComponent } from './layouts/right-config/right-config.component';
 
 @NgModule({
     imports: [
