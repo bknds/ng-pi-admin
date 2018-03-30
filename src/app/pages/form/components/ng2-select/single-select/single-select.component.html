@@ -1,8 +1,11 @@
-<div style="width: 300px">
-  <h3>Select a single city</h3>
-  <ng-select [allowClear]="true" [items]="items" [disabled]="disabled" (data)="refreshValue($event)" (selected)="selected($event)"
-    (removed)="removed($event)" (typed)="typed($event)" placeholder="No city selected">
-  </ng-select>
-  <p></p>
-  <pre>{{value.text}}</pre>
+<div class="row">
+  <h3 class="col-md-12">Select a single city</h3>
+  <div class="col-md-6">
+    <ng-select [allowClear]="true" [items]="items" [disabled]="disabled" (data)="refreshValue($event)" (selected)="selected($event)"
+      (removed)="removed($event)" (typed)="typed($event)" placeholder="No city selected">
+    </ng-select>
+  </div>
+  <div class="col-md-6">
+    <pre>{{value.text}}</pre>
+  </div>
 </div>

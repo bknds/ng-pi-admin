@@ -1,0 +1,49 @@
+.ui-select-container {
+    .bg-default,
+    .btn-default,
+    .btn-default:disabled:hover,
+    .btn-default:hover,
+    .btn-default:active:focus,
+    .btn-default:focus,
+    .open>.btn.dropdown-toggle.btn-default {
+        background: $border-color;
+        line-height: 25px;
+        color: $fonts-color;
+    }
+    .btn-xs,
+    .btn-xs:hover,
+    .btn-xs:focus,
+    .btn-xs:active:focus,
+    .btn-group-xs>.btn,
+    .btn-group-xs>.btn:hover,
+    .btn-group-xs>.btn:focus,
+    .btn-group-xs>.btn:active:focus {
+        padding: 0 2px;
+        background: $primary;
+        border: none;
+        line-height: 16px;
+        color: $white;
+    }
+    .ui-select-match .close {
+        line-height: 1 !important;
+    }
+    a.btn-xs,
+    a.btn-xs:hover,
+    .glyphicon-remove:before {
+        line-height: 25px;
+        background: transparent;
+        color: rgba($fonts-color, .5);
+    }
+}
+
+.ui-select-container.form-control {
+    border: 1px solid $border-color;
+    border-radius: 0;
+    background: $border-color;
+}
+
+.ui-select-choices.dropdown-menu {
+    top: 110%;
+    border: none;
+    border-radius: 0;
+}

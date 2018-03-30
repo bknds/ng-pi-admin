@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-//import pell from 'pell';
-declare let pell: any;
+import pell from 'pell';
+
 @Component({
   selector: 'pell-editor',
   templateUrl: './pell-editor.component.html',

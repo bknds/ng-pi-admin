@@ -11,7 +11,6 @@ import { TabContentComponent } from './components/tabset/tab-content/tab-content
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import { FileTreeComponent } from './components/file-tree/file-tree.component';
 import { SwitchComponent } from './components/switch/switch.component';
-import { SortComponent } from './components/sort/sort.component';
 import { PellEditorComponent } from './components/pell-editor/pell-editor.component';
 import { AlertComponent } from './components/alert/alert.component';
 
@@ -30,7 +29,6 @@ import { AlertComponent } from './components/alert/alert.component';
     TabContentComponent,
     ProgressBarComponent,
     SwitchComponent,
-    SortComponent,
     PellEditorComponent,
     AlertComponent
   ],
@@ -42,7 +40,6 @@ import { AlertComponent } from './components/alert/alert.component';
     TabContentComponent,
     ProgressBarComponent,
     SwitchComponent,
-    SortComponent,
     PellEditorComponent,
     AlertComponent
   ]

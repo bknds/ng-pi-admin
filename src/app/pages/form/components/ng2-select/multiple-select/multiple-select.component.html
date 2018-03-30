@@ -1,7 +1,10 @@
-<div style="width: 300px; margin-bottom: 20px;">
-  <h3>Select multiple cities</h3>
-  <ng-select [multiple]="true" [items]="items" [disabled]="disabled" (data)="refreshValue($event)" (selected)="selected($event)"
-    (removed)="removed($event)" placeholder="No city selected"></ng-select>
-  <pre>{{itemsToString(value)}}</pre>
-
+<div class="row">
+  <h3 class="col-md-12">Select multiple cities</h3>
+  <div class="col-md-6">
+    <ng-select [multiple]="true" [items]="items" [disabled]="disabled" (data)="refreshValue($event)" (selected)="selected($event)"
+      (removed)="removed($event)" placeholder="No city selected"></ng-select>
+  </div>
+  <div class="col-md-6">
+    <pre>{{itemsToString(value)}}</pre>
+  </div>
 </div>
