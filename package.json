@@ -36,6 +36,7 @@
     "ngx-modal": "0.0.29",
     "ngx-pagination": "^3.0.3",
     "normalize.css": "^7.0.0",
+    "pell": "^1.0.4",
     "roboto-fontface": "^0.8.0",
     "rxjs": "^5.4.2",
     "sweetalert2": "^7.6.3",

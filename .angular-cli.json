@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "Pill"
+    "name": "ng-pi-admin"
   },
   "apps": [{
     "root": "src",
@@ -30,7 +30,6 @@
       "../node_modules/jquery/dist/jquery.js",
       "../node_modules/bootstrap/dist/js/bootstrap.js",
       "../node_modules/sweetalert2/dist/sweetalert2.js",
-      "../node_modules/pell/dist/pell.min.js",
       "../node_modules/echarts/dist/echarts.min.js",
       "../node_modules/echarts/map/js/china.js",
       "../node_modules/echarts/dist/extension/bmap.js",
