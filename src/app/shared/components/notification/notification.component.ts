@@ -17,8 +17,16 @@ export class NotificationComponent implements OnInit {
   }
 
   public getNewNotification() {
-    this._globalService.notification$.subscribe(notification => {
+    /* this._globalService.notification$.subscribe(notification => {
       this.notificationItem.push(notification)
+    }, error => {
+      console.log('Error: ' + error);
+    });
+ */
+    this._globalService.data$.subscribe(data => {
+      if (data.ev === 'notification') {
+        this.notificationItem.push(data.value)
+      }
     }, error => {
       console.log('Error: ' + error);
     });

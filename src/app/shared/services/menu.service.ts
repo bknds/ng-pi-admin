@@ -61,10 +61,10 @@ export class menuService {
         index.toggle = 'init';
       } else {
         this.path_item = [index.path];
-        
+
         index.routerLink = this.creatRouterLink(index.path);
         console.log(index.routerLink);
-        
+
         index.routerLink.unshift('/', 'pages');
       }
     })
@@ -79,7 +79,8 @@ export class menuService {
       if (element.routerLink) {
         element.isActive = this._router.isActive(this._router.createUrlTree(element.routerLink), true);
         if (element.isActive)
-          this._globalService._isActived(element);
+          //this._globalService._isActived(element);
+          this._globalService.dataBusChanged('isActived', element);
       } else if (element.children)
         this.selectItem(element.children);
     });

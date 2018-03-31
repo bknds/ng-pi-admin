@@ -15,6 +15,7 @@ export class RightConfigComponent implements OnInit {
 
   configToggle() {
     this.isConfigToggle = !this.isConfigToggle;
-    this._globalService._sidebarToggleState(!this.isConfigToggle);
+    //this._globalService._sidebarToggleState(!this.isConfigToggle);
+    this._globalService.dataBusChanged('sidebarToggle', !this.isConfigToggle);
   }
 }

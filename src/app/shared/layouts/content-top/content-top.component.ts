@@ -13,14 +13,23 @@ export class ContentTopComponent {
   }
 
   private getRouteTitle() {
-    this._globalService.isActived$.subscribe(isActived => {
+    /* this._globalService.isActived$.subscribe(isActived => {
       this.routeTitle = isActived.title;
+    }, error => {
+      console.log('Error: ' + error);
+    }); */
+
+    this._globalService.data$.subscribe(data => {
+      if (data.ev === 'isActived') {
+        this.routeTitle = data.value.title;
+      }
     }, error => {
       console.log('Error: ' + error);
     });
   }
 
   returnHome() {
-    this._globalService._isActived({ title: 'Dashboard' });
+    //    this._globalService._isActived({ title: 'Dashboard' });
+    this._globalService.dataBusChanged('isActived', { title: 'Dashboard' });
   }
 }

@@ -18,6 +18,7 @@ export class MenuComponent {
   }
 
   private _selectItem(item) {
-    this._globalService._isActived(item);
+    //this._globalService._isActived(item);
+    this._globalService.dataBusChanged('isActived', item);
   }
 }

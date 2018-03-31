@@ -6,57 +6,49 @@ import { NotificationModel } from '../models/notification-model';
 
 @Injectable()
 export class GlobalService {
-    /* sidebar toggle */
-    private sidebarToggleSource = new Subject<boolean>();
-
+    /*private sidebarToggleSource = new Subject<boolean>();
     sidebarToggle$ = this.sidebarToggleSource.asObservable();
-
     _sidebarToggleState(sidebarToggle: boolean) {
         this.sidebarToggleSource.next(sidebarToggle);
-    }
+    }*/
 
-    /* tabs title */
-    // tslint:disable-next-line:member-ordering
-    private tabsMenuSource = new Subject<TabMenuModel>();
-
-    // tslint:disable-next-line:member-ordering
+    /* private tabsMenuSource = new Subject<TabMenuModel>();
     tabsMenu$ = this.tabsMenuSource.asObservable();
-
     _tabsMenu(tabsMenu: TabMenuModel) {
         this.tabsMenuSource.next(tabsMenu);
     }
-
-    /* tabs choosen */
-    // tslint:disable-next-line:member-ordering
     private tabsOrderSource = new Subject<Array<any>>();
-
-    // tslint:disable-next-line:member-ordering
     tabsOrder$ = this.tabsOrderSource.asObservable();
-
     _tabsOrder(tabsOrder: Array<any>) {
         this.tabsOrderSource.next(tabsOrder);
-    }
-
-    /* notification */
-    // tslint:disable-next-line:member-ordering
-    private notificationSource = new Subject<NotificationModel>();
-
-    // tslint:disable-next-line:member-ordering
+    }*/
+    
+    /* private notificationSource = new Subject<NotificationModel>();
     notification$ = this.notificationSource.asObservable();
-
     _notification(notification: NotificationModel) {
         this.notificationSource.next(notification);
-    }
+    } */
 
-
-    /* router isActive */
-    // tslint:disable-next-line:member-ordering
-    private isActivedSource = new Subject<any>();
-
-    // tslint:disable-next-line:member-ordering
+    /* private isActivedSource = new Subject<any>();
     isActived$ = this.isActivedSource.asObservable();
-
     _isActived(isActived) {
         this.isActivedSource.next(isActived);
+    }*/
+
+    private dataSource = new Subject<DataSourceClass>();
+
+    data$ = this.dataSource.asObservable();
+
+    public dataBusChanged(ev, value) {
+        this.dataSource.next({
+            ev: ev,
+            value: value
+        })
     }
+}
+
+
+export class DataSourceClass {
+    ev: string;
+    value: any
 }

@@ -27,10 +27,21 @@ export class TabContentComponent implements OnInit {
   ngOnInit() {
     this._tabsTitle();
 
-    this._globalService.tabsOrder$.subscribe(tabsOrder => {
+    /* this._globalService.tabsOrder$.subscribe(tabsOrder => {
       if (this.for === tabsOrder[0]) {
         this.active = false;
         if (this.tabTitle === tabsOrder[1]) {
+          this.active = true;
+        }
+      }
+    }, error => {
+      console.log('Error: ' + error);
+    }); */
+
+    this._globalService.data$.subscribe(data => {
+      if (data.ev === 'tabsOrder' && this.for === data.value[0]) {
+        this.active = false;
+        if (this.tabTitle === data.value[1]) {
           this.active = true;
         }
       }
@@ -46,6 +57,8 @@ export class TabContentComponent implements OnInit {
       active: this.active,
       disabled: this.disabled
     }
-    this._globalService._tabsMenu(this.tabsMenu);
+    //this._globalService._tabsMenu(this.tabsMenu);
+    this._globalService.dataBusChanged('tabsMenu', this.tabsMenu);
+
   }
 }
