@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs/Subject';
 /* models */
-import { TabMenuModel } from '../models/tabs-model';
-import { NotificationModel } from '../models/notification-model';
+/* import { TabMenuModel } from '../models/tabs-model';
+import { NotificationModel } from '../models/notification-model'; */
 
 @Injectable()
 export class GlobalService {

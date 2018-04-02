@@ -18,7 +18,4 @@ export class EditorComponent implements OnInit {
     document.getElementById('text-output').innerHTML = event;
   }
 
-  froalaContent(event) {
-    console.log(event);
-  }
 }

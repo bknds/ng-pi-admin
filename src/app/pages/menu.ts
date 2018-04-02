@@ -15,6 +15,11 @@ export let MENU_ITEM = [
         icon: 'diamond'
     },
     {
+        path: 'profile',
+        title: 'Profile',
+        icon: 'user-circle'
+    },
+    {
         path: 'ui',
         title: 'UI Element',
         icon: 'paint-brush',

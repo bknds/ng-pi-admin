@@ -61,10 +61,7 @@ export class menuService {
         index.toggle = 'init';
       } else {
         this.path_item = [index.path];
-
         index.routerLink = this.creatRouterLink(index.path);
-        console.log(index.routerLink);
-
         index.routerLink.unshift('/', 'pages');
       }
     })

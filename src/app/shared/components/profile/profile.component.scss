@@ -1,0 +1,95 @@
+@import '../../theme/conf';
+.profile-wrap {
+    padding: 0;
+}
+
+.profile-head {
+    height: 250px;
+    overflow: hidden;
+    .profile-head-bg {
+        width: 100%;
+        height: auto;
+        filter: blur(20px);
+        -moz-filter: blur(20px);
+        -webkit-filter: blur(20px);
+    }
+}
+
+.info-wrap {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 10;
+    .avatar-wrap {
+        margin: 0 auto;
+        border: 2px solid $white;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .user-name,
+    .user-post,
+    .user-desc {
+        display: block;
+        color: $white;
+    }
+    .user-name {
+        font-size: 2em;
+    }
+}
+
+.profile-foot {
+    padding: 10px;
+    text-align: center;
+    h4 {
+        text-transform: uppercase;
+    }
+}
+
+.skills-tag {
+    display: inline-block;
+    padding: .2em .4em;
+    margin: 2px;
+    border: 1px solid $border-color;
+    border-radius: 3px;
+    background: transparent;
+    text-decoration: none;
+    color: rgba($fonts-color, .7);
+    @include transition(all .4s);
+    &:hover {
+        border: 1px solid $primary;
+        background: $primary;
+        color: $white;
+    }
+}
+
+.contact-way-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 70px;
+}
+
+.contact-way-list {
+    list-style: none;
+    a.info-icon {
+        line-height: 70px;
+        font-size: 20px;
+        color: rgba($fonts-color, .5);
+        @include transition(all .4s);
+        &:hover {
+            color: $primary;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    }
+}
