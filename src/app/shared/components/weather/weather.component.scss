@@ -1,0 +1,26 @@
+@import '../../theme/conf';
+.weather-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.weather-content {
+    flex: 1;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    .content-left {
+        flex: 1;
+    }
+    .content-right {
+        width: 70px;
+        height: 100%;
+        border-left: 1px solid $border-color;
+    }
+}
+
+.weather-bottom {
+    width: 100%;
+    height: 70px;
+    border-top: 1px solid $border-color;
+}

@@ -9,7 +9,6 @@ export class ProfileComponent implements OnInit {
   avatarImgSrc: string = 'assets/images/avatar.png';
   userName: string = 'Folisise Chosielie';
   userPost: string = 'Musician, Player';
-  userDesc: string = 'Lorem ipsum dolor uaerat nisi tenetur minima itaque repellat consectetur laborum.';
   
   constructor() { }
 

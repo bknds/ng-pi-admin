@@ -4,7 +4,7 @@
 }
 
 .profile-head {
-    height: 250px;
+    height: 200px;
     overflow: hidden;
     .profile-head-bg {
         width: 100%;
@@ -35,13 +35,20 @@
         }
     }
     .user-name,
-    .user-post,
-    .user-desc {
+    .user-post {
         display: block;
         color: $white;
     }
     .user-name {
-        font-size: 2em;
+        font-size: 1.6em;
+        font-weight: normal;
+    }
+    .map-location {
+        color: $white;
+        i {
+            font-size: 1.3em;
+            color: $primary;
+        }
     }
 }
 

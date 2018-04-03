@@ -26,7 +26,7 @@ body {
 }
 
 .bg-primary {
-    @include linear-gradient(to top right, $primary, #ffdd9f);
+    @include linear-gradient(to top right, $primary, #ffd17c);
 }
 
 .bg-success {

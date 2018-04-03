@@ -16,8 +16,8 @@ export let MENU_ITEM = [
     },
     {
         path: 'profile',
-        title: 'Profile',
-        icon: 'user-circle'
+        title: 'User Profile',
+        icon: 'user'
     },
     {
         path: 'ui',
