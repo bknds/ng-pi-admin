@@ -7,20 +7,31 @@
 .weather-content {
     flex: 1;
     height: 200px;
-    display: flex;
-    flex-direction: row;
-    .content-left {
-        flex: 1;
-    }
-    .content-right {
-        width: 70px;
-        height: 100%;
-        border-left: 1px solid $border-color;
+    .type {
+        font-size: 10em;
     }
 }
 
 .weather-bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     width: 100%;
     height: 70px;
     border-top: 1px solid $border-color;
+    .forecast-item-wrap {
+        flex: 1;
+        border-right: 1px solid $border-color;
+        text-align: center;
+        .icon {
+            font-size: 3em;
+        }
+        span {
+            display: block;
+            font-size: $sm-text;
+        }
+        &:last-child {
+            border: none;
+        }
+    }
 }
