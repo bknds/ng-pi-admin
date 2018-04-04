@@ -1,32 +1,16 @@
 <div class="weather-wrap">
   <div class="weather-content">
-    <i class="icon iconfont icon-duoyun type"></i>
-    <span class="date">03-04</span>
-    <span class="low-high">29.0℃ ~ 22.0℃</span>
+    <i class="icon iconfont icon-{{today.type}} type"></i>
+    <span class="low-high">{{today.low}} ~ {{today.high}}</span>
     <span class="wind">
       <i class="icon iconfont icon-tianqizitiku09"></i>
-      <3级</span>
+      {{today.fl}}</span>
   </div>
   <div class="weather-bottom">
-    <div class="forecast-item-wrap">
-      <i class="icon iconfont icon-duoyun"></i>
-      <span>03-04</span>
-    </div>
-    <div class="forecast-item-wrap">
-      <i class="icon iconfont icon-duoyun"></i>
-      <span>03-05</span>
-    </div>
-    <div class="forecast-item-wrap">
-      <i class="icon iconfont icon-xiaoyu"></i>
-      <span>03-06</span>
-    </div>
-    <div class="forecast-item-wrap">
-      <i class="icon iconfont icon-xiaoyu"></i>
-      <span>03-07</span>
-    </div>
-    <div class="forecast-item-wrap">
-      <i class="icon iconfont icon-qing"></i>
-      <span>03-08</span>
-    </div>
+    <button class="switch-btn forecast-item-wrap" [ngClass]="{'active':item.isSelect}" *ngFor="let item of data;let i = index"
+      (click)="switch(i)">
+      <i class="icon iconfont icon-{{item.type}}"></i>
+      <span>{{item.date}}</span>
+    </button>
   </div>
 </div>
