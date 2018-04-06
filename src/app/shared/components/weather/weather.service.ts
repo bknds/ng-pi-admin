@@ -26,27 +26,27 @@ export class WeatherService {
             "type": "dayu",
         }, {
             "date": "03-05",
-            "high": "29.0℃",
-            "low": "22.0℃",
-            "fl": "<3级",
+            "high": "32.0℃",
+            "low": "28.0℃",
+            "fl": "<2级",
             "type": "duoyun",
         }, {
             "date": "03-06",
-            "high": "29.0℃",
-            "low": "22.0℃",
+            "high": "19.0℃",
+            "low": "17.0℃",
             "fl": "<3级",
             "type": "leidian",
         }, {
             "date": "03-07",
-            "high": "29.0℃",
-            "low": "22.0℃",
-            "fl": "<3级",
+            "high": "32.0℃",
+            "low": "25.0℃",
+            "fl": "<2级",
             "type": "qing",
         }, {
             "date": "03-08",
-            "high": "29.0℃",
+            "high": "27.0℃",
             "low": "22.0℃",
-            "fl": "<3级",
+            "fl": "<4级",
             "type": "yintian",
         }]
 }

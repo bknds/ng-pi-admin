@@ -5,6 +5,13 @@
     -webkit-box-shadow: $shadow;
 }
 
+@mixin text-shadow($shadow...) {
+    text-shadow: $shadow;
+    -o-text-shadow: $shadow;
+    -moz-text-shadow: $shadow;
+    -webkit-text-shadow: $shadow;
+}
+
 @mixin transform($transform...) {
     transform: $transform;
     -o-transform: $transform;
