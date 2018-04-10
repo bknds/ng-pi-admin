@@ -14,7 +14,7 @@
         display: block;
         font-size: 10em;
         text-align: center;
-        @include text-shadow( 5px 5px 10px rgba($black, .5));
+        @include text-shadow( 6px 6px 10px rgba($black, .5));
     }
     .low-high {
         display: block;
@@ -30,12 +30,12 @@
     width: 100%;
     height: 100px;
     background: rgba($card-bg, .5);
-    border-top: 1px solid rgba($border-color, .5);
+    border-top: 1px solid rgba($border-color, .3);
     .forecast-item-wrap {
         flex: 1;
         background: transparent;
         border: none;
-        border-right: 1px solid rgba($border-color, .5);
+        border-right: 1px solid rgba($border-color, .3);
         outline: none;
         text-align: center;
         .icon {
