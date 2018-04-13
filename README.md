@@ -1,5 +1,5 @@
 
-[![Build Status](https://travis-ci.org/Treesflowers/ng-pi-admin.svg?branch=master)](https://travis-ci.org/Treesflowers/ng-pi-admin)
+[![Build Status](https://travis-ci.org/BKnds/ng-pi-admin.svg?branch=master)](https://travis-ci.org/BKnds/ng-pi-admin)
 
 
 Default | Dark | Light
