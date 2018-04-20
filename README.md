@@ -12,6 +12,7 @@ Default | Dark | Light
 Angular 4+, Angular CLI, TypeScript, Scss, Bootstrap
 
 ## Demo
+
 [Live Demo](http://treesflower.com/ng-pi-admin)
 
 ## Getting started
