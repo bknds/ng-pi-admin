@@ -1,10 +1,12 @@
 
-[![Build Status](https://travis-ci.org/BKnds/ng-pi-admin.svg?branch=master)](https://travis-ci.org/BKnds/ng-pi-admin)
+[![Build Status](https://travis-ci.org/bknds/ng-pi-admin.svg?branch=master)](https://travis-ci.org/bknds/ng-pi-admin)
 
 
 Default | Dark | Light
 ---|---|---
-![](https://raw.githubusercontent.com/treesflower/dustAdmin/master/default.png) | ![](https://raw.githubusercontent.com/treesflower/dustAdmin/master/dark.png) | ![](https://raw.githubusercontent.com/treesflower/dustAdmin/master/light.png)
+![](https://raw.githubusercontent.com/bknds/ng-pi-admin/master/default.png) | ![]
+(https://raw.githubusercontent.com/bknds/ng-pi-admin/master/dark.png) | ![]
+(https://raw.githubusercontent.com/bknds/ng-pi-admin/master/light.png)
 
 
 
@@ -17,7 +19,7 @@ Angular 4+, Angular CLI, TypeScript, Scss, Bootstrap
 
 ## Getting started
 ```
-git clone https://github.com/treesflower/ng-pi-admin.git
+git clone https://github.com/bknds/ng-pi-admin.git
 
 npm install
 
