@@ -9,4 +9,8 @@ import { environment } from './environments/environment';
 } */
 enableProdMode();
 
-platformBrowserDynamic().bootstrapModule(AppModule);
+// platformBrowserDynamic().bootstrapModule(AppModule);
+platformBrowserDynamic().bootstrapModule(AppModule, {
+  preserveWhitespaces: true
+})
+.catch(err => console.log(err));
