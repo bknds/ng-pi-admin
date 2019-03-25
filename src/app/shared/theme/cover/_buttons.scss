@@ -28,40 +28,40 @@
 }
 
 .btn-primary {
-    @extend .bg-primary;
-    @include box-shadow( 0 2px 10px 0 rgba($primary, .5));
+    // @extend .bg-primary;
+    // @include box-shadow( 0 2px 10px 0 rgba($primary, .5));
     &:active {
         @extend .bg-primary;
     }
 }
 
 .btn-success {
-    @extend .bg-success;
-    @include box-shadow( 0 2px 10px 0 rgba($success, .5));
+    // @extend .bg-success;
+    // @include box-shadow( 0 2px 10px 0 rgba($success, .5));
     &:active {
         @extend .bg-success;
     }
 }
 
 .btn-danger {
-    @extend .bg-danger;
-    @include box-shadow( 0 2px 10px 0 rgba($danger, .5));
+    // @extend .bg-danger;
+    // @include box-shadow( 0 2px 10px 0 rgba($danger, .5));
     &:active {
         @extend .bg-danger;
     }
 }
 
 .btn-warning {
-    @extend .bg-warning;
-    @include box-shadow( 0 2px 10px 0 rgba($warning, .5));
+    // @extend .bg-warning;
+    // @include box-shadow( 0 2px 10px 0 rgba($warning, .5));
     &:active {
         @extend .bg-warning;
     }
 }
 
 .btn-info {
-    @extend .bg-info;
-    @include box-shadow( 0 2px 10px 0 rgba($info, .5));
+    // @extend .bg-info;
+    // @include box-shadow( 0 2px 10px 0 rgba($info, .5));
     &:active {
         @extend .bg-info;
     }
