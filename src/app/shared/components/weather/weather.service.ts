@@ -1,6 +1,8 @@
+
+import {map} from 'rxjs/operators';
 import { Injectable } from '@angular/core';
 import { Jsonp } from "@angular/http";
-import 'rxjs/add/operator/map';
+
 
 @Injectable()
 export class WeatherService {
@@ -13,7 +15,7 @@ export class WeatherService {
         let callback = "&callback=" + "__ng_jsonp__.__req" + WeatherService.times + ".finished";
         WeatherService.times++;
         let url = this.baseUrl + callback;
-        return this.jsonp.get(url).map(res => res.json());
+        return this.jsonp.get(url).pipe(map(res => res.json()));
     }
 
 

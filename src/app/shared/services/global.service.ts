@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs/Subject';
+import { Subject } from 'rxjs';
 /* models */
 /* import { TabMenuModel } from '../models/tabs-model';
 import { NotificationModel } from '../models/notification-model'; */
