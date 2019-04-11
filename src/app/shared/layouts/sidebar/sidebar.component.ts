@@ -1,6 +1,6 @@
-import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
-import { menuService } from '../../services/menu.service';
-import { GlobalService } from '../../services/global.service';
+import {Component, Input, Output, EventEmitter, OnInit, HostListener} from '@angular/core';
+import {menuService} from '../../services/menu.service';
+import {GlobalService} from '../../services/global.service';
 
 @Component({
   selector: 'sidebar',
@@ -15,7 +15,8 @@ export class SidebarComponent implements OnInit {
   public sidebarToggle = true;
 
   constructor(private _menuService: menuService,
-    public _globalService: GlobalService) { }
+              public _globalService: GlobalService) {
+  }
 
   ngOnInit() {
     this.menuInfo = this._menuService.putSidebarJson();
@@ -55,6 +56,13 @@ export class SidebarComponent implements OnInit {
         }
       }
     }
+  }
+
+
+  // detect window size and automatically hide the left side menu
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.sidebarToggle = window.innerWidth >= 970;
   }
 
 }
