@@ -1,21 +1,22 @@
-import { Component, Input } from '@angular/core';
-import { GlobalService } from '../../services/global.service';
+import {AfterViewInit, Component, Input} from '@angular/core';
+import {GlobalService} from '../../services/global.service';
 
 @Component({
   selector: 'pages-top',
   templateUrl: './pages-top.component.html',
   styleUrls: ['./pages-top.component.scss'],
 })
-export class PagesTopComponent {
+export class PagesTopComponent implements AfterViewInit {
   avatarImgSrc: string = 'assets/images/avatar.png';
   userName: string = 'Folisise Chosielie';
   userPost: string = 'Musician, Player';
 
 
   sidebarToggle: boolean = true;
-  tip = { ring: true, email: true };
+  tip = {ring: true, email: true};
 
-  constructor(private _globalService: GlobalService) { }
+  constructor(private _globalService: GlobalService) {
+  }
 
   public _sidebarToggle() {
     /* this._globalService.sidebarToggle$.subscribe(sidebarToggle => {
@@ -35,5 +36,10 @@ export class PagesTopComponent {
 
 
     //this._globalService._sidebarToggleState(!this.sidebarToggle);
+  }
+
+
+  ngAfterViewInit(): void {
+    this.sidebarToggle = window.innerWidth >= 970;
   }
 }
