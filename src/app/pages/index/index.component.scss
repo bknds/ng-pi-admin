@@ -29,22 +29,22 @@
     }
     .tip-ico-primary {
         @extend .bg-primary;
-        // @include box-shadow( 0 2px 10px 0 rgba($primary, .5));
+        @include box-shadow( 0 2px 10px 0 rgba($primary, .5));
     }
     .tip-ico-success {
         @extend .bg-success;
-        // @include box-shadow( 0 2px 10px 0 rgba($success, .5));
+        @include box-shadow( 0 2px 10px 0 rgba($success, .5));
     }
     .tip-ico-danger {
         @extend .bg-danger;
-        // @include box-shadow( 0 2px 10px 0 rgba($danger, .5));
+        @include box-shadow( 0 2px 10px 0 rgba($danger, .5));
     }
     .tip-ico-warning {
         @extend .bg-warning;
-        // @include box-shadow( 0 2px 10px 0 rgba($warning, .5));
+        @include box-shadow( 0 2px 10px 0 rgba($warning, .5));
     }
     .tip-ico-info {
         @extend .bg-info;
-        // @include box-shadow( 0 2px 10px 0 rgba($info, .5));
+        @include box-shadow( 0 2px 10px 0 rgba($info, .5));
     }
 }

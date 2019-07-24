@@ -2,9 +2,8 @@
 $default-text:14px;
 $sm-text:12px;
 $lg-text:16px;
-$body-bg:#ecf0f5;
-$sidebar-bg:#1a2226;
-$topbar-bg:#115387;
+$body-bg:#fff;
+$sidebar-bg:#465294;
 $sidebar-fonts-color:#fff;
 $card-bg:#fff;
 $card-border:#e4e3e3;
@@ -13,11 +12,11 @@ $black:#000;
 $border-color:rgba($black, .1);
 $table-border-color:#e6e6e6;
 $fonts-color:#26253c;
-$primary:#3c8dbc;
-$success:#00a65a;
-$danger:#dd4b39;
-$warning:#f39c12;
-$info:#00c0ef;
+$primary:#fca400;
+$success:#16be9a;
+$danger:#fa5167;
+$warning:#ff7403;
+$info:#2cc3ff;
 body {
     background: $body-bg;
 }
@@ -27,21 +26,21 @@ body {
 }
 
 .bg-primary {
-    background-color: $primary;
+    @include linear-gradient(to top right, $primary, #ffd17c);
 }
 
 .bg-success {
-    background-color: $success;
+    @include linear-gradient(to top right, $success, #42e697);
 }
 
 .bg-danger {
-    background-color: $danger;
+    @include linear-gradient(to top right, $danger, #fda09c);
 }
 
 .bg-warning {
-    background-color: $warning;
+    @include linear-gradient(to top right, $warning, #fac980);
 }
 
 .bg-info {
-    background-color: $info;
+    @include linear-gradient(to top right, $info, #15f8bf);
 }
