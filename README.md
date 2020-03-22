@@ -13,7 +13,7 @@ Angular 7+, Angular CLI, TypeScript, Scss, Bootstrap 3
 
 ## Demo
 
-[Live Demo](https://treesflower.com/ng-pi-admin)
+[Live Demo](https://treesflower.com/dist/)
 
 ## Getting started
 ```
