@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { routing } from './ui.routing';
 import { SharedModule } from '../../shared/shared.module';
-import { ModalModule } from 'ngx-modal';
+import { ModalDialogModule } from '@preeco-privacy/ngx-modal-dialog';
 
 /* components */
 import { UiComponent } from './ui.component';
@@ -19,7 +19,7 @@ import { ModalsComponent } from './components/modals/modals.component';
     imports: [
         CommonModule,
         SharedModule,
-        ModalModule,
+        ModalDialogModule,
         routing
     ],
     declarations: [
